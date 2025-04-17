@@ -597,3 +597,38 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is
 2025-04-17 18:44:12,071 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\users\models.py changed, reloading.
 2025-04-17 18:44:24,514 - INFO - autoreload - Watching for file changes with StatReloader
 2025-04-17 18:45:57,602 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-17 18:46:14,116 - INFO - basehttp - "POST /admin/Employe/clemploye/add/ HTTP/1.1" 200 29568
+2025-04-17 18:46:14,486 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-04-17 18:46:39,338 - INFO - basehttp - "POST /admin/Employe/clemploye/add/ HTTP/1.1" 302 0
+2025-04-17 18:46:39,753 - INFO - basehttp - "GET /admin/Employe/clemploye/ HTTP/1.1" 200 17953
+2025-04-17 18:46:40,012 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-04-17 18:46:48,246 - INFO - basehttp - "GET /admin/connection/clconnection/ HTTP/1.1" 200 16558
+2025-04-17 18:46:48,441 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-04-17 18:46:50,578 - INFO - basehttp - "GET /admin/connection/clconnection/add/ HTTP/1.1" 200 19600
+2025-04-17 18:46:50,804 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-04-17 18:47:07,650 - INFO - basehttp - "POST /admin/connection/clconnection/add/ HTTP/1.1" 302 0
+2025-04-17 18:47:07,802 - INFO - basehttp - "GET /admin/connection/clconnection/ HTTP/1.1" 200 17945
+2025-04-17 18:47:08,055 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-04-17 18:47:29,034 - INFO - basehttp - "POST /login/ HTTP/1.1" 302 0
+2025-04-17 18:47:29,117 - INFO - basehttp - "GET /home HTTP/1.1" 200 11806
+2025-04-17 18:47:38,532 - INFO - basehttp - "GET /register/ HTTP/1.1" 200 7279
+2025-04-17 18:47:43,210 - INFO - basehttp - "GET /home HTTP/1.1" 200 11806
+2025-04-17 18:47:45,619 - INFO - basehttp - "GET /register/ HTTP/1.1" 200 7279
+2025-04-17 18:47:47,560 - INFO - basehttp - "GET /home HTTP/1.1" 200 11806
+2025-04-17 18:47:49,261 - INFO - basehttp - "GET /administration/list/ HTTP/1.1" 200 4558
+2025-04-17 18:47:52,590 - INFO - basehttp - "GET /administration/create/ HTTP/1.1" 200 6445
+2025-04-17 18:48:35,696 - INFO - basehttp - "POST /administration/create/ HTTP/1.1" 302 0
+2025-04-17 18:48:35,855 - INFO - basehttp - "GET /administration/list/ HTTP/1.1" 200 5313
+2025-04-17 18:48:42,197 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-04-17 18:48:46,465 - INFO - basehttp - "GET /administration/detail/1/ HTTP/1.1" 200 8599
+2025-04-17 18:48:46,965 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 304 0
+2025-04-17 18:48:47,149 - INFO - basehttp - "GET /media/drapeaux/congo-2697382_1920.jpg HTTP/1.1" 200 566668
+2025-04-17 18:48:50,227 - INFO - basehttp - "GET /administration/list/ HTTP/1.1" 200 5313
+2025-04-17 18:48:50,467 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 304 0
+2025-04-17 18:50:18,978 - INFO - basehttp - "GET /admin/connection/clconnection/ HTTP/1.1" 200 17879
+2025-04-17 18:50:21,646 - INFO - basehttp - "GET /administration/list/ HTTP/1.1" 200 5313
+2025-04-17 18:50:23,395 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-04-17 18:50:31,626 - WARNING - log - Not Found: /favicon.ico
+2025-04-17 18:50:31,630 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 3263
+2025-04-17 18:50:31,789 - WARNING - log - Not Found: /favicon.ico
+2025-04-17 18:50:31,795 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 3263
