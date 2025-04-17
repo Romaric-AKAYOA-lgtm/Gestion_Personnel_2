@@ -1,0 +1,599 @@
+2025-04-17 17:44:37,431 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-17 17:44:52,269 - ERROR - log - Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'Activation'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Activation\activation_middleware.py", line 17, in __call__
+    reverse("Activation:activation_page"),  # Page d'activation
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'Activation' is not a registered namespace
+2025-04-17 17:44:52,286 - ERROR - basehttp - "GET /favicon.ico HTTP/1.1" 500 72621
+2025-04-17 17:44:54,362 - ERROR - log - Internal Server Error: /home
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'Activation'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Activation\activation_middleware.py", line 17, in __call__
+    reverse("Activation:activation_page"),  # Page d'activation
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'Activation' is not a registered namespace
+2025-04-17 17:44:54,369 - ERROR - basehttp - "GET /home HTTP/1.1" 500 72601
+2025-04-17 17:44:55,710 - ERROR - log - Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'Activation'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Activation\activation_middleware.py", line 17, in __call__
+    reverse("Activation:activation_page"),  # Page d'activation
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'Activation' is not a registered namespace
+2025-04-17 17:44:55,719 - ERROR - basehttp - "GET /favicon.ico HTTP/1.1" 500 72472
+2025-04-17 17:44:58,465 - ERROR - log - Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'Activation'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Activation\activation_middleware.py", line 17, in __call__
+    reverse("Activation:activation_page"),  # Page d'activation
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'Activation' is not a registered namespace
+2025-04-17 17:44:58,480 - ERROR - basehttp - "GET / HTTP/1.1" 500 72839
+2025-04-17 17:44:59,412 - ERROR - log - Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'Activation'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Activation\activation_middleware.py", line 17, in __call__
+    reverse("Activation:activation_page"),  # Page d'activation
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'Activation' is not a registered namespace
+2025-04-17 17:44:59,436 - ERROR - basehttp - "GET / HTTP/1.1" 500 72565
+2025-04-17 17:45:01,027 - ERROR - log - Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'Activation'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Activation\activation_middleware.py", line 17, in __call__
+    reverse("Activation:activation_page"),  # Page d'activation
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'Activation' is not a registered namespace
+2025-04-17 17:45:01,033 - ERROR - basehttp - "GET /favicon.ico HTTP/1.1" 500 72468
+2025-04-17 17:46:03,392 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\settings.py changed, reloading.
+2025-04-17 17:46:10,297 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-17 17:46:15,816 - ERROR - log - Internal Server Error: /admin
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'Activation'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Activation\activation_middleware.py", line 17, in __call__
+    reverse("Activation:activation_page"),  # Page d'activation
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'Activation' is not a registered namespace
+2025-04-17 17:46:15,834 - ERROR - basehttp - "GET /admin HTTP/1.1" 500 72610
+2025-04-17 17:46:17,286 - ERROR - log - Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'Activation'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Activation\activation_middleware.py", line 17, in __call__
+    reverse("Activation:activation_page"),  # Page d'activation
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'Activation' is not a registered namespace
+2025-04-17 17:46:17,294 - ERROR - basehttp - "GET /favicon.ico HTTP/1.1" 500 72473
+2025-04-17 17:46:27,734 - ERROR - log - Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'Activation'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Activation\activation_middleware.py", line 17, in __call__
+    reverse("Activation:activation_page"),  # Page d'activation
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'Activation' is not a registered namespace
+2025-04-17 17:46:27,740 - ERROR - basehttp - "GET /admin/ HTTP/1.1" 500 72717
+2025-04-17 17:46:28,942 - ERROR - log - Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'Activation'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Activation\activation_middleware.py", line 17, in __call__
+    reverse("Activation:activation_page"),  # Page d'activation
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'Activation' is not a registered namespace
+2025-04-17 17:46:28,952 - ERROR - basehttp - "GET /favicon.ico HTTP/1.1" 500 72474
+2025-04-17 17:47:45,433 - ERROR - log - Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'Activation'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Activation\activation_middleware.py", line 17, in __call__
+    reverse("Activation:activation_page"),  # Page d'activation
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'Activation' is not a registered namespace
+2025-04-17 17:47:45,447 - ERROR - basehttp - "GET /admin/ HTTP/1.1" 500 72717
+2025-04-17 17:47:46,944 - ERROR - log - Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'Activation'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Activation\activation_middleware.py", line 17, in __call__
+    reverse("Activation:activation_page"),  # Page d'activation
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'Activation' is not a registered namespace
+2025-04-17 17:47:46,983 - ERROR - basehttp - "GET /favicon.ico HTTP/1.1" 500 72474
+2025-04-17 17:47:57,198 - ERROR - log - Internal Server Error: /admin
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'Activation'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Activation\activation_middleware.py", line 17, in __call__
+    reverse("Activation:activation_page"),  # Page d'activation
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'Activation' is not a registered namespace
+2025-04-17 17:47:57,209 - ERROR - basehttp - "GET /admin HTTP/1.1" 500 72884
+2025-04-17 17:47:57,950 - ERROR - log - Internal Server Error: /admin
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'Activation'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Activation\activation_middleware.py", line 17, in __call__
+    reverse("Activation:activation_page"),  # Page d'activation
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'Activation' is not a registered namespace
+2025-04-17 17:47:57,962 - ERROR - basehttp - "GET /admin HTTP/1.1" 500 72610
+2025-04-17 17:47:59,305 - ERROR - log - Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'Activation'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Activation\activation_middleware.py", line 17, in __call__
+    reverse("Activation:activation_page"),  # Page d'activation
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'Activation' is not a registered namespace
+2025-04-17 17:47:59,313 - ERROR - basehttp - "GET /favicon.ico HTTP/1.1" 500 72473
+2025-04-17 17:48:55,548 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\urls.py changed, reloading.
+2025-04-17 17:49:16,399 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-17 17:49:23,168 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\urls.py changed, reloading.
+2025-04-17 17:49:29,405 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-17 17:49:40,587 - INFO - basehttp - "GET / HTTP/1.1" 302 0
+2025-04-17 17:49:41,636 - ERROR - log - Internal Server Error: /Activation/page/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: template_base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Activation\views.py", line 34, in activation_page
+    return render(request, "Activation/activation.html", {
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: template_base.html
+2025-04-17 17:49:41,679 - ERROR - basehttp - "GET /Activation/page/ HTTP/1.1" 500 135457
+2025-04-17 17:50:10,847 - INFO - basehttp - "GET /admin HTTP/1.1" 302 0
+2025-04-17 17:50:11,267 - ERROR - log - Internal Server Error: /Activation/page/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: template_base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Activation\views.py", line 34, in activation_page
+    return render(request, "Activation/activation.html", {
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: template_base.html
+2025-04-17 17:50:11,283 - ERROR - basehttp - "GET /Activation/page/ HTTP/1.1" 500 135183
+2025-04-17 17:50:12,436 - INFO - basehttp - "GET /favicon.ico HTTP/1.1" 302 0
+2025-04-17 17:50:13,038 - ERROR - log - Internal Server Error: /Activation/page/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: template_base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Activation\views.py", line 34, in activation_page
+    return render(request, "Activation/activation.html", {
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: template_base.html
+2025-04-17 17:50:13,053 - ERROR - basehttp - "GET /Activation/page/ HTTP/1.1" 500 135003
+2025-04-17 17:52:25,306 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\urls.py changed, reloading.
+2025-04-17 17:52:34,268 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-17 17:55:11,201 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-17 17:55:18,024 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 17:55:18,248 - INFO - basehttp - "GET /static/js/scripti.js HTTP/1.1" 304 0
+2025-04-17 17:55:18,265 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-04-17 17:55:18,489 - INFO - basehttp - "GET /static/image/boat-5889919_1280.png HTTP/1.1" 304 0
+2025-04-17 17:55:19,019 - INFO - basehttp - "GET /favicon.ico HTTP/1.1" 302 0
+2025-04-17 17:55:19,104 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 17:55:31,939 - INFO - basehttp - "GET /login/ HTTP/1.1" 302 0
+2025-04-17 17:55:34,533 - INFO - basehttp - "GET /favicon.ico HTTP/1.1" 302 0
+2025-04-17 17:55:34,708 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 17:55:36,279 - INFO - basehttp - "GET / HTTP/1.1" 302 0
+2025-04-17 17:55:36,360 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 17:55:37,439 - INFO - basehttp - "GET /admin HTTP/1.1" 302 0
+2025-04-17 17:55:37,494 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 17:55:39,305 - INFO - basehttp - "GET /favicon.ico HTTP/1.1" 302 0
+2025-04-17 17:55:39,453 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 17:55:46,531 - INFO - basehttp - "GET / HTTP/1.1" 302 0
+2025-04-17 17:55:46,600 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 17:55:49,661 - INFO - basehttp - "GET /admin HTTP/1.1" 302 0
+2025-04-17 17:55:49,711 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 17:55:52,003 - INFO - basehttp - "GET /favicon.ico HTTP/1.1" 302 0
+2025-04-17 17:55:52,039 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 17:57:21,570 - INFO - basehttp - "GET / HTTP/1.1" 302 0
+2025-04-17 17:57:21,642 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 17:57:25,652 - INFO - basehttp - "GET /admin HTTP/1.1" 302 0
+2025-04-17 17:57:25,746 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 17:57:27,171 - INFO - basehttp - "GET /favicon.ico HTTP/1.1" 302 0
+2025-04-17 17:57:27,212 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 17:59:39,298 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Activation\views.py changed, reloading.
+2025-04-17 18:00:21,296 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-17 18:00:29,067 - INFO - basehttp - "GET /admin HTTP/1.1" 302 0
+2025-04-17 18:00:29,678 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 18:00:30,421 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 18:00:31,097 - INFO - basehttp - "GET /favicon.ico HTTP/1.1" 302 0
+2025-04-17 18:00:31,238 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 18:00:59,728 - INFO - basehttp - "GET /admin HTTP/1.1" 302 0
+2025-04-17 18:01:00,511 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 18:01:02,910 - INFO - basehttp - "GET /favicon.ico HTTP/1.1" 302 0
+2025-04-17 18:01:02,965 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 18:03:22,106 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Activation\activation_middleware.py changed, reloading.
+2025-04-17 18:03:36,940 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-17 18:25:34,731 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Activation\activation_middleware.py changed, reloading.
+2025-04-17 18:25:50,764 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-17 18:25:55,420 - INFO - basehttp - "GET /admin HTTP/1.1" 302 0
+2025-04-17 18:25:55,733 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 18:25:57,861 - INFO - basehttp - "GET /favicon.ico HTTP/1.1" 302 0
+2025-04-17 18:25:58,111 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 18:26:00,542 - INFO - basehttp - "GET / HTTP/1.1" 302 0
+2025-04-17 18:26:00,599 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 18:26:01,780 - INFO - basehttp - "GET /admin HTTP/1.1" 302 0
+2025-04-17 18:26:01,844 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 18:26:03,762 - INFO - basehttp - "GET /favicon.ico HTTP/1.1" 302 0
+2025-04-17 18:26:03,873 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 18:26:22,207 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\settings.py changed, reloading.
+2025-04-17 18:26:29,287 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-17 18:26:32,219 - INFO - basehttp - "GET / HTTP/1.1" 302 0
+2025-04-17 18:26:32,352 - INFO - basehttp - "GET /login/ HTTP/1.1" 200 5509
+2025-04-17 18:26:33,880 - INFO - basehttp - "GET /admin HTTP/1.1" 301 0
+2025-04-17 18:26:34,150 - INFO - basehttp - "GET /admin/ HTTP/1.1" 302 0
+2025-04-17 18:26:34,519 - INFO - basehttp - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4326
+2025-04-17 18:26:43,708 - INFO - basehttp - "GET /static/admin/css/base.css HTTP/1.1" 200 21310
+2025-04-17 18:26:43,734 - INFO - basehttp - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+2025-04-17 18:26:43,749 - INFO - basehttp - "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+2025-04-17 18:26:43,807 - INFO - basehttp - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+2025-04-17 18:26:44,118 - INFO - basehttp - "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+2025-04-17 18:26:44,156 - INFO - basehttp - "GET /static/admin/css/responsive.css HTTP/1.1" 200 18559
+2025-04-17 18:26:44,186 - INFO - basehttp - "GET /static/admin/css/login.css HTTP/1.1" 200 958
+2025-04-17 18:26:44,234 - INFO - basehttp - "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+2025-04-17 18:26:44,754 - WARNING - log - Not Found: /favicon.ico
+2025-04-17 18:26:44,759 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 3263
+2025-04-17 18:26:58,267 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 18:27:05,540 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 18:27:06,534 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 18:27:07,517 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 18:27:08,344 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 18:27:09,111 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 18:27:09,952 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 18:27:10,911 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 18:27:11,753 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 18:28:23,234 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Activation\views.py changed, reloading.
+2025-04-17 18:28:50,845 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-17 18:28:56,126 - INFO - basehttp - "GET / HTTP/1.1" 302 0
+2025-04-17 18:28:58,165 - INFO - basehttp - "GET /login/ HTTP/1.1" 200 5509
+2025-04-17 18:28:58,381 - INFO - basehttp - "GET / HTTP/1.1" 302 0
+2025-04-17 18:28:58,478 - INFO - basehttp - "GET /login/ HTTP/1.1" 200 5509
+2025-04-17 18:29:23,139 - INFO - basehttp - "POST /login/ HTTP/1.1" 200 5509
+2025-04-17 18:29:29,066 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 64243)
+2025-04-17 18:29:30,437 - INFO - basehttp - "POST /login/ HTTP/1.1" 200 5509
+2025-04-17 18:29:36,530 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 18:29:39,155 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 18:29:53,536 - INFO - basehttp - "GET / HTTP/1.1" 302 0
+2025-04-17 18:29:53,618 - INFO - basehttp - "GET /login/ HTTP/1.1" 200 5509
+2025-04-17 18:30:17,225 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\settings.py changed, reloading.
+2025-04-17 18:30:25,421 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-17 18:30:37,755 - INFO - basehttp - "GET / HTTP/1.1" 302 0
+2025-04-17 18:30:37,904 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 18:30:46,587 - INFO - basehttp - "GET / HTTP/1.1" 302 0
+2025-04-17 18:30:46,647 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 18:30:47,843 - INFO - basehttp - "GET /admin/ HTTP/1.1" 302 0
+2025-04-17 18:30:48,232 - INFO - basehttp - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4688
+2025-04-17 18:30:52,683 - INFO - basehttp - "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+2025-04-17 18:31:14,978 - INFO - basehttp - "GET / HTTP/1.1" 302 0
+2025-04-17 18:31:15,061 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 18:31:19,826 - INFO - basehttp - "GET / HTTP/1.1" 302 0
+2025-04-17 18:31:19,922 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 18:31:22,402 - INFO - basehttp - "GET /admin/ HTTP/1.1" 302 0
+2025-04-17 18:31:22,499 - INFO - basehttp - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4181
+2025-04-17 18:31:47,908 - INFO - basehttp - "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2025-04-17 18:31:48,167 - INFO - basehttp - "GET /admin/ HTTP/1.1" 200 17486
+2025-04-17 18:31:48,440 - INFO - basehttp - "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+2025-04-17 18:31:48,567 - INFO - basehttp - "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2025-04-17 18:31:48,587 - INFO - basehttp - "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+2025-04-17 18:31:56,808 - INFO - basehttp - "GET /admin/Activation/activation/ HTTP/1.1" 200 16539
+2025-04-17 18:31:57,241 - INFO - basehttp - "GET /static/admin/css/changelists.css HTTP/1.1" 200 6566
+2025-04-17 18:31:57,277 - INFO - basehttp - "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2025-04-17 18:31:57,290 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-04-17 18:31:57,298 - INFO - basehttp - "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+2025-04-17 18:31:57,299 - INFO - basehttp - "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+2025-04-17 18:31:57,384 - INFO - basehttp - "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+2025-04-17 18:31:57,531 - INFO - basehttp - "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+2025-04-17 18:31:57,538 - INFO - basehttp - "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+2025-04-17 18:31:57,545 - INFO - basehttp - "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2025-04-17 18:31:57,597 - INFO - basehttp - "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+2025-04-17 18:31:57,700 - INFO - basehttp - "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+2025-04-17 18:31:57,819 - INFO - basehttp - "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2025-04-17 18:32:00,485 - INFO - basehttp - "GET /admin/Activation/activation/add/ HTTP/1.1" 200 18107
+2025-04-17 18:32:00,802 - INFO - basehttp - "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+2025-04-17 18:32:00,805 - INFO - basehttp - "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+2025-04-17 18:32:00,806 - INFO - basehttp - "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+2025-04-17 18:32:00,808 - INFO - basehttp - "GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+2025-04-17 18:32:00,872 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-04-17 18:32:00,940 - INFO - basehttp - "GET /static/admin/css/widgets.css HTTP/1.1" 200 11921
+2025-04-17 18:32:00,953 - INFO - basehttp - "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+2025-04-17 18:32:01,391 - INFO - basehttp - "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+2025-04-17 18:32:01,404 - INFO - basehttp - "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+2025-04-17 18:32:06,056 - INFO - basehttp - "GET /static/admin/img/calendar-icons.svg HTTP/1.1" 200 1094
+2025-04-17 18:32:23,296 - INFO - basehttp - "POST /admin/Activation/activation/add/ HTTP/1.1" 302 0
+2025-04-17 18:32:23,713 - INFO - basehttp - "GET /admin/Activation/activation/ HTTP/1.1" 200 18472
+2025-04-17 18:32:23,971 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-04-17 18:32:30,655 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 5317
+2025-04-17 18:32:34,240 - INFO - basehttp - "POST /Activation/page/ HTTP/1.1" 302 0
+2025-04-17 18:32:34,593 - ERROR - log - Internal Server Error: /home
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\views.py", line 11, in home_view
+    return redirect('login')  # Redirige vers la page de connexion si pas de nom d'utilisateur dans la session
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+2025-04-17 18:32:34,609 - ERROR - basehttp - "GET /home HTTP/1.1" 500 83644
+2025-04-17 18:34:10,396 - ERROR - log - Internal Server Error: /home
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\views.py", line 11, in home_view
+    return redirect('login')  # Redirige vers la page de connexion si pas de nom d'utilisateur dans la session
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+2025-04-17 18:34:10,407 - ERROR - basehttp - "GET /home HTTP/1.1" 500 83644
+2025-04-17 18:36:32,706 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\views.py changed, reloading.
+2025-04-17 18:36:38,820 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-17 18:36:43,533 - INFO - basehttp - "GET /home HTTP/1.1" 302 0
+2025-04-17 18:36:43,737 - INFO - basehttp - "GET /login/ HTTP/1.1" 200 5509
+2025-04-17 18:37:11,423 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 17339
+2025-04-17 18:37:11,743 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-04-17 18:37:26,417 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-04-17 18:37:26,890 - INFO - basehttp - "GET /admin/specialite/specialite/ HTTP/1.1" 200 17923
+2025-04-17 18:37:27,193 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-04-17 18:37:51,877 - INFO - basehttp - "GET /admin/Employe/clemploye/ HTTP/1.1" 200 16525
+2025-04-17 18:37:52,305 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-04-17 18:37:55,284 - INFO - basehttp - "GET /admin/Employe/clemploye/add/ HTTP/1.1" 200 27440
+2025-04-17 18:37:55,568 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-04-17 18:38:05,882 - INFO - basehttp - "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+2025-04-17 18:38:05,962 - INFO - basehttp - "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+2025-04-17 18:39:31,290 - INFO - basehttp - "POST /admin/Employe/clemploye/add/ HTTP/1.1" 200 27761
+2025-04-17 18:39:31,855 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-04-17 18:40:34,111 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\users\models.py changed, reloading.
+2025-04-17 18:40:39,250 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-17 18:42:26,858 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\users\models.py changed, reloading.
+2025-04-17 18:42:33,399 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-17 18:43:50,839 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\users\models.py changed, reloading.
+2025-04-17 18:43:56,116 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-17 18:44:12,071 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\users\models.py changed, reloading.
+2025-04-17 18:44:24,514 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-17 18:45:57,602 - INFO - autoreload - Watching for file changes with StatReloader
