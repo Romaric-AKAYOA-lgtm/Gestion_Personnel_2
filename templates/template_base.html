@@ -41,14 +41,17 @@
             <i class="fas fa-house-user"></i> Accueil
           </a>
         </li>
-    
-        <!-- Lien Créer un utilisateur (Administrateur) -->
         <li class="nav-item">
-          <a href="{% url 'connection:register' %}" class="nav-link">
-            <i class="fas fa-user-plus"></i> Créer un utilisateur
+          <a href="{% url 'fonction:fonction' %}"  class="nav-link">
+            <i class="fas fa-house-user"></i> Fonction
           </a>
         </li>
-    
+        <li class="nav-item">
+          <a href="{% url 'specialite:specialite' %}" class="nav-link">
+            <i class="fas fa-house-user"></i> Spécialite
+          </a>
+        </li>
+
         <!-- Lien Paramètres (Administrateur) -->
         <li class="nav-item">
           <a href="{% url 'administration:list' %}" class="nav-link">

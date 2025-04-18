@@ -11,10 +11,6 @@ class FonctionForm(forms.ModelForm):
     def clean_designation(self):
         designation = self.cleaned_data['designation']
         
-        # Vérification que la designation ne contient pas de chiffres ni de caractères spéciaux
-        if any(char.isdigit() for char in designation) or not re.match("^[a-zA-Z\s]*$", designation):
-            raise ValidationError("La désignation ne doit contenir que des lettres et des espaces, sans chiffres ni caractères spéciaux.")
-        
         # Vérification que la designation n'est pas vide
         if not designation:
             raise ValidationError("La désignation est obligatoire.")
