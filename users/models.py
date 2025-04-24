@@ -3,10 +3,17 @@ from django.utils import timezone
 from datetime import date
 from django.core.validators import MaxValueValidator
 
+from specialite.models import Specialite
+
 class ClUser(models.Model):
     SEX_CHOICES = [
         ('Masculin', 'Masculin'),
         ('Feminin', 'Féminin'),
+    ]
+
+    STATUT_USER_CHOICES = [
+        ('actif', 'Actif'),
+        ('inactif', 'Inactif'),
     ]
 
     tnm = models.CharField(max_length=50, null=False)
@@ -18,11 +25,9 @@ class ClUser(models.Model):
     tads = models.CharField(max_length=50, blank=True, null=True)
     teml = models.EmailField(blank=True, null=True, unique=True)
     tphne = models.CharField(max_length=20, blank=True, null=True, unique=True)
+    ttvst = models.CharField(max_length=50, blank=True, null=True)
     dsb = models.DateField(default=timezone.now, null=True, blank=True)
     ddf = models.DateField(blank=True, null=True)
-    tstt = models.CharField(max_length=50, null=True, blank=True)
-    ttvst = models.CharField(max_length=50, blank=True, null=True)
-    img = models.ImageField(upload_to='user_images/', blank=True, null=True)
 
     # 🔹 Champs ajoutés
     matricule = models.CharField(max_length=7, unique=True, null=False)
@@ -33,12 +38,38 @@ class ClUser(models.Model):
         null=True
     )
 
+    # 🔹 Spécialité liée
+    specialite = models.ForeignKey(
+        Specialite,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True
+    )
+
+    # 🔹 Champ observation ajouté
+    observation = models.TextField(blank=True, null=True)
+
+    # 🔹 Champ statut utilisateur (tstt_user)
+    tstt_user = models.CharField(
+        max_length=50,
+        choices=STATUT_USER_CHOICES,
+        null=True,
+        blank=True,
+        default='actif'  # Valeur par défaut "actif"
+    )
+
+    # 🔹 Champ supplémentaire pour l'image
+    img = models.ImageField(upload_to='user_images/', blank=True, null=True)
+
+    # 🔹 Ancien champ 'tstt' conservé
+    tstt = models.CharField(max_length=50, null=True, blank=True)
+
     def save(self, *args, **kwargs):
         if self.dns and not self.date_retraite:
             self.date_retraite = date(self.dns.year + 60, self.dns.month, self.dns.day)
         
-        if not self.tstt:
-            self.tstt = 'default_value'
+        if not self.tstt_user:
+            self.tstt_user = 'actif'  # Par défaut, le statut sera 'actif'
         super(ClUser, self).save(*args, **kwargs)
 
     def __str__(self):

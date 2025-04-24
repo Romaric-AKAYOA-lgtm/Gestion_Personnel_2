@@ -1,31 +1,37 @@
 from django.db import models
-from unite.models import Unite  # Import différé pour éviter l'importation circulaire
+from unite.models import Unite  # Veille à ce que le modèle Unite soit bien défini
 
 class OrganizationalUnit(models.Model):
-
     name = models.CharField(
         max_length=50,
         unique=True,
         help_text="Nom de l'unité (ex. 'II-1-1 Sections Français')"
     )
-    designation = models.TextField( blank=True, null=True,)
-    unite = models.ForeignKey(
-            Unite, on_delete=models.CASCADE
+    designation = models.TextField(
+        blank=True,
+        null=True,
+        help_text="Désignation ou description de l'unité"
     )
-  
+    unite = models.ForeignKey(
+        Unite,
+        on_delete=models.CASCADE,
+        related_name="organizational_units",
+        help_text="Unité de rattachement (par exemple, une unité fonctionnelle globale)"
+    )
     parent = models.ForeignKey(
         'self',
         on_delete=models.CASCADE,
         null=True,
         blank=True,
         related_name='sub_units',
-        help_text="Unité parente dans la hiérarchie (laissez vide pour une unité de premier niveau)"
+        help_text="Unité parente dans la hiérarchie (laisser vide pour une unité de premier niveau)"
     )
+
     class Meta:
         verbose_name = "Unité Organisationnelle"
         verbose_name_plural = "Unités Organisationnelles"
         ordering = ['name']
-    
+
     def __str__(self):
         return self.name
 

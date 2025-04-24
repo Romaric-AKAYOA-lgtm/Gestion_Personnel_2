@@ -1,0 +1,66 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+<div class="container-fluid mt-4">
+    <h1 class="text-center mb-4 text-white">Liste des Types de Congé</h1>
+
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <a href="{% url 'typeconge:creer' %}" class="btn btn-primary">
+            <i class="bi bi-plus-circle"></i> Créer un Type de Congé
+        </a>
+
+        <!-- Formulaire de recherche -->
+        <form action="{% url 'typeconge:recherche' %}" method="get" class="d-flex">
+            <select name="criteres" class="form-select me-2">
+                <option value="designation" {% if criteres == 'designation' %}selected{% endif %}>Désignation</option>
+                <option value="periode_conge" {% if criteres == 'periode_conge' %}selected{% endif %}>Période (en jours)</option>
+                <option value="mois_debut_autorise" {% if criteres == 'mois_debut_autorise' %}selected{% endif %}>Mois de début</option>
+            </select>
+            
+            <input type="text" name="query" class="form-control me-2" placeholder="Rechercher..." value="{{ query }}">
+            <button type="submit" class="btn btn-secondary">
+                <i class="bi bi-search"></i> Rechercher
+            </button>
+        </form>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped table-hover text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Désignation</th>
+                    <th>Période</th>
+                    <th>Mois Début Autorisé</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody class="bg-white">
+                {% if types %}
+                    {% for type in types %}
+                    <tr>
+                        <td>{{ type.id }}</td>
+                        <td>{{ type.designation }}</td>
+                        <td>{{ type.periode_conge }} jours</td>
+                        <td>{{ type.get_mois_debut_autorise_display }}</td>
+                        <td>
+                            <a href="{% url 'typeconge:modifier' type.id %}" class="btn btn-warning btn-sm mb-1">
+                                <i class="bi bi-pencil"></i> Modifier
+                            </a>
+                            <a href="{% url 'typeconge:supprimer' type.id %}" class="btn btn-danger btn-sm mb-1"
+                               onclick="return confirm('Confirmer la suppression ?')">
+                                <i class="bi bi-trash"></i> Supprimer
+                            </a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                {% else %}
+                    <tr>
+                        <td colspan="5" class="text-center text-muted">Aucun type de congé trouvé.</td>
+                    </tr>
+                {% endif %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

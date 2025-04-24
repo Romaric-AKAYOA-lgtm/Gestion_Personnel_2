@@ -2,14 +2,14 @@ from django import forms
 from django.utils.timezone import now
 from datetime import timedelta
 from django.core.validators import MinValueValidator, MaxValueValidator
-from .models import ClUser
+from .models import ClUser, Specialite  # Assure-toi d'importer Specialite
 
 class ClUserForm(forms.ModelForm):
     class Meta:
         model = ClUser
         fields = [
             'tnm', 'tpm', 'tsx', 'dns', 'tlns', 'tads', 'teml', 'tphne', 'dsb', 'ddf',
-            'tstt', 'ttvst', 'img', 'matricule', 'grade', 'echelon'
+            'tstt', 'ttvst', 'img', 'matricule', 'grade', 'echelon', 'specialite', 'tstt_user'  # 🆕 Ajouté ici
         ]
         widgets = {
             'dns': forms.DateInput(attrs={'type': 'date'}),
@@ -27,6 +27,8 @@ class ClUserForm(forms.ModelForm):
             MinValueValidator(1),
             MaxValueValidator(50),
         ])
+
+        self.fields['specialite'].required = False  # Si tu veux rendre le champ non obligatoire
 
     def clean_tnm(self):
         tnm = self.cleaned_data.get('tnm')

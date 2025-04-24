@@ -4,7 +4,6 @@ from django.shortcuts import render
 from django.shortcuts import render, get_object_or_404, redirect
 
 from Activation.models import Activation
-from Employee.views import get_username_from_session
 from .models import Unite
 from .forms import UniteForm
  

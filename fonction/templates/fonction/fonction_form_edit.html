@@ -10,7 +10,7 @@
                 <h5 class="modal-title text-white" id="directeurModalLabel">
                     Modifier une fonction
                 </h5>
-           </div>
+            </div>
             <div class="modal-body">
                 {% if form.errors %}
                 <div class="alert alert-danger">
@@ -28,6 +28,21 @@
                         <label for="designation" class="form-label">Designation</label>
                         <input type="text" class="form-control" id="designation" name="designation" value="{{ form.designation.value }}" required>
                     </div>
+
+                    <!-- Adding the parent field -->
+                    <div class="mb-3">
+                        <label for="parent" class="form-label">Fonction parente</label>
+                        <select name="parent" id="parent" class="form-select">
+                            <option value="" {% if not form.parent.value %} selected {% endif %}>---------</option>
+                            {% for fonction in form.fields.parent.queryset %}
+                                <option value="{{ fonction.pk }}"
+                                    {% if form.initial.parent == fonction.pk %}selected{% endif %}>
+                                    {{ fonction.designation }}
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
                     <div class="text-end">
                         <a href="{% url 'fonction:fonction' %}" class="btn btn-secondary px-4 py-2 btn-sm">Annuler</a>
                         <button type="submit" class="btn btn-warning px-4 py-2 btn-sm">

@@ -28,6 +28,19 @@
                         <label for="designation" class="form-label">Designation</label>
                         <input type="text" class="form-control" id="designation" name="designation" required>
                     </div>
+                    <div class="mb-3">
+                        <label for="parent" class="form-label">Fonction parente</label>
+                        <select name="parent" id="parent" class="form-select">
+                            <option value="" selected>---------</option>
+                            {% for fonction in form.fields.parent.queryset %}
+                                <option value="{{ fonction.pk }}"
+                                    {% if form.initial.parent == fonction.pk %}selected{% endif %}>
+                                    {{ fonction.designation }}
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    
                     <div class="text-end">
                         <a href="{% url 'fonction:fonction' %}" class="btn btn-secondary px-4 py-2 btn-sm">Annuler</a>
                         <button type="submit" class="btn btn-primary px-4 py-2 btn-sm">

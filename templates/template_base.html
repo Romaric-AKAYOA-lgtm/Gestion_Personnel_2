@@ -46,9 +46,24 @@
             <i class="fas fa-house-user"></i> Fonction
           </a>
         </li>
+        <li class="nav-item">   
+          <a href="{% url 'Employee:list' %}" class="nav-link">
+           <i class="fas fa-house-user"></i> Employe
+         </a>
+       </li>
+        <li class="nav-item">  
+          <a href="{% url 'typeconge:typeconge' %}"  class="nav-link">
+            <i class="fas fa-house-user"></i> Types congés
+          </a>
+        </li>
         <li class="nav-item">
-          <a href="{% url 'specialite:specialite' %}" class="nav-link">
-            <i class="fas fa-house-user"></i> Spécialite
+          <a href="{% url 'OrganizationalUnit:list' %}"  class="nav-link">
+            <i class="fas fa-house-user"></i> Service
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'unite:unite' %}" class="nav-link">
+            <i class="fas fa-house-user"></i> Unite
           </a>
         </li>
 

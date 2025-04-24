@@ -26,19 +26,21 @@
                 <form action="{% url 'OrganizationalUnit:update' unite.id %}" method="POST">
                     {% csrf_token %}
 
+                    <!-- Nom de l'unité -->
                     <div class="mb-3">
                         <label for="name" class="form-label">Nom</label>
                         <input type="text" class="form-control input-focus-blue {% if form.name.errors %}is-invalid{% endif %}" id="name" name="name" value="{{ form.name.value }}" required>
                         {% if form.name.errors %}
                             <div class="invalid-feedback">{{ form.name.errors }}</div>
                         {% endif %}
-                  </div>
-                
+                    </div>
+
+                    <!-- Designation -->
                     <div class="mb-3">
-                        <label for="description" class="form-label">Description</label>
-                        <textarea class="form-control input-focus-blue {% if form.description.errors %}is-invalid{% endif %}" id="description" name="description" rows="4">{{ form.description.value }}</textarea>
-                        {% if form.description.errors %}
-                            <div class="invalid-feedback">{{ form.description.errors }}</div>
+                        <label for="designation" class="form-label">Désignation</label>
+                        <textarea class="form-control input-focus-blue {% if form.designation.errors %}is-invalid{% endif %}" id="designation" name="designation" rows="4">{{ form.designation.value }}</textarea>
+                        {% if form.designation.errors %}
+                            <div class="invalid-feedback">{{ form.designation.errors }}</div>
                         {% endif %}
                     </div>
 
@@ -55,6 +57,7 @@
                         {% endif %}
                     </div>
 
+                    <!-- Unité Parente -->
                     <div class="mb-3">
                         <label for="parent" class="form-label">Unité Parente</label>
                         <select class="form-select input-focus-blue {% if form.parent.errors %}is-invalid{% endif %}" id="parent" name="parent" required>
@@ -70,6 +73,7 @@
                         {% endif %}
                     </div>
 
+                    <!-- Buttons -->
                     <div class="text-end">
                         <a href="{% url 'OrganizationalUnit:list' %}" class="btn btn-secondary px-4 py-2 btn-sm">Annuler</a>
                         <button type="submit" class="btn btn-warning px-4 py-2 btn-sm">Modifier</button>

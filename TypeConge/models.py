@@ -1,20 +1,22 @@
 from django.db import models
-from datetime import timedelta
 from calendar import monthrange
 
-MOIS_CHOICES = [
-    (1, 'Janvier'), (2, 'Février'), (3, 'Mars'), (4, 'Avril'),
-    (5, 'Mai'), (6, 'Juin'), (7, 'Juillet'), (8, 'Août'),
-    (9, 'Septembre'), (10, 'Octobre'), (11, 'Novembre'), (12, 'Décembre'),
-]
-
 class CLTypeConge(models.Model):
+    MOIS_CHOICES = [
+        (1, 'Janvier'), (2, 'Février'), (3, 'Mars'), (4, 'Avril'),
+        (5, 'Mai'), (6, 'Juin'), (7, 'Juillet'), (8, 'Août'),
+        (9, 'Septembre'), (10, 'Octobre'), (11, 'Novembre'), (12, 'Décembre'),
+    ]
+
     designation = models.CharField(max_length=50, unique=True)
     periode_conge = models.IntegerField(help_text="Durée du congé en jours")
-    mois_debut_autorise = models.IntegerField(choices=MOIS_CHOICES, help_text="Mois de début autorisé pour ce type de congé")
+    mois_debut_autorise = models.IntegerField(
+        choices=MOIS_CHOICES,
+        help_text="Mois de début autorisé pour ce type de congé"
+    )
 
     def __str__(self):
-        mois_nom = dict(MOIS_CHOICES).get(self.mois_debut_autorise, "Inconnu")
+        mois_nom = dict(self.MOIS_CHOICES).get(self.mois_debut_autorise, "Inconnu")
         return f"{self.designation} ({self.periode_conge} jours) - Début autorisé en {mois_nom}"
 
     def calculer_mois_fin(self):

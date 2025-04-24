@@ -1,0 +1,77 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+
+<!-- Modal pour Type de Congé -->
+<div class="modal fade show" id="typeCongeModal" tabindex="-1" aria-labelledby="typeCongeModalLabel" aria-hidden="true" style="display: block;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary">
+                <h5 class="modal-title text-white" id="typeCongeModalLabel">
+                    {{ form.instance.pk|yesno:"Modifier un Type de Congé,Créer un Type de Congé" }}
+                </h5>
+            </div>
+            <div class="modal-body">
+                {% if form.errors %}
+                    <div class="alert alert-danger">
+                        {% for field in form %}
+                            {% if field.errors %}
+                                <strong>{{ field.label }}</strong> : {{ field.errors|striptags }}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                
+                <form method="POST" class="needs-validation" novalidate>
+                    {% csrf_token %}
+
+                    <div class="mb-3">
+                        <label for="{{ form.designation.id_for_label }}" class="form-label">Désignation</label>
+                        <input type="text" name="{{ form.designation.name }}" id="{{ form.designation.id_for_label }}"
+                               class="form-control{% if form.designation.errors %} is-invalid{% endif %}"
+                               value="{{ form.designation.value|default_if_none:'' }}" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="{{ form.periode_conge.id_for_label }}" class="form-label">Période (en jours)</label>
+                        <input type="number" name="{{ form.periode_conge.name }}" id="{{ form.periode_conge.id_for_label }}"
+                               class="form-control{% if form.periode_conge.errors %} is-invalid{% endif %}"
+                               value="{{ form.periode_conge.value|default_if_none:'' }}" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="{{ form.mois_debut_autorise.id_for_label }}" class="form-label">Mois de début autorisé</label>
+                        <select name="{{ form.mois_debut_autorise.name }}" id="{{ form.mois_debut_autorise.id_for_label }}"
+                                class="form-select{% if form.mois_debut_autorise.errors %} is-invalid{% endif %}">
+                            {% for choice in form.mois_debut_autorise.field.choices %}
+                                <option value="{{ choice.0 }}" {% if choice.0 == form.mois_debut_autorise.value %}selected{% endif %}>
+                                    {{ choice.1 }}
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <div class="text-end">
+                        <a href="{% url 'typeconge:typeconge' %}" class="btn btn-secondary px-4 py-2 btn-sm">Annuler</a>
+                        <button type="submit" class="btn btn-primary px-4 py-2 btn-sm">
+                            {{ form.instance.pk|yesno:"Modifier,Créer" }}
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Script d’activation du modal -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var modal = new bootstrap.Modal(document.getElementById('typeCongeModal'), {
+            keyboard: false,
+            backdrop: 'static'
+        });
+        modal.show();
+    });
+</script>
+
+{% endblock %}

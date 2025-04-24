@@ -1,7 +1,7 @@
 {% extends 'template_base.html' %}
 
 {% block contenue %}
-<div class="container mt-4">
+<div class="container-fluid mt-4">
     <h1 class="text-center mb-4 text-white">Liste des Unités Organisationnelles</h1>
     <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-3">
         <!-- Bouton pour ajouter une unité organisationnelle -->
@@ -10,7 +10,7 @@
         </a>  
     
         <!-- Formulaire de recherche -->
-        <form method="GET" action="{% url 'OrganizationalUnit:search_organizational_units' %}" class="row g-2 align-items-center">
+        <form method="GET" action="{% url 'OrganizationalUnit:search_organizational_units' %}" class="row g-2 align-items-center" id="searchForm">
             <div class="col-md-4">
                 <!-- Sélecteur de filtre -->
                 <select name="filter" class="form-select" aria-label="Filtrer par">
@@ -73,4 +73,21 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // Fonction pour réinitialiser le tableau lorsqu'aucun résultat n'est trouvé
+    document.addEventListener('DOMContentLoaded', function () {
+        var searchForm = document.getElementById('searchForm');
+        var noResultsMessage = document.querySelector('tbody.text-center.text-muted');
+
+        // Vérifier si le tableau est vide après une recherche
+        if (noResultsMessage) {
+            // Ici, nous réinitialisons la recherche
+            searchForm.reset();  // Réinitialise les filtres de recherche
+            alert('Aucun résultat trouvé, le tableau va être réactualisé.');
+            // Optionnellement, vous pouvez ici rediriger vers une page sans filtre ou charger les données par défaut
+        }
+    });
+</script>
+
 {% endblock %}

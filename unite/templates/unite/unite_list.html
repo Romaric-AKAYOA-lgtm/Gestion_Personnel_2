@@ -2,27 +2,40 @@
 
 {% block contenue %}
 <div class="container mt-4">
-    <h1 class="text-center mb-4 text-white">Liste des unités </h1>
+    <h1 class="text-center mb-4 text-white">Liste des unités</h1>
 
     <div class="d-flex justify-content-between align-items-center mb-3">
         <a href="{% url 'unite:creer' %}" class="btn btn-primary">
             <i class="bi bi-person-plus"></i> Créer une Unité
         </a>
-                <!-- Formulaire de recherche pour Employee -->
-                <form action="{% url 'unite:recherche' %}" method="get" class="d-flex">
-                    <!-- Champ pour sélectionner le critère de recherche -->
-                    <select name="criteres" class="form-select me-2" aria-label="Critère de recherche">
-                        <option value="designation">Designation</option>
-                        <!-- Ajouter d'autres critères si nécessaire -->
-                    </select>
-                    <!-- Champ pour la valeur de recherche -->
-                    <input type="text" name="query" class="form-control me-2" placeholder="Rechercher un employé" aria-label="Recherche">
-                    
-                    <button type="submit" class="btn btn-secondary">
-                        <i class="bi bi-search"></i> Rechercher
-                    </button>
-                </form>
+        
+        <!-- Formulaire de recherche pour les unités -->
+        <form action="{% url 'unite:recherche' %}" method="get" class="d-flex">
+            <!-- Champ pour sélectionner le critère de recherche -->
+            <select name="criteres" class="form-select me-2" aria-label="Critère de recherche">
+                <option value="designation">Designation</option>
+                <!-- Ajouter d'autres critères si nécessaire -->
+            </select>
+            
+            <!-- Champ pour la valeur de recherche -->
+            <input type="text" name="query" class="form-control me-2" placeholder="Rechercher une unité" aria-label="Recherche">
+            
+            <button type="submit" class="btn btn-secondary">
+                <i class="bi bi-search"></i> Rechercher
+            </button>
+        </form>
     </div>
+
+    <!-- Affichage des erreurs de validation -->
+    {% if form.errors %}
+        <div class="alert alert-danger">
+            {% for field in form %}
+                {% if field.errors %}
+                    <strong>{{ field.label }}</strong> : {{ field.errors|striptags }}
+                {% endif %}
+            {% endfor %}
+        </div>
+    {% endif %}
 
     <div class="table-responsive">
         <table class="table table-striped table-hover text-center">
@@ -30,26 +43,34 @@
                 <tr>
                     <th>#</th>
                     <th>Designation</th>
+                    <th>Unité Parente</th>
                     <th>Actions</th>
                 </tr>
             </thead>
-            <tbody class="bg-white" >
-                {% for unite  in unite  %}
+            <tbody class="bg-white">
+                {% for unite in unite %}
                 <tr>
                     <td>{{ unite.id }}</td>
                     <td>{{ unite.designation }}</td>
-                    <td class="">
-                        <a href="{% url 'unite:modifier' unite.id %}" class="btn btn-warning btn-sm mb-1 ">
+                    <td>
+                        {% if unite.unite_parent %}
+                            {{ unite.unite_parent.designation }}
+                        {% else %}
+                            Aucune
+                        {% endif %}
+                    </td>
+                    <td>
+                        <a href="{% url 'unite:modifier' unite.id %}" class="btn btn-warning btn-sm mb-1">
                             <i class="bi bi-pencil"></i> Modifier
                         </a>
-                        <a href="{% url 'unite:supprimer' unite.id %}" class="btn btn-danger btn-sm mb-1 ">
+                        <a href="{% url 'unite:supprimer' unite.id %}" class="btn btn-danger btn-sm mb-1">
                             <i class="bi bi-trash"></i> Supprimer
                         </a>
                     </td>
                 </tr>
                 {% empty %}
                 <tr>
-                    <td colspan="3" class="text-center text-muted">Aucune Unité  trouvée.</td> <!-- Ajustement du colspan -->
+                    <td colspan="4" class="text-center text-muted">Aucune Unité trouvée.</td>
                 </tr>
                 {% endfor %}
             </tbody>
