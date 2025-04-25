@@ -5,14 +5,14 @@ from django.shortcuts import render, get_object_or_404, redirect
 from Activation.models import Activation
 from TypeConge.form import CLTypeCongeForm
 from TypeConge.models import CLTypeConge
-from unite.views import get_username_from_session
+from connection.views import get_connected_user
+
 
 def typeconge_list(request):
 
-    username = get_username_from_session(request)
+    username = get_connected_user(request)
     if not username:
-        return redirect('login')
-
+        return redirect('connection:login')
     types = CLTypeConge.objects.all().order_by('designation')
     return render(request, 'typeconge/typeconge_list.html', {
         'username': username,
@@ -21,9 +21,9 @@ def typeconge_list(request):
 
 
 def typeconge_create(request):
-    username = get_username_from_session(request)
+    username = get_connected_user(request)
     if not username:
-        return redirect('login')
+        return redirect('connection:login')
 
     if request.method == "POST":
         form = CLTypeCongeForm(request.POST)
@@ -39,9 +39,9 @@ def typeconge_create(request):
     })
 
 def modifier_typeconge(request, id):
-    username = get_username_from_session(request)
+    username = get_connected_user(request)
     if not username:
-        return redirect('login')
+        return redirect('connection:login')
 
     typeconge = get_object_or_404(CLTypeConge, id=id)
 
@@ -65,9 +65,9 @@ def supprimer_typeconge(request, id):
     return redirect('typeconge:typeconge')
 
 def typeconge_search(request):
-    username = get_username_from_session(request)
+    username = get_connected_user(request)
     if not username:
-        return redirect('login')
+        return redirect('connection:login')
 
     query = request.GET.get('query', '')
     critere = request.GET.get('criteres', '')

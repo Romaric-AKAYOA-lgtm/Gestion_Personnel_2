@@ -9,6 +9,9 @@ urlpatterns = [
     path('Employee', views.liste_employes ,name='list'),
     # Création d'un nouvel employé
     path('create/', views.ajouter_employe, name='create'),
+    # Détail d'un employé
+    path('<int:id>/detail/', views.detail_employe, name='detail'),
+
     # Modification d'un employé
     path('<int:id>/update/', views.modifier_employe, name='update'),
     # Suppression d'un employé

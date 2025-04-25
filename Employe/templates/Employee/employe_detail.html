@@ -1,0 +1,66 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+<div class="container mt-4">
+    <!-- Modal de détails de l'employé -->
+    <div class="modal fade show" id="modalEmployeDetails" tabindex="-1" aria-labelledby="modalEmployeDetailsLabel" aria-hidden="true" style="display: block;">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="modalEmployeDetailsLabel">Détails de l'employé</h5>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered table-striped">
+                        <tbody>
+                            <tr>
+                                <th>Photo</th>
+                                <td>
+                                    {% if employe.img %}
+                                        <img src="{{ employe.img.url }}" alt="Photo de {{ employe.tnm }}" class="img-thumbnail" style="max-width: 150px; height: auto;">
+                                    {% else %}
+                                        <span class="text-muted">Aucune photo disponible</span>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            <tr><th>Nom</th><td>{{ employe.tnm }}</td></tr>
+                            <tr><th>Prénom</th><td>{{ employe.tpm }}</td></tr>
+                            <tr><th>Email</th><td><a href="mailto:{{ employe.teml }}">{{ employe.teml }}</a></td></tr>
+                            <tr><th>Téléphone</th><td><a href="https://web.whatsapp.com/send?phone={{ employe.tphne }}" target="_blank">{{ employe.tphne }}</a></td></tr>
+                            <tr><th>Matricule</th><td>{{ employe.matricule }}</td></tr>
+                            <tr><th>Grade</th><td>{{ employe.grade }}</td></tr>
+                            <tr><th>Echelon</th><td>{{ employe.echelon }}</td></tr>
+                            <tr><th>Spécialité</th><td>{{ employe.specialite }}</td></tr>
+                            <tr><th>Statut</th><td>{{ employe.tstt_user }}</td></tr>
+                            <tr><th>Date de début</th><td>{{ employe.dsb|date:"Y-m-d" }}</td></tr>
+                            <tr><th>Date de fin</th><td>{{ employe.date_retraite|date:"Y-m-d" }}</td></tr>
+                            <tr><th>Observation</th><td>{{ employe.observation }}</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <a href="{% url 'Employee:update' employe.id %}" class="btn btn-warning btn-sm">Modifier</a>
+                    <a href="{% url 'Employee:list' %}" class="btn btn-secondary">Fermer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ne pas appliquer de flou sur l'arrière-plan -->
+<style>
+    .modal-backdrop {
+        display: none !important;
+    }
+</style>
+
+<!-- Script ouverture automatique -->
+<script>
+    window.onload = function () {
+        var myModal = new bootstrap.Modal(document.getElementById("modalEmployeDetails"), {
+            keyboard: false,
+            backdrop: 'static'
+        });
+        myModal.show();
+    };
+</script>
+{% endblock %}

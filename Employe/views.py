@@ -9,6 +9,7 @@ from reportlab.lib.units import inch
 from datetime import datetime
 from Employe.models import CLEmploye
 from .forms import ClEmployeForm
+from django.contrib import messages
 from connection.views import get_connected_user
 from specialite.models import Specialite
 
@@ -61,12 +62,28 @@ def modifier_employe(request, id):
         'username': username, 'form': form,
         'specialite': specialite
     })
-
-# Supprimer un employé
+def detail_employe(request, id):
+    username = get_connected_user(request)
+    if not username:
+        return redirect('connection:login')
+    
+    employe = get_object_or_404(CLEmploye, id=id)
+    return render(request, 'Employee/employe_detail.html', {
+        'employe': employe,
+        'username': username
+    })
+# views.py
 def supprimer_employe(request, id):
     employe = get_object_or_404(CLEmploye, id=id)
-    employe.delete()
-    return render(request, 'Employee/supprimer_employe.html', {'employe': employe})
+
+    if request.method == 'POST':  # Vérifie si la demande est de type POST (confirmée)
+        employe.delete()  # Supprimer l'employé
+        messages.success(request, f"L'employé {employe.tnm} {employe.tpm} a été supprimé avec succès.")
+        return redirect('Employee:list')  # Redirige vers la liste des employés après suppression
+    
+    # Si ce n'est pas un POST, on redirige directement vers la liste
+    messages.warning(request, "Vous devez confirmer la suppression.")
+    return redirect('Employee:list')
 
 # Détail secrétaire avec mot de passe
 def secretaire_detail2(request, username, password):
@@ -132,41 +149,51 @@ def employee_search(request):
     query = request.GET.get('query', '')
     critere = request.GET.get('criteres', '')
 
-    employees = CLEmploye.objects.all()
+    # Récupère tous les employés par défaut
+    employes = CLEmploye.objects.all()
 
+    # Filtres par critères spécifiques
     if critere and query:
         filters = {
             'username': 'username__icontains',
-            'tpm': 'tpm__icontains',  # Prénom
-            'tnm': 'tnm__icontains',  # Nom
+            'tpm': 'tpm__icontains',        # Prénom
+            'tnm': 'tnm__icontains',        # Nom
             'email': 'email__icontains',
             'num_tel': 'num_tel__icontains',
             'matricule': 'matricule__icontains',
             'status': 'status__icontains'
         }
         if critere in filters:
-            employees = employees.filter(**{filters[critere]: query})
+            employes = employes.filter(**{filters[critere]: query})
+
+    # Recherche générale sans critère spécifique
     elif query:
         from django.db.models import Q
-        employees = employees.filter(
+        employes = employes.filter(
             Q(username__icontains=query) |
             Q(tnm__icontains=query) |
             Q(tpm__icontains=query) |
             Q(email__icontains=query)
         )
 
+    # Filtres par date
     date_debut = request.GET.get('date_debut', '')
     date_fin = request.GET.get('date_fin', '')
+
     if date_debut:
-        employees = employees.filter(start_date__gte=date_debut)
+        employes = employes.filter(start_date__gte=date_debut)
     if date_fin:
-        employees = employees.filter(retirement_date__lte=date_fin)
+        employes = employes.filter(retirement_date__lte=date_fin)
 
-    if not employees.exists():
-        employees = None
+    # Si aucune recherche n’est soumise, on retourne tous les employés
+    is_filtering = query or date_debut or date_fin
+    if not is_filtering:
+        employes = CLEmploye.objects.all()
+    elif not employes.exists():
+        employes = None
 
-    return render(request, 'employee/search.html', {
-        'employees': employees,
+    return render(request, 'Employee/liste_employes.html', {
+        'employes': employes,
         'username': username,
         'query': query,
         'criteres': critere,

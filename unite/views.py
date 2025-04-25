@@ -3,18 +3,16 @@ from django.shortcuts import render
 # Create your views here.
 from django.shortcuts import render, get_object_or_404, redirect
 
-from Activation.models import Activation
+from connection.views import get_connected_user
+
 from .models import Unite
 from .forms import UniteForm
  
 def unite_list(request):
     """Affiche la page d'accueil avec la gestion du personnel et la vérification d'activation."""
-    
-    # 🔹 Vérifier l'activation
-    activation = Activation.objects.first()
-    if not activation or not activation.is_valid():
-        return redirect("Activation:activation_page")  # Redirige vers une page d'activation si expiré
-    username = get_username_from_session(request)
+    username = get_connected_user(request)
+    if not username:
+        return redirect('connection:login')
 
     # Assurez-vous que le nom d'utilisateur est disponible dans la session
     if not username:
@@ -25,11 +23,9 @@ def unite_list(request):
        'username':username, 'unite': unite})
 
 def unite_create(request):
-    username = get_username_from_session(request)
-
-    # Assurez-vous que le nom d'utilisateur est disponible dans la session
+    username = get_connected_user(request)
     if not username:
-        return redirect('login')  # Redirige vers la page de connexion si pas de nom d'utilisateur dans la session
+        return redirect('connection:login')
 
     if request.method == "POST":
         form = UniteForm(request.POST)
@@ -42,11 +38,9 @@ def unite_create(request):
 
 
 def modifier_unite(request, id):
-    username = get_username_from_session(request)
-
-    # Assurez-vous que le nom d'utilisateur est disponible dans la session
+    username = get_connected_user(request)
     if not username:
-        return redirect('login')  # Redirige vers la page de connexion si pas de nom d'utilisateur dans la session
+        return redirect('connection:login')
 
     unite = get_object_or_404(Unite, id=id)
 
@@ -65,17 +59,10 @@ def supprimer_unite(request, id):
     unite.delete()
     return redirect('unite:unite')
 
-def get_username_from_session(request):
-    # Cette fonction peut être définie pour récupérer l'username de la session
-    return request.session.get('username')
-
 def unite_search(request):
-    username = get_username_from_session(request)
-
-    # Assurez-vous que le nom d'utilisateur est disponible dans la session
+    username = get_connected_user(request)
     if not username:
-        return redirect('login')  # Redirige vers la page de connexion si pas de nom d'utilisateur dans la session
-
+        return redirect('connection:login')
     # Récupérer les paramètres de recherche
     query = request.GET.get('query', '')  # Recherche globale
     critere = request.GET.get('criteres', '')  # Critère de recherche sélectionné (username, first_name, email, etc.)

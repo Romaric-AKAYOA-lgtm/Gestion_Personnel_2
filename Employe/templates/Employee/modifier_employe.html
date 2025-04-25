@@ -2,11 +2,11 @@
 
 {% block contenue %}
 <div class="container mt-4">
-    <div class="modal fade show" id="modalEmployeeEdit" tabindex="-1" aria-labelledby="modalEmployeeEditLabel" aria-hidden="true" style="display: block;" data-bs-backdrop="static">
+    <div class="modal fade" id="modalUserEdit" tabindex="-1" aria-labelledby="modalUserEditLabel" aria-hidden="true" data-bs-backdrop="static">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header bg-warning text-white">
-                    <h5 class="modal-title" id="modalEmployeeEditLabel">Modifier un Employé</h5>
+                    <h5 class="modal-title" id="modalUserEditLabel">Modifier un Utilisateur</h5>
                 </div>
                 <div class="modal-body">
                     {% if form.errors %}
@@ -18,84 +18,111 @@
                         {% endfor %}
                     </div>
                     {% endif %}
-                    
-                    <form action="{% url 'Employee:update' form.instance.pk %}" method="POST" enctype="multipart/form-data" class="needs-validation" novalidate>
+
+                    <form action="{% url 'Employee:update' id=form.instance.id %}" method="POST" enctype="multipart/form-data">
                         {% csrf_token %}
-                        
                         <div class="row g-3">
+
                             <div class="col-md-6">
-                                <label for="first_name" class="form-label">Prénom</label>
-                                <input type="text" class="form-control" id="first_name" name="first_name" value="{{ form.first_name.value }}" >
+                                <label for="tnm" class="form-label">Nom</label>
+                                <input type="text" class="form-control" id="tnm" name="tnm" value="{{ form.tnm.value }}">
                             </div>
+
                             <div class="col-md-6">
-                                <label for="last_name" class="form-label">Nom</label>
-                                <input type="text" class="form-control" id="last_name" name="last_name" value="{{ form.last_name.value }}" >
+                                <label for="tpm" class="form-label">Prénom</label>
+                                <input type="text" class="form-control" id="tpm" name="tpm" value="{{ form.tpm.value }}">
                             </div>
+
                             <div class="col-md-6">
-                                <label for="date_of_birth" class="form-label">Date de Naissance</label>
-                                <input type="date" class="form-control" id="date_of_birth" name="date_of_birth" value="{{ form.date_of_birth.value|date:'Y-m-d' }}" >
+                                <label for="tsx" class="form-label">Sexe</label>
+                                <select class="form-select" id="tsx" name="tsx">
+                                    <option value="Masculin" {% if form.tsx.value == 'Masculin' %}selected{% endif %}>Masculin</option>
+                                    <option value="Feminin" {% if form.tsx.value == 'Feminin' %}selected{% endif %}>Féminin</option>
+                                </select>
                             </div>
+
                             <div class="col-md-6">
-                                <label for="place_of_birth" class="form-label">Lieu de Naissance</label>
-                                <input type="text" class="form-control" id="place_of_birth" name="place_of_birth" value="{{ form.place_of_birth.value }}" >
+                                <label for="dns" class="form-label">Date de Naissance</label>
+                                <input type="date" class="form-control" id="dns" name="dns" value="{{ form.dns.value|date:'Y-m-d' }}">
                             </div>
+
                             <div class="col-md-6">
-                                <label for="start_date" class="form-label">Date de Prise de Service</label>
-                                <input type="date" class="form-control" id="start_date" name="start_date" value="{{ form.start_date.value|date:'Y-m-d' }}" >
+                                <label for="tlns" class="form-label">Lieu de Naissance</label>
+                                <input type="text" class="form-control" id="tlns" name="tlns" value="{{ form.tlns.value }}">
                             </div>
+
+                            <div class="col-md-6">
+                                <label for="teml" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="teml" name="teml" value="{{ form.teml.value }}">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="tphne" class="form-label">Téléphone</label>
+                                <input type="tel" class="form-control" id="tphne" name="tphne" value="{{ form.tphne.value }}">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="ttvst" class="form-label">Adresse</label>
+                                <input type="text" class="form-control" id="ttvst" name="ttvst" value="{{ form.ttvst.value }}">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="dsb" class="form-label">Date de Prise de Service</label>
+                                <input type="date" class="form-control" id="dsb" name="dsb" value="{{ form.dsb.value|date:'Y-m-d' }}">
+                            </div>
+
                             <div class="col-md-6">
                                 <label for="matricule" class="form-label">Matricule</label>
-                                <input type="text" class="form-control" id="matricule" name="matricule" value="{{ form.matricule.value }}" >
+                                <input type="text" class="form-control" id="matricule" name="matricule" value="{{ form.matricule.value }}">
                             </div>
+
                             <div class="col-md-6">
                                 <label for="grade" class="form-label">Grade</label>
-                                <input type="text" class="form-control" id="grade" name="grade" value="{{ form.grade.value }}" >
+                                <input type="text" class="form-control" id="grade" name="grade" value="{{ form.grade.value }}">
                             </div>
+
                             <div class="col-md-6">
                                 <label for="echelon" class="form-label">Échelon</label>
-                                <input type="text" class="form-control" id="echelon" name="echelon" value="{{ form.echelon.value }}">
+                                <input type="number" class="form-control" id="echelon" name="echelon" value="{{ form.echelon.value }}">
                             </div>
+
                             <div class="col-md-6">
-                                <label for="specialty" class="form-label">Spécialité</label>
-                                <select class="form-select" id="specialty" name="specialty" >
-                                    {% for specialite in specialite %}
-                                        <option value="{{ specialite.id }}" {% if form.specialty.value == specialite.id %}selected{% endif %}>{{ specialite.designation }}</option>
+                                <label for="specialite" class="form-label">Spécialité</label>
+                                <select class="form-select" id="specialite" name="specialite">
+                                    <option value="">---------</option>
+                                    {% for sp in specialite %}
+                                        <option value="{{ sp.id }}" {% if form.specialite.value|stringformat:"s" == sp.id|stringformat:"s" %}selected{% endif %}>
+                                            {{ sp.designation }}
+                                        </option>
                                     {% endfor %}
                                 </select>
                             </div>
-                            <div class="col-md-6">
-                                <label for="sexe" class="form-label">Sexe</label>
-                                <select class="form-select" id="sexe" name="sexe" required>
-                                    <option value="Masculin" {% if form.sexe.value == 'Masculin' %}selected{% endif %}>Masculin</option>
-                                    <option value="Féminin" {% if form.sexe.value == 'Féminin' %}selected{% endif %}>Féminin</option>
-                                </select>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" value="{{ form.email.value }}" >
-                            </div>
-                            <div class="col-md-6">
-                                <label for="num_tel" class="form-label">Numéro de Téléphone</label>
-                                <input type="tel" class="form-control" id="num_tel" name="num_tel" value="{{ form.num_tel.value }}" >
-                            </div>
-                            <div class="col-md-6">
-                                <label for="image" class="form-label">Photo</label>
-                                <input type="file" class="form-control" id="image" name="image">
-                            </div>
+                            
                             <div class="col-md-6">
                                 <label for="observation" class="form-label">Observation</label>
-                                <input type="text" class="form-control" id="observation" name="observation" value="{{ form.observation.value }}">
+                                <textarea class="form-control" id="observation" name="observation">{{ form.observation.value }}</textarea>
                             </div>
-                            <div class="col-md-12">
-                                <label for="status" class="form-label">Statut</label>
-                                <select class="form-select" id="status" name="status" required>
-                                    <option value="Actif" {% if form.status.value == 'Actif' %}selected{% endif %}>Actif</option>
-                                    <option value="Non Actif" {% if form.status.value == 'Non Actif' %}selected{% endif %}>Non Actif</option>
+
+                            <div class="col-md-6">
+                                <label for="tstt_user" class="form-label">Statut</label>
+                                <select class="form-select" id="tstt_user" name="tstt_user">
+                                    <option value="actif" {% if form.tstt_user.value == 'actif' %}selected{% endif %}>Actif</option>
+                                    <option value="inactif" {% if form.tstt_user.value == 'inactif' %}selected{% endif %}>Inactif</option>
                                 </select>
                             </div>
+
+                            <div class="col-md-6">
+                                <label for="img" class="form-label">Photo</label>
+                                <input type="file" class="form-control" id="img" name="img">
+                                {% if form.img.value %}
+                                    <img src="{{ form.img.value.url }}" class="img-thumbnail mt-2" width="120">
+                                {% endif %}
+                            </div>
+
                         </div>
-                        <div class="text-end mt-3">
-                            <a href="{% url 'Employee:list' %}" class="btn btn-secondary px-4 py-2">Annuler</a>
+
+                        <div class="text-end mt-4">
+                            <a href="{% url 'Employee:list' %}" class="btn btn-secondary">Annuler</a>
                             <button type="submit" class="btn btn-warning px-4 py-2">Modifier</button>
                         </div>
                     </form>
@@ -107,7 +134,10 @@
 
 <script>
     window.onload = function() {
-        var myModal = new bootstrap.Modal(document.getElementById("modalEmployeeEdit"), {keyboard: false, backdrop: 'static'});
+        const myModal = new bootstrap.Modal(document.getElementById("modalUserEdit"), {
+            keyboard: false,
+            backdrop: 'static'
+        });
         myModal.show();
     }
 </script>

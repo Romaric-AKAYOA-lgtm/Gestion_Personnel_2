@@ -65,5 +65,5 @@ class ClUserForm(forms.ModelForm):
 
         if dns and dsb:
             delta = dsb - dns
-            if delta < timedelta(days=28 * 365):
-                self.add_error('dsb', "L'utilisateur doit avoir au moins 28 ans à la date de début.")
+            if delta < timedelta(days=18 * 365):
+                self.add_error('dsb', "L'utilisateur doit avoir au moins 18 ans à la date de début.")
