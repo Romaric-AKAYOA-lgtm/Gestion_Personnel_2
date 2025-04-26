@@ -1,0 +1,125 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+
+<!-- Modal structure -->
+<div class="modal fade show" id="mutationModal" tabindex="-1" aria-labelledby="mutationModalLabel" aria-hidden="true" style="display: block;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header bg-warning">
+                <h5 class="modal-title  text-white" id="mutationModalLabel">
+                    {{ form.instance.pk|yesno:"Modifier une Mutation,Créer une Mutation" }}
+                </h5>
+            </div>
+
+            <div class="modal-body">
+                {% if form.errors %}
+                <div class="alert alert-danger">
+                    {% for field in form %}
+                        {% if field.errors %}
+                            <strong>{{ field.label }}</strong> : {{ field.errors|striptags }}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                {% endif %}
+
+                <form method="POST" class="needs-validation" novalidate>
+                    {% csrf_token %}
+
+                    <!-- Unité organisationnelle -->
+                    <div class="mb-3">
+                        <label for="organizational_unit" class="form-label">Unité organisationnelle</label>
+                        <select name="organizational_unit" id="organizational_unit" class="form-select" required>
+                            <option value="" selected>---------</option>
+                            {% for unit in form.fields.organizational_unit.queryset %}
+                                <option value="{{ unit.pk }}"
+                                    {% if form.initial.organizational_unit == unit.pk %}selected{% endif %}>
+                                    {{ unit.name }}  {{ unit.parent }}
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <!-- Employé -->
+                    <div class="mb-3">
+                        <label for="employe" class="form-label">Employé</label>
+                        <select name="employe" id="employe" class="form-select" required>
+                            <option value="" selected>---------</option>
+                            {% for emp in form.fields.employe.queryset %}
+                                <option value="{{ emp.pk }}"
+                                    {% if form.initial.employe == emp.pk %}selected{% endif %}>
+                                    {{ emp.tnm }}    {{ emp.tpm }}
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <!-- Responsable -->
+                    <div class="mb-3">
+                        <label for="responsable" class="form-label">Responsable</label>
+                        <select name="responsable" id="responsable" class="form-select" required>
+                            <option value="" selected>---------</option>
+                            {% for resp in form.fields.responsable.queryset %}
+                                <option value="{{ resp.pk }}"
+                                    {% if form.initial.responsable == resp.pk %}selected{% endif %}>
+                                    {{ resp.tnm }}    {{ resp.tpm }}
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <!-- Fonction -->
+                    <div class="mb-3">
+                        <label for="function" class="form-label">Fonction</label>
+                        <select name="function" id="function" class="form-select" required>
+                            <option value="" selected>---------</option>
+                            {% for fonction in form.fields.function.queryset %}
+                                <option value="{{ fonction.pk }}"
+                                    {% if form.initial.function == fonction.pk %}selected{% endif %}>
+                                    {{ fonction.designation }}
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <!-- Date début -->
+                    <div class="mb-3">
+                        <label for="date_debut" class="form-label">Date début</label>
+                        <input type="date" class="form-control" id="date_debut" name="date_debut" 
+                               value="{{ form.initial.date_debut|date:'Y-m-d' }}" required>
+                    </div>
+
+                    <!-- Date fin -->
+                    <div class="mb-3">
+                        <label for="date_fin" class="form-label">Date fin</label>
+                        <input type="date" class="form-control" id="date_fin" name="date_fin" 
+                               value="{{ form.initial.date_fin|date:'Y-m-d' }}">
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="text-end">
+                        <a href="{% url 'Mutation:list' %}" class="btn btn-secondary px-4 py-2 btn-sm">Annuler</a>
+                        <button type="submit" class="btn btn-warning px-4 py-2 btn-sm text-white">
+                            {{ form.instance.pk|yesno:"Modifier,Créer" }}
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Script to trigger modal -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var myModal = new bootstrap.Modal(document.getElementById('mutationModal'), {
+            keyboard: false,
+            backdrop: 'static'
+        });
+        myModal.show();
+    });
+</script>
+
+{% endblock %}

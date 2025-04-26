@@ -1,0 +1,16 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+    <h1>Détail du congé</h1>
+
+    <p><strong>Employé :</strong> {{ conge.employe.nom }} {{ conge.employe.prenom }}</p>
+    <p><strong>Type de congé :</strong> {{ conge.typeconge.designation }}</p>
+    <p><strong>Date début prévisionnelle :</strong> {{ conge.date_debut_previsionnel }}</p>
+    <p><strong>Date retour prévisionnelle :</strong> {{ conge.date_retour_previsionnel }}</p>
+    <p><strong>Date retour définitif :</strong> {{ conge.date_retour_definitif }}</p>
+    <p><strong>Signature de l'employé :</strong> {% if conge.employe_signature %} Signé {% else %} Non signé {% endif %}</p>
+
+    <a href="{% url 'conge:update' conge.id %}">Modifier</a> |
+    <a href="{% url 'conge:delete' conge.id %}">Supprimer</a> |
+    <a href="{% url 'conge:list' %}">Retour à la liste</a>
+    {% endblock %}

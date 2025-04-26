@@ -1,0 +1,39 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+    <h1>Liste des congés</h1>
+
+    <form method="GET" action="{% url 'conge:search' %}">
+        <input type="text" name="query" placeholder="Rechercher un employé...">
+        <button type="submit">Rechercher</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Employé</th>
+                <th>Type de congé</th>
+                <th>Date début prévisionnelle</th>
+                <th>Date retour prévisionnelle</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for conge in conges %}
+            <tr>
+                <td>{{ conge.employe.nom }} {{ conge.employe.prenom }}</td>
+                <td>{{ conge.typeconge.designation }}</td>
+                <td>{{ conge.date_debut_previsionnel }}</td>
+                <td>{{ conge.date_retour_previsionnel }}</td>
+                <td>
+                    <a href="{% url 'conge:detail' conge.id %}">Détails</a> |
+                    <a href="{% url 'conge:update' conge.id %}">Modifier</a> |
+                    <a href="{% url 'conge:delete' conge.id %}">Supprimer</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{% url 'conge:create' %}">Ajouter un congé</a>
+    {% endblock %}

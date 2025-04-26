@@ -1,0 +1,52 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+
+<!-- Modal pour afficher les détails de la mutation -->
+<div class="modal fade show" id="modalMutationDetails" tabindex="-1" aria-labelledby="modalMutationDetailsLabel" aria-hidden="true" style="display: block;">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="modalMutationDetailsLabel">Détails de la Mutation</h5>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>Employé :</strong> {{ mutation.employe }}</li>
+                    <li class="list-group-item"><strong>Unité Organisationnelle :</strong> {{ mutation.organizational_unit }}</li>
+                    <li class="list-group-item"><strong>Fonction :</strong> {{ mutation.function }}</li>
+                    <li class="list-group-item"><strong>Responsable :</strong> {{ mutation.responsable }}</li>
+                    <li class="list-group-item"><strong>Date de Début :</strong> {{ mutation.date_debut }}</li>
+                    <li class="list-group-item"><strong>Date de Fin :</strong> {{ mutation.date_fin }}</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <!-- Bouton pour modifier -->
+                <a href="{% url 'Mutation:update' mutation.id %}" class="btn btn-warning btn-sm mb-1">
+                    <i class="bi bi-pencil"></i> Modifier
+                </a>
+                <!-- Bouton pour annuler -->
+                <a href="{% url 'Mutation:list' %}" class="btn btn-secondary px-4 py-2 btn-sm">Annuler</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ne pas appliquer de flou sur l'arrière-plan -->
+<style>
+    .modal-backdrop {
+        display: none !important;
+    }
+</style>
+
+<!-- Script pour ouvrir le modal automatiquement -->
+<script>
+    window.onload = function () {
+        var myModal = new bootstrap.Modal(document.getElementById("modalMutationDetails"), {
+            keyboard: false,
+            backdrop: 'static'
+        });
+        myModal.show();
+    };
+</script>
+
+{% endblock %}

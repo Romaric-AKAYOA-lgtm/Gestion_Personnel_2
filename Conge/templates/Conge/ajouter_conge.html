@@ -1,0 +1,12 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+
+    <h1>Ajouter un congé</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Ajouter</button>
+    </form>
+    <a href="{% url 'conge:list' %}">Retour à la liste des congés</a>
+    {% endblock %}
