@@ -1,0 +1,72 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+<div class="container mt-4">
+
+    <!-- Modal Détail Mission -->
+    <div class="modal fade" id="missionDetailModal" tabindex="-1" aria-labelledby="missionDetailModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="missionDetailModalLabel">Détails de la mission</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+
+                <div class="modal-body">
+                    <table class="table table-bordered table-striped">
+                        <tbody>                     
+                            <tr>
+                                <th>Objet</th>
+                                <td>{{ mission.objet }}</td>
+                            </tr>
+                            <tr>
+                                <th>Description</th>
+                                <td>{{ mission.description }}</td>
+                            </tr>
+                            <tr>
+                                <th>Organisme</th>
+                                <td>{{ mission.organisme }}</td>
+                            </tr>
+                            <tr>
+                                <th>Lieu</th>
+                                <td>{{ mission.lieu_mission }}</td>
+                            </tr>
+                            <tr>
+                                <th>Date début</th>
+                                <td>{{ mission.date_debut|date:"d/m/Y" }}</td>
+                            </tr>
+                            <tr>
+                                <th>Date fin</th>
+                                <td>{{ mission.date_fin|date:"d/m/Y" }}</td>
+                            </tr>
+                            <tr>
+                                <th>Signataire</th>
+                                <td>{{ mission.employe_signataire.tnm }} {{ mission.employe_signataire.tpm }}</td>
+                            </tr>       
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="modal-footer">
+                    <a href="{% url 'mission:update' mission.id %}" class="btn btn-warning">Modifier</a>
+                    <a href="{% url 'mission:list' %}" class="btn btn-secondary">Retour à la liste</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Script : affichage automatique du modal -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var missionModal = new bootstrap.Modal(document.getElementById('missionDetailModal'), {
+                keyboard: false,
+                backdrop: 'static'
+            });
+            missionModal.show();
+        });
+    </script>
+
+</div>
+{% endblock %}

@@ -1,11 +1,115 @@
 {% extends 'template_base.html' %}
 
 {% block contenue %}
-    <h1>Modifier le congé</h1>
-    <form method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Modifier</button>
-    </form>
-    <a href="{% url 'conge:detail' conge.id %}">Retour aux détails</a>
-    {% endblock %}
+<div class="modal fade show" id="congeModal" tabindex="-1" aria-labelledby="congeModalLabel" aria-modal="true" role="dialog" style="display: block;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-warning">
+                <h5 class="modal-title text-white" id="congeModalLabel">
+                    {{ form.instance.pk|yesno:"Modifier un congé,Créer un congé" }}
+                </h5>
+            </div>
+
+            <div class="modal-body">
+                <form method="POST" class="needs-validation" novalidate>
+                    {% csrf_token %}
+
+                    <div class="alert alert-danger" style="display: {% if form.errors %}block{% else %}none{% endif %};">
+                        <ul>
+                            {% for field in form %}
+                                {% if field.errors %}
+                                    <li><strong>{{ field.label }}</strong> : {{ field.errors|striptags }}</li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                    <!-- Employé (lecture seule) -->
+                    <div class="mb-3">
+                        <label for="id_employe" class="form-label">Employé</label>
+                        <select name="employe" id="id_employe" class="form-select" disabled>
+                            {% for value, label in form.fields.employe.choices %}
+                                <option value="{{ value }}" {% if form.initial.employe == value %}selected{% endif %}>{{ label }}</option>
+                            {% endfor %}
+                        </select>
+                        <input type="hidden" name="employe" value="{{ form.initial.employe }}">
+                    </div>
+
+                    <!-- Type de congé (lecture seule) -->
+                    <div class="mb-3">
+                        <label for="id_typeconge" class="form-label">Type de congé</label>
+                        <select name="typeconge" id="id_typeconge" class="form-select" disabled>
+                            {% for value, label in form.fields.typeconge.choices %}
+                                <option value="{{ value }}" {% if form.initial.typeconge == value %}selected{% endif %}>{{ label }}</option>
+                            {% endfor %}
+                        </select>
+                        <input type="hidden" name="typeconge" value="{{ form.initial.typeconge }}">
+                    </div>
+
+                    <!-- Date Début Prévisionnel (lecture seule) -->
+                    <div class="mb-3">
+                        <label for="id_date_debut_previsionnel" class="form-label">Date de début prévisionnel</label>
+                        <input type="date" name="date_debut_previsionnel" id="id_date_debut_previsionnel"
+                               class="form-control" value="{{ form.date_debut_previsionnel.value|date:'Y-m-d' }}" readonly>
+                    </div>
+
+                    <!-- Date Retour Prévisionnel (lecture seule) -->
+                    <div class="mb-3">
+                        <label for="id_date_retour_previsionnel" class="form-label">Date de retour prévisionnel</label>
+                        <input type="date" name="date_retour_previsionnel" id="id_date_retour_previsionnel"
+                               class="form-control" value="{{ form.date_retour_previsionnel.value|date:'Y-m-d' }}" readonly>
+                    </div>
+
+                    <!-- Date Retour Définitif (modifiable) -->
+                    <div class="mb-3">
+                        <label for="id_date_retour_definitif" class="form-label">Date de retour définitif</label>
+                        <input type="date" name="date_retour_definitif" id="id_date_retour_definitif"
+                               class="form-control {% if form.date_retour_definitif.errors %}is-invalid{% endif %}"
+                               value="{{ form.date_retour_definitif.value|date:'Y-m-d' }}">
+                        {% for error in form.date_retour_definitif.errors %}
+                            <div class="invalid-feedback">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+
+                    <!-- Boutons -->
+                    <div class="text-end">
+                        <a href="{% url 'conge:list' %}" class="btn btn-secondary px-4 py-2 btn-sm">Annuler</a>
+                        <button type="submit" class="btn btn-warning   px-4 py-2 btn-sm">
+                            {{ form.instance.pk|yesno:"Modifier,Créer" }}
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const modalEl = document.getElementById('congeModal');
+        const modal = new bootstrap.Modal(modalEl, {
+            keyboard: false,
+            backdrop: 'static'
+        });
+        modal.show();
+
+        const dateRetourInput = document.getElementById('id_date_retour_previsionnel');
+        const dateRetourDefinitifInput = document.getElementById('id_date_retour_definitif');
+
+        if (dateRetourInput.value && !dateRetourDefinitifInput.value) {
+            dateRetourDefinitifInput.value = dateRetourInput.value;
+        }
+
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            if (form.checkValidity()) {
+                modal.hide();
+                form.submit();
+            } else {
+                form.classList.add('was-validated');
+            }
+        });
+    });
+</script>
+{% endblock %}

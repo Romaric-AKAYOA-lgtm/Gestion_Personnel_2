@@ -1,12 +1,101 @@
 {% extends 'template_base.html' %}
 
 {% block contenue %}
+<div class="modal fade show" id="congeModal" tabindex="-1" aria-labelledby="congeModalLabel" aria-modal="true" role="dialog" style="display: block;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary">
+                <h5 class="modal-title text-white" id="congeModalLabel">
+                    {{ form.instance.pk|yesno:"Modifier un congé,Créer un congé" }}
+                </h5>
+            </div>
+            <div class="modal-body">
+                {% if form.errors %}
+                <div class="alert alert-danger">
+                    {% for field in form %}
+                        {% if field.errors %}
+                            <strong>{{ field.label }}</strong> : {{ field.errors|striptags }}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                {% endif %}
 
-    <h1>Ajouter un congé</h1>
-    <form method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Ajouter</button>
-    </form>
-    <a href="{% url 'conge:list' %}">Retour à la liste des congés</a>
-    {% endblock %}
+                <form method="POST" class="needs-validation" novalidate>
+                    {% csrf_token %}
+
+                    <!-- Employé -->
+                    <div class="mb-3">
+                        <label for="id_employe" class="form-label">Employé</label>
+                        <select name="employe" id="id_employe" class="form-select">
+                            {% for value, label in form.fields.employe.choices %}
+                                <option value="{{ value }}" {% if form.initial.employe == value %}selected{% endif %}>{{ label }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <!-- Type de congé -->
+                    <div class="mb-3">
+                        <label for="id_typeconge" class="form-label">Type de congé</label>
+                        <select name="typeconge" id="id_typeconge" class="form-select">
+                            {% for value, label in form.fields.typeconge.choices %}
+                                <option value="{{ value }}" {% if form.initial.typeconge == value %}selected{% endif %}>{{ label }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <!-- Boutons -->
+                    <div class="text-end">
+                        <a href="{% url 'conge:list' %}" class="btn btn-secondary px-4 py-2 btn-sm">Annuler</a>
+                        <button type="submit" class="btn btn-primary px-4 py-2 btn-sm">
+                            {{ form.instance.pk|yesno:"Modifier,Créer" }}
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Script pour gérer l'initialisation automatique -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const modalEl = document.getElementById('congeModal');
+        new bootstrap.Modal(modalEl, {
+            keyboard: false,
+            backdrop: 'static'
+        }).show();
+
+        const typeSelect = document.getElementById('id_typeconge');
+        const dateDebutInput = document.getElementById('id_date_debut_previsionnel');
+        const dateRetourInput = document.getElementById('id_date_retour_previsionnel');
+
+        typeSelect?.addEventListener('change', async () => {
+            const typeId = typeSelect.value;
+            if (!typeId) return;
+
+            try {
+                const response = await fetch(`/api/typeconge/${typeId}/`);
+                if (!response.ok) throw new Error("Réponse API invalide");
+
+                const data = await response.json();
+                const moisDebut = +data.mois_debut_autorise;
+                const duree = +data.periode_conge;
+
+                const annee = new Date().getFullYear();
+                const dateDebut = new Date(annee, moisDebut - 1, 1);
+                const dateRetour = new Date(dateDebut);
+                dateRetour.setDate(dateRetour.getDate() + duree);
+
+                const formatDate = (date) =>
+                    date.toISOString().split('T')[0]; // YYYY-MM-DD
+
+                dateDebutInput.value = formatDate(dateDebut);
+                dateRetourInput.value = formatDate(dateRetour);
+            } catch (error) {
+                console.error("Erreur chargement type congé :", error);
+            }
+        });
+    });
+</script>
+
+{% endblock %}

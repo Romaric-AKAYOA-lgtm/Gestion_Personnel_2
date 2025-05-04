@@ -35,52 +35,75 @@
     <h6 class="mb-3 text-center">Menu</h6>
     <div class="vh-100 overflow-auto mb-4">
       <ul class="nav flex-column w-100 px-2">
-        <!-- Lien Accueil -->
-        <li class="nav-item">
-          <a href="{% url 'home' %}" class="nav-link">
-            <i class="fas fa-house-user"></i> Accueil
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="{% url 'fonction:fonction' %}"  class="nav-link">
-            <i class="fas fa-house-user"></i> Fonction
-          </a>
-        </li>
-        <li class="nav-item">   
-          <a href="{% url 'conge:list' %}" class="nav-link">
-           <i class="fas fa-house-user"></i>Congé
-         </a>
-       </li>
-        <li class="nav-item">  
-          <a href="{% url 'typeconge:typeconge' %}"  class="nav-link">
-            <i class="fas fa-house-user"></i> Types congés
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="{% url 'OrganizationalUnit:list' %}"  class="nav-link">
-            <i class="fas fa-house-user"></i> Service
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="{% url 'unite:unite' %}" class="nav-link">
-            <i class="fas fa-house-user"></i> Unite
-          </a>
-        </li>
-
-        <!-- Lien Paramètres (Administrateur) -->
-        <li class="nav-item">
-          <a href="{% url 'administration:list' %}" class="nav-link">
-            <i class="fas fa-cogs"></i> Paramètres
-          </a>
-        </li>
-    
-        <!-- Lien Se Déconnecter -->
-        <li class="nav-item">
-          <a href="{% url 'connection:logout' %}" class="nav-link">
-            <i class="fas fa-sign-out-alt"></i> Se Déconnecter
-          </a>
-        </li>
-      </ul>
+            <!-- Lien Accueil -->
+            <li class="nav-item">
+              <a href="{% url 'home' %}" class="nav-link">
+                <i class="fas fa-home me-2"></i> Accueil
+              </a>
+            </li>
+          
+            <!-- Lien Fonction -->
+            <li class="nav-item">
+              <a href="{% url 'fonction:fonction' %}" class="nav-link">
+                <i class="fas fa-briefcase me-2"></i> Fonction
+              </a>
+            </li>
+          
+            <!-- Lien Congé -->
+            <li class="nav-item">
+              <a href="{% url 'conge:list' %}" class="nav-link">
+                <i class="fas fa-calendar-alt me-2"></i> Congé
+              </a>
+            </li>
+          
+            <!-- Lien Mission -->
+            <li class="nav-item">
+              <a href="{% url 'mission:list' %}" class="nav-link">
+                <i class="fas fa-tasks me-2"></i> Mission
+              </a>
+            </li>
+          
+            <!-- Lien Agents Missions -->
+            <li class="nav-item">
+              <a href="{% url 'employe_mission:list' %}" class="nav-link">
+                <i class="fas fa-users me-2"></i> Agents Missions
+              </a>
+            </li>
+          
+            <!-- Lien Types congés -->
+            <li class="nav-item">
+              <a href="{% url 'typeconge:typeconge' %}" class="nav-link">
+                <i class="fas fa-list-alt me-2"></i> Types congés
+              </a>
+            </li>
+          
+            <!-- Lien Service -->
+            <li class="nav-item">
+              <a href="{% url 'OrganizationalUnit:list' %}" class="nav-link">
+                <i class="fas fa-sitemap me-2"></i> Service
+              </a>
+            </li>
+          
+            <!-- Lien Unité -->
+            <li class="nav-item">
+              <a href="{% url 'unite:unite' %}" class="nav-link">
+                <i class="fas fa-building me-2"></i> Unité
+              </a>
+            </li>
+          
+            <!-- Lien Paramètres -->
+            <li class="nav-item">
+              <a href="{% url 'administration:list' %}" class="nav-link">
+                <i class="fas fa-cogs me-2"></i> Paramètres
+              </a>
+            </li>
+          
+            <!-- Lien Se Déconnecter -->
+            <li class="nav-item">
+              <a href="{% url 'connection:logout' %}" class="nav-link">
+                <i class="fas fa-sign-out-alt me-2"></i> Se Déconnecter
+              </a>
+            </li>
     </div>
     
     <div class="user-info w-100 px-2 mt-auto mt-3">

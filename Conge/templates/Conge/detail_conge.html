@@ -1,16 +1,93 @@
 {% extends 'template_base.html' %}
 
 {% block contenue %}
-    <h1>Détail du congé</h1>
 
-    <p><strong>Employé :</strong> {{ conge.employe.nom }} {{ conge.employe.prenom }}</p>
-    <p><strong>Type de congé :</strong> {{ conge.typeconge.designation }}</p>
-    <p><strong>Date début prévisionnelle :</strong> {{ conge.date_debut_previsionnel }}</p>
-    <p><strong>Date retour prévisionnelle :</strong> {{ conge.date_retour_previsionnel }}</p>
-    <p><strong>Date retour définitif :</strong> {{ conge.date_retour_definitif }}</p>
-    <p><strong>Signature de l'employé :</strong> {% if conge.employe_signature %} Signé {% else %} Non signé {% endif %}</p>
+<div class="container mt-4">
 
-    <a href="{% url 'conge:update' conge.id %}">Modifier</a> |
-    <a href="{% url 'conge:delete' conge.id %}">Supprimer</a> |
-    <a href="{% url 'conge:list' %}">Retour à la liste</a>
-    {% endblock %}
+    <!-- Modal Détail Congé -->
+    <div class="modal fade" id="congeDetailModal" tabindex="-1" aria-labelledby="congeDetailModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="congeDetailModalLabel">Détails du congé</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+
+                <div class="modal-body">
+                    <table class="table table-bordered table-striped">
+                        <tbody>
+                            <tr>
+                                <th>Employé</th>
+                                <td>{{ conge.employe.tnm }} {{ conge.employe.tpm }}</td>
+                            </tr>
+                            <tr>
+                                <th>Type de congé</th>
+                                <td>{{ conge.typeconge.designation }}</td>
+                            </tr>
+                            <tr>
+                                <th>Date début prévisionnelle</th>
+                                <td>{{ conge.date_debut_previsionnel }}</td>
+                            </tr>
+                            <tr>
+                                <th>Date retour prévisionnelle</th>
+                                <td>{{ conge.date_retour_previsionnel }}</td>
+                            </tr>
+                            <tr>
+                                <th>Date retour définitif</th>
+                                <td>{{ conge.date_retour_definitif }}</td>
+                            </tr>
+                            <tr>
+                                <th>Signature de l'employé</th>
+                                <td>{% if conge.employe_signature %}Signé{% else %}Non signé{% endif %}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="modal-footer">
+                    <a href="{% url 'conge:update' conge.id %}" class="btn btn-warning">Modifier</a>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#supprimerModal" data-bs-dismiss="modal">Supprimer</button>
+                    <a href="{% url 'conge:list' %}" class="btn btn-secondary">Retour à la liste</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Confirmation Suppression -->
+    <div class="modal fade" id="supprimerModal" tabindex="-1" aria-labelledby="supprimerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="supprimerModalLabel">Supprimer ce congé</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Êtes-vous sûr de vouloir supprimer ce congé de <strong>{{ conge.employe.nom }} {{ conge.employe.prenom }}</strong> ? Cette action est irréversible.</p>
+                </div>
+                <div class="modal-footer">
+                    <form method="post" action="{% url 'conge:delete' conge.id %}">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-danger">Confirmer la suppression</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script : affichage automatique du modal -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var congeModal = new bootstrap.Modal(document.getElementById('congeDetailModal'), {
+                keyboard: false,
+                backdrop: 'static'
+            });
+            congeModal.show();
+        });
+    </script>
+
+</div>
+
+{% endblock %}

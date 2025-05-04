@@ -1,0 +1,67 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+<div class="modal fade show" id="employeMissionModal" tabindex="-1" aria-labelledby="employeMissionModalLabel" aria-modal="true" role="dialog" style="display: block;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-warning">
+                <h5 class="modal-title text-white" id="employeMissionModalLabel">
+                    {{ form.instance.pk|yesno:"Modifier une liaison,Créer une liaison" }}
+                </h5>
+            </div>
+
+            <div class="modal-body">
+                {% if form.errors %}
+                <div class="alert alert-danger">
+                    {% for field in form %}
+                        {% if field.errors %}
+                            <strong>{{ field.label }}</strong> : {{ field.errors|striptags }}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                {% endif %}
+
+                <form method="POST" class="needs-validation" novalidate>
+                    {% csrf_token %}
+
+                    <!-- Employé -->
+                    <div class="mb-3">
+                        <label for="{{ form.employe.id_for_label }}" class="form-label">Employé</label>
+                        {{ form.employe }}
+                    </div>
+
+                    <!-- Mission -->
+                    <div class="mb-3">
+                        <label for="{{ form.mission.id_for_label }}" class="form-label">Mission</label>
+                        {{ form.mission }}
+                    </div>
+
+                    <!-- Statut -->
+                    <div class="mb-3">
+                        <label for="{{ form.statut.id_for_label }}" class="form-label">Statut</label>
+                        {{ form.statut }}
+                    </div>
+
+                    <!-- Boutons -->
+                    <div class="text-end">
+                        <a href="{% url 'employe_mission:list' %}" class="btn btn-secondary px-4 py-2 btn-sm">Annuler</a>
+                        <button type="submit" class="btn btn-warning px-4 py-2 btn-sm">
+                            {{ form.instance.pk|yesno:"Modifier,Créer" }}
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const modalEl = document.getElementById('employeMissionModal');
+    new bootstrap.Modal(modalEl, {
+        keyboard: false,
+        backdrop: 'static'
+    }).show();
+});
+</script>
+{% endblock %}

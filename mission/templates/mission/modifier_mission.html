@@ -1,0 +1,120 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+<div class="modal fade show" id="missionModal" tabindex="-1" aria-labelledby="missionModalLabel" aria-modal="true" role="dialog" style="display: block;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-warning">
+                <h5 class="modal-title text-white" id="missionModalLabel">
+                    {{ form.instance.pk|yesno:"Modifier une mission,Créer une mission" }}
+                </h5>
+            </div>
+            <div class="modal-body">
+                {% if form.errors %}
+                <div class="alert alert-danger">
+                    {% for field in form %}
+                        {% if field.errors %}
+                            <strong>{{ field.label }}</strong> : {{ field.errors|striptags }}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                {% endif %}
+
+                <form method="POST" class="needs-validation" novalidate>
+                    {% csrf_token %}
+
+                    <!-- Objet -->
+                    <div class="mb-3">
+                        <label for="{{ form.objet.id_for_label }}" class="form-label">Objet</label>
+                        {{ form.objet }}
+                    </div>
+
+                    <!-- Description -->
+                    <div class="mb-3">
+                        <label for="{{ form.description.id_for_label }}" class="form-label">Description</label>
+                        {{ form.description }}
+                    </div>
+
+                    <!-- Organisme -->
+                    <div class="mb-3">
+                        <label for="{{ form.organisme.id_for_label }}" class="form-label">Organisme</label>
+                        {{ form.organisme }}
+                    </div>
+
+                    <!-- Lieu -->
+                    <div class="mb-3">
+                        <label for="{{ form.lieu_mission.id_for_label }}" class="form-label">Lieu</label>
+                        {{ form.lieu_mission }}
+                    </div>
+
+                    <!-- Date début -->
+                    <div class="mb-3">
+                        <label for="{{ form.date_debut.id_for_label }}" class="form-label">Date début</label>
+                        {{ form.date_debut }}
+                    </div>
+
+                    <!-- Date fin -->
+                    <div class="mb-3">
+                        <label for="{{ form.date_fin.id_for_label }}" class="form-label">Date fin</label>
+                        {{ form.date_fin }}
+                    </div>
+
+                    <!-- Employé signataire -->
+                    <div class="mb-3">
+                        <label for="{{ form.employe_signataire.id_for_label }}" class="form-label">Employé signataire</label>
+                        {{ form.employe_signataire }}
+                    </div>
+
+                    <!-- Boutons -->
+                    <div class="text-end">
+                        <a href="{% url 'mission:list' %}" class="btn btn-secondary px-4 py-2 btn-sm">Annuler</a>
+                        <button type="submit" class="btn btn-warning px-4 py-2 btn-sm">
+                            {{ form.instance.pk|yesno:"Modifier,Créer" }}
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const modalEl = document.getElementById('missionModal');
+    new bootstrap.Modal(modalEl, {
+        keyboard: false,
+        backdrop: 'static'
+    }).show();
+
+    const form = document.querySelector('form');
+    const dateDebut = document.getElementById("{{ form.date_debut.id_for_label }}");
+
+    const champsAGriser = [
+        "{{ form.objet.id_for_label }}",
+        "{{ form.description.id_for_label }}",
+        "{{ form.organisme.id_for_label }}",
+        "{{ form.lieu_mission.id_for_label }}",
+        "{{ form.date_debut.id_for_label }}",
+        "{{ form.employe_signataire.id_for_label }}"
+    ];
+
+    const today = new Date().toISOString().split('T')[0];
+
+    if (dateDebut && dateDebut.value < today) {
+        champsAGriser.forEach(id => {
+            const champ = document.getElementById(id);
+            if (champ) {
+                champ.disabled = true;
+
+                // Ajouter champ hidden avec la même valeur pour garder les données lors de la soumission
+                const hidden = document.createElement('input');
+                hidden.type = 'hidden';
+                hidden.name = champ.name;
+                hidden.value = champ.value;
+                form.appendChild(hidden);
+            }
+        });
+    }
+});
+</script>
+{% endblock %}

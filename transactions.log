@@ -4743,3 +4743,1827 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'update' with arguments '('',
 2025-04-26 22:55:39,087 - INFO - basehttp - "GET /Mutation/ HTTP/1.1" 200 6953
 2025-04-26 22:55:39,147 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
 2025-04-26 22:55:41,167 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 4547
+2025-04-30 18:13:30,421 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-30 18:13:48,457 - INFO - basehttp - "GET / HTTP/1.1" 302 0
+2025-04-30 18:13:48,555 - INFO - basehttp - "GET /login/ HTTP/1.1" 200 6253
+2025-04-30 18:13:51,718 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3730
+2025-04-30 18:13:51,724 - INFO - basehttp - "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 78743
+2025-04-30 18:13:51,734 - INFO - basehttp - "GET /static/css/bootstrap.min.css HTTP/1.1" 200 155845
+2025-04-30 18:13:51,753 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-04-30 18:13:52,174 - INFO - basehttp - "GET /static/js/scripti.js HTTP/1.1" 200 2496
+2025-04-30 18:13:52,209 - INFO - basehttp - "GET /static/image/boat-5889919_1280.png HTTP/1.1" 200 143567
+2025-04-30 18:13:52,328 - WARNING - log - Not Found: /favicon.ico
+2025-04-30 18:13:52,330 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 4341
+2025-04-30 18:14:18,781 - INFO - basehttp - "POST /login/ HTTP/1.1" 302 0
+2025-04-30 18:14:18,813 - INFO - basehttp - "GET /home HTTP/1.1" 200 12551
+2025-04-30 18:14:18,947 - INFO - basehttp - "GET /static/image/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-04-30 18:14:18,995 - INFO - basehttp - "GET /static/image/city-7352352_1280.jpg HTTP/1.1" 200 445704
+2025-04-30 18:14:18,996 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-04-30 18:14:19,007 - INFO - basehttp - "GET /static/image/city-182223_1280.jpg HTTP/1.1" 200 376515
+2025-04-30 18:14:19,019 - INFO - basehttp - "GET /static/image/istockphoto-2162033406-1024x1024.jpg HTTP/1.1" 200 62104
+2025-04-30 18:14:22,267 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 6610
+2025-04-30 18:14:23,195 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 4547
+2025-04-30 18:14:25,209 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 4547
+2025-04-30 18:14:26,574 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 6610
+2025-04-30 18:14:28,916 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 4547
+2025-04-30 18:14:30,119 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 6610
+2025-04-30 18:14:37,028 - INFO - basehttp - "GET /fonction/creer/ HTTP/1.1" 200 6641
+2025-04-30 18:14:39,695 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 6610
+2025-04-30 18:14:44,991 - INFO - basehttp - "GET /fonction/2/modifier/ HTTP/1.1" 200 6762
+2025-04-30 18:14:46,955 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 6610
+2025-04-30 18:14:49,558 - INFO - basehttp - "GET /typeConge/ HTTP/1.1" 200 6413
+2025-04-30 18:15:13,889 - INFO - basehttp - "GET /typeConge/1/modifier/ HTTP/1.1" 200 7516
+2025-04-30 18:15:20,218 - INFO - basehttp - "GET /typeConge/ HTTP/1.1" 200 6413
+2025-04-30 18:15:27,697 - INFO - basehttp - "GET /typeConge/creer/ HTTP/1.1" 200 8753
+2025-04-30 18:15:39,318 - INFO - basehttp - "GET /typeConge/ HTTP/1.1" 200 6413
+2025-04-30 18:16:28,737 - INFO - basehttp - "GET /typeConge/creer/ HTTP/1.1" 200 8753
+2025-04-30 18:16:30,984 - INFO - basehttp - "GET /typeConge/ HTTP/1.1" 200 6413
+2025-04-30 18:16:32,781 - INFO - basehttp - "GET /typeConge/1/modifier/ HTTP/1.1" 200 7516
+2025-04-30 18:16:35,203 - INFO - basehttp - "GET /typeConge/ HTTP/1.1" 200 6413
+2025-04-30 18:16:37,708 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 7755
+2025-04-30 18:16:42,380 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 7500
+2025-04-30 18:16:45,346 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 7755
+2025-04-30 18:16:47,399 - INFO - basehttp - "GET /OrganizationalUnit/1/update/ HTTP/1.1" 200 7614
+2025-04-30 18:16:49,129 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 7755
+2025-04-30 18:20:37,381 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 302 0
+2025-04-30 18:20:37,418 - INFO - basehttp - "GET /login/ HTTP/1.1" 200 6253
+2025-04-30 18:20:37,505 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3732
+2025-04-30 18:20:37,510 - INFO - basehttp - "GET /static/js/scripti.js HTTP/1.1" 200 2496
+2025-04-30 18:20:37,517 - INFO - basehttp - "GET /static/css/bootstrap.min.css HTTP/1.1" 200 155845
+2025-04-30 18:20:37,520 - INFO - basehttp - "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 78743
+2025-04-30 18:20:37,614 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-04-30 18:20:37,648 - INFO - basehttp - "GET /static/image/boat-5889919_1280.png HTTP/1.1" 200 143567
+2025-04-30 18:20:41,096 - INFO - basehttp - "POST /login/ HTTP/1.1" 302 0
+2025-04-30 18:20:41,127 - INFO - basehttp - "GET /home HTTP/1.1" 200 12551
+2025-04-30 18:20:41,250 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-04-30 18:20:41,306 - INFO - basehttp - "GET /static/image/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-04-30 18:20:41,372 - INFO - basehttp - "GET /static/image/city-7352352_1280.jpg HTTP/1.1" 200 445704
+2025-04-30 18:20:41,391 - INFO - basehttp - "GET /static/image/city-182223_1280.jpg HTTP/1.1" 200 376515
+2025-04-30 18:20:41,474 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-04-30 18:20:41,492 - INFO - basehttp - "GET /static/image/istockphoto-2162033406-1024x1024.jpg HTTP/1.1" 200 62104
+2025-04-30 18:20:44,125 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 6610
+2025-04-30 18:20:44,210 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-04-30 18:20:45,450 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 4547
+2025-04-30 18:20:46,851 - INFO - basehttp - "GET /typeConge/ HTTP/1.1" 200 6413
+2025-04-30 18:20:46,927 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-04-30 18:20:49,995 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 7755
+2025-04-30 18:20:50,069 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-04-30 18:20:54,641 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 7879
+2025-04-30 18:20:54,741 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-04-30 18:20:57,839 - INFO - basehttp - "GET /unite/creer/ HTTP/1.1" 200 6857
+2025-04-30 18:20:57,933 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-04-30 18:22:22,280 - INFO - basehttp - "GET /unite/creer/ HTTP/1.1" 302 0
+2025-04-30 18:22:22,327 - INFO - basehttp - "GET /login/ HTTP/1.1" 200 6253
+2025-04-30 18:22:22,412 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3765
+2025-04-30 18:22:22,413 - INFO - basehttp - "GET /static/js/scripti.js HTTP/1.1" 200 2496
+2025-04-30 18:22:22,417 - INFO - basehttp - "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 78743
+2025-04-30 18:22:22,431 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-04-30 18:22:22,441 - INFO - basehttp - "GET /static/css/bootstrap.min.css HTTP/1.1" 200 155845
+2025-04-30 18:22:22,530 - INFO - basehttp - "GET /static/image/boat-5889919_1280.png HTTP/1.1" 200 143567
+2025-04-30 18:22:26,388 - INFO - basehttp - "POST /login/ HTTP/1.1" 302 0
+2025-04-30 18:22:26,417 - INFO - basehttp - "GET /home HTTP/1.1" 200 12551
+2025-04-30 18:22:26,539 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-04-30 18:22:26,573 - INFO - basehttp - "GET /static/image/city-182223_1280.jpg HTTP/1.1" 200 376515
+2025-04-30 18:22:26,601 - INFO - basehttp - "GET /static/image/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-04-30 18:22:26,624 - INFO - basehttp - "GET /static/image/city-7352352_1280.jpg HTTP/1.1" 200 445704
+2025-04-30 18:22:26,651 - INFO - basehttp - "GET /static/image/istockphoto-2162033406-1024x1024.jpg HTTP/1.1" 200 62104
+2025-04-30 18:22:26,687 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-04-30 18:22:29,081 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 6610
+2025-04-30 18:22:29,162 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-04-30 18:22:30,337 - INFO - basehttp - "GET /fonction/creer/ HTTP/1.1" 200 6641
+2025-04-30 18:22:34,986 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 6610
+2025-04-30 18:22:35,067 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-04-30 18:22:39,644 - INFO - basehttp - "GET /home HTTP/1.1" 200 12551
+2025-04-30 18:22:39,720 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-04-30 18:22:41,293 - INFO - basehttp - "GET /typeConge/ HTTP/1.1" 200 6413
+2025-04-30 18:22:42,377 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 4547
+2025-04-30 18:22:42,455 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-04-30 18:22:43,541 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 6610
+2025-04-30 18:23:21,495 - INFO - basehttp - "GET /fonction/2/modifier/ HTTP/1.1" 200 6762
+2025-04-30 18:23:21,577 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-04-30 18:23:24,207 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 6610
+2025-04-30 18:24:04,333 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 302 0
+2025-04-30 18:24:04,361 - INFO - basehttp - "GET /login/ HTTP/1.1" 200 6253
+2025-04-30 18:24:04,451 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3730
+2025-04-30 18:24:04,452 - INFO - basehttp - "GET /static/js/scripti.js HTTP/1.1" 200 2496
+2025-04-30 18:24:04,454 - INFO - basehttp - "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 78743
+2025-04-30 18:24:04,457 - INFO - basehttp - "GET /static/css/bootstrap.min.css HTTP/1.1" 200 155845
+2025-04-30 18:24:04,479 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-04-30 18:24:04,555 - INFO - basehttp - "GET /static/image/boat-5889919_1280.png HTTP/1.1" 200 143567
+2025-04-30 18:24:08,493 - INFO - basehttp - "POST /login/ HTTP/1.1" 302 0
+2025-04-30 18:24:08,521 - INFO - basehttp - "GET /home HTTP/1.1" 200 12551
+2025-04-30 18:24:08,621 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-04-30 18:24:08,628 - INFO - basehttp - "GET /static/image/istockphoto-2162033406-1024x1024.jpg HTTP/1.1" 200 62104
+2025-04-30 18:24:08,640 - INFO - basehttp - "GET /static/image/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-04-30 18:24:08,643 - INFO - basehttp - "GET /static/image/city-182223_1280.jpg HTTP/1.1" 200 376515
+2025-04-30 18:24:08,670 - INFO - basehttp - "GET /static/image/city-7352352_1280.jpg HTTP/1.1" 200 445704
+2025-04-30 18:32:45,688 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 4547
+2025-04-30 18:32:45,764 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-04-30 18:32:46,769 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 6610
+2025-04-30 18:32:46,962 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-02 20:44:53,735 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-02 20:48:33,356 - INFO - basehttp - "GET /home HTTP/1.1" 200 12551
+2025-05-02 20:48:33,359 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 61757)
+2025-05-02 20:48:34,033 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-02 20:48:34,524 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 304 0
+2025-05-02 20:48:34,647 - INFO - basehttp - "GET /static/js/scripti.js HTTP/1.1" 304 0
+2025-05-02 20:48:36,512 - WARNING - log - Not Found: /favicon.ico
+2025-05-02 20:48:36,521 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 4341
+2025-05-02 20:48:38,921 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 6610
+2025-05-02 20:48:42,329 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 4547
+2025-05-02 21:01:44,057 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 4547
+2025-05-02 21:01:51,405 - ERROR - log - Internal Server Error: /conge/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py", line 11, in lister_conges
+    return render(request, 'conge/lister_conges.html', {'conges': conges})
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+2025-05-02 21:01:51,536 - ERROR - basehttp - "GET /conge/ HTTP/1.1" 500 136041
+2025-05-02 21:03:18,661 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 5816
+2025-05-02 21:06:18,812 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 5816
+2025-05-02 21:06:26,324 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 6610
+2025-05-02 21:06:29,624 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 5735
+2025-05-02 21:06:41,243 - ERROR - log - Internal Server Error: /conge/ajouter/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py", line 21, in ajouter_conge
+    form = CLCongeForm()
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py", line 27, in __init__
+    if self.instance and self.instance.typeconge:
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\fields\related_descriptors.py", line 246, in __get__
+    raise self.RelatedObjectDoesNotExist(
+Conge.models.CLConge.typeconge.RelatedObjectDoesNotExist: CLConge has no typeconge.
+2025-05-02 21:06:41,290 - ERROR - basehttp - "GET /conge/ajouter/ HTTP/1.1" 500 74736
+2025-05-02 21:09:58,812 - ERROR - log - Internal Server Error: /conge/ajouter/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py", line 21, in ajouter_conge
+    form = CLCongeForm()
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py", line 27, in __init__
+    if self.instance and self.instance.typeconge:
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\fields\related_descriptors.py", line 246, in __get__
+    raise self.RelatedObjectDoesNotExist(
+Conge.models.CLConge.typeconge.RelatedObjectDoesNotExist: CLConge has no typeconge.
+2025-05-02 21:09:58,833 - ERROR - basehttp - "GET /conge/ajouter/ HTTP/1.1" 500 74873
+2025-05-02 21:10:04,421 - ERROR - log - Internal Server Error: /conge/ajouter/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py", line 21, in ajouter_conge
+    form = CLCongeForm()
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py", line 27, in __init__
+    if self.instance and self.instance.typeconge:
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\fields\related_descriptors.py", line 246, in __get__
+    raise self.RelatedObjectDoesNotExist(
+Conge.models.CLConge.typeconge.RelatedObjectDoesNotExist: CLConge has no typeconge.
+2025-05-02 21:10:04,469 - ERROR - basehttp - "GET /conge/ajouter/ HTTP/1.1" 500 74873
+2025-05-02 21:15:10,844 - ERROR - log - Internal Server Error: /conge/ajouter/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py", line 21, in ajouter_conge
+    form = CLCongeForm()
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py", line 27, in __init__
+    if self.instance and self.instance.typeconge:
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\fields\related_descriptors.py", line 246, in __get__
+    raise self.RelatedObjectDoesNotExist(
+Conge.models.CLConge.typeconge.RelatedObjectDoesNotExist: CLConge has no typeconge.
+2025-05-02 21:15:10,874 - ERROR - basehttp - "GET /conge/ajouter/ HTTP/1.1" 500 74873
+2025-05-02 21:15:33,958 - ERROR - log - Internal Server Error: /conge/ajouter/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py", line 21, in ajouter_conge
+    form = CLCongeForm()
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py", line 27, in __init__
+    if self.instance and self.instance.typeconge:
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\fields\related_descriptors.py", line 246, in __get__
+    raise self.RelatedObjectDoesNotExist(
+Conge.models.CLConge.typeconge.RelatedObjectDoesNotExist: CLConge has no typeconge.
+2025-05-02 21:15:33,990 - ERROR - basehttp - "GET /conge/ajouter/ HTTP/1.1" 500 74736
+2025-05-02 21:19:25,090 - ERROR - log - Internal Server Error: /conge/ajouter/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py", line 21, in ajouter_conge
+    form = CLCongeForm()
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py", line 27, in __init__
+    if self.instance and self.instance.typeconge:
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\fields\related_descriptors.py", line 246, in __get__
+    raise self.RelatedObjectDoesNotExist(
+Conge.models.CLConge.typeconge.RelatedObjectDoesNotExist: CLConge has no typeconge.
+2025-05-02 21:19:25,110 - ERROR - basehttp - "GET /conge/ajouter/ HTTP/1.1" 500 74873
+2025-05-02 21:29:07,635 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-02 21:29:22,663 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-02 21:29:49,057 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 5824
+2025-05-02 21:33:29,696 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 5824
+2025-05-02 21:33:31,925 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 5824
+2025-05-02 21:34:03,712 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 5734
+2025-05-02 21:34:08,166 - ERROR - log - Internal Server Error: /conge/ajouter/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py", line 22, in ajouter_conge
+    return render(request, 'conge/ajouter_conge.html', {'form': form})
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'add_class'
+2025-05-02 21:34:08,237 - ERROR - basehttp - "GET /conge/ajouter/ HTTP/1.1" 500 195708
+2025-05-02 21:36:21,868 - ERROR - log - Internal Server Error: /conge/ajouter/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py", line 22, in ajouter_conge
+    return render(request, 'conge/ajouter_conge.html', {'form': form})
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'add_class'
+2025-05-02 21:36:21,920 - ERROR - basehttp - "GET /conge/ajouter/ HTTP/1.1" 500 195845
+2025-05-03 13:51:07,489 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 13:52:11,145 - INFO - basehttp - "GET / HTTP/1.1" 302 0
+2025-05-03 13:52:11,222 - INFO - basehttp - "GET /login/ HTTP/1.1" 200 6253
+2025-05-03 13:52:11,287 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-03 13:52:11,391 - INFO - basehttp - "GET /static/image/boat-5889919_1280.png HTTP/1.1" 304 0
+2025-05-03 13:52:11,976 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-03 13:52:12,466 - WARNING - log - Not Found: /favicon.ico
+2025-05-03 13:52:12,468 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 4341
+2025-05-03 13:52:16,621 - INFO - basehttp - "POST /login/ HTTP/1.1" 302 0
+2025-05-03 13:52:16,653 - INFO - basehttp - "GET /home HTTP/1.1" 200 12551
+2025-05-03 13:52:20,826 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 5734
+2025-05-03 13:52:22,535 - ERROR - log - Internal Server Error: /conge/ajouter/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py", line 22, in ajouter_conge
+    return render(request, 'conge/ajouter_conge.html', {'form': form})
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'add_class'
+2025-05-03 13:52:22,547 - ERROR - basehttp - "GET /conge/ajouter/ HTTP/1.1" 500 195770
+2025-05-03 13:54:16,896 - ERROR - log - Internal Server Error: /conge/ajouter/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'widget_tweaks'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py", line 22, in ajouter_conge
+    return render(request, 'conge/ajouter_conge.html', {'form': form})
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'widget_tweaks' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+2025-05-03 13:54:16,903 - ERROR - basehttp - "GET /conge/ajouter/ HTTP/1.1" 500 187306
+2025-05-03 13:54:37,695 - ERROR - log - Internal Server Error: /conge/ajouter/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py", line 22, in ajouter_conge
+    return render(request, 'conge/ajouter_conge.html', {'form': form})
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'add_class'
+2025-05-03 13:54:37,700 - ERROR - basehttp - "GET /conge/ajouter/ HTTP/1.1" 500 195907
+2025-05-03 13:55:54,825 - ERROR - log - Internal Server Error: /conge/ajouter/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py", line 22, in ajouter_conge
+    return render(request, 'conge/ajouter_conge.html', {'form': form})
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'add_class'
+2025-05-03 13:55:54,832 - ERROR - basehttp - "GET /conge/ajouter/ HTTP/1.1" 500 198675
+2025-05-03 13:57:39,726 - ERROR - log - Internal Server Error: /conge/ajouter/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'widget_tweaks'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py", line 22, in ajouter_conge
+    return render(request, 'conge/ajouter_conge.html', {'form': form})
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'widget_tweaks' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+2025-05-03 13:57:39,736 - ERROR - basehttp - "GET /conge/ajouter/ HTTP/1.1" 500 188888
+2025-05-03 13:57:51,320 - ERROR - log - Internal Server Error: /conge/ajouter/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py", line 22, in ajouter_conge
+    return render(request, 'conge/ajouter_conge.html', {'form': form})
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'add_class'
+2025-05-03 13:57:51,338 - ERROR - basehttp - "GET /conge/ajouter/ HTTP/1.1" 500 199763
+2025-05-03 14:00:46,592 - ERROR - log - Internal Server Error: /conge/ajouter/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py", line 22, in ajouter_conge
+    return render(request, 'conge/ajouter_conge.html', {'form': form})
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'add_class'
+2025-05-03 14:00:46,597 - ERROR - basehttp - "GET /conge/ajouter/ HTTP/1.1" 500 208272
+2025-05-03 14:00:57,084 - ERROR - log - Internal Server Error: /conge/ajouter/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py", line 22, in ajouter_conge
+    return render(request, 'conge/ajouter_conge.html', {'form': form})
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'add_class'
+2025-05-03 14:00:57,091 - ERROR - basehttp - "GET /conge/ajouter/ HTTP/1.1" 500 208272
+2025-05-03 14:01:33,742 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 8086
+2025-05-03 14:01:33,908 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-03 14:02:23,173 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 7714
+2025-05-03 14:05:54,034 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 9287
+2025-05-03 14:05:58,982 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 14:05:58,983 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 14:09:46,010 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 9287
+2025-05-03 14:09:50,058 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 14:09:50,061 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 14:11:48,160 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 9087
+2025-05-03 14:11:51,489 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 14:11:51,490 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 14:14:32,602 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-03 14:14:35,270 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 14:14:36,545 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 8944
+2025-05-03 14:14:45,622 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 5734
+2025-05-03 14:14:50,543 - INFO - basehttp - "GET /typeConge/ HTTP/1.1" 200 6413
+2025-05-03 14:14:52,082 - INFO - basehttp - "GET /typeConge/creer/ HTTP/1.1" 200 8753
+2025-05-03 14:15:00,864 - INFO - basehttp - "GET /typeConge/ HTTP/1.1" 200 6413
+2025-05-03 14:15:04,075 - INFO - basehttp - "GET /typeConge/1/modifier/ HTTP/1.1" 200 7516
+2025-05-03 14:15:23,583 - INFO - basehttp - "POST /typeConge/1/modifier/ HTTP/1.1" 302 0
+2025-05-03 14:15:23,617 - INFO - basehttp - "GET /typeConge/ HTTP/1.1" 200 6412
+2025-05-03 14:15:28,622 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 5734
+2025-05-03 14:15:29,800 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 8944
+2025-05-03 14:15:39,143 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 5734
+2025-05-03 14:15:40,746 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 5734
+2025-05-03 14:15:41,900 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 8944
+2025-05-03 14:18:08,805 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-03 14:18:11,117 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 14:18:16,181 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 9086
+2025-05-03 14:18:25,138 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 14:18:25,139 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 14:18:29,510 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 5734
+2025-05-03 14:18:32,223 - INFO - basehttp - "GET /typeConge/ HTTP/1.1" 200 6412
+2025-05-03 14:18:33,785 - INFO - basehttp - "GET /typeConge/1/modifier/ HTTP/1.1" 200 7517
+2025-05-03 14:18:39,180 - INFO - basehttp - "POST /typeConge/1/modifier/ HTTP/1.1" 302 0
+2025-05-03 14:18:39,221 - INFO - basehttp - "GET /typeConge/ HTTP/1.1" 200 6414
+2025-05-03 14:18:41,670 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 6610
+2025-05-03 14:18:42,286 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 5734
+2025-05-03 14:18:44,826 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 8944
+2025-05-03 14:18:50,569 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 5734
+2025-05-03 14:18:51,791 - INFO - basehttp - "GET /typeConge/ HTTP/1.1" 200 6414
+2025-05-03 14:18:54,080 - INFO - basehttp - "GET /typeConge/1/modifier/ HTTP/1.1" 200 7517
+2025-05-03 14:19:01,016 - INFO - basehttp - "POST /typeConge/1/modifier/ HTTP/1.1" 302 0
+2025-05-03 14:19:01,062 - INFO - basehttp - "GET /typeConge/ HTTP/1.1" 200 6412
+2025-05-03 14:19:04,112 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 5734
+2025-05-03 14:19:05,154 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 9086
+2025-05-03 14:19:08,305 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 14:19:08,307 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 14:20:24,381 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 9142
+2025-05-03 14:20:26,390 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 14:20:26,391 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 14:20:55,562 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 302 0
+2025-05-03 14:20:55,613 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6794
+2025-05-03 14:24:58,459 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6794
+2025-05-03 14:25:00,223 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 9460
+2025-05-03 14:25:02,649 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 14:25:02,651 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 14:29:01,902 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 9118
+2025-05-03 14:29:04,720 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 14:29:04,721 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 14:31:41,833 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 9401
+2025-05-03 14:31:43,718 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 14:31:43,719 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 14:31:53,895 - ERROR - log - Internal Server Error: /conge/ajouter/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py", line 17, in ajouter_conge
+    if form.is_valid():
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\forms\forms.py", line 434, in full_clean
+    self._clean_form()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\forms\forms.py", line 455, in _clean_form
+    cleaned_data = self.clean()
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py", line 65, in clean
+    if date_debut_previsionnel < today:
+TypeError: '<' not supported between instances of 'NoneType' and 'datetime.date'
+2025-05-03 14:31:53,901 - ERROR - basehttp - "POST /conge/ajouter/ HTTP/1.1" 500 87039
+2025-05-03 14:33:36,537 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-03 14:33:39,637 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 14:33:41,615 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 9401
+2025-05-03 14:33:43,364 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 14:33:43,365 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 14:33:52,580 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 9401
+2025-05-03 14:33:54,055 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 14:33:54,056 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 14:33:56,798 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 302 0
+2025-05-03 14:33:56,861 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 7988
+2025-05-03 14:34:09,398 - INFO - basehttp - "GET /conge/2/modifier/ HTTP/1.1" 200 5860
+2025-05-03 14:36:38,111 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-03 14:36:40,698 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 14:36:52,909 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 7988
+2025-05-03 14:36:54,273 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 9401
+2025-05-03 14:36:56,267 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 14:36:56,268 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 14:37:00,093 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 302 0
+2025-05-03 14:37:00,136 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 9202
+2025-05-03 14:37:14,918 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 9401
+2025-05-03 14:37:18,692 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 14:37:18,694 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 14:37:53,856 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 8271
+2025-05-03 14:37:58,730 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 14:37:58,731 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 14:38:01,518 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 302 0
+2025-05-03 14:38:01,574 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 10416
+2025-05-03 14:39:24,374 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 7854
+2025-05-03 14:39:25,783 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 7854
+2025-05-03 14:39:26,538 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 7854
+2025-05-03 14:39:27,350 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 7854
+2025-05-03 14:39:27,891 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 7854
+2025-05-03 14:39:28,459 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 7854
+2025-05-03 14:39:28,946 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 7854
+2025-05-03 14:39:29,411 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 7854
+2025-05-03 14:39:34,318 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 10416
+2025-05-03 14:39:53,777 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 10308
+2025-05-03 14:39:54,429 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 10308
+2025-05-03 14:39:54,810 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 10308
+2025-05-03 14:40:17,984 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 10400
+2025-05-03 14:41:01,688 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 10400
+2025-05-03 14:43:03,628 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 8221
+2025-05-03 14:44:32,823 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 8246
+2025-05-03 14:45:31,895 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 8246
+2025-05-03 14:47:08,099 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-03 14:47:11,667 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 14:48:34,362 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 14:48:47,317 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-03 14:48:49,427 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 14:51:01,664 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-03 14:51:03,388 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 14:52:05,191 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-03 14:52:07,568 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 14:53:50,352 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 8268
+2025-05-03 14:53:56,912 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 8268
+2025-05-03 14:53:57,376 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 8268
+2025-05-03 14:55:04,531 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 8246
+2025-05-03 14:55:18,374 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 14:55:18,375 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 14:58:25,145 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\models.py changed, reloading.
+2025-05-03 14:58:28,960 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 15:01:33,600 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 15:01:39,881 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 7855
+2025-05-03 15:01:41,592 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 9745
+2025-05-03 15:03:40,064 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-03 15:03:42,600 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 15:03:44,505 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 9745
+2025-05-03 15:03:53,215 - INFO - basehttp - "GET /conge/1/modifier/ HTTP/1.1" 200 5607
+2025-05-03 15:08:22,682 - INFO - basehttp - "GET /conge/1/modifier/ HTTP/1.1" 200 9224
+2025-05-03 15:09:56,520 - INFO - basehttp - "GET /conge/1/modifier/ HTTP/1.1" 200 9223
+2025-05-03 15:13:00,271 - INFO - basehttp - "GET /conge/1/modifier/ HTTP/1.1" 200 10034
+2025-05-03 15:14:10,076 - INFO - basehttp - "POST /conge/1/modifier/ HTTP/1.1" 200 10354
+2025-05-03 15:14:16,745 - INFO - basehttp - "POST /conge/1/modifier/ HTTP/1.1" 200 10354
+2025-05-03 15:14:45,393 - INFO - basehttp - "POST /conge/1/modifier/ HTTP/1.1" 200 10806
+2025-05-03 15:14:48,386 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 9745
+2025-05-03 15:14:50,604 - INFO - basehttp - "GET /conge/4/modifier/ HTTP/1.1" 200 10486
+2025-05-03 15:14:54,574 - INFO - basehttp - "POST /conge/4/modifier/ HTTP/1.1" 200 10806
+2025-05-03 15:16:05,218 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py changed, reloading.
+2025-05-03 15:16:08,663 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 15:16:15,903 - INFO - basehttp - "POST /conge/4/modifier/ HTTP/1.1" 200 10806
+2025-05-03 15:16:18,164 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 9745
+2025-05-03 15:16:19,970 - INFO - basehttp - "GET /conge/4/modifier/ HTTP/1.1" 200 10486
+2025-05-03 15:16:21,436 - INFO - basehttp - "POST /conge/4/modifier/ HTTP/1.1" 200 10806
+2025-05-03 15:17:26,658 - INFO - basehttp - "POST /conge/4/modifier/ HTTP/1.1" 200 11201
+2025-05-03 15:18:51,973 - INFO - basehttp - "POST /conge/4/modifier/ HTTP/1.1" 200 11088
+2025-05-03 15:20:09,553 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-03 15:20:12,765 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 15:20:16,224 - INFO - basehttp - "POST /conge/4/modifier/ HTTP/1.1" 200 11108
+2025-05-03 15:20:18,553 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 9745
+2025-05-03 15:20:20,776 - INFO - basehttp - "GET /conge/3/modifier/ HTTP/1.1" 200 11127
+2025-05-03 15:20:24,643 - INFO - basehttp - "POST /conge/3/modifier/ HTTP/1.1" 200 11108
+2025-05-03 15:22:43,228 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-03 15:22:46,879 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 15:23:21,822 - INFO - basehttp - "POST /conge/3/modifier/ HTTP/1.1" 200 11108
+2025-05-03 15:23:48,565 - INFO - basehttp - "POST /conge/3/modifier/ HTTP/1.1" 200 11214
+2025-05-03 15:23:50,632 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 9745
+2025-05-03 15:23:52,823 - INFO - basehttp - "GET /conge/4/modifier/ HTTP/1.1" 200 11233
+2025-05-03 15:24:02,617 - INFO - basehttp - "GET /conge/4/modifier/ HTTP/1.1" 200 11127
+2025-05-03 15:26:01,389 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-03 15:26:05,539 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 15:26:29,757 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 9745
+2025-05-03 15:26:34,750 - INFO - basehttp - "GET /conge/2/supprimer/ HTTP/1.1" 302 0
+2025-05-03 15:26:34,806 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 8682
+2025-05-03 15:26:41,782 - INFO - basehttp - "GET /conge/3/supprimer/ HTTP/1.1" 302 0
+2025-05-03 15:26:41,831 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 7599
+2025-05-03 15:26:45,623 - INFO - basehttp - "GET /conge/1/supprimer/ HTTP/1.1" 302 0
+2025-05-03 15:26:45,663 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6516
+2025-05-03 15:26:50,660 - INFO - basehttp - "GET /conge/4/modifier/ HTTP/1.1" 200 11127
+2025-05-03 15:26:52,448 - INFO - basehttp - "POST /conge/4/modifier/ HTTP/1.1" 302 0
+2025-05-03 15:26:52,489 - INFO - basehttp - "GET /conge/4/detail/ HTTP/1.1" 200 4468
+2025-05-03 15:28:03,883 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py changed, reloading.
+2025-05-03 15:28:06,107 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 15:28:12,526 - INFO - basehttp - "GET /conge/4/detail/ HTTP/1.1" 200 4468
+2025-05-03 15:28:16,013 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6480
+2025-05-03 15:28:18,418 - INFO - basehttp - "GET /conge/4/modifier/ HTTP/1.1" 200 11137
+2025-05-03 15:31:52,389 - INFO - basehttp - "GET /conge/4/modifier/ HTTP/1.1" 200 9238
+2025-05-03 15:31:56,844 - INFO - basehttp - "POST /conge/4/modifier/ HTTP/1.1" 302 0
+2025-05-03 15:31:56,883 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6480
+2025-05-03 15:31:58,669 - INFO - basehttp - "GET /conge/4/modifier/ HTTP/1.1" 200 9238
+2025-05-03 15:33:35,307 - INFO - basehttp - "GET /conge/4/modifier/ HTTP/1.1" 200 9240
+2025-05-03 15:33:46,003 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6480
+2025-05-03 15:33:47,640 - INFO - basehttp - "GET /conge/4/detail/ HTTP/1.1" 200 4468
+2025-05-03 15:34:59,178 - INFO - basehttp - "GET /conge/4/detail/ HTTP/1.1" 200 6505
+2025-05-03 15:35:08,158 - INFO - basehttp - "GET /conge/4/modifier/ HTTP/1.1" 200 9240
+2025-05-03 15:35:09,710 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6480
+2025-05-03 15:35:11,449 - INFO - basehttp - "GET /conge/4/detail/ HTTP/1.1" 200 6505
+2025-05-03 15:35:16,433 - INFO - basehttp - "GET /conge/4/detail/ HTTP/1.1" 200 6505
+2025-05-03 15:35:27,220 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6480
+2025-05-03 15:36:29,165 - INFO - basehttp - "GET /conge/4/detail/ HTTP/1.1" 200 6389
+2025-05-03 15:36:31,090 - INFO - basehttp - "GET /conge/4/detail/ HTTP/1.1" 200 6389
+2025-05-03 15:37:02,757 - INFO - basehttp - "GET /conge/4/detail/ HTTP/1.1" 200 6378
+2025-05-03 15:37:27,567 - INFO - basehttp - "GET /conge/4/detail/ HTTP/1.1" 200 6401
+2025-05-03 15:37:30,725 - INFO - basehttp - "GET /conge/4/detail/ HTTP/1.1" 200 6401
+2025-05-03 15:37:35,335 - INFO - basehttp - "GET /conge/4/detail/ HTTP/1.1" 200 6401
+2025-05-03 15:38:40,156 - INFO - basehttp - "GET /conge/4/detail/ HTTP/1.1" 200 6228
+2025-05-03 15:38:42,549 - INFO - basehttp - "GET /conge/4/detail/ HTTP/1.1" 200 6228
+2025-05-03 15:46:55,489 - ERROR - log - Internal Server Error: /conge/4/detail/
+2025-05-03 15:46:55,491 - ERROR - basehttp - "GET /conge/4/detail/ HTTP/1.1" 500 133
+2025-05-03 15:47:15,838 - ERROR - log - Internal Server Error: /conge/4/detail/
+2025-05-03 15:47:15,839 - ERROR - basehttp - "GET /conge/4/detail/ HTTP/1.1" 500 133
+2025-05-03 15:47:34,154 - INFO - basehttp - "GET /conge/4/detail/ HTTP/1.1" 200 6228
+2025-05-03 15:48:36,364 - INFO - basehttp - "GET /conge/4/detail/ HTTP/1.1" 200 7964
+2025-05-03 15:49:09,682 - INFO - basehttp - "GET /conge/4/detail/ HTTP/1.1" 200 7987
+2025-05-03 15:49:27,289 - INFO - basehttp - "GET /conge/4/modifier/ HTTP/1.1" 200 9240
+2025-05-03 15:49:29,391 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6480
+2025-05-03 15:49:43,993 - ERROR - log - Internal Server Error: /conge/recherche/
+2025-05-03 15:49:43,996 - ERROR - basehttp - "GET /conge/recherche/?criteres=employe&query=MOKONDZI+NGAKEGNI HTTP/1.1" 500 124
+2025-05-03 15:53:24,997 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py changed, reloading.
+2025-05-03 15:53:27,552 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 19:27:42,694 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 19:27:52,359 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6480
+2025-05-03 19:27:54,108 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3730
+2025-05-03 19:27:54,111 - INFO - basehttp - "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 78743
+2025-05-03 19:27:54,124 - INFO - basehttp - "GET /static/css/bootstrap.min.css HTTP/1.1" 200 155845
+2025-05-03 19:27:54,143 - INFO - basehttp - "GET /static/js/scripti.js HTTP/1.1" 200 2496
+2025-05-03 19:27:54,174 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-03 19:28:02,244 - INFO - basehttp - "GET /static/image/boat-5889919_1280.png HTTP/1.1" 200 143567
+2025-05-03 19:28:03,458 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6480
+2025-05-03 19:28:12,051 - INFO - basehttp - "GET /conge/4/modifier/ HTTP/1.1" 200 9240
+2025-05-03 19:28:16,937 - INFO - basehttp - "GET /conge/4/modifier/ HTTP/1.1" 200 9240
+2025-05-03 19:28:37,363 - INFO - basehttp - "POST /conge/4/modifier/ HTTP/1.1" 302 0
+2025-05-03 19:28:37,405 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6480
+2025-05-03 19:28:37,655 - WARNING - log - Not Found: /favicon.ico
+2025-05-03 19:28:37,656 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 4341
+2025-05-03 19:28:46,264 - INFO - basehttp - "GET /conge/4/detail/ HTTP/1.1" 200 7987
+2025-05-03 19:28:49,766 - INFO - basehttp - "GET /conge/4/modifier/ HTTP/1.1" 200 9240
+2025-05-03 19:28:52,144 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6480
+2025-05-03 19:35:00,152 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-03 19:35:03,187 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 19:50:31,270 - INFO - basehttp - "GET /conge/4/modifier/ HTTP/1.1" 200 9240
+2025-05-03 19:50:33,034 - INFO - basehttp - "POST /conge/4/modifier/ HTTP/1.1" 302 0
+2025-05-03 19:50:33,071 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6480
+2025-05-03 20:27:07,727 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 20:27:20,197 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6480
+2025-05-03 20:27:21,984 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 6610
+2025-05-03 20:27:26,717 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 64928)
+2025-05-03 20:27:26,720 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 64935)
+2025-05-03 20:27:26,727 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 64933)
+2025-05-03 20:27:26,752 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 64929)
+2025-05-03 20:27:26,798 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 64932)
+2025-05-03 20:27:26,852 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 64936)
+2025-05-03 20:27:27,414 - INFO - basehttp - "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 78743
+2025-05-03 20:27:27,415 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3730
+2025-05-03 20:27:27,441 - INFO - basehttp - "GET /static/js/scripti.js HTTP/1.1" 200 2496
+2025-05-03 20:27:27,457 - INFO - basehttp - "GET /static/css/bootstrap.min.css HTTP/1.1" 200 155845
+2025-05-03 20:27:27,474 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-03 20:27:27,700 - INFO - basehttp - "GET /static/image/boat-5889919_1280.png HTTP/1.1" 200 143567
+2025-05-03 20:27:27,782 - WARNING - log - Not Found: /favicon.ico
+2025-05-03 20:27:27,785 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 4341
+2025-05-03 20:27:35,047 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6480
+2025-05-03 20:27:45,557 - ERROR - log - Internal Server Error: /conge/recherche/
+2025-05-03 20:27:45,559 - ERROR - basehttp - "GET /conge/recherche/?criteres=typeconge&query=Service+des+Edition HTTP/1.1" 500 124
+2025-05-03 20:28:16,077 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py changed, reloading.
+2025-05-03 20:28:18,777 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 20:30:27,440 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py changed, reloading.
+2025-05-03 20:30:29,932 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 20:31:01,925 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6492
+2025-05-03 20:31:05,659 - INFO - basehttp - "GET /conge/recherche/?criteres=employe&query=MOKONDZI+NGAKEGNI HTTP/1.1" 200 5612
+2025-05-03 20:31:11,537 - INFO - basehttp - "GET /conge/recherche/?criteres=employe&query=AKAOYA HTTP/1.1" 200 5601
+2025-05-03 20:31:23,421 - INFO - basehttp - "GET /conge/recherche/?criteres=employe&query=AKAYOA HTTP/1.1" 200 6498
+2025-05-03 20:31:25,047 - INFO - basehttp - "GET /conge/recherche/?criteres=employe&query=AKAYOA HTTP/1.1" 200 6498
+2025-05-03 20:35:36,570 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py changed, reloading.
+2025-05-03 20:35:39,009 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 20:35:45,797 - INFO - basehttp - "GET /conge/recherche/?criteres=employe&query=AKAYOA HTTP/1.1" 200 6626
+2025-05-03 20:35:57,891 - INFO - basehttp - "GET /home HTTP/1.1" 200 12551
+2025-05-03 20:35:59,301 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 6610
+2025-05-03 20:36:00,079 - INFO - basehttp - "GET /static/image/istockphoto-2162033406-1024x1024.jpg HTTP/1.1" 200 62104
+2025-05-03 20:36:00,080 - INFO - basehttp - "GET /static/image/city-7352352_1280.jpg HTTP/1.1" 200 445704
+2025-05-03 20:36:00,112 - INFO - basehttp - "GET /static/image/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-03 20:36:00,138 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 65052)
+2025-05-03 20:36:00,531 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 6610
+2025-05-03 20:36:01,662 - INFO - basehttp - "GET /home HTTP/1.1" 200 12551
+2025-05-03 20:36:01,758 - INFO - basehttp - "GET /static/image/city-182223_1280.jpg HTTP/1.1" 200 376515
+2025-05-03 20:36:03,090 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 6610
+2025-05-03 20:36:04,613 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6620
+2025-05-03 20:36:05,709 - INFO - basehttp - "GET /typeConge/ HTTP/1.1" 200 6412
+2025-05-03 20:36:06,661 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 7755
+2025-05-03 20:36:08,849 - INFO - basehttp - "GET /typeConge/ HTTP/1.1" 200 6412
+2025-05-03 20:36:09,750 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 7755
+2025-05-03 20:36:11,356 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 7879
+2025-05-03 20:36:13,427 - INFO - basehttp - "GET /administration/list/ HTTP/1.1" 200 5892
+2025-05-03 20:36:14,937 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 7879
+2025-05-03 20:36:15,551 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 7755
+2025-05-03 20:36:16,056 - INFO - basehttp - "GET /typeConge/ HTTP/1.1" 200 6412
+2025-05-03 20:36:16,514 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 6610
+2025-05-03 20:36:17,150 - INFO - basehttp - "GET /home HTTP/1.1" 200 12551
+2025-05-03 20:36:17,829 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 6610
+2025-05-03 20:36:18,590 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 6610
+2025-05-03 20:36:19,446 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6620
+2025-05-03 20:36:20,138 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6620
+2025-05-03 20:36:21,062 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 6610
+2025-05-03 20:36:21,839 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6620
+2025-05-03 20:36:22,490 - INFO - basehttp - "GET /typeConge/ HTTP/1.1" 200 6412
+2025-05-03 20:42:55,703 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-03 20:42:58,666 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 20:43:01,865 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6620
+2025-05-03 20:43:02,967 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 7983
+2025-05-03 20:43:07,742 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 20:43:07,743 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 20:43:09,116 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 200 7983
+2025-05-03 20:43:11,871 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 200 8533
+2025-05-03 20:43:18,841 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 20:43:18,843 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 20:43:19,379 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 200 7983
+2025-05-03 20:43:31,578 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 20:43:31,579 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 20:43:32,033 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 200 7983
+2025-05-03 20:45:11,553 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6620
+2025-05-03 20:45:31,585 - INFO - basehttp - "GET /administration/list/ HTTP/1.1" 200 5892
+2025-05-03 20:45:32,990 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 6610
+2025-05-03 20:45:35,301 - INFO - basehttp - "GET /home HTTP/1.1" 200 12551
+2025-05-03 20:46:16,431 - INFO - basehttp - "GET / HTTP/1.1" 302 0
+2025-05-03 20:46:16,481 - INFO - basehttp - "GET /login/ HTTP/1.1" 200 6253
+2025-05-03 20:46:17,565 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-03 20:46:18,072 - INFO - basehttp - "GET /admin HTTP/1.1" 301 0
+2025-05-03 20:46:18,099 - INFO - basehttp - "GET /admin/ HTTP/1.1" 302 0
+2025-05-03 20:46:18,213 - INFO - basehttp - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4640
+2025-05-03 20:46:18,269 - INFO - basehttp - "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+2025-05-03 20:46:18,270 - INFO - basehttp - "GET /static/admin/css/base.css HTTP/1.1" 200 21310
+2025-05-03 20:46:18,271 - INFO - basehttp - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+2025-05-03 20:46:18,387 - INFO - basehttp - "GET /static/admin/css/login.css HTTP/1.1" 200 958
+2025-05-03 20:46:18,392 - INFO - basehttp - "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+2025-05-03 20:46:18,394 - INFO - basehttp - "GET /static/admin/css/responsive.css HTTP/1.1" 200 18559
+2025-05-03 20:46:18,420 - INFO - basehttp - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+2025-05-03 20:46:18,447 - INFO - basehttp - "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+2025-05-03 20:46:26,813 - INFO - basehttp - "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4344
+2025-05-03 20:46:39,689 - INFO - basehttp - "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2025-05-03 20:46:39,793 - INFO - basehttp - "GET /admin/ HTTP/1.1" 200 19459
+2025-05-03 20:46:39,861 - INFO - basehttp - "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+2025-05-03 20:46:39,882 - INFO - basehttp - "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2025-05-03 20:46:39,882 - INFO - basehttp - "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+2025-05-03 20:47:02,649 - INFO - basehttp - "GET /admin/Employe/clemploye/add/ HTTP/1.1" 200 30637
+2025-05-03 20:47:02,796 - INFO - basehttp - "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2025-05-03 20:47:02,797 - INFO - basehttp - "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+2025-05-03 20:47:02,798 - INFO - basehttp - "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+2025-05-03 20:47:02,800 - INFO - basehttp - "GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+2025-05-03 20:47:02,801 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-05-03 20:47:02,836 - INFO - basehttp - "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+2025-05-03 20:47:02,852 - INFO - basehttp - "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+2025-05-03 20:47:02,861 - INFO - basehttp - "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+2025-05-03 20:47:02,863 - INFO - basehttp - "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+2025-05-03 20:47:02,864 - INFO - basehttp - "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+2025-05-03 20:47:02,881 - INFO - basehttp - "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2025-05-03 20:47:02,882 - INFO - basehttp - "GET /static/admin/css/widgets.css HTTP/1.1" 200 11921
+2025-05-03 20:47:02,939 - INFO - basehttp - "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+2025-05-03 20:47:02,947 - INFO - basehttp - "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+2025-05-03 20:47:02,951 - INFO - basehttp - "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+2025-05-03 20:47:02,968 - INFO - basehttp - "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+2025-05-03 20:47:02,995 - INFO - basehttp - "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+2025-05-03 20:47:03,212 - INFO - basehttp - "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+2025-05-03 20:48:22,077 - INFO - basehttp - "POST /admin/Employe/clemploye/add/ HTTP/1.1" 302 0
+2025-05-03 20:48:22,219 - INFO - basehttp - "GET /admin/Employe/clemploye/ HTTP/1.1" 200 18185
+2025-05-03 20:48:22,378 - INFO - basehttp - "GET /static/admin/css/changelists.css HTTP/1.1" 200 6566
+2025-05-03 20:48:22,406 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-05-03 20:48:22,493 - INFO - basehttp - "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+2025-05-03 20:48:22,563 - INFO - basehttp - "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2025-05-03 20:48:32,293 - INFO - basehttp - "GET /conge/ HTTP/1.1" 302 0
+2025-05-03 20:48:32,324 - INFO - basehttp - "GET /login/ HTTP/1.1" 200 6253
+2025-05-03 20:48:32,441 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-03 20:48:35,496 - INFO - basehttp - "POST /login/ HTTP/1.1" 302 0
+2025-05-03 20:48:35,514 - INFO - basehttp - "GET /home HTTP/1.1" 302 0
+2025-05-03 20:48:35,536 - INFO - basehttp - "GET /login/ HTTP/1.1" 200 6253
+2025-05-03 20:48:37,503 - INFO - basehttp - "POST /login/ HTTP/1.1" 302 0
+2025-05-03 20:48:37,519 - INFO - basehttp - "GET /home HTTP/1.1" 302 0
+2025-05-03 20:48:37,539 - INFO - basehttp - "GET /login/ HTTP/1.1" 200 6253
+2025-05-03 20:48:39,515 - INFO - basehttp - "POST /login/ HTTP/1.1" 302 0
+2025-05-03 20:48:39,537 - INFO - basehttp - "GET /home HTTP/1.1" 302 0
+2025-05-03 20:48:39,561 - INFO - basehttp - "GET /login/ HTTP/1.1" 200 6253
+2025-05-03 20:48:54,179 - INFO - basehttp - "POST /login/ HTTP/1.1" 302 0
+2025-05-03 20:48:54,205 - INFO - basehttp - "GET /home HTTP/1.1" 200 12551
+2025-05-03 20:48:58,436 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6620
+2025-05-03 20:48:59,790 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 8105
+2025-05-03 20:49:08,969 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 20:49:08,970 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 20:49:09,390 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 200 8105
+2025-05-03 20:49:22,095 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 20:49:22,096 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 20:49:22,750 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 200 8105
+2025-05-03 20:49:27,015 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6620
+2025-05-03 20:50:05,436 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-03 20:50:07,798 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 20:50:15,728 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 8105
+2025-05-03 20:50:16,692 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-03 20:50:19,960 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 20:50:19,961 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 20:50:20,325 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 200 8105
+2025-05-03 20:50:21,666 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 200 8655
+2025-05-03 20:50:26,705 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 20:50:26,707 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 20:50:28,052 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 200 8105
+2025-05-03 20:50:30,503 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6620
+2025-05-03 20:50:32,027 - INFO - basehttp - "GET /conge/4/modifier/ HTTP/1.1" 200 9490
+2025-05-03 20:50:34,120 - INFO - basehttp - "POST /conge/4/modifier/ HTTP/1.1" 302 0
+2025-05-03 20:50:34,163 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6620
+2025-05-03 20:50:50,271 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-03 20:50:52,599 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 20:56:30,350 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6620
+2025-05-03 20:56:31,135 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 8867
+2025-05-03 20:56:34,170 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 20:56:34,171 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 20:56:36,946 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 200 8867
+2025-05-03 20:56:44,777 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6620
+2025-05-03 20:56:55,094 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 8867
+2025-05-03 20:57:00,194 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 20:57:00,195 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 20:57:01,382 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 200 8867
+2025-05-03 20:57:14,187 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-03 20:57:16,545 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 20:57:24,462 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-03 20:57:26,866 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 20:57:47,322 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 200 8867
+2025-05-03 20:58:02,530 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 200 8105
+2025-05-03 20:58:04,964 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 20:58:04,965 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 20:58:07,315 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 200 8105
+2025-05-03 20:58:08,239 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 200 8655
+2025-05-03 21:04:04,238 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\mission\models.py changed, reloading.
+2025-05-03 21:04:09,356 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 21:04:22,968 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\mission\models.py changed, reloading.
+2025-05-03 21:04:26,376 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 21:05:30,015 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-03 21:05:33,088 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 21:05:41,438 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 200 8655
+2025-05-03 21:05:46,088 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 21:05:46,089 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 21:05:46,557 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 200 8105
+2025-05-03 21:05:54,675 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 21:05:54,677 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 21:05:55,668 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 200 8105
+2025-05-03 21:05:59,799 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 21:05:59,800 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 21:06:00,612 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 200 8105
+2025-05-03 21:06:05,116 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6620
+2025-05-03 21:10:03,228 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py changed, reloading.
+2025-05-03 21:10:05,512 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 21:10:09,458 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py changed, reloading.
+2025-05-03 21:10:11,502 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 21:10:19,481 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6620
+2025-05-03 21:10:20,484 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 8105
+2025-05-03 21:10:23,917 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 21:10:23,921 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 21:10:24,686 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 200 8105
+2025-05-03 21:10:25,571 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 200 8655
+2025-05-03 21:10:32,610 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 21:10:32,615 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 21:10:33,348 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 200 8105
+2025-05-03 21:14:20,389 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py changed, reloading.
+2025-05-03 21:14:22,870 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 21:14:27,108 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py changed, reloading.
+2025-05-03 21:14:30,481 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 21:14:32,857 - ERROR - log - Internal Server Error: /conge/ajouter/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1364, "Field 'employe_signature' doesn't have a default value")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py", line 30, in ajouter_conge
+    form.save()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\forms\models.py", line 542, in save
+    self.instance.save()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1364, "Field 'employe_signature' doesn't have a default value")
+2025-05-03 21:14:32,871 - ERROR - basehttp - "POST /conge/ajouter/ HTTP/1.1" 500 174793
+2025-05-03 21:15:15,901 - ERROR - log - Internal Server Error: /conge/ajouter/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1364, "Field 'employe_signature' doesn't have a default value")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py", line 30, in ajouter_conge
+    form.save()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\forms\models.py", line 542, in save
+    self.instance.save()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1364, "Field 'employe_signature' doesn't have a default value")
+2025-05-03 21:15:15,912 - ERROR - basehttp - "POST /conge/ajouter/ HTTP/1.1" 500 174793
+2025-05-03 21:19:27,935 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 302 0
+2025-05-03 21:19:28,026 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 7680
+2025-05-03 21:19:44,950 - INFO - basehttp - "GET /conge/5/modifier/ HTTP/1.1" 200 9480
+2025-05-03 21:19:49,895 - INFO - basehttp - "POST /conge/5/modifier/ HTTP/1.1" 302 0
+2025-05-03 21:19:49,941 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 7664
+2025-05-03 21:19:57,746 - INFO - basehttp - "GET /conge/5/supprimer/ HTTP/1.1" 302 0
+2025-05-03 21:19:57,796 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6620
+2025-05-03 21:19:59,993 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 8105
+2025-05-03 21:20:05,465 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 21:20:05,470 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 21:20:05,927 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 302 0
+2025-05-03 21:20:05,967 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 7680
+2025-05-03 21:20:22,331 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-03 21:20:24,445 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 21:20:30,526 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 7680
+2025-05-03 21:20:33,938 - INFO - basehttp - "GET /conge/6/supprimer/ HTTP/1.1" 302 0
+2025-05-03 21:20:33,977 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6620
+2025-05-03 21:20:35,688 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 8105
+2025-05-03 21:20:39,276 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 21:20:39,278 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 21:20:39,625 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 302 0
+2025-05-03 21:20:39,667 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 7680
+2025-05-03 21:20:52,628 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-03 21:20:54,664 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 21:23:20,495 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-03 21:23:24,053 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 21:23:26,035 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 7680
+2025-05-03 21:23:28,245 - INFO - basehttp - "GET /conge/7/modifier/ HTTP/1.1" 200 9460
+2025-05-03 21:23:29,909 - INFO - basehttp - "POST /conge/7/modifier/ HTTP/1.1" 302 0
+2025-05-03 21:23:29,963 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 7700
+2025-05-03 21:23:33,599 - INFO - basehttp - "GET /conge/7/supprimer/ HTTP/1.1" 302 0
+2025-05-03 21:23:33,639 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 6620
+2025-05-03 21:23:35,261 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 8105
+2025-05-03 21:23:39,239 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 21:23:39,241 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 21:23:40,192 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 302 0
+2025-05-03 21:23:40,235 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 7700
+2025-05-03 21:29:37,193 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-03 21:29:40,803 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 21:29:45,673 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 7700
+2025-05-03 21:29:47,524 - ERROR - log - Internal Server Error: /conge/ajouter/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py", line 33, in ajouter_conge
+    form = CLCongeForm()
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py", line 31, in __init__
+    self.fields['employe'].queryset = self.fields['employe'].queryset.filter(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1492, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1313, in build_lookup
+    lhs = self.try_transform(lhs, lookup_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1357, in try_transform
+    raise FieldError(
+django.core.exceptions.FieldError: Unsupported lookup 'is_active' for CharField or join on the field not permitted.
+2025-05-03 21:29:47,530 - ERROR - basehttp - "GET /conge/ajouter/ HTTP/1.1" 500 112416
+2025-05-03 21:36:22,318 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-03 21:36:25,215 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 21:36:35,187 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 8105
+2025-05-03 21:36:45,438 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-03 21:36:45,440 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 4356
+2025-05-03 21:36:45,981 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 302 0
+2025-05-03 21:36:46,067 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 8767
+2025-05-03 21:36:56,948 - INFO - basehttp - "GET /conge/9/supprimer/ HTTP/1.1" 302 0
+2025-05-03 21:36:56,999 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 7700
+2025-05-03 21:37:05,038 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 6610
+2025-05-03 21:37:07,066 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 7700
+2025-05-03 21:38:15,938 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\urls.py changed, reloading.
+2025-05-03 21:38:18,499 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 21:39:07,414 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 7851
+2025-05-03 21:39:11,033 - ERROR - log - Internal Server Error: /mission/
+2025-05-03 21:39:11,035 - ERROR - basehttp - "GET /mission/ HTTP/1.1" 500 130
+2025-05-03 21:39:39,502 - ERROR - log - Internal Server Error: /mission/
+2025-05-03 21:39:39,504 - ERROR - basehttp - "GET /mission/ HTTP/1.1" 500 130
+2025-05-03 21:42:01,123 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 5631
+2025-05-03 21:42:07,717 - INFO - basehttp - "GET /mission/ajouter/ HTTP/1.1" 200 4189
+2025-05-03 21:45:43,043 - ERROR - log - Internal Server Error: /mission/ajouter/
+2025-05-03 21:45:43,044 - ERROR - basehttp - "GET /mission/ajouter/ HTTP/1.1" 500 74
+2025-05-03 21:45:43,853 - ERROR - log - Internal Server Error: /mission/ajouter/
+2025-05-03 21:45:43,855 - ERROR - basehttp - "GET /mission/ajouter/ HTTP/1.1" 500 74
+2025-05-03 21:45:44,090 - ERROR - log - Internal Server Error: /mission/ajouter/
+2025-05-03 21:45:44,091 - ERROR - basehttp - "GET /mission/ajouter/ HTTP/1.1" 500 74
+2025-05-03 21:55:29,937 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\mission\forms.py changed, reloading.
+2025-05-03 21:55:31,856 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 21:55:59,140 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\mission\forms.py changed, reloading.
+2025-05-03 21:56:01,354 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 21:56:28,012 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\mission\forms.py changed, reloading.
+2025-05-03 21:56:30,273 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 21:58:10,401 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\mission\forms.py changed, reloading.
+2025-05-03 21:58:12,392 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 21:58:20,449 - ERROR - log - Internal Server Error: /mission/ajouter/
+2025-05-03 21:58:20,451 - ERROR - basehttp - "GET /mission/ajouter/ HTTP/1.1" 500 74
+2025-05-03 21:58:21,678 - ERROR - log - Internal Server Error: /mission/ajouter/
+2025-05-03 21:58:21,679 - ERROR - basehttp - "GET /mission/ajouter/ HTTP/1.1" 500 74
+2025-05-03 21:58:22,277 - ERROR - log - Internal Server Error: /mission/ajouter/
+2025-05-03 21:58:22,278 - ERROR - basehttp - "GET /mission/ajouter/ HTTP/1.1" 500 74
+2025-05-03 21:58:56,309 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\mission\forms.py changed, reloading.
+2025-05-03 21:58:58,550 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 22:29:57,510 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 22:30:43,044 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\mission\forms.py changed, reloading.
+2025-05-03 22:30:45,292 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 22:32:22,638 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\mission\forms.py changed, reloading.
+2025-05-03 22:32:25,176 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 22:32:47,346 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 22:35:01,013 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\mission\forms.py changed, reloading.
+2025-05-03 22:35:02,997 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 22:35:10,332 - ERROR - log - Internal Server Error: /mission/ajouter/
+2025-05-03 22:35:10,334 - ERROR - basehttp - "GET /mission/ajouter/ HTTP/1.1" 500 74
+2025-05-03 22:36:28,114 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\mission\forms.py changed, reloading.
+2025-05-03 22:36:31,897 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 22:36:37,036 - ERROR - log - Internal Server Error: /mission/ajouter/
+2025-05-03 22:36:37,038 - ERROR - basehttp - "GET /mission/ajouter/ HTTP/1.1" 500 74
+2025-05-03 22:36:38,062 - ERROR - log - Internal Server Error: /mission/ajouter/
+2025-05-03 22:36:38,063 - ERROR - basehttp - "GET /mission/ajouter/ HTTP/1.1" 500 74
+2025-05-03 22:36:38,696 - ERROR - log - Internal Server Error: /mission/ajouter/
+2025-05-03 22:36:38,699 - ERROR - basehttp - "GET /mission/ajouter/ HTTP/1.1" 500 74
+2025-05-03 22:36:43,321 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 5631
+2025-05-03 22:36:44,657 - ERROR - log - Internal Server Error: /mission/ajouter/
+2025-05-03 22:36:44,658 - ERROR - basehttp - "GET /mission/ajouter/ HTTP/1.1" 500 74
+2025-05-03 22:39:54,802 - INFO - basehttp - "GET /mission/ajouter/ HTTP/1.1" 200 7995
+2025-05-03 22:41:10,108 - INFO - basehttp - "POST /mission/ajouter/ HTTP/1.1" 200 8837
+2025-05-03 22:41:18,914 - INFO - basehttp - "POST /mission/ajouter/ HTTP/1.1" 200 8837
+2025-05-03 22:50:12,135 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\mission\forms.py changed, reloading.
+2025-05-03 22:50:14,634 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 22:50:22,143 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\mission\forms.py changed, reloading.
+2025-05-03 22:50:24,691 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-03 22:50:38,295 - INFO - basehttp - "POST /mission/ajouter/ HTTP/1.1" 200 8821
+2025-05-03 22:51:14,894 - INFO - basehttp - "POST /mission/ajouter/ HTTP/1.1" 302 0
+2025-05-03 22:51:14,950 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 6507
+2025-05-03 22:51:21,393 - INFO - basehttp - "GET /mission/1/detail/ HTTP/1.1" 200 6981
+2025-05-03 22:51:26,679 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 6507
+2025-05-03 22:51:28,367 - INFO - basehttp - "GET /mission/1/modifier/ HTTP/1.1" 200 4189
+2025-05-03 23:01:51,329 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 6507
+2025-05-03 23:01:52,313 - INFO - basehttp - "GET /mission/ajouter/ HTTP/1.1" 200 7995
+2025-05-03 23:02:12,617 - INFO - basehttp - "GET /mission/ajouter/ HTTP/1.1" 200 7995
+2025-05-03 23:02:14,565 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 6507
+2025-05-03 23:02:16,233 - INFO - basehttp - "GET /mission/1/modifier/ HTTP/1.1" 200 8165
+2025-05-03 23:03:03,782 - INFO - basehttp - "GET /mission/1/modifier/ HTTP/1.1" 200 8166
+2025-05-03 23:03:06,421 - INFO - basehttp - "POST /mission/1/modifier/ HTTP/1.1" 302 0
+2025-05-03 23:03:06,462 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 6507
+2025-05-03 23:03:28,003 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 7851
+2025-05-03 23:03:29,051 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 6761
+2025-05-03 23:03:29,901 - INFO - basehttp - "GET /home HTTP/1.1" 200 12702
+2025-05-03 23:03:31,162 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 7851
+2025-05-03 23:03:31,855 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 7851
+2025-05-03 23:03:32,344 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 6507
+2025-05-03 23:03:33,001 - INFO - basehttp - "GET /typeConge/ HTTP/1.1" 200 6563
+2025-05-03 23:03:34,212 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 7906
+2025-05-03 23:03:35,072 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 7851
+2025-05-03 23:03:39,095 - INFO - basehttp - "GET /administration/list/ HTTP/1.1" 200 6043
+2025-05-03 23:03:39,719 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 7906
+2025-05-03 23:03:40,342 - INFO - basehttp - "GET /typeConge/ HTTP/1.1" 200 6563
+2025-05-03 23:03:41,021 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 6507
+2025-05-03 23:03:42,017 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 6507
+2025-05-03 23:03:42,851 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 7851
+2025-05-03 23:09:39,768 - INFO - basehttp - "GET /admin/Employe/clemploye/ HTTP/1.1" 200 18384
+2025-05-03 23:09:39,945 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-05-03 23:09:42,602 - INFO - basehttp - "GET /admin/Employe/clemploye/ HTTP/1.1" 200 17953
+2025-05-03 23:09:42,694 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-05-04 13:55:08,912 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-04 13:55:22,492 - INFO - basehttp - "GET / HTTP/1.1" 302 0
+2025-05-04 13:55:22,597 - INFO - basehttp - "GET /login/ HTTP/1.1" 200 6404
+2025-05-04 13:55:25,808 - INFO - basehttp - "GET /static/css/bootstrap.min.css HTTP/1.1" 200 155845
+2025-05-04 13:55:25,872 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3730
+2025-05-04 13:55:25,879 - INFO - basehttp - "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 78743
+2025-05-04 13:55:25,902 - INFO - basehttp - "GET /static/js/scripti.js HTTP/1.1" 200 2496
+2025-05-04 13:55:25,911 - INFO - basehttp - "GET /static/image/boat-5889919_1280.png HTTP/1.1" 200 143567
+2025-05-04 13:55:25,923 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-04 13:55:26,261 - WARNING - log - Not Found: /favicon.ico
+2025-05-04 13:55:26,263 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 4449
+2025-05-04 13:56:31,603 - INFO - basehttp - "POST /login/ HTTP/1.1" 302 0
+2025-05-04 13:56:31,636 - INFO - basehttp - "GET /home HTTP/1.1" 200 12702
+2025-05-04 13:56:31,790 - INFO - basehttp - "GET /static/image/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-04 13:56:31,798 - INFO - basehttp - "GET /static/image/city-182223_1280.jpg HTTP/1.1" 200 376515
+2025-05-04 13:56:31,831 - INFO - basehttp - "GET /static/image/istockphoto-2162033406-1024x1024.jpg HTTP/1.1" 200 62104
+2025-05-04 13:56:31,836 - INFO - basehttp - "GET /static/image/city-7352352_1280.jpg HTTP/1.1" 200 445704
+2025-05-04 13:56:31,862 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-04 13:56:37,807 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 6507
+2025-05-04 13:56:40,820 - INFO - basehttp - "GET /mission/ajouter/ HTTP/1.1" 200 7995
+2025-05-04 13:56:43,220 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 6507
+2025-05-04 13:56:45,195 - INFO - basehttp - "GET /mission/1/modifier/ HTTP/1.1" 200 8166
+2025-05-04 13:56:58,497 - INFO - basehttp - "POST /mission/1/modifier/ HTTP/1.1" 200 8793
+2025-05-04 13:58:01,941 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 6507
+2025-05-04 14:02:05,036 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 6507
+2025-05-04 14:02:11,422 - INFO - basehttp - "GET /mission/1/modifier/ HTTP/1.1" 200 8166
+2025-05-04 14:02:14,793 - INFO - basehttp - "GET /mission/1/modifier/ HTTP/1.1" 200 8166
+2025-05-04 14:02:15,488 - INFO - basehttp - "GET /mission/1/modifier/ HTTP/1.1" 200 8166
+2025-05-04 14:02:17,719 - INFO - basehttp - "POST /mission/1/modifier/ HTTP/1.1" 200 8793
+2025-05-04 14:03:24,564 - INFO - basehttp - "POST /mission/1/modifier/ HTTP/1.1" 200 10079
+2025-05-04 14:03:45,084 - INFO - basehttp - "POST /mission/1/modifier/ HTTP/1.1" 200 10194
+2025-05-04 14:03:55,753 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 6507
+2025-05-04 14:03:59,246 - INFO - basehttp - "GET /mission/1/modifier/ HTTP/1.1" 200 9452
+2025-05-04 14:04:01,195 - INFO - basehttp - "POST /mission/1/modifier/ HTTP/1.1" 200 10194
+2025-05-04 14:05:25,379 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\mission\forms.py changed, reloading.
+2025-05-04 14:05:28,306 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-04 14:05:36,422 - INFO - basehttp - "POST /mission/1/modifier/ HTTP/1.1" 200 10045
+2025-05-04 14:05:38,384 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 6507
+2025-05-04 14:05:40,413 - INFO - basehttp - "GET /mission/1/modifier/ HTTP/1.1" 200 9452
+2025-05-04 14:05:42,434 - INFO - basehttp - "POST /mission/1/modifier/ HTTP/1.1" 200 10045
+2025-05-04 14:05:46,861 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 6507
+2025-05-04 14:05:48,923 - INFO - basehttp - "GET /mission/1/modifier/ HTTP/1.1" 200 9452
+2025-05-04 14:05:51,261 - INFO - basehttp - "POST /mission/1/modifier/ HTTP/1.1" 200 10045
+2025-05-04 14:06:04,288 - INFO - basehttp - "POST /mission/1/modifier/ HTTP/1.1" 200 8759
+2025-05-04 14:06:07,309 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 6507
+2025-05-04 14:06:09,368 - INFO - basehttp - "GET /mission/1/modifier/ HTTP/1.1" 200 8166
+2025-05-04 14:06:11,080 - INFO - basehttp - "POST /mission/1/modifier/ HTTP/1.1" 302 0
+2025-05-04 14:06:11,114 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 6507
+2025-05-04 14:06:13,603 - INFO - basehttp - "GET /mission/1/modifier/ HTTP/1.1" 200 8166
+2025-05-04 14:06:58,481 - INFO - basehttp - "GET /mission/1/modifier/ HTTP/1.1" 200 9062
+2025-05-04 14:07:00,242 - INFO - basehttp - "POST /mission/1/modifier/ HTTP/1.1" 200 9655
+2025-05-04 14:09:28,358 - INFO - basehttp - "POST /mission/1/modifier/ HTTP/1.1" 200 9995
+2025-05-04 14:09:43,883 - INFO - basehttp - "POST /mission/1/modifier/ HTTP/1.1" 200 9655
+2025-05-04 14:09:51,264 - INFO - basehttp - "POST /mission/1/modifier/ HTTP/1.1" 200 8759
+2025-05-04 14:09:58,527 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 6507
+2025-05-04 14:10:00,452 - INFO - basehttp - "GET /mission/1/modifier/ HTTP/1.1" 200 8166
+2025-05-04 14:12:20,975 - INFO - basehttp - "GET /mission/1/modifier/ HTTP/1.1" 200 8847
+2025-05-04 14:12:24,944 - INFO - basehttp - "POST /mission/1/modifier/ HTTP/1.1" 302 0
+2025-05-04 14:12:24,984 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 6507
+2025-05-04 14:12:28,083 - INFO - basehttp - "GET /mission/1/modifier/ HTTP/1.1" 200 8847
+2025-05-04 14:12:30,460 - INFO - basehttp - "POST /mission/1/modifier/ HTTP/1.1" 302 0
+2025-05-04 14:12:30,491 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 6507
+2025-05-04 14:13:33,346 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 6507
+2025-05-04 14:13:35,227 - INFO - basehttp - "GET /mission/1/modifier/ HTTP/1.1" 200 9079
+2025-05-04 14:13:37,624 - INFO - basehttp - "POST /mission/1/modifier/ HTTP/1.1" 302 0
+2025-05-04 14:13:37,657 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 6507
+2025-05-04 14:13:46,545 - INFO - basehttp - "GET /mission/recherche/?query=AKAYOA HTTP/1.1" 200 5637
+2025-05-04 14:13:47,718 - INFO - basehttp - "GET /mission/recherche/?query=AKAYOA HTTP/1.1" 200 5637
+2025-05-04 14:13:51,008 - INFO - basehttp - "GET /mission/recherche/?query=akayoaromaric%40gmail.com HTTP/1.1" 200 5654
+2025-05-04 14:13:51,862 - INFO - basehttp - "GET /mission/recherche/?query=akayoaromaric%40gmail.com HTTP/1.1" 200 5654
+2025-05-04 14:13:54,188 - INFO - basehttp - "GET /mission/recherche/?query= HTTP/1.1" 200 6507
+2025-05-04 14:14:02,249 - INFO - basehttp - "GET /mission/recherche/?query=Mission+de+recherche+de+nouveau+partenair HTTP/1.1" 200 6548
+2025-05-04 14:14:15,939 - INFO - basehttp - "GET /typeConge/ HTTP/1.1" 200 6563
+2025-05-04 14:14:17,477 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 6507
+2025-05-04 14:14:18,555 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 7851
+2025-05-04 14:14:28,362 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 6507
+2025-05-04 14:14:31,135 - INFO - basehttp - "GET /mission/1/detail/ HTTP/1.1" 200 6981
+2025-05-04 14:14:37,233 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 6507
+2025-05-04 18:55:37,787 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-04 18:55:58,755 - INFO - basehttp - "GET / HTTP/1.1" 302 0
+2025-05-04 18:55:58,824 - INFO - basehttp - "GET /login/ HTTP/1.1" 200 6404
+2025-05-04 18:56:01,986 - INFO - basehttp - "GET /static/js/scripti.js HTTP/1.1" 200 2496
+2025-05-04 18:56:01,990 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3730
+2025-05-04 18:56:02,010 - INFO - basehttp - "GET /static/image/boat-5889919_1280.png HTTP/1.1" 200 143567
+2025-05-04 18:56:02,019 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-04 18:56:02,021 - INFO - basehttp - "GET /static/css/bootstrap.min.css HTTP/1.1" 200 155845
+2025-05-04 18:56:02,023 - INFO - basehttp - "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 78743
+2025-05-04 18:56:02,367 - WARNING - log - Not Found: /favicon.ico
+2025-05-04 18:56:02,369 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 4449
+2025-05-04 18:56:07,652 - INFO - basehttp - "POST /login/ HTTP/1.1" 302 0
+2025-05-04 18:56:07,682 - INFO - basehttp - "GET /home HTTP/1.1" 200 12702
+2025-05-04 18:56:07,771 - INFO - basehttp - "GET /static/image/city-182223_1280.jpg HTTP/1.1" 200 376515
+2025-05-04 18:56:07,777 - INFO - basehttp - "GET /static/image/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-04 18:56:07,783 - INFO - basehttp - "GET /static/image/istockphoto-2162033406-1024x1024.jpg HTTP/1.1" 200 62104
+2025-05-04 18:56:07,805 - INFO - basehttp - "GET /static/image/city-7352352_1280.jpg HTTP/1.1" 200 445704
+2025-05-04 18:56:29,090 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 6761
+2025-05-04 18:56:30,592 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 7851
+2025-05-04 18:56:33,682 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 6507
+2025-05-04 18:56:39,026 - INFO - basehttp - "GET /mission/1/modifier/ HTTP/1.1" 200 9079
+2025-05-04 18:56:48,880 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 6507
+2025-05-04 18:56:50,648 - INFO - basehttp - "GET /mission/ajouter/ HTTP/1.1" 200 7995
+2025-05-04 18:57:18,562 - INFO - basehttp - "POST /mission/ajouter/ HTTP/1.1" 302 0
+2025-05-04 18:57:18,608 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 7540
+2025-05-04 18:57:24,096 - INFO - basehttp - "GET /mission/2/modifier/ HTTP/1.1" 200 9062
+2025-05-04 18:57:27,204 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 7540
+2025-05-04 18:57:28,388 - INFO - basehttp - "GET /mission/1/modifier/ HTTP/1.1" 200 9079
+2025-05-04 18:57:30,575 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 7540
+2025-05-04 18:57:41,068 - INFO - basehttp - "GET /mission/2/modifier/ HTTP/1.1" 200 9062
+2025-05-04 18:57:43,676 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 7540
+2025-05-04 20:00:45,737 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-04 20:04:36,171 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\urls.py changed, reloading.
+2025-05-04 20:04:38,146 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-04 20:04:58,193 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\urls.py changed, reloading.
+2025-05-04 20:05:00,126 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-04 20:05:42,390 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\urls.py changed, reloading.
+2025-05-04 20:05:44,486 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-04 20:08:52,925 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 7709
+2025-05-04 20:08:54,385 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:08:54,387 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 110
+2025-05-04 20:08:54,620 - WARNING - log - Not Found: /favicon.ico
+2025-05-04 20:08:54,625 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 4565
+2025-05-04 20:08:56,023 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 61506)
+2025-05-04 20:08:56,025 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 61511)
+2025-05-04 20:08:56,028 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 61508)
+2025-05-04 20:08:56,029 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 61505)
+2025-05-04 20:08:56,032 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 61509)
+2025-05-04 20:08:56,132 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 61512)
+2025-05-04 20:08:57,978 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3730
+2025-05-04 20:08:57,984 - INFO - basehttp - "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 78743
+2025-05-04 20:08:57,990 - INFO - basehttp - "GET /static/css/bootstrap.min.css HTTP/1.1" 200 155845
+2025-05-04 20:08:57,992 - INFO - basehttp - "GET /static/js/scripti.js HTTP/1.1" 200 2496
+2025-05-04 20:08:58,017 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-04 20:08:58,043 - INFO - basehttp - "GET /static/image/boat-5889919_1280.png HTTP/1.1" 200 143567
+2025-05-04 20:09:21,506 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 7717
+2025-05-04 20:09:36,348 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:09:36,350 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 110
+2025-05-04 20:10:19,338 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:10:19,339 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 110
+2025-05-04 20:10:20,792 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:10:20,794 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 110
+2025-05-04 20:10:21,367 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:10:21,368 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 110
+2025-05-04 20:10:21,845 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:10:21,846 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 110
+2025-05-04 20:10:22,273 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:10:22,275 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 110
+2025-05-04 20:10:23,165 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:10:23,166 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 110
+2025-05-04 20:10:53,865 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:10:53,866 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 110
+2025-05-04 20:13:16,400 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:13:16,401 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 110
+2025-05-04 20:14:43,544 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:14:43,546 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 110
+2025-05-04 20:14:46,483 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:14:46,485 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 110
+2025-05-04 20:16:04,813 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:16:04,815 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 110
+2025-05-04 20:16:05,816 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:16:05,817 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 110
+2025-05-04 20:16:12,298 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 8011
+2025-05-04 20:16:13,365 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 8011
+2025-05-04 20:16:13,963 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 8011
+2025-05-04 20:16:14,386 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 8011
+2025-05-04 20:16:15,241 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 8011
+2025-05-04 20:16:15,775 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 8011
+2025-05-04 20:16:54,823 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 8279
+2025-05-04 20:16:57,775 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:16:57,776 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 110
+2025-05-04 20:20:36,040 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\EmployeMission\views.py changed, reloading.
+2025-05-04 20:20:37,863 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-04 20:20:43,290 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\EmployeMission\views.py changed, reloading.
+2025-05-04 20:20:44,852 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-04 20:21:07,133 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:21:07,135 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 72
+2025-05-04 20:22:34,410 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:22:34,411 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 72
+2025-05-04 20:24:34,659 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:24:34,660 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 72
+2025-05-04 20:26:03,168 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\EmployeMission\views.py changed, reloading.
+2025-05-04 20:26:05,673 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-04 20:26:22,932 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:26:22,934 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 109
+2025-05-04 20:26:43,675 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\EmployeMission\views.py changed, reloading.
+2025-05-04 20:26:46,262 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-04 20:27:44,122 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:27:44,124 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 72
+2025-05-04 20:27:45,142 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:27:45,144 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 72
+2025-05-04 20:27:45,712 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:27:45,713 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 72
+2025-05-04 20:27:46,156 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:27:46,157 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 72
+2025-05-04 20:27:46,461 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:27:46,463 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 72
+2025-05-04 20:27:46,738 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:27:46,740 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 72
+2025-05-04 20:27:46,959 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:27:46,960 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 72
+2025-05-04 20:30:51,466 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\EmployeMission\views.py changed, reloading.
+2025-05-04 20:30:53,841 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-04 20:31:02,307 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:31:02,309 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 72
+2025-05-04 20:33:51,027 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\EmployeMission\views.py changed, reloading.
+2025-05-04 20:33:53,385 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-04 20:34:01,039 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:34:01,040 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 109
+2025-05-04 20:34:38,134 - INFO - basehttp - "GET /employe_mission/ HTTP/1.1" 200 6282
+2025-05-04 20:34:58,095 - INFO - basehttp - "GET /employe_mission/ HTTP/1.1" 200 6289
+2025-05-04 20:35:02,565 - INFO - basehttp - "GET /employe_mission/ajouter/ HTTP/1.1" 200 4928
+2025-05-04 20:37:24,096 - INFO - basehttp - "GET /employe_mission/ajouter/ HTTP/1.1" 200 7836
+2025-05-04 20:37:52,656 - INFO - basehttp - "POST /employe_mission/ajouter/ HTTP/1.1" 302 0
+2025-05-04 20:37:52,713 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:37:52,714 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 111
+2025-05-04 20:39:21,935 - INFO - basehttp - "GET /employe_mission/ajouter/ HTTP/1.1" 200 8575
+2025-05-04 20:39:40,944 - INFO - basehttp - "GET /employe_mission/ajouter/ HTTP/1.1" 200 7837
+2025-05-04 20:41:14,647 - INFO - basehttp - "GET /employe_mission/ajouter/ HTTP/1.1" 200 8104
+2025-05-04 20:41:15,607 - INFO - basehttp - "GET /employe_mission/ajouter/ HTTP/1.1" 200 8104
+2025-05-04 20:41:16,195 - INFO - basehttp - "GET /employe_mission/ajouter/ HTTP/1.1" 200 8104
+2025-05-04 20:45:08,055 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\mission\models.py changed, reloading.
+2025-05-04 20:45:10,099 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-04 20:46:06,693 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\mission\models.py changed, reloading.
+2025-05-04 20:46:08,683 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-04 20:46:13,594 - INFO - basehttp - "GET /employe_mission/ajouter/ HTTP/1.1" 200 8114
+2025-05-04 20:46:14,471 - INFO - basehttp - "GET /employe_mission/ajouter/ HTTP/1.1" 200 8114
+2025-05-04 20:47:37,893 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-04 20:47:51,146 - INFO - basehttp - "GET /employe_mission/ajouter/ HTTP/1.1" 200 8114
+2025-05-04 20:48:33,161 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:48:33,163 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 111
+2025-05-04 20:48:37,364 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:48:37,365 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 111
+2025-05-04 20:48:50,225 - INFO - basehttp - "GET /mission/1/modifier/ HTTP/1.1" 200 9818
+2025-05-04 20:48:52,553 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 8279
+2025-05-04 20:48:54,543 - INFO - basehttp - "GET /mission/2/modifier/ HTTP/1.1" 200 9801
+2025-05-04 20:49:57,011 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 8279
+2025-05-04 20:50:01,654 - ERROR - log - Internal Server Error: /employe_mission/
+2025-05-04 20:50:01,655 - ERROR - basehttp - "GET /employe_mission/ HTTP/1.1" 500 111
+2025-05-04 20:57:33,661 - INFO - basehttp - "GET /employe_mission/ HTTP/1.1" 200 7136
+2025-05-04 20:57:41,679 - INFO - basehttp - "GET /employe_mission/1/modifier/ HTTP/1.1" 200 4928
+2025-05-04 21:00:06,505 - INFO - basehttp - "GET /employe_mission/1/detail/ HTTP/1.1" 200 7586
+2025-05-04 21:00:13,711 - INFO - basehttp - "GET /employe_mission/ HTTP/1.1" 200 7136
+2025-05-04 21:01:51,829 - INFO - basehttp - "GET /employe_mission/1/modifier/ HTTP/1.1" 200 7806
+2025-05-04 21:02:04,783 - INFO - basehttp - "POST /employe_mission/1/modifier/ HTTP/1.1" 302 0
+2025-05-04 21:02:04,820 - INFO - basehttp - "GET /employe_mission/ HTTP/1.1" 200 7136

@@ -13,8 +13,6 @@ class CLConge(models.Model):
     # Dates définitives
     date_retour_definitif = models.DateField(null=True, blank=True, help_text="Date définitive de retour du congé")
 
-    # Signature de l'employé (champ booléen pour savoir si l'employé a signé)
-    employe_signature = models.BooleanField(default=False, help_text="Indique si l'employé a signé le congé")
 
     def __str__(self):
         return f"{self.employe} - {self.typeconge.designation} ({self.date_debut_previsionnel} - {self.date_retour_previsionnel})"
