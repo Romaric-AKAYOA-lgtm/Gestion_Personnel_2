@@ -6567,3 +6567,604 @@ django.core.exceptions.FieldError: Unsupported lookup 'is_active' for CharField 
 2025-05-04 21:01:51,829 - INFO - basehttp - "GET /employe_mission/1/modifier/ HTTP/1.1" 200 7806
 2025-05-04 21:02:04,783 - INFO - basehttp - "POST /employe_mission/1/modifier/ HTTP/1.1" 302 0
 2025-05-04 21:02:04,820 - INFO - basehttp - "GET /employe_mission/ HTTP/1.1" 200 7136
+2025-05-04 21:11:33,037 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 8279
+2025-05-04 21:11:33,980 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 8279
+2025-05-04 21:11:35,138 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 8590
+2025-05-04 21:11:35,855 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 7500
+2025-05-04 21:11:37,299 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 8279
+2025-05-04 21:11:37,840 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 8590
+2025-05-04 21:11:38,698 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 7500
+2025-05-04 21:11:39,237 - INFO - basehttp - "GET /home HTTP/1.1" 200 13441
+2025-05-04 21:11:40,054 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 8590
+2025-05-04 21:11:41,018 - INFO - basehttp - "GET /home HTTP/1.1" 200 13441
+2025-05-04 21:11:41,455 - INFO - basehttp - "GET /static/image/istockphoto-2162033406-1024x1024.jpg HTTP/1.1" 200 62104
+2025-05-04 21:11:41,471 - INFO - basehttp - "GET /static/image/city-182223_1280.jpg HTTP/1.1" 200 376515
+2025-05-04 21:11:41,481 - INFO - basehttp - "GET /static/image/city-7352352_1280.jpg HTTP/1.1" 200 445704
+2025-05-04 21:11:41,483 - INFO - basehttp - "GET /static/image/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-04 21:11:42,780 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 8590
+2025-05-04 21:11:43,638 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 8590
+2025-05-04 21:11:44,472 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 8279
+2025-05-04 21:11:44,979 - INFO - basehttp - "GET /employe_mission/ HTTP/1.1" 200 7136
+2025-05-04 21:11:45,666 - INFO - basehttp - "GET /typeConge/ HTTP/1.1" 200 7302
+2025-05-04 21:11:46,448 - INFO - basehttp - "GET /typeConge/ HTTP/1.1" 200 7302
+2025-05-04 21:11:47,149 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 8645
+2025-05-04 21:13:43,336 - INFO - basehttp - "GET /employe_mission/ HTTP/1.1" 200 7136
+2025-05-04 21:13:47,268 - INFO - basehttp - "GET /employe_mission/1/modifier/ HTTP/1.1" 200 8772
+2025-05-04 21:13:53,887 - INFO - basehttp - "POST /employe_mission/1/modifier/ HTTP/1.1" 302 0
+2025-05-04 21:13:53,928 - INFO - basehttp - "GET /employe_mission/ HTTP/1.1" 200 7136
+2025-05-04 21:13:56,052 - INFO - basehttp - "GET /employe_mission/ajouter/ HTTP/1.1" 200 8114
+2025-05-04 21:14:11,136 - INFO - basehttp - "POST /employe_mission/ajouter/ HTTP/1.1" 302 0
+2025-05-04 21:14:11,179 - INFO - basehttp - "GET /employe_mission/ HTTP/1.1" 200 8134
+2025-05-04 21:16:12,655 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\EmployeMission\form.py changed, reloading.
+2025-05-04 21:16:15,177 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-04 21:16:21,184 - INFO - basehttp - "GET /employe_mission/1/modifier/ HTTP/1.1" 200 8772
+2025-05-04 21:16:22,705 - INFO - basehttp - "POST /employe_mission/1/modifier/ HTTP/1.1" 302 0
+2025-05-04 21:16:22,748 - INFO - basehttp - "GET /employe_mission/ HTTP/1.1" 200 8134
+2025-05-04 21:16:24,674 - INFO - basehttp - "GET /employe_mission/2/modifier/ HTTP/1.1" 200 8772
+2025-05-04 21:16:26,770 - INFO - basehttp - "POST /employe_mission/2/modifier/ HTTP/1.1" 302 0
+2025-05-04 21:16:26,808 - INFO - basehttp - "GET /employe_mission/ HTTP/1.1" 200 8134
+2025-05-06 13:14:19,121 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-06 13:14:43,232 - INFO - basehttp - "GET / HTTP/1.1" 302 0
+2025-05-06 13:14:43,364 - INFO - basehttp - "GET /login/ HTTP/1.1" 200 7143
+2025-05-06 13:14:46,068 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3730
+2025-05-06 13:14:46,082 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-06 13:14:46,082 - INFO - basehttp - "GET /static/css/bootstrap.min.css HTTP/1.1" 200 155845
+2025-05-06 13:14:46,088 - INFO - basehttp - "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 78743
+2025-05-06 13:14:46,089 - INFO - basehttp - "GET /static/js/scripti.js HTTP/1.1" 200 2496
+2025-05-06 13:14:46,142 - INFO - basehttp - "GET /static/image/boat-5889919_1280.png HTTP/1.1" 200 143567
+2025-05-06 13:14:46,498 - WARNING - log - Not Found: /favicon.ico
+2025-05-06 13:14:46,499 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 4565
+2025-05-06 13:14:59,534 - INFO - basehttp - "POST /login/ HTTP/1.1" 302 0
+2025-05-06 13:14:59,563 - INFO - basehttp - "GET /home HTTP/1.1" 200 13441
+2025-05-06 13:14:59,637 - INFO - basehttp - "GET /static/image/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-06 13:14:59,640 - INFO - basehttp - "GET /static/image/city-182223_1280.jpg HTTP/1.1" 200 376515
+2025-05-06 13:14:59,679 - INFO - basehttp - "GET /static/image/istockphoto-2162033406-1024x1024.jpg HTTP/1.1" 200 62104
+2025-05-06 13:14:59,703 - INFO - basehttp - "GET /static/image/city-7352352_1280.jpg HTTP/1.1" 200 445704
+2025-05-06 13:15:03,722 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 7500
+2025-05-06 13:15:04,606 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 8590
+2025-05-06 13:15:05,749 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 8279
+2025-05-06 13:15:06,704 - INFO - basehttp - "GET /employe_mission/ HTTP/1.1" 200 8134
+2025-05-06 13:26:10,676 - INFO - basehttp - "GET /employe_mission/ajouter/ HTTP/1.1" 200 8114
+2025-05-06 13:26:10,772 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-06 13:26:13,844 - INFO - basehttp - "GET /employe_mission/ HTTP/1.1" 200 8134
+2025-05-06 13:26:15,550 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 7500
+2025-05-06 13:26:17,215 - INFO - basehttp - "GET /fonction/creer/ HTTP/1.1" 200 7531
+2025-05-06 13:26:23,744 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 7500
+2025-05-06 13:28:22,452 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 8590
+2025-05-06 13:28:29,294 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 8995
+2025-05-06 13:28:31,460 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 8590
+2025-05-06 13:46:56,964 - INFO - basehttp - "GET /static/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 325834
+2025-05-06 13:46:57,044 - INFO - basehttp - "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 431289
+2025-05-06 13:47:45,228 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 7500
+2025-05-06 20:52:53,938 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-06 20:53:16,944 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 7500
+2025-05-06 20:53:19,689 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3730
+2025-05-06 20:53:19,690 - INFO - basehttp - "GET /static/js/scripti.js HTTP/1.1" 200 2496
+2025-05-06 20:53:19,692 - INFO - basehttp - "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 78743
+2025-05-06 20:53:19,696 - INFO - basehttp - "GET /static/css/bootstrap.min.css HTTP/1.1" 200 155845
+2025-05-06 20:53:19,722 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-06 20:53:19,763 - INFO - basehttp - "GET /static/image/boat-5889919_1280.png HTTP/1.1" 200 143567
+2025-05-06 20:53:20,206 - WARNING - log - Not Found: /favicon.ico
+2025-05-06 20:53:20,210 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 4565
+2025-05-06 20:53:30,840 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 8590
+2025-05-06 20:53:32,087 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 8279
+2025-05-06 20:53:33,765 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 7500
+2025-05-06 20:53:34,677 - INFO - basehttp - "GET /home HTTP/1.1" 200 13441
+2025-05-06 20:53:34,761 - INFO - basehttp - "GET /static/image/istockphoto-2162033406-1024x1024.jpg HTTP/1.1" 200 62104
+2025-05-06 20:53:34,769 - INFO - basehttp - "GET /static/image/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-06 20:53:34,772 - INFO - basehttp - "GET /static/image/city-182223_1280.jpg HTTP/1.1" 200 376515
+2025-05-06 20:53:34,804 - INFO - basehttp - "GET /static/image/city-7352352_1280.jpg HTTP/1.1" 200 445704
+2025-05-06 20:54:06,974 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 7500
+2025-05-06 20:54:08,513 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 8590
+2025-05-06 20:54:10,729 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 7500
+2025-05-06 21:03:15,461 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\urls.py changed, reloading.
+2025-05-06 21:03:18,209 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-06 23:12:11,353 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-06 23:21:55,196 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-06 23:30:54,452 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-06 23:31:09,130 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 7678
+2025-05-06 23:31:11,000 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 8457
+2025-05-06 23:31:12,593 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 7678
+2025-05-06 23:31:13,611 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 8457
+2025-05-06 23:31:14,258 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 8768
+2025-05-06 23:31:15,375 - INFO - basehttp - "GET /employe_mission/ HTTP/1.1" 200 8312
+2025-05-06 23:31:17,913 - INFO - basehttp - "GET /employe_mission/ HTTP/1.1" 200 8312
+2025-05-06 23:31:20,333 - INFO - basehttp - "GET /affectation/ HTTP/1.1" 200 0
+2025-05-07 08:25:50,828 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-07 08:26:10,492 - INFO - basehttp - "GET / HTTP/1.1" 302 0
+2025-05-07 08:26:10,584 - INFO - basehttp - "GET /login/ HTTP/1.1" 200 7321
+2025-05-07 08:26:14,320 - INFO - basehttp - "GET /static/js/scripti.js HTTP/1.1" 200 2496
+2025-05-07 08:26:14,328 - INFO - basehttp - "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 78743
+2025-05-07 08:26:14,351 - INFO - basehttp - "GET /static/css/bootstrap.min.css HTTP/1.1" 200 155845
+2025-05-07 08:26:14,408 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-07 08:26:14,459 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3730
+2025-05-07 08:26:15,465 - INFO - basehttp - "GET /static/image/boat-5889919_1280.png HTTP/1.1" 200 143567
+2025-05-07 08:26:16,451 - WARNING - log - Not Found: /favicon.ico
+2025-05-07 08:26:16,453 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 4677
+2025-05-07 08:26:32,011 - INFO - basehttp - "POST /login/ HTTP/1.1" 302 0
+2025-05-07 08:26:32,048 - INFO - basehttp - "GET /home HTTP/1.1" 200 13619
+2025-05-07 08:26:32,160 - INFO - basehttp - "GET /static/image/city-182223_1280.jpg HTTP/1.1" 200 376515
+2025-05-07 08:26:32,180 - INFO - basehttp - "GET /static/image/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-07 08:26:32,205 - INFO - basehttp - "GET /static/image/istockphoto-2162033406-1024x1024.jpg HTTP/1.1" 200 62104
+2025-05-07 08:26:32,222 - INFO - basehttp - "GET /static/image/city-7352352_1280.jpg HTTP/1.1" 200 445704
+2025-05-07 08:26:36,292 - INFO - basehttp - "GET /employe_mission/ HTTP/1.1" 200 8312
+2025-05-07 08:26:37,984 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 8457
+2025-05-07 08:26:39,188 - INFO - basehttp - "GET /employe_mission/ HTTP/1.1" 200 8312
+2025-05-07 08:26:39,940 - INFO - basehttp - "GET /affectation/ HTTP/1.1" 200 0
+2025-05-07 08:36:59,067 - INFO - basehttp - "GET /affectation/ HTTP/1.1" 200 5632
+2025-05-07 08:36:59,185 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-07 08:38:19,404 - INFO - basehttp - "GET /affectation/ HTTP/1.1" 200 5632
+2025-05-07 08:38:21,054 - INFO - basehttp - "GET /affectation/ajouter/ HTTP/1.1" 200 6832
+2025-05-07 08:38:52,852 - INFO - basehttp - "GET /affectation/ HTTP/1.1" 200 5632
+2025-05-07 08:41:36,963 - INFO - basehttp - "GET /affectation/ HTTP/1.1" 200 6817
+2025-05-07 08:42:04,434 - INFO - basehttp - "GET /affectation/ajouter/ HTTP/1.1" 200 6832
+2025-05-07 08:44:17,229 - ERROR - log - Internal Server Error: /affectation/ajouter/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Affectation\views.py", line 54, in ajouter_affectation
+    return render(request, 'Affectation/ajouter_affectation.html', {
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'as_widget'
+2025-05-07 08:44:17,237 - ERROR - basehttp - "GET /affectation/ajouter/ HTTP/1.1" 500 198443
+2025-05-07 08:44:19,668 - ERROR - log - Internal Server Error: /affectation/ajouter/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Affectation\views.py", line 54, in ajouter_affectation
+    return render(request, 'Affectation/ajouter_affectation.html', {
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'as_widget'
+2025-05-07 08:44:19,674 - ERROR - basehttp - "GET /affectation/ajouter/ HTTP/1.1" 500 198443
+2025-05-07 08:50:58,712 - ERROR - log - Internal Server Error: /affectation/ajouter/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Affectation\views.py", line 54, in ajouter_affectation
+    return render(request, 'Affectation/ajouter_affectation.html', {
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'add_class'
+2025-05-07 08:50:58,716 - ERROR - basehttp - "GET /affectation/ajouter/ HTTP/1.1" 500 201310
+2025-05-07 08:56:54,245 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Affectation\forms.py changed, reloading.
+2025-05-07 08:56:57,119 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-07 09:11:07,906 - ERROR - log - Internal Server Error: /affectation/ajouter/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Affectation\views.py", line 54, in ajouter_affectation
+    return render(request, 'Affectation/ajouter_affectation.html', {
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'add_class'
+2025-05-07 09:11:07,917 - ERROR - basehttp - "GET /affectation/ajouter/ HTTP/1.1" 500 201310
+2025-05-07 09:11:19,299 - ERROR - log - Internal Server Error: /affectation/ajouter/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Affectation\views.py", line 54, in ajouter_affectation
+    return render(request, 'Affectation/ajouter_affectation.html', {
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 698, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 606, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'add_class'
+2025-05-07 09:11:19,304 - ERROR - basehttp - "GET /affectation/ajouter/ HTTP/1.1" 500 201310
+2025-05-07 09:20:00,260 - ERROR - log - Internal Server Error: /affectation/ajouter/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Affectation\views.py", line 54, in ajouter_affectation
+    return render(request, 'Affectation/ajouter_affectation.html', {
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+2025-05-07 09:20:00,264 - ERROR - basehttp - "GET /affectation/ajouter/ HTTP/1.1" 500 140522
+2025-05-07 09:20:01,193 - ERROR - log - Internal Server Error: /affectation/ajouter/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Affectation\views.py", line 54, in ajouter_affectation
+    return render(request, 'Affectation/ajouter_affectation.html', {
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+2025-05-07 09:20:01,201 - ERROR - basehttp - "GET /affectation/ajouter/ HTTP/1.1" 500 140522
+2025-05-07 09:20:38,564 - INFO - basehttp - "GET /affectation/ajouter/ HTTP/1.1" 200 7617
+2025-05-07 09:24:16,635 - INFO - basehttp - "GET /affectation/ajouter/ HTTP/1.1" 200 8703
+2025-05-07 09:24:53,428 - INFO - basehttp - "GET /affectation/ajouter/ HTTP/1.1" 200 7617
+2025-05-07 10:00:14,762 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-07 10:00:28,537 - INFO - basehttp - "GET /affectation/ajouter/ HTTP/1.1" 200 7617
+2025-05-07 10:00:32,692 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3730
+2025-05-07 10:00:32,698 - INFO - basehttp - "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 78743
+2025-05-07 10:00:32,716 - INFO - basehttp - "GET /static/js/scripti.js HTTP/1.1" 200 2496
+2025-05-07 10:00:32,721 - INFO - basehttp - "GET /static/css/bootstrap.min.css HTTP/1.1" 200 155845
+2025-05-07 10:00:32,760 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-07 10:00:32,766 - INFO - basehttp - "GET /static/image/boat-5889919_1280.png HTTP/1.1" 200 143567
+2025-05-07 10:00:33,018 - WARNING - log - Not Found: /favicon.ico
+2025-05-07 10:00:33,022 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 4677
+2025-05-07 10:00:41,267 - INFO - basehttp - "GET /affectation/ajouter/ HTTP/1.1" 200 7617
+2025-05-07 10:04:09,911 - INFO - basehttp - "GET /affectation/ajouter/ HTTP/1.1" 200 9144
+2025-05-07 10:11:11,361 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Affectation\forms.py changed, reloading.
+2025-05-07 10:11:14,140 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-07 10:11:19,063 - INFO - basehttp - "GET /affectation/ajouter/ HTTP/1.1" 200 9164
+2025-05-07 10:12:09,437 - INFO - basehttp - "POST /affectation/ajouter/ HTTP/1.1" 200 9830
+2025-05-07 10:15:52,700 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Affectation\forms.py changed, reloading.
+2025-05-07 10:15:54,923 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-07 10:16:10,270 - INFO - basehttp - "POST /affectation/ajouter/ HTTP/1.1" 200 9830
+2025-05-07 10:16:13,804 - INFO - basehttp - "POST /affectation/ajouter/ HTTP/1.1" 200 9830
+2025-05-07 10:16:28,114 - INFO - basehttp - "POST /affectation/ajouter/ HTTP/1.1" 302 0
+2025-05-07 10:16:28,164 - INFO - basehttp - "GET /affectation/ HTTP/1.1" 200 7793
+2025-05-07 10:20:18,521 - INFO - basehttp - "GET /affectation/ajouter/ HTTP/1.1" 200 9842
+2025-05-07 10:21:16,215 - INFO - basehttp - "POST /affectation/ajouter/ HTTP/1.1" 302 0
+2025-05-07 10:21:16,263 - INFO - basehttp - "GET /affectation/ HTTP/1.1" 200 8894
+2025-05-07 10:21:57,871 - INFO - basehttp - "GET /affectation/1/detail/ HTTP/1.1" 200 5547
+2025-05-07 10:39:42,139 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Affectation\forms.py changed, reloading.
+2025-05-07 10:39:44,663 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-07 10:39:50,132 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Affectation\forms.py changed, reloading.
+2025-05-07 10:39:52,913 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-07 10:39:54,722 - INFO - basehttp - "GET /affectation/1/detail/ HTTP/1.1" 200 5547
+2025-05-07 10:39:56,334 - INFO - basehttp - "GET /affectation/ HTTP/1.1" 200 8894
+2025-05-07 10:39:59,542 - INFO - basehttp - "GET /affectation/ajouter/ HTTP/1.1" 200 9772
+2025-05-07 10:40:29,810 - INFO - basehttp - "POST /affectation/ajouter/ HTTP/1.1" 302 0
+2025-05-07 10:40:29,864 - INFO - basehttp - "GET /affectation/ HTTP/1.1" 200 10024
+2025-05-07 10:40:32,467 - INFO - basehttp - "GET /affectation/ajouter/ HTTP/1.1" 200 9709
+2025-05-07 10:40:38,060 - INFO - basehttp - "POST /affectation/ajouter/ HTTP/1.1" 200 10772
+2025-05-07 10:40:45,965 - INFO - basehttp - "GET /affectation/ HTTP/1.1" 200 10024
+2025-05-07 10:40:52,141 - INFO - basehttp - "GET /affectation/recherche/?criteres=employe&query=AKAYOA HTTP/1.1" 200 10030
+2025-05-07 10:40:53,001 - INFO - basehttp - "GET /affectation/recherche/?criteres=employe&query=AKAYOA HTTP/1.1" 200 10030
+2025-05-07 10:40:53,679 - INFO - basehttp - "GET /affectation/recherche/?criteres=employe&query=AKAYOA HTTP/1.1" 200 10030
+2025-05-07 10:40:56,940 - INFO - basehttp - "GET /affectation/recherche/?criteres=employe&query=akayoaromaric%40gmail.com HTTP/1.1" 200 6840
+2025-05-07 10:40:57,801 - INFO - basehttp - "GET /affectation/recherche/?criteres=employe&query=akayoaromaric%40gmail.com HTTP/1.1" 200 6840
+2025-05-07 10:41:00,672 - INFO - basehttp - "GET /affectation/recherche/?criteres=employe&query=akayoaromaric%40gmail.com HTTP/1.1" 200 6840
+2025-05-07 10:41:05,769 - INFO - basehttp - "GET /affectation/recherche/?criteres=employe&query= HTTP/1.1" 200 10024
+2025-05-07 10:41:19,869 - INFO - basehttp - "GET /affectation/1/modifier/ HTTP/1.1" 200 6910
+2025-05-07 10:41:24,655 - INFO - basehttp - "GET /affectation/1/modifier/ HTTP/1.1" 200 6910
+2025-05-07 10:51:35,860 - INFO - basehttp - "GET /affectation/1/modifier/ HTTP/1.1" 200 9513
+2025-05-07 10:52:27,930 - INFO - basehttp - "GET /affectation/1/modifier/ HTTP/1.1" 200 9513
+2025-05-07 10:53:25,619 - INFO - basehttp - "GET /affectation/1/modifier/ HTTP/1.1" 200 9514
+2025-05-07 10:53:32,731 - INFO - basehttp - "POST /affectation/1/modifier/ HTTP/1.1" 200 9771
+2025-05-07 10:53:38,356 - INFO - basehttp - "GET /affectation/ HTTP/1.1" 200 10024
+2025-05-07 10:53:42,157 - INFO - basehttp - "GET /affectation/1/modifier/ HTTP/1.1" 200 9514
+2025-05-07 10:58:33,871 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Affectation\forms.py changed, reloading.
+2025-05-07 10:58:37,554 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-07 10:58:40,285 - INFO - basehttp - "GET /affectation/1/modifier/ HTTP/1.1" 200 9602
+2025-05-07 10:58:44,339 - INFO - basehttp - "POST /affectation/1/modifier/ HTTP/1.1" 302 0
+2025-05-07 10:58:44,392 - INFO - basehttp - "GET /affectation/ HTTP/1.1" 200 10024
+2025-05-07 10:58:47,316 - ERROR - log - Internal Server Error: /affectation/ajouter/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Affectation\views.py", line 52, in ajouter_affectation
+    form = CLAffectationForm()
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Affectation\forms.py", line 40, in __init__
+    employe=self.instance.employe  # Garder l'employé en cours de modification
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\fields\related_descriptors.py", line 246, in __get__
+    raise self.RelatedObjectDoesNotExist(
+Affectation.models.CLAffectation.employe.RelatedObjectDoesNotExist: CLAffectation has no employe.
+2025-05-07 10:58:47,320 - ERROR - basehttp - "GET /affectation/ajouter/ HTTP/1.1" 500 75058
+2025-05-07 10:59:16,156 - ERROR - log - Internal Server Error: /affectation/ajouter/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Affectation\views.py", line 52, in ajouter_affectation
+    form = CLAffectationForm()
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Affectation\forms.py", line 40, in __init__
+    employe=self.instance.employe  # Garder l'employé en cours de modification
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\fields\related_descriptors.py", line 246, in __get__
+    raise self.RelatedObjectDoesNotExist(
+Affectation.models.CLAffectation.employe.RelatedObjectDoesNotExist: CLAffectation has no employe.
+2025-05-07 10:59:16,159 - ERROR - basehttp - "GET /affectation/ajouter/ HTTP/1.1" 500 75058
+2025-05-07 11:01:15,503 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Affectation\forms.py changed, reloading.
+2025-05-07 11:01:18,794 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-07 11:01:24,394 - ERROR - log - Internal Server Error: /affectation/ajouter/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Affectation\views.py", line 52, in ajouter_affectation
+    form = CLAffectationForm()
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Affectation\forms.py", line 40, in __init__
+    employe=self.instance.employe  # Garder l'employé en cours de modification
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\fields\related_descriptors.py", line 246, in __get__
+    raise self.RelatedObjectDoesNotExist(
+Affectation.models.CLAffectation.employe.RelatedObjectDoesNotExist: CLAffectation has no employe.
+2025-05-07 11:01:24,399 - ERROR - basehttp - "GET /affectation/ajouter/ HTTP/1.1" 500 75195
+2025-05-07 11:09:11,072 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Affectation\forms.py changed, reloading.
+2025-05-07 11:09:13,143 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-07 11:09:18,721 - INFO - basehttp - "GET /affectation/ajouter/ HTTP/1.1" 200 9709
+2025-05-07 11:09:22,520 - INFO - basehttp - "GET /affectation/ HTTP/1.1" 200 10024
+2025-05-07 11:09:24,460 - INFO - basehttp - "GET /affectation/1/modifier/ HTTP/1.1" 200 9602
+2025-05-07 11:09:27,242 - INFO - basehttp - "GET /affectation/ HTTP/1.1" 200 10024
+2025-05-07 11:16:15,343 - INFO - basehttp - "GET /affectation/ HTTP/1.1" 200 10024
+2025-05-07 11:16:17,215 - INFO - basehttp - "GET /affectation/1/detail/ HTTP/1.1" 200 9406
+2025-05-07 11:18:56,286 - INFO - basehttp - "GET /affectation/1/detail/ HTTP/1.1" 200 9401
+2025-05-07 11:19:05,424 - INFO - basehttp - "GET /affectation/1/modifier/ HTTP/1.1" 200 9602
+2025-05-07 11:19:07,998 - INFO - basehttp - "GET /affectation/ HTTP/1.1" 200 10024
+2025-05-07 11:19:14,732 - INFO - basehttp - "GET /affectation/3/supprimer/ HTTP/1.1" 302 0
+2025-05-07 11:19:14,775 - INFO - basehttp - "GET /affectation/ HTTP/1.1" 200 8894
+2025-05-07 11:19:20,480 - INFO - basehttp - "GET /employe_mission/ HTTP/1.1" 200 8312
+2025-05-07 11:19:22,426 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 8457
+2025-05-07 11:19:23,878 - INFO - basehttp - "GET /employe_mission/ HTTP/1.1" 200 8312
+2025-05-07 11:31:31,483 - INFO - autoreload - Watching for file changes with StatReloader

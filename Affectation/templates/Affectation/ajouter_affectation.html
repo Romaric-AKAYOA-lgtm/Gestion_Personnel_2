@@ -1,0 +1,110 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+<div class="modal fade show" id="affectationModal" tabindex="-1" aria-labelledby="affectationModalLabel" aria-modal="true" role="dialog" style="display: block;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary">
+                <h5 class="modal-title text-white" id="affectationModalLabel">
+                    {{ form.instance.pk|yesno:"Modifier une affectation,Ajouter une affectation" }}
+                </h5>
+            </div>
+            <div class="modal-body">
+                {% if form.errors %}
+                <div class="alert alert-danger">
+                    {% for field in form %}
+                        {% if field.errors %}
+                            <strong>{{ field.label }}</strong> : {{ field.errors|striptags }}
+                        {% endif %}
+                    {% endfor %}
+                    {% for error in form.non_field_errors %}
+                        <div>{{ error }}</div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+
+                <form method="POST" class="needs-validation" novalidate>
+                    {% csrf_token %}
+
+                    <!-- Employé -->
+                    <div class="mb-3">
+                        <label for="id_employe" class="form-label">Employé</label>
+                        {{ form.employe }}
+                    </div>
+
+                    <!-- Organisme affecté -->
+                    <div class="mb-3">
+                        <label for="id_organisme_affecte" class="form-label">Organisme affecté</label>
+                        {{ form.organisme_affecte }}
+                    </div>
+
+                    <!-- Lieu d'affectation -->
+                    <div class="mb-3">
+                        <label for="id_lieu_affectation" class="form-label">Lieu d'affectation</label>
+                        {{ form.lieu_affectation }}
+                    </div>
+
+                    <!-- Statut -->
+                    <div class="mb-3">
+                        <label for="id_statut" class="form-label">Statut</label>
+                        {{ form.statut }}
+                    </div>
+
+                    <!-- Motif d'affectation -->
+                    <div class="mb-3">
+                        <label for="id_motif_affectation" class="form-label">Motif d'affectation</label>
+                        {{ form.motif_affectation }}
+                    </div>
+
+                    <!-- Date de début -->
+                    <div class="mb-3">
+                        <label for="id_date_debut" class="form-label">Date de début</label>
+                        {{ form.date_debut }}
+                    </div>
+
+                    <!-- Date de fin -->
+                    <div class="mb-3">
+                        <label for="id_date_fin" class="form-label">Date de fin</label>
+                        {{ form.date_fin }}
+                    </div>
+
+                    <!-- Boutons -->
+                    <div class="text-end">
+                        <a href="{% url 'affectation:list' %}" class="btn btn-secondary px-4 py-2 btn-sm">Annuler</a>
+                        <button type="submit" class="btn btn-primary px-4 py-2 btn-sm">
+                            {{ form.instance.pk|yesno:"Modifier,Enregistrer" }}
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Script JS pour griser la date de fin selon le statut -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const statutField = document.getElementById('id_statut');
+        const dateFinField = document.getElementById('id_date_fin');
+
+        function toggleDateFinField() {
+            if (statutField.value === 'Définitif') {
+                dateFinField.disabled = true;
+                dateFinField.value = '';  // Efface la date si déjà remplie
+            } else {
+                dateFinField.disabled = false;
+            }
+        }
+
+        toggleDateFinField();  // Initialisation au chargement
+        statutField.addEventListener('change', toggleDateFinField);  // Sur changement
+
+        // Initialisation de la modale Bootstrap
+        const modalEl = document.getElementById('affectationModal');
+        new bootstrap.Modal(modalEl, {
+            keyboard: false,
+            backdrop: 'static'
+        }).show();
+    });
+</script>
+{% endblock %}

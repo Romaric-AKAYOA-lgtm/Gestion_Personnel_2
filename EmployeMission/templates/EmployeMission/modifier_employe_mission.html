@@ -62,6 +62,36 @@ document.addEventListener('DOMContentLoaded', () => {
         keyboard: false,
         backdrop: 'static'
     }).show();
+
+    // Condition de verrouillage : mission entamée ou terminée
+    const dateDebut = "{{ form.instance.mission.date_debut|date:'Y-m-d' }}";
+    const dateFin = "{{ form.instance.mission.date_fin|date:'Y-m-d' }}";
+    const today = new Date().toISOString().split('T')[0];
+
+    const isLocked = dateDebut && (dateDebut <= today);  // Mission entamée ou terminée
+
+    if (isLocked) {
+        const champsAGriser = [
+            "{{ form.employe.id_for_label }}",
+            "{{ form.mission.id_for_label }}",
+            "{{ form.statut.id_for_label }}"
+        ];
+        const form = document.querySelector('form');
+
+        champsAGriser.forEach(id => {
+            const champ = document.getElementById(id);
+            if (champ) {
+                champ.disabled = true;
+
+                // Ajouter un champ caché pour garder la valeur
+                const hidden = document.createElement('input');
+                hidden.type = 'hidden';
+                hidden.name = champ.name;
+                hidden.value = champ.value;
+                form.appendChild(hidden);
+            }
+        });
+    }
 });
 </script>
 {% endblock %}

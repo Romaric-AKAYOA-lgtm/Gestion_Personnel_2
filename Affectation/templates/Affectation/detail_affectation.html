@@ -1,0 +1,95 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+<div class="container mt-4">
+
+    <!-- Modal Détail Affectation -->
+    <div class="modal fade" id="affectationDetailModal" tabindex="-1" aria-labelledby="affectationDetailModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="affectationDetailModalLabel">Détails de l'affectation</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+
+                <div class="modal-body">
+                    <table class="table table-bordered table-striped">
+                        <tbody>
+                            <tr>
+                                <th>Employé</th>
+                                <td>{{ affectation.employe }}</td>
+                            </tr>
+                            <tr>
+                                <th>Organisme affecté</th>
+                                <td>{{ affectation.organisme_affecte }}</td>
+                            </tr>
+                            <tr>
+                                <th>Lieu d'affectation</th>
+                                <td>{{ affectation.lieu_affectation }}</td>
+                            </tr>
+                            <tr>
+                                <th>Statut</th>
+                                <td>{{ affectation.statut }}</td>
+                            </tr>
+                            <tr>
+                                <th>Motif</th>
+                                <td>{{ affectation.motif_affectation }}</td>
+                            </tr>
+                            <tr>
+                                <th>Date début</th>
+                                <td>{{ affectation.date_debut|date:"Y-m-d" }}</td>
+                            </tr>
+                            <tr>
+                                <th>Date fin</th>
+                                <td>{{ affectation.date_fin|date:"Y-m-d" }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="modal-footer">
+                    <a href="{% url 'affectation:update' affectation.id %}" class="btn btn-warning">Modifier</a>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#supprimerModal" data-bs-dismiss="modal">Supprimer</button>
+                    <a href="{% url 'affectation:list' %}" class="btn btn-secondary">Retour à la liste</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Confirmation Suppression -->
+    <div class="modal fade" id="supprimerModal" tabindex="-1" aria-labelledby="supprimerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="supprimerModalLabel">Supprimer cette affectation</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Êtes-vous sûr de vouloir supprimer cette affectation de <strong>{{ affectation.employe }}</strong> ? Cette action est irréversible.</p>
+                </div>
+                <div class="modal-footer">
+                    <form method="post" action="{% url 'affectation:delete' affectation.id %}">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-danger">Confirmer la suppression</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script : affichage automatique du modal -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var affectationModal = new bootstrap.Modal(document.getElementById('affectationDetailModal'), {
+                keyboard: false,
+                backdrop: 'static'
+            });
+            affectationModal.show();
+        });
+    </script>
+
+</div>
+{% endblock %}

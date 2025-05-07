@@ -1,0 +1,47 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+<div class="container mt-4">
+    <h2>Liste des stagiaires</h2>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Photo</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Filière</th>
+                <th>Date début</th>
+                <th>Date fin</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for stagiaire in stagiaires %}
+            <tr>
+                <td>
+                    {% if stagiaire.photo %}
+                        <img src="{{ stagiaire.photo.url }}" alt="Photo de {{ stagiaire.tnm }}" class="img-thumbnail" width="50">
+                    {% else %}
+                        <img src="{% static 'images/default_avatar.png' %}" alt="Photo par défaut" class="img-thumbnail" width="50">
+                    {% endif %}
+                </td>
+                <td>{{ stagiaire.tnm }}</td>
+                <td>{{ stagiaire.tpm }}</td>
+                <td>{{ stagiaire.filiere }}</td>
+                <td>{{ stagiaire.date_debut|date:"Y-m-d" }}</td>
+                <td>{{ stagiaire.date_fin|date:"Y-m-d" }}</td>
+                <td>
+                    <a href="{% url 'stagiaire:detail' stagiaire.id %}" class="btn btn-info btn-sm">Détails</a>
+                    <a href="{% url 'stagiaire:update' stagiaire.id %}" class="btn btn-warning btn-sm">Modifier</a>
+                    <a href="{% url 'stagiaire:delete' stagiaire.id %}" class="btn btn-danger btn-sm">Supprimer</a>
+                </td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="7">Aucun stagiaire trouvé.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

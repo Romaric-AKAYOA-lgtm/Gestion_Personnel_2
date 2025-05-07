@@ -15,6 +15,8 @@ urlpatterns = [
       path('conge/', include('Conge.urls')),
         path('mission/', include('mission.urls')),
         path('Mutation/', include('mutation.urls')),
+      path('affectation/', include('Affectation.urls')),
+ 
          path('employe_mission/', include('EmployeMission.urls')),
       path('unite/', include('unite.urls')),
     path('typeConge/', include('TypeConge.urls')),

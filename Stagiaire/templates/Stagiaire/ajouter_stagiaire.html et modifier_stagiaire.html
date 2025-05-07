@@ -1,0 +1,13 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+<div class="container mt-4">
+    <h2>{% if stagiaire %}Modifier{% else %}Ajouter{% endif %} un stagiaire</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">{% if stagiaire %}Mettre à jour{% else %}Enregistrer{% endif %}</button>
+        <a href="{% url 'stagiaire:list' %}" class="btn btn-secondary">Annuler</a>
+    </form>
+</div>
+{% endblock %}

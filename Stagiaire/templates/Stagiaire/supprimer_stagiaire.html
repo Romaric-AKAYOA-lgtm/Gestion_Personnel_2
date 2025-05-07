@@ -1,0 +1,13 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+<div class="container mt-4">
+    <h2>Supprimer le stagiaire</h2>
+    <p>Êtes-vous sûr de vouloir supprimer le stagiaire <strong>{{ stagiaire.tnm }} {{ stagiaire.tpm }}</strong> ? Cette action est irréversible.</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Confirmer la suppression</button>
+        <a href="{% url 'stagiaire:list' %}" class="btn btn-secondary">Annuler</a>
+    </form>
+</div>
+{% endblock %}

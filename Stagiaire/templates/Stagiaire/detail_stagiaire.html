@@ -1,0 +1,33 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+<div class="container mt-4">
+    <h2>Détails du stagiaire</h2>
+    <div class="row">
+        <div class="col-md-3">
+            {% if stagiaire.photo %}
+                <img src="{{ stagiaire.photo.url }}" alt="Photo de {{ stagiaire.tnm }}" class="img-fluid rounded">
+            {% else %}
+                <img src="{% static 'images/default_avatar.png' %}" alt="Photo par défaut" class="img-fluid rounded">
+            {% endif %}
+        </div>
+        <div class="col-md-9">
+            <p><strong>Nom :</strong> {{ stagiaire.tnm }}</p>
+            <p><strong>Prénom :</strong> {{ stagiaire.tpm }}</p>
+            <p><strong>Établissement :</strong> {{ stagiaire.etablissement }}</p>
+            <p><strong>Filière :</strong> {{ stagiaire.filiere }}</p>
+            <p><strong>Option :</strong> {{ stagiaire.option }}</p>
+            <p><strong>Thème :</strong> {{ stagiaire.theme }}</p>
+            <p><strong>Date début :</strong> {{ stagiaire.date_debut|date:"Y-m-d" }}</p>
+            <p><strong>Date fin :</strong> {{ stagiaire.date_fin|date:"Y-m-d" }}</p>
+            <p><strong>Responsable :</strong> {{ stagiaire.responsable }}</p>
+            <p><strong>Unité organisationnelle :</strong> {{ stagiaire.organisationUnit }}</p>
+        </div>
+    </div>
+    <div class="mt-3">
+        <a href="{% url 'stagiaire:update' stagiaire.id %}" class="btn btn-warning">Modifier</a>
+        <a href="{% url 'stagiaire:delete' stagiaire.id %}" class="btn btn-danger">Supprimer</a>
+        <a href="{% url 'stagiaire:list' %}" class="btn btn-secondary">Retour à la liste</a>
+    </div>
+</div>
+{% endblock %}
