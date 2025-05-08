@@ -1,33 +1,117 @@
 {% extends 'template_base.html' %}
+{% load static %}
 
 {% block contenue %}
 <div class="container mt-4">
-    <h2>Détails du stagiaire</h2>
-    <div class="row">
-        <div class="col-md-3">
-            {% if stagiaire.photo %}
-                <img src="{{ stagiaire.photo.url }}" alt="Photo de {{ stagiaire.tnm }}" class="img-fluid rounded">
-            {% else %}
-                <img src="{% static 'images/default_avatar.png' %}" alt="Photo par défaut" class="img-fluid rounded">
-            {% endif %}
-        </div>
-        <div class="col-md-9">
-            <p><strong>Nom :</strong> {{ stagiaire.tnm }}</p>
-            <p><strong>Prénom :</strong> {{ stagiaire.tpm }}</p>
-            <p><strong>Établissement :</strong> {{ stagiaire.etablissement }}</p>
-            <p><strong>Filière :</strong> {{ stagiaire.filiere }}</p>
-            <p><strong>Option :</strong> {{ stagiaire.option }}</p>
-            <p><strong>Thème :</strong> {{ stagiaire.theme }}</p>
-            <p><strong>Date début :</strong> {{ stagiaire.date_debut|date:"Y-m-d" }}</p>
-            <p><strong>Date fin :</strong> {{ stagiaire.date_fin|date:"Y-m-d" }}</p>
-            <p><strong>Responsable :</strong> {{ stagiaire.responsable }}</p>
-            <p><strong>Unité organisationnelle :</strong> {{ stagiaire.organisationUnit }}</p>
+
+    <!-- Modal Détail Stagiaire -->
+    <div class="modal fade" id="stagiaireDetailModal" tabindex="-1" aria-labelledby="stagiaireDetailModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="stagiaireDetailModalLabel">Détails du stagiaire</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                        {% if stagiaire.img %}
+                            <img src="{{ stagiaire.img.url }}" alt="Photo de {{ stagiaire.tnm }}" class="img-thumbnail" style="max-height: 200px;">
+                        {% else %}
+                            <img src="{% static 'images/default_avatar.png' %}" alt="Photo par défaut" class="img-thumbnail" style="max-height: 200px;">
+                        {% endif %}
+                    </div>
+                    
+
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr>
+                                <th>Nom</th>
+                                <td>{{ stagiaire.tnm }}</td>
+                            </tr>
+                            <tr>
+                                <th>Prénom</th>
+                                <td>{{ stagiaire.tpm }}</td>
+                            </tr>
+                            <tr>
+                                <th>Établissement</th>
+                                <td>{{ stagiaire.etablissement }}</td>
+                            </tr>
+                            <tr>
+                                <th>Filière</th>
+                                <td>{{ stagiaire.filiere }}</td>
+                            </tr>
+                            <tr>
+                                <th>Option</th>
+                                <td>{{ stagiaire.option }}</td>
+                            </tr>
+                            <tr>
+                                <th>Thème</th>
+                                <td>{{ stagiaire.theme }}</td>
+                            </tr>
+                            <tr>
+                                <th>Date début</th>
+                                <td>{{ stagiaire.dsb|date:"d/m/Y" }}</td>
+                            </tr>
+                            <tr>
+                                <th>Date fin</th>
+                                <td>{{ stagiaire.ddf|date:"d/m/Y" }}</td>
+                            </tr>
+                            <tr>
+                                <th>Responsable</th>
+                                <td>{{ stagiaire.responsable }}</td>
+                            </tr>
+                            <tr>
+                                <th>Unité organisationnelle</th>
+                                <td>{{ stagiaire.organisationUnit }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="modal-footer">
+                    <a href="{% url 'stagiaire:update' stagiaire.id %}" class="btn btn-warning">Modifier</a>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#supprimerModal" data-bs-dismiss="modal">Supprimer</button>
+                    <a href="{% url 'stagiaire:list' %}" class="btn btn-secondary">Retour à la liste</a>
+                </div>
+
+            </div>
         </div>
     </div>
-    <div class="mt-3">
-        <a href="{% url 'stagiaire:update' stagiaire.id %}" class="btn btn-warning">Modifier</a>
-        <a href="{% url 'stagiaire:delete' stagiaire.id %}" class="btn btn-danger">Supprimer</a>
-        <a href="{% url 'stagiaire:list' %}" class="btn btn-secondary">Retour à la liste</a>
+
+    <!-- Modal Confirmation Suppression -->
+    <div class="modal fade" id="supprimerModal" tabindex="-1" aria-labelledby="supprimerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="supprimerModalLabel">Supprimer ce stagiaire</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Êtes-vous sûr de vouloir supprimer <strong>{{ stagiaire.tnm }} {{ stagiaire.tpm }}</strong> ? Cette action est irréversible.</p>
+                </div>
+                <div class="modal-footer">
+                    <form method="post" action="{% url 'stagiaire:delete' stagiaire.id %}">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-danger">Confirmer la suppression</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- Script : affichage automatique du modal -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var stagiaireModal = new bootstrap.Modal(document.getElementById('stagiaireDetailModal'), {
+                keyboard: false,
+                backdrop: 'static'
+            });
+            stagiaireModal.show();
+        });
+    </script>
+
 </div>
 {% endblock %}

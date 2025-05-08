@@ -30,7 +30,7 @@ class ClUser(models.Model):
     ddf = models.DateField(blank=True, null=True)
 
     # 🔹 Champs ajoutés
-    matricule = models.CharField(max_length=7, unique=True, null=False)
+    matricule = models.CharField(max_length=7, unique=True, null=True , blank=True)
     grade = models.CharField(max_length=50, blank=True, null=True)
     echelon = models.IntegerField(
         validators=[MaxValueValidator(50)],

@@ -1,0 +1,165 @@
+{% extends 'template_base.html' %}
+{% load static %}
+
+{% block contenue %}
+<div class="modal fade show" id="stagiaireModal" tabindex="-1" aria-labelledby="stagiaireModalLabel" aria-modal="true" role="dialog" style="display: block;">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <h5 class="modal-title text-white" id="stagiaireModalLabel">
+          {{ form.instance.pk|yesno:"Modifier un stagiaire,Créer un stagiaire" }}
+        </h5>
+      </div>
+      <div class="modal-body">
+        {% if form.errors %}
+          <div class="alert alert-danger">
+            {% for field in form %}
+              {% for err in field.errors %}
+                <div><strong>{{ field.label }} :</strong> {{ err }}</div>
+              {% endfor %}
+            {% endfor %}
+            {% for err in form.non_field_errors %}
+              <div><strong>Erreur :</strong> {{ err }}</div>
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        <form method="POST" enctype="multipart/form-data" novalidate>
+          {% csrf_token %}
+          <div class="row g-3">
+
+            <!-- Nom -->
+            <div class="col-md-6">
+              <label for="id_tnm" class="form-label">Nom</label>
+              <input type="text" name="tnm" id="id_tnm" class="form-control"
+                     value="{{ form.tnm.value|default_if_none:'' }}" required>
+            </div>
+
+            <!-- Prénom -->
+            <div class="col-md-6">
+              <label for="id_tpm" class="form-label">Prénom</label>
+              <input type="text" name="tpm" id="id_tpm" class="form-control"
+                     value="{{ form.tpm.value|default_if_none:'' }}">
+            </div>
+
+            <!-- Sexe -->
+            <div class="col-md-6">
+              <label for="id_tsx" class="form-label">Sexe</label>
+              <select name="tsx" id="id_tsx" class="form-select">
+                {% for val, lab in form.fields.tsx.choices %}
+                  <option value="{{ val }}" {% if form.initial.tsx == val %}selected{% endif %}>
+                    {{ lab }}
+                  </option>
+                {% endfor %}
+              </select>
+            </div>
+
+            <!-- Date de naissance -->
+            <div class="col-md-6">
+              <label for="id_dns" class="form-label">Date de naissance</label>
+              <input type="date" name="dns" id="id_dns" class="form-control"
+                     value="{{ form.dns.value|default_if_none:'' }}" required>
+            </div>
+
+            <!-- Date de saisie (dsb) -->
+            <div class="col-md-6">
+              <label for="id_dsb" class="form-label">Date de debut de formation</label>
+              <input type="date" name="dsb" id="id_dsb" class="form-control"
+                     value="{{ form.dsb.value|default_if_none:'' }}">
+            </div>
+
+            <!-- Date de début de formation (ddf) -->
+            <div class="col-md-6">
+              <label for="id_ddf" class="form-label">Date de fin de formation</label>
+              <input type="date" name="ddf" id="id_ddf" class="form-control"
+                     value="{{ form.ddf.value|default_if_none:'' }}">
+            </div>
+
+            <!-- Etablissement -->
+            <div class="col-md-6">
+              <label for="id_etablissement" class="form-label">Etablissement</label>
+              <input type="text" name="etablissement" id="id_etablissement" class="form-control"
+                     value="{{ form.etablissement.value|default_if_none:'' }}">
+            </div>
+
+            <!-- Thème -->
+            <div class="col-md-6">
+              <label for="id_theme" class="form-label">Thème</label>
+              <input type="text" name="theme" id="id_theme" class="form-control"
+                     value="{{ form.theme.value|default_if_none:'' }}">
+            </div>
+
+            <!-- Filière -->
+            <div class="col-md-6">
+              <label for="id_filiere" class="form-label">Filière</label>
+              <input type="text" name="filiere" id="id_filiere" class="form-control"
+                     value="{{ form.filiere.value|default_if_none:'' }}">
+            </div>
+
+            <!-- Option -->
+            <div class="col-md-6">
+              <label for="id_option" class="form-label">Option</label>
+              <input type="text" name="option" id="id_option" class="form-control"
+                     value="{{ form.option.value|default_if_none:'' }}">
+            </div>
+
+            <!-- Responsable -->
+            <div class="col-md-6">
+              <label for="id_responsable" class="form-label">Responsable</label>
+              <select name="responsable" id="id_responsable" class="form-select">
+                {% for user in form.fields.responsable.queryset %}
+                  <option value="{{ user.pk }}" {% if form.initial.responsable == user.pk %}selected{% endif %}>
+                    {{ user }}
+                  </option>
+                {% endfor %}
+              </select>
+            </div>
+
+            <!-- Unité organisationnelle -->
+            <!-- Unité organisationnelle -->
+            <div class="col-md-6">
+                <label for="id_organisationUnit" class="form-label">Unité organisationnelle</label>
+                <select name="organisationUnit" id="id_organisationUnit" class="form-select">
+                  {% for unit in form.fields.organisationUnit.queryset %}
+                    <option value="{{ unit.pk }}" {% if form.initial.organisationUnit == unit.pk %}selected{% endif %}>
+                      {{ unit }}
+                    </option>
+                  {% endfor %}
+                </select>
+              </div>
+
+            <!-- Image -->
+            <div class="col-12">
+              <label for="id_img" class="form-label">Photo</label>
+              <input type="file" name="img" id="id_img" class="form-control">
+            </div>
+
+            <!-- Observation -->
+            <div class="col-12">
+              <label for="id_observation" class="form-label">Observation</label>
+              <textarea name="observation" id="id_observation" class="form-control" rows="3">{{ form.observation.value }}</textarea>
+            </div>
+                 
+        </div>
+
+          <div class="mt-4 text-end">
+            <a href="{% url 'stagiaire:list' %}" class="btn btn-secondary me-2">Annuler</a>
+            <button type="submit" class="btn btn-primary">
+              {{ form.instance.pk|yesno:"Modifier,Créer" }}
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    new bootstrap.Modal(document.getElementById('stagiaireModal'), {
+      keyboard: false,
+      backdrop: 'static'
+    }).show();
+  });
+</script>
+{% endblock %}

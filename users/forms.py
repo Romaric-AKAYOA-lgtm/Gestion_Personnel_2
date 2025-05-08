@@ -46,11 +46,10 @@ class ClUserForm(forms.ModelForm):
 
     def clean_matricule(self):
         matricule = self.cleaned_data.get('matricule')
-        if not matricule:
-            raise forms.ValidationError("Le matricule est requis.")
-        if len(matricule) != 7:
-            raise forms.ValidationError("Le matricule doit contenir exactement 7 caractères.")
+        if matricule and len(matricule) < 5:
+            raise forms.ValidationError("Le matricule doit contenir au moins 5 caractères.")
         return matricule
+
 
     def clean_echelon(self):
         echelon = self.cleaned_data.get('echelon')

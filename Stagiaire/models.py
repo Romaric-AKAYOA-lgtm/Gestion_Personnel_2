@@ -8,8 +8,6 @@ class CLStagiaire(ClUser):
     theme = models.CharField(max_length=200, blank=True, null=True, help_text="Thème du stage")
     filiere = models.CharField(max_length=100, blank=True, null=True, help_text="Filière du stagiaire")
     option = models.CharField(max_length=100, blank=True, null=True, help_text="Option du stagiaire")
-    date_debut = models.DateField(null=True, blank=True, help_text="Date de début du stage")
-    date_fin = models.DateField(null=True, blank=True, help_text="Date de fin du stage")
 
     # Ajouter la clé étrangère pour le responsable (clé étrangère vers ClUser)
     responsable = models.ForeignKey(ClUser, on_delete=models.CASCADE, related_name='responsables', null=True, blank=True, help_text="Responsable du stagiaire")

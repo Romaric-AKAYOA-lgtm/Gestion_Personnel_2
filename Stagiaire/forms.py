@@ -1,35 +1,38 @@
-from Stagiaire.models import CLStagiaire
-from users.forms import ClUserForm
+from django import forms
 from django.core.exceptions import ValidationError
-from django.utils import timezone
+from users.forms import ClUserForm
+from Stagiaire.models import CLStagiaire
+from datetime import date
 
 class ClStagiaireForm(ClUserForm):
     class Meta:
         model = CLStagiaire
-        # Inclure les champs hérités de ClUserForm et les champs spécifiques au modèle CLStagiaire
         fields = ClUserForm.Meta.fields + [
-            'etablissement', 'theme', 'filiere', 'option', 'date_debut', 'date_fin', 
-            'responsable', 'organisationUnit', 'tstt'
+            'etablissement',
+            'theme',
+            'filiere',
+            'option',
+            'responsable',
+            'organisationUnit',
+            'tstt',
         ]
         widgets = ClUserForm.Meta.widgets
 
     def __init__(self, *args, **kwargs):
-        # Appel du constructeur de la classe parente (ClUserForm)
         super().__init__(*args, **kwargs)
-
-        # Initialiser 'tstt' à 'Stagiaire' par défaut si ce n'est pas déjà spécifié
-        if not self.instance.pk and not self.instance.tstt:
-            self.instance.tstt = 'Stagiaire'  # Valeur par défaut pour le champ tstt
-
-        # Définir la date de début par défaut à la date système
-        if not self.instance.date_debut:
-            self.instance.date_debut = timezone.now().date()
+        # Initialiser 'tstt' à 'Stagiaire' si c’est une création
+        if not self.instance.pk:
+            self.fields['tstt'].initial = 'Stagiaire'
+            self.fields['tstt'].widget.attrs['readonly'] = True
 
     def clean_responsable(self):
+        """Empêche de sélectionner un responsable déjà retraité (dont la date de retraite est dans le passé)."""
         responsable = self.cleaned_data.get('responsable')
 
-        # Vérifier si le responsable est un retraité en vérifiant si la date de retraite est définie
-        if responsable and responsable.date_retraite:  # Assurez-vous que vous avez ce champ dans votre modèle ClUser
-            raise ValidationError("Le responsable ne peut pas être un retraité.")
-
+        if responsable and getattr(responsable, 'date_retraite', None):
+            # Récupérer la date de retraite et comparer avec la date actuelle
+            date_retraite = responsable.date_retraite
+            if date_retraite <= date.today():  # Si la date de retraite est dans le passé ou aujourd'hui
+                raise ValidationError("Le responsable ne peut pas être un retraité.")
+        
         return responsable
