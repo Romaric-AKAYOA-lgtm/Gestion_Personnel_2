@@ -15,8 +15,16 @@ class ClStagiaireForm(ClUserForm):
             'responsable',
             'organisationUnit',
             'tstt',
+            'observation',
         ]
         widgets = ClUserForm.Meta.widgets
+        widgets.update({
+            'observation': forms.Textarea(attrs={
+                'rows': 3,
+                'placeholder': 'Saisir une observation du stagiaire',
+                'class': 'form-control'
+            }),
+        })
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -25,14 +33,27 @@ class ClStagiaireForm(ClUserForm):
             self.fields['tstt'].initial = 'Stagiaire'
             self.fields['tstt'].widget.attrs['readonly'] = True
 
+        # Filtrer les responsables : date de retraite dépassée + user actif + ddf atteinte
+        self.fields['responsable'].queryset = self.fields['responsable'].queryset.filter(
+            tstt_user__is_active=True,
+            ddf__lte=date.today()
+        ).exclude(date_retraite__lte=date.today())
+
     def clean_responsable(self):
-        """Empêche de sélectionner un responsable déjà retraité (dont la date de retraite est dans le passé)."""
         responsable = self.cleaned_data.get('responsable')
 
-        if responsable and getattr(responsable, 'date_retraite', None):
-            # Récupérer la date de retraite et comparer avec la date actuelle
-            date_retraite = responsable.date_retraite
-            if date_retraite <= date.today():  # Si la date de retraite est dans le passé ou aujourd'hui
-                raise ValidationError("Le responsable ne peut pas être un retraité.")
-        
+        if responsable:
+            date_retraite = getattr(responsable, 'date_retraite', None)
+            ddf = getattr(responsable, 'ddf', None)
+            tstt_user = getattr(responsable, 'tstt_user', None)
+
+            if date_retraite and date_retraite <= date.today():
+                raise ValidationError("Le responsable est déjà à la retraite.")
+
+            if tstt_user and not tstt_user.is_active:
+                raise ValidationError("Le responsable sélectionné n'est pas actif.")
+
+            if ddf and ddf > date.today():
+                raise ValidationError("Ce responsable n'est pas encore disponible (date de fin non atteinte).")
+
         return responsable

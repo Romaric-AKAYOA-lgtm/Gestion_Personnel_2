@@ -1,0 +1,64 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+<div class="container mt-4">
+
+    <!-- Modal Détail Parcours -->
+    <div class="modal fade" id="parcoursDetailModal" tabindex="-1" aria-labelledby="parcoursDetailModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="parcoursDetailModalLabel">Détails du parcours</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr>
+                                <th>Stagiaire</th>
+                                <td>{{ parcours.stagiaire }}</td>
+                            </tr>
+                            <tr>
+                                <th>Responsable</th>
+                                <td>{{ parcours.responsable }}</td>
+                            </tr>
+                            <tr>
+                                <th>Évaluation</th>
+                                <td>{{ parcours.evaluation }}</td>
+                            </tr>
+                            <tr>
+                                <th>Compétence</th>
+                                <td>{{ parcours.competences }}</td>
+                            </tr>
+                            <tr>
+                                <th>Commentaire</th>
+                                <td>{{ parcours.commentaire }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="modal-footer">
+                    <a href="{% url 'parcours_stagiaire:update' parcours.id %}" class="btn btn-warning">Modifier</a>
+                    <a href="{% url 'parcours_stagiaire:list' %}" class="btn btn-secondary">Retour à la liste</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Script : affichage automatique du modal -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var modal = new bootstrap.Modal(document.getElementById('parcoursDetailModal'), {
+                keyboard: false,
+                backdrop: 'static'
+            });
+            modal.show();
+        });
+    </script>
+
+</div>
+{% endblock %}

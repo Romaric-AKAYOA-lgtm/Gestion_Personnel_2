@@ -1,0 +1,123 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+<div class="modal fade show" id="parcoursStagiaireModal" tabindex="-1" aria-labelledby="parcoursStagiaireModalLabel" aria-hidden="true" style="display: block;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary">
+                <h5 class="modal-title text-white" id="parcoursStagiaireModalLabel">
+                    {{ form.instance.pk|yesno:"Modifier un parcours stagiaire,Créer un parcours stagiaire" }}
+                </h5>
+            </div>
+            <div class="modal-body">
+                {% if form.errors %}
+                <div class="alert alert-danger">
+                    {% for field in form %}
+                        {% if field.errors %}
+                            <strong>{{ field.label }}</strong> : {{ field.errors|striptags }}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                {% endif %}
+
+                <form method="POST" class="needs-validation" novalidate id="parcoursForm">
+                    {% csrf_token %}
+
+                    <!-- Stagiaire -->
+                    <div class="mb-3">
+                        <label for="id_stagiaire" class="form-label">Stagiaire</label>
+                        <select name="stagiaire" id="id_stagiaire" class="form-select">
+                            {% for value, label in form.fields.stagiaire.choices %}
+                                <option value="{{ value }}" {% if form.stagiaire.value == value %}selected{% endif %}>{{ label }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <!-- Unité organisationnelle -->
+                    <div class="mb-3">
+                        <label for="id_organizational_unit" class="form-label">Unité Organisationnelle</label>
+                        <select name="organizational_unit" id="id_organizational_unit" class="form-select">
+                            {% for value, label in form.fields.organizational_unit.choices %}
+                                <option value="{{ value }}" {% if form.organizational_unit.value == value %}selected{% endif %}>{{ label }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <!-- Responsable -->
+                    <div class="mb-3">
+                        <label for="id_responsable" class="form-label">Responsable</label>
+                        <select name="responsable" id="id_responsable" class="form-select">
+                            {% for value, label in form.fields.responsable.choices %}
+                                <option value="{{ value }}" {% if form.responsable.value == value %}selected{% endif %}>{{ label }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <!-- Date de début -->
+                    <div class="mb-3">
+                        <label for="id_date_debut" class="form-label">Date de début</label>
+                        <input type="date" name="date_debut" id="id_date_debut" class="form-control" value="{{ form.date_debut.value|date:"Y-m-d" }}">
+                    </div>
+
+                    <!-- Date de fin -->
+                    <div class="mb-3">
+                        <label for="id_date_fin" class="form-label">Date de fin</label>
+                        <input type="date" name="date_fin" id="id_date_fin" class="form-control" value="{{ form.date_fin.value|date:"Y-m-d" }}">
+                    </div>
+
+                    <!-- Évaluation -->
+                    <div class="mb-3">
+                        <label for="id_evaluation" class="form-label">Évaluation</label>
+                        <input type="text" name="evaluation" id="id_evaluation" class="form-control" value="{{ form.evaluation.value }}">
+                    </div>
+
+                    <!-- Commentaire -->
+                    <div class="mb-3">
+                        <label for="id_commentaire" class="form-label">Commentaire</label>
+                        <textarea name="commentaire" id="id_commentaire" class="form-control" rows="3">{{ form.commentaire.value }}</textarea>
+                    </div>
+
+                    <!-- Compétences -->
+                    <div class="mb-3">
+                        <label for="id_competences" class="form-label">Compétences</label>
+                        <input type="text" name="competences" id="id_competences" class="form-control" value="{{ form.competences.value }}">
+                    </div>
+
+                    <!-- Boutons -->
+                    <div class="text-end">
+                        <a href="{% url 'parcours_stagiaire:list' %}" class="btn btn-secondary px-4 py-2 btn-sm">Annuler</a>
+                        <button type="submit" class="btn btn-primary px-4 py-2 btn-sm">
+                            {{ form.instance.pk|yesno:"Modifier,Créer" }}
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('parcoursForm');
+        const dateFinInput = document.getElementById('id_date_fin');
+        const currentDate = new Date().toISOString().split('T')[0]; // Date actuelle au format YYYY-MM-DD
+
+        // Vérifie si la date de fin est antérieure à la date actuelle
+        function checkDateFin() {
+            const dateFin = dateFinInput.value;
+            if (dateFin && dateFin < currentDate) {
+                // Désactive tous les champs du formulaire
+                const formElements = form.elements;
+                for (let i = 0; i < formElements.length; i++) {
+                    formElements[i].disabled = true;
+                }
+                alert("La date de fin ne peut pas être antérieure à la date actuelle. Tous les champs sont désactivés.");
+            }
+        }
+
+        // Attendre que l'utilisateur saisisse la date de fin et vérifier
+        dateFinInput.addEventListener('change', checkDateFin);
+    });
+</script>
+
+{% endblock %}
