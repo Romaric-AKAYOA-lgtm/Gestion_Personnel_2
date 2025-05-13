@@ -1,7 +1,7 @@
 # urls.py dans ton app Mutation
 
 from django.urls import path
-from . import views
+from . import views, views_print
 
 app_name = 'Mutation'  # très important pour utiliser {% url 'Mutation:create' %} par exemple
 
@@ -21,4 +21,6 @@ urlpatterns = [
 
     # 5. Supprimer une mutation
     path('<int:id>/delete/', views.supprimer_mutation, name='delete'),
+     path('mutation/pdf/<int:mutation_id>/', views_print.generate_mutation_pdf, name='mutation_pdf'),
+    path('mutations/pdf/annssee/', views_print.generate_mutations_annee_pdf, name='mutations_annee_pdf'),
 ]

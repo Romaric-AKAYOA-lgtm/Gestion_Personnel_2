@@ -8,6 +8,11 @@
         <a href="{% url 'employe_mission:create' %}" class="btn btn-primary">
             <i class="bi bi-plus-circle"></i> Ajouter une liaison
         </a>
+        
+        <!-- Bouton pour imprimer la liste de l'année -->
+        <a href="{% url 'employe_mission:employe_missions_annee_pdf' %}" class="btn btn-primary">
+            <i class="bi bi-file-earmark-pdf"></i> Imprimer la liste de l'année
+        </a>
 
         <form method="GET" action="{% url 'employe_mission:search' %}" class="d-flex">
             <input type="text" name="query" class="form-control me-2" placeholder="Rechercher une liaison" value="{{ query|default:'' }}">
@@ -44,6 +49,10 @@
                         </a>
                         <a href="{% url 'employe_mission:delete' aff.id %}" class="btn btn-danger btn-sm mb-1" onclick="return confirm('Confirmer la suppression ?')">
                             <i class="bi bi-trash"></i> Supprimer
+                        </a>
+                        <!-- Bouton Imprimer PDF par mission -->
+                        <a href="{% url 'employe_mission:employe_mission_pdf' aff.mission.id %}" class="btn btn-danger btn-sm mb-1" target="_blank">
+                            <i class="bi bi-file-earmark-pdf"></i> PDF
                         </a>
                     </td>
                 </tr>

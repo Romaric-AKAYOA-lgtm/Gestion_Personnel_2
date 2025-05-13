@@ -10471,3 +10471,1633 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'complet' not found. 'complet
 2025-05-12 23:58:09,875 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 10162
 2025-05-12 23:58:11,125 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 11289
 2025-05-12 23:58:15,544 - INFO - basehttp - "GET /complet/ HTTP/1.1" 200 2277
+2025-05-13 08:28:41,144 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 08:28:54,317 - INFO - basehttp - "GET / HTTP/1.1" 302 0
+2025-05-13 08:28:54,516 - INFO - basehttp - "GET /login/ HTTP/1.1" 200 9799
+2025-05-13 08:28:56,162 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 08:28:57,211 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-13 08:28:57,296 - WARNING - log - Not Found: /favicon.ico
+2025-05-13 08:28:57,298 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 5286
+2025-05-13 08:29:10,292 - INFO - basehttp - "POST /login/ HTTP/1.1" 302 0
+2025-05-13 08:29:10,407 - INFO - basehttp - "GET /home HTTP/1.1" 200 19313
+2025-05-13 08:29:21,087 - INFO - basehttp - "GET /complet/ HTTP/1.1" 200 2277
+2025-05-13 08:29:48,828 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 10960
+2025-05-13 08:30:03,859 - INFO - basehttp - "GET /Employee/2/detail/ HTTP/1.1" 200 10488
+2025-05-13 08:30:03,967 - INFO - basehttp - "GET /media/user_images/congo-2697382_1920.jpg HTTP/1.1" 200 566668
+2025-05-13 08:30:11,597 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 10960
+2025-05-13 08:30:53,795 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 10960
+2025-05-13 08:30:53,971 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-13 08:30:59,865 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 10960
+2025-05-13 08:31:15,343 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 302 0
+2025-05-13 08:31:15,368 - INFO - basehttp - "GET /login/ HTTP/1.1" 200 9799
+2025-05-13 08:31:15,456 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3765
+2025-05-13 08:31:15,457 - INFO - basehttp - "GET /static/js/scripti.js HTTP/1.1" 200 2496
+2025-05-13 08:31:15,460 - INFO - basehttp - "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 78743
+2025-05-13 08:31:15,465 - INFO - basehttp - "GET /static/css/bootstrap.min.css HTTP/1.1" 200 155845
+2025-05-13 08:31:15,487 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-13 08:31:15,564 - INFO - basehttp - "GET /static/image/boat-5889919_1280.png HTTP/1.1" 200 143567
+2025-05-13 08:31:29,527 - INFO - basehttp - "POST /login/ HTTP/1.1" 200 9799
+2025-05-13 08:31:29,585 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 08:31:42,472 - INFO - basehttp - "POST /login/ HTTP/1.1" 302 0
+2025-05-13 08:31:42,547 - INFO - basehttp - "GET /home HTTP/1.1" 200 19313
+2025-05-13 08:31:42,611 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 08:31:42,637 - INFO - basehttp - "GET /static/image/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-13 08:31:42,639 - INFO - basehttp - "GET /static/image/city-182223_1280.jpg HTTP/1.1" 200 376515
+2025-05-13 08:31:42,651 - INFO - basehttp - "GET /static/image/istockphoto-2162033406-1024x1024.jpg HTTP/1.1" 200 62104
+2025-05-13 08:31:42,668 - INFO - basehttp - "GET /static/image/city-7352352_1280.jpg HTTP/1.1" 200 445704
+2025-05-13 08:33:52,399 - INFO - basehttp - "GET /home HTTP/1.1" 200 19313
+2025-05-13 08:33:52,494 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3610
+2025-05-13 08:33:52,529 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-13 08:34:09,642 - INFO - basehttp - "GET /home HTTP/1.1" 302 0
+2025-05-13 08:34:09,666 - INFO - basehttp - "GET /login/ HTTP/1.1" 200 9799
+2025-05-13 08:34:09,747 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3610
+2025-05-13 08:34:09,751 - INFO - basehttp - "GET /static/css/bootstrap.min.css HTTP/1.1" 200 155845
+2025-05-13 08:34:09,772 - INFO - basehttp - "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 78743
+2025-05-13 08:34:09,785 - INFO - basehttp - "GET /static/js/scripti.js HTTP/1.1" 200 2496
+2025-05-13 08:34:09,801 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-13 08:34:09,834 - INFO - basehttp - "GET /static/image/boat-5889919_1280.png HTTP/1.1" 200 143567
+2025-05-13 08:34:27,354 - INFO - basehttp - "POST /login/ HTTP/1.1" 200 9799
+2025-05-13 08:34:27,409 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 08:34:42,445 - INFO - basehttp - "POST /login/ HTTP/1.1" 302 0
+2025-05-13 08:34:42,521 - INFO - basehttp - "GET /home HTTP/1.1" 200 19313
+2025-05-13 08:34:42,584 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 08:34:42,602 - INFO - basehttp - "GET /static/image/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-13 08:34:42,610 - INFO - basehttp - "GET /static/image/city-182223_1280.jpg HTTP/1.1" 200 376515
+2025-05-13 08:34:42,615 - INFO - basehttp - "GET /static/image/istockphoto-2162033406-1024x1024.jpg HTTP/1.1" 200 62104
+2025-05-13 08:34:42,634 - INFO - basehttp - "GET /static/image/city-7352352_1280.jpg HTTP/1.1" 200 445704
+2025-05-13 08:36:52,997 - INFO - basehttp - "GET /home HTTP/1.1" 200 19313
+2025-05-13 08:36:53,147 - WARNING - basehttp - "GET /static/css/styles.css HTTP/1.1" 404 1801
+2025-05-13 08:36:53,151 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-13 08:37:18,332 - INFO - basehttp - "GET /home HTTP/1.1" 200 19313
+2025-05-13 08:37:18,385 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3610
+2025-05-13 08:40:31,158 - INFO - basehttp - "GET /home HTTP/1.1" 200 19314
+2025-05-13 08:40:34,058 - INFO - basehttp - "GET /home HTTP/1.1" 200 19314
+2025-05-13 08:40:44,121 - INFO - basehttp - "GET /home HTTP/1.1" 302 0
+2025-05-13 08:40:44,156 - INFO - basehttp - "GET /login/ HTTP/1.1" 200 9799
+2025-05-13 08:40:44,234 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3610
+2025-05-13 08:40:44,242 - INFO - basehttp - "GET /static/js/scripti.js HTTP/1.1" 200 2496
+2025-05-13 08:40:44,243 - INFO - basehttp - "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 78743
+2025-05-13 08:40:44,246 - INFO - basehttp - "GET /static/css/bootstrap.min.css HTTP/1.1" 200 155845
+2025-05-13 08:40:44,281 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-13 08:40:44,309 - INFO - basehttp - "GET /static/image/boat-5889919_1280.png HTTP/1.1" 200 143567
+2025-05-13 08:40:57,188 - INFO - basehttp - "POST /login/ HTTP/1.1" 302 0
+2025-05-13 08:40:57,260 - INFO - basehttp - "GET /home HTTP/1.1" 200 19314
+2025-05-13 08:40:57,360 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 08:40:57,366 - INFO - basehttp - "GET /static/image/istockphoto-2162033406-1024x1024.jpg HTTP/1.1" 200 62104
+2025-05-13 08:40:57,378 - INFO - basehttp - "GET /static/image/city-7352352_1280.jpg HTTP/1.1" 200 445704
+2025-05-13 08:40:57,389 - INFO - basehttp - "GET /static/image/city-182223_1280.jpg HTTP/1.1" 200 376515
+2025-05-13 08:40:57,391 - INFO - basehttp - "GET /static/image/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-13 08:41:23,114 - INFO - basehttp - "GET /home HTTP/1.1" 200 19314
+2025-05-13 08:41:23,160 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3610
+2025-05-13 08:45:34,647 - INFO - basehttp - "GET /home HTTP/1.1" 200 19354
+2025-05-13 08:45:34,710 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 08:45:34,744 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-13 08:45:55,107 - INFO - basehttp - "GET /home HTTP/1.1" 302 0
+2025-05-13 08:45:55,145 - INFO - basehttp - "GET /login/ HTTP/1.1" 200 9799
+2025-05-13 08:45:55,230 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3610
+2025-05-13 08:45:55,233 - INFO - basehttp - "GET /static/js/scripti.js HTTP/1.1" 200 2496
+2025-05-13 08:45:55,241 - INFO - basehttp - "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 78743
+2025-05-13 08:45:55,243 - INFO - basehttp - "GET /static/css/bootstrap.min.css HTTP/1.1" 200 155845
+2025-05-13 08:45:55,270 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-13 08:45:55,334 - INFO - basehttp - "GET /static/image/boat-5889919_1280.png HTTP/1.1" 200 143567
+2025-05-13 08:46:05,244 - INFO - basehttp - "POST /login/ HTTP/1.1" 302 0
+2025-05-13 08:46:05,317 - INFO - basehttp - "GET /home HTTP/1.1" 200 19354
+2025-05-13 08:46:05,412 - INFO - basehttp - "GET /static/image/city-182223_1280.jpg HTTP/1.1" 200 376515
+2025-05-13 08:46:05,417 - INFO - basehttp - "GET /static/image/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-13 08:46:05,422 - INFO - basehttp - "GET /static/image/istockphoto-2162033406-1024x1024.jpg HTTP/1.1" 200 62104
+2025-05-13 08:46:05,442 - INFO - basehttp - "GET /static/image/city-7352352_1280.jpg HTTP/1.1" 200 445704
+2025-05-13 08:47:20,270 - INFO - basehttp - "GET /home HTTP/1.1" 200 19354
+2025-05-13 08:47:20,370 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3610
+2025-05-13 08:47:20,405 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-13 08:47:49,504 - INFO - basehttp - "GET /home HTTP/1.1" 200 19354
+2025-05-13 08:47:49,576 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 08:47:50,367 - INFO - basehttp - "GET /complet/ HTTP/1.1" 200 2277
+2025-05-13 08:48:33,206 - INFO - basehttp - "GET /home HTTP/1.1" 200 19354
+2025-05-13 08:48:33,299 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3610
+2025-05-13 08:49:23,510 - INFO - basehttp - "GET /home HTTP/1.1" 200 19354
+2025-05-13 08:49:23,584 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3610
+2025-05-13 08:49:31,031 - INFO - basehttp - "GET /home HTTP/1.1" 200 19354
+2025-05-13 08:49:31,090 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 08:50:10,093 - INFO - basehttp - "GET /home HTTP/1.1" 200 19354
+2025-05-13 08:50:10,140 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3610
+2025-05-13 08:51:20,533 - INFO - basehttp - "GET /home HTTP/1.1" 200 19354
+2025-05-13 08:51:20,604 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3610
+2025-05-13 08:52:29,978 - INFO - basehttp - "GET /home HTTP/1.1" 200 19290
+2025-05-13 08:52:30,109 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 08:53:33,311 - INFO - basehttp - "GET /home HTTP/1.1" 200 19290
+2025-05-13 08:53:33,392 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 08:55:20,384 - INFO - basehttp - "GET /home HTTP/1.1" 200 19290
+2025-05-13 08:55:20,466 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3608
+2025-05-13 08:55:22,101 - INFO - basehttp - "GET /home HTTP/1.1" 200 19290
+2025-05-13 08:55:22,181 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:00:14,648 - INFO - basehttp - "GET /home HTTP/1.1" 200 19290
+2025-05-13 09:00:14,703 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3650
+2025-05-13 09:00:39,125 - INFO - basehttp - "GET /home HTTP/1.1" 200 19290
+2025-05-13 09:00:39,185 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3608
+2025-05-13 09:00:40,056 - INFO - basehttp - "GET /home HTTP/1.1" 200 19290
+2025-05-13 09:00:40,108 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:01:50,403 - INFO - basehttp - "GET /home HTTP/1.1" 200 19290
+2025-05-13 09:01:50,480 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3588
+2025-05-13 09:01:51,523 - INFO - basehttp - "GET /home HTTP/1.1" 200 19290
+2025-05-13 09:01:51,598 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:02:02,546 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 10098
+2025-05-13 09:02:02,625 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:02:04,025 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 11225
+2025-05-13 09:02:04,099 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:02:06,086 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 11367
+2025-05-13 09:02:06,149 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:02:07,223 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 11225
+2025-05-13 09:02:08,175 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 10896
+2025-05-13 09:02:08,248 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:03:06,084 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 10896
+2025-05-13 09:03:06,166 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3594
+2025-05-13 09:03:07,136 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 10896
+2025-05-13 09:03:07,211 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:03:07,884 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 10896
+2025-05-13 09:03:07,919 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:03:54,569 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 10896
+2025-05-13 09:03:54,625 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3638
+2025-05-13 09:03:56,214 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 10896
+2025-05-13 09:03:56,269 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:03:56,998 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 10896
+2025-05-13 09:03:57,046 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:04:22,337 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 10896
+2025-05-13 09:04:22,387 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3636
+2025-05-13 09:04:50,077 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 10896
+2025-05-13 09:04:50,132 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3608
+2025-05-13 09:06:19,524 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 10896
+2025-05-13 09:06:19,584 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3672
+2025-05-13 09:07:19,897 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 10896
+2025-05-13 09:07:19,988 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3608
+2025-05-13 09:07:53,104 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 10896
+2025-05-13 09:07:53,151 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3608
+2025-05-13 09:09:14,417 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 10896
+2025-05-13 09:09:14,509 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3588
+2025-05-13 09:09:22,718 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 14915
+2025-05-13 09:09:22,799 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:09:28,777 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 10896
+2025-05-13 09:09:28,831 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:09:32,863 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 10098
+2025-05-13 09:09:32,929 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:09:34,253 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 11225
+2025-05-13 09:09:34,316 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:09:48,427 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 11225
+2025-05-13 09:09:48,479 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3608
+2025-05-13 09:10:32,534 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 11225
+2025-05-13 09:10:32,597 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3608
+2025-05-13 09:10:36,268 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 10994
+2025-05-13 09:10:36,347 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:10:45,369 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 11225
+2025-05-13 09:10:45,419 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:11:59,124 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 11225
+2025-05-13 09:11:59,208 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:12:10,389 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 10994
+2025-05-13 09:12:10,473 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:12:38,233 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 10994
+2025-05-13 09:12:38,284 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3590
+2025-05-13 09:12:43,448 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 11225
+2025-05-13 09:12:43,530 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:13:00,772 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 11225
+2025-05-13 09:13:00,848 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3610
+2025-05-13 09:13:30,430 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 11225
+2025-05-13 09:13:30,479 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3610
+2025-05-13 09:13:42,678 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 11225
+2025-05-13 09:13:42,735 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3609
+2025-05-13 09:14:26,161 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 11225
+2025-05-13 09:14:26,234 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3609
+2025-05-13 09:14:27,164 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 11225
+2025-05-13 09:14:27,245 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:14:38,102 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 11225
+2025-05-13 09:14:38,152 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3609
+2025-05-13 09:14:39,287 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 11225
+2025-05-13 09:14:39,334 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:14:52,596 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 11225
+2025-05-13 09:14:52,644 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3609
+2025-05-13 09:14:56,047 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 10896
+2025-05-13 09:14:56,114 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:14:57,254 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 11225
+2025-05-13 09:14:57,320 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:15:19,121 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 10994
+2025-05-13 09:15:19,177 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:15:29,168 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 11225
+2025-05-13 09:15:29,247 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:16:41,990 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 11225
+2025-05-13 09:16:42,079 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3609
+2025-05-13 09:17:43,006 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 11225
+2025-05-13 09:17:43,095 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3631
+2025-05-13 09:17:44,132 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 11225
+2025-05-13 09:17:44,204 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:18:25,198 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 11225
+2025-05-13 09:18:25,241 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3631
+2025-05-13 09:20:24,038 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 11225
+2025-05-13 09:20:24,088 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3690
+2025-05-13 09:20:37,477 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 10896
+2025-05-13 09:20:37,534 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:20:38,436 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 10098
+2025-05-13 09:20:40,197 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 11225
+2025-05-13 09:20:40,270 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:20:42,736 - INFO - basehttp - "GET /parcours_stagiaire/ HTTP/1.1" 200 11738
+2025-05-13 09:20:42,791 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:20:43,595 - INFO - basehttp - "GET /stagiaire/ HTTP/1.1" 200 10962
+2025-05-13 09:20:44,742 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 12233
+2025-05-13 09:20:44,804 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:20:45,690 - INFO - basehttp - "GET /typeConge/ HTTP/1.1" 200 9900
+2025-05-13 09:20:55,196 - INFO - basehttp - "GET /typeConge/ HTTP/1.1" 200 9900
+2025-05-13 09:20:55,278 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3631
+2025-05-13 09:21:01,579 - INFO - basehttp - "GET /typeConge/ HTTP/1.1" 200 9900
+2025-05-13 09:21:01,648 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3630
+2025-05-13 09:21:18,962 - INFO - basehttp - "GET /typeConge/ HTTP/1.1" 200 9900
+2025-05-13 09:21:19,013 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3609
+2025-05-13 09:26:42,172 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\urls.py changed, reloading.
+2025-05-13 09:26:44,369 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 09:27:43,593 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\urls.py changed, reloading.
+2025-05-13 09:27:45,526 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 09:28:54,404 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\urls.py changed, reloading.
+2025-05-13 09:28:56,391 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 09:29:41,321 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 12233
+2025-05-13 09:29:41,410 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:30:10,123 - ERROR - log - Internal Server Error: /conge/
+2025-05-13 09:30:10,124 - ERROR - basehttp - "GET /conge/ HTTP/1.1" 500 199
+2025-05-13 09:32:49,626 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 13011
+2025-05-13 09:32:49,699 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:33:51,427 - INFO - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 200 1763
+2025-05-13 09:35:51,216 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 09:35:53,509 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 09:35:56,367 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 13011
+2025-05-13 09:35:56,450 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:35:59,432 - ERROR - log - Internal Server Error: /conge/conge/4/pdf/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py", line 38, in generate_conge_pdf
+    elements.append(PageBreak())
+NameError: name 'PageBreak' is not defined
+2025-05-13 09:35:59,436 - ERROR - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 500 67621
+2025-05-13 09:37:00,043 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 09:37:02,094 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 09:37:05,287 - INFO - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 200 2436
+2025-05-13 09:37:49,358 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 09:37:51,906 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 09:38:05,398 - ERROR - log - Internal Server Error: /conge/conge/8/pdf/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py", line 31, in generate_conge_pdf
+    title_table = Table(data)
+UnboundLocalError: local variable 'data' referenced before assignment
+2025-05-13 09:38:05,402 - ERROR - basehttp - "GET /conge/conge/8/pdf/ HTTP/1.1" 500 67182
+2025-05-13 09:38:25,446 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 09:38:27,438 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 09:39:40,960 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 09:39:43,352 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 09:39:50,498 - INFO - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 200 2436
+2025-05-13 09:40:38,294 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 09:40:40,408 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 09:40:42,618 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 13011
+2025-05-13 09:40:42,694 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:40:44,605 - INFO - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 200 1988
+2025-05-13 09:42:22,326 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 09:42:24,542 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 09:42:27,526 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 13011
+2025-05-13 09:42:34,823 - INFO - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 200 1997
+2025-05-13 09:44:47,335 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 09:44:49,825 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 09:44:51,854 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 13011
+2025-05-13 09:44:51,918 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:44:54,183 - INFO - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 200 1997
+2025-05-13 09:45:41,700 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 09:45:44,232 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 09:45:47,950 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 13011
+2025-05-13 09:45:49,314 - INFO - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 200 1978
+2025-05-13 09:47:28,208 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 09:47:30,850 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 09:47:34,032 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 13011
+2025-05-13 09:47:34,087 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:47:36,620 - INFO - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 200 1998
+2025-05-13 09:49:09,764 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 09:49:11,990 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 09:49:23,147 - INFO - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 200 1982
+2025-05-13 09:50:01,755 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 09:50:03,800 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 09:50:06,979 - INFO - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 200 1967
+2025-05-13 09:50:32,800 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 09:50:34,891 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 09:50:37,951 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 13011
+2025-05-13 09:50:38,010 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:50:40,312 - INFO - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 200 1965
+2025-05-13 09:51:11,748 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 09:51:14,311 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 09:51:17,209 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 13011
+2025-05-13 09:51:24,459 - INFO - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 200 1939
+2025-05-13 09:52:05,824 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 09:52:08,436 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 09:52:10,360 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 13011
+2025-05-13 09:52:12,722 - INFO - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 200 1929
+2025-05-13 09:53:35,592 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 09:53:38,319 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 09:53:41,628 - INFO - basehttp - "GET /conge/conge/8/pdf/ HTTP/1.1" 200 1962
+2025-05-13 09:55:10,308 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 09:55:12,467 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 09:55:23,229 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 13011
+2025-05-13 09:55:23,281 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 09:55:26,173 - INFO - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 200 1929
+2025-05-13 09:57:10,187 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 09:57:12,571 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 09:57:45,482 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 09:57:47,585 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 09:57:49,539 - ERROR - log - Internal Server Error: /conge/conge/4/pdf/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py", line 84, in generate_conge_pdf
+    doc.build(elements, onFirstPage=onPage, onLaterPages=onPage, canvasmaker=footer)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 1322, in build
+    BaseDocTemplate.build(self,flowables, canvasmaker=canvasmaker)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 1062, in build
+    self._startBuild(filename,canvasmaker)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 1032, in _startBuild
+    self.canv = self._makeCanvas(filename=filename,canvasmaker=canvasmaker)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 992, in _makeCanvas
+    canv = canvasmaker(filename or self.filename,
+TypeError: footer() got an unexpected keyword argument 'pagesize'
+2025-05-13 09:57:49,544 - ERROR - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 500 89101
+2025-05-13 09:58:21,492 - ERROR - log - Internal Server Error: /conge/conge/8/pdf/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py", line 84, in generate_conge_pdf
+    doc.build(elements, onFirstPage=onPage, onLaterPages=onPage, canvasmaker=footer)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 1322, in build
+    BaseDocTemplate.build(self,flowables, canvasmaker=canvasmaker)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 1062, in build
+    self._startBuild(filename,canvasmaker)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 1032, in _startBuild
+    self.canv = self._makeCanvas(filename=filename,canvasmaker=canvasmaker)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 992, in _makeCanvas
+    canv = canvasmaker(filename or self.filename,
+TypeError: footer() got an unexpected keyword argument 'pagesize'
+2025-05-13 09:58:21,495 - ERROR - basehttp - "GET /conge/conge/8/pdf/ HTTP/1.1" 500 89206
+2025-05-13 09:59:21,943 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 09:59:24,184 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 09:59:46,555 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 09:59:48,592 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 10:00:01,458 - INFO - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 200 2569
+2025-05-13 10:00:47,413 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 10:00:49,517 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 10:00:59,769 - INFO - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 200 2569
+2025-05-13 10:02:39,603 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 10:02:41,539 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 10:03:12,620 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 10:03:14,526 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 10:03:30,607 - ERROR - log - Internal Server Error: /conge/conge/4/pdf/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 165, in apply
+    getattr(doc,arn)(*args)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 1298, in handle_pageBegin
+    self._handle_pageBegin()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 621, in handle_pageBegin
+    self.pageTemplate.onPage(self.canv,self)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py", line 25, in onFirstPage
+    generer_entete_pdf(canvas, doc)  # Appel de la fonction d'entête
+TypeError: generer_entete_pdf() takes 1 positional argument but 2 were given
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py", line 78, in generate_conge_pdf
+    doc.build(elements, onFirstPage=onFirstPage, onLaterPages=footer)  # Utiliser des fonctions distinctes
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 1322, in build
+    BaseDocTemplate.build(self,flowables, canvasmaker=canvasmaker)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 1080, in build
+    self.clean_hanging()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 592, in clean_hanging
+    self.handle_flowable(self._hanging)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 926, in handle_flowable
+    f.apply(self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 172, in apply
+    annotateException("\nhandle_%s args=%s"%(action,ascii(args)))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 1176, in annotateException
+    rl_reraise(t,t(sep.join((_ for _ in (msg,str(v),postMsg) if _))),b)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 138, in rl_reraise
+    raise v.with_traceback(b)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 165, in apply
+    getattr(doc,arn)(*args)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 1298, in handle_pageBegin
+    self._handle_pageBegin()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 621, in handle_pageBegin
+    self.pageTemplate.onPage(self.canv,self)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py", line 25, in onFirstPage
+    generer_entete_pdf(canvas, doc)  # Appel de la fonction d'entête
+TypeError: 
+handle_pageBegin args=() generer_entete_pdf() takes 1 positional argument but 2 were given
+2025-05-13 10:03:30,615 - ERROR - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 500 135073
+2025-05-13 10:04:55,861 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 10:04:57,840 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 10:05:40,043 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 10:05:42,787 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 10:06:36,193 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 10:06:38,469 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 10:09:06,662 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 10:09:09,330 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 10:09:12,172 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 13011
+2025-05-13 10:09:12,258 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 10:09:13,599 - ERROR - log - Internal Server Error: /conge/conge/4/pdf/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 523, in open_for_read
+    return open_for_read_by_name(name,mode)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 463, in open_for_read_by_name
+    return open(name,mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'chemin_vers_ton_dossier\\45906d1a-f183-41db-bfad-d4e6c14242fb.png'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 530, in open_for_read
+    return BytesIO((datareader if name[:5].lower()=='data:' else rlUrlRead)(name))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 476, in rlUrlRead
+    return urlopen(name).read()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 501, in open
+    req = Request(fullurl, data)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 320, in __init__
+    self.full_url = url
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 346, in full_url
+    self._parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 375, in _parse
+    raise ValueError("unknown url type: %r" % self.full_url)
+ValueError: unknown url type: 'chemin_vers_ton_dossier\\45906d1a-f183-41db-bfad-d4e6c14242fb.png'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 643, in __init__
+    fp = open_for_read(fileName,'b')
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 534, in open_for_read
+    return open_for_read(name,mode)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 532, in open_for_read
+    raise IOError('Cannot open resource "%s"' % name)
+OSError: Cannot open resource "chemin_vers_ton_dossier\45906d1a-f183-41db-bfad-d4e6c14242fb.png"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\views_print.py", line 28, in generer_entete_pdf
+    logo = ImageReader(logo_path)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 655, in __init__
+    annotateException('\nfileName=%r identity=%s'%(fileName,self.identity()))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 1176, in annotateException
+    rl_reraise(t,t(sep.join((_ for _ in (msg,str(v),postMsg) if _))),b)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 138, in rl_reraise
+    raise v.with_traceback(b)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 643, in __init__
+    fp = open_for_read(fileName,'b')
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 534, in open_for_read
+    return open_for_read(name,mode)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 532, in open_for_read
+    raise IOError('Cannot open resource "%s"' % name)
+OSError: 
+fileName='chemin_vers_ton_dossier\\45906d1a-f183-41db-bfad-d4e6c14242fb.png' identity=[ImageReader@0x219cd35dfa0 filename='chemin_vers_ton_dossier\\45906d1a-f183-41db-bfad-d4e6c14242fb.png'] Cannot open resource "chemin_vers_ton_dossier\45906d1a-f183-41db-bfad-d4e6c14242fb.png"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py", line 28, in generate_conge_pdf
+    generer_entete_pdf (elements)  # Appelle la fonction pour ajouter l'entête
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\views_print.py", line 34, in generer_entete_pdf
+    p.setFont("Times-Roman", 10)
+AttributeError: 'list' object has no attribute 'setFont'
+2025-05-13 10:09:13,607 - ERROR - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 500 158263
+2025-05-13 10:10:19,605 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 10:10:21,941 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 10:11:26,185 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 10:11:27,906 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 10:11:44,361 - ERROR - log - Internal Server Error: /conge/conge/4/pdf/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py", line 83, in generate_conge_pdf
+    generer_pdf_avec_pied_de_page(elements, username)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\views_print.py", line 75, in generer_pdf_avec_pied_de_page
+    p.setFont("Times-Roman", 10)
+AttributeError: 'list' object has no attribute 'setFont'
+2025-05-13 10:11:44,365 - ERROR - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 500 75876
+2025-05-13 10:12:13,030 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 13011
+2025-05-13 10:12:17,951 - ERROR - log - Internal Server Error: /conge/conge/4/pdf/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py", line 83, in generate_conge_pdf
+    generer_pdf_avec_pied_de_page(elements, username)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\views_print.py", line 75, in generer_pdf_avec_pied_de_page
+    p.setFont("Times-Roman", 10)
+AttributeError: 'list' object has no attribute 'setFont'
+2025-05-13 10:12:17,956 - ERROR - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 500 75739
+2025-05-13 10:14:21,732 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 10:14:23,813 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 10:15:46,658 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\views_print.py changed, reloading.
+2025-05-13 10:15:49,536 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 10:15:54,504 - ERROR - log - Internal Server Error: /conge/conge/4/pdf/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py", line 83, in generate_conge_pdf
+    generer_pdf_avec_pied_de_page(elements, username)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\views_print.py", line 81, in generer_pdf_avec_pied_de_page
+    raise TypeError("L'objet p doit être un objet de type canvas.")
+TypeError: L'objet p doit être un objet de type canvas.
+2025-05-13 10:15:54,508 - ERROR - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 500 75721
+2025-05-13 10:16:41,458 - INFO - basehttp - "GET /complet/ HTTP/1.1" 200 2277
+2025-05-13 10:18:53,099 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 10:18:54,993 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 10:19:14,166 - ERROR - log - Internal Server Error: /conge/conge/4/pdf/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py", line 118, in generate_conge_pdf
+    generer_pdf_avec_pied_de_page(elements, username)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\views_print.py", line 81, in generer_pdf_avec_pied_de_page
+    raise TypeError("L'objet p doit être un objet de type canvas.")
+TypeError: L'objet p doit être un objet de type canvas.
+2025-05-13 10:19:14,171 - ERROR - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 500 75726
+2025-05-13 10:20:49,077 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 10:20:51,209 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 10:20:52,526 - ERROR - log - Internal Server Error: /conge/conge/4/pdf/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py", line 79, in generate_conge_pdf
+    generer_pdf_avec_pied_de_page(elements, username)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\views_print.py", line 81, in generer_pdf_avec_pied_de_page
+    raise TypeError("L'objet p doit être un objet de type canvas.")
+TypeError: L'objet p doit être un objet de type canvas.
+2025-05-13 10:20:52,531 - ERROR - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 500 75858
+2025-05-13 10:20:53,835 - ERROR - log - Internal Server Error: /conge/conge/4/pdf/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py", line 79, in generate_conge_pdf
+    generer_pdf_avec_pied_de_page(elements, username)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\views_print.py", line 81, in generer_pdf_avec_pied_de_page
+    raise TypeError("L'objet p doit être un objet de type canvas.")
+TypeError: L'objet p doit être un objet de type canvas.
+2025-05-13 10:20:53,841 - ERROR - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 500 75858
+2025-05-13 10:20:54,671 - ERROR - log - Internal Server Error: /conge/conge/4/pdf/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py", line 79, in generate_conge_pdf
+    generer_pdf_avec_pied_de_page(elements, username)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\views_print.py", line 81, in generer_pdf_avec_pied_de_page
+    raise TypeError("L'objet p doit être un objet de type canvas.")
+TypeError: L'objet p doit être un objet de type canvas.
+2025-05-13 10:20:54,676 - ERROR - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 500 75858
+2025-05-13 10:23:51,527 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 10:23:54,935 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 10:24:03,422 - ERROR - log - Internal Server Error: /conge/conge/4/pdf/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 165, in apply
+    getattr(doc,arn)(*args)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 1298, in handle_pageBegin
+    self._handle_pageBegin()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 621, in handle_pageBegin
+    self.pageTemplate.onPage(self.canv,self)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py", line 30, in onPage
+    generer_pdf_avec_pied_de_page(elements, username, canvas)  # Passer canvas ici
+TypeError: generer_pdf_avec_pied_de_page() takes 2 positional arguments but 3 were given
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py", line 78, in generate_conge_pdf
+    doc.build(elements, onFirstPage=onPage, onLaterPages=onPage)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 1322, in build
+    BaseDocTemplate.build(self,flowables, canvasmaker=canvasmaker)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 1080, in build
+    self.clean_hanging()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 592, in clean_hanging
+    self.handle_flowable(self._hanging)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 926, in handle_flowable
+    f.apply(self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 172, in apply
+    annotateException("\nhandle_%s args=%s"%(action,ascii(args)))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 1176, in annotateException
+    rl_reraise(t,t(sep.join((_ for _ in (msg,str(v),postMsg) if _))),b)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 138, in rl_reraise
+    raise v.with_traceback(b)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 165, in apply
+    getattr(doc,arn)(*args)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 1298, in handle_pageBegin
+    self._handle_pageBegin()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 621, in handle_pageBegin
+    self.pageTemplate.onPage(self.canv,self)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py", line 30, in onPage
+    generer_pdf_avec_pied_de_page(elements, username, canvas)  # Passer canvas ici
+TypeError: 
+handle_pageBegin args=() generer_pdf_avec_pied_de_page() takes 2 positional arguments but 3 were given
+2025-05-13 10:24:03,428 - ERROR - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 500 136709
+2025-05-13 10:24:37,196 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 10:24:39,701 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 10:24:41,042 - ERROR - log - Internal Server Error: /conge/conge/4/pdf/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 165, in apply
+    getattr(doc,arn)(*args)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 1298, in handle_pageBegin
+    self._handle_pageBegin()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 621, in handle_pageBegin
+    self.pageTemplate.onPage(self.canv,self)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py", line 30, in onPage
+    generer_pdf_avec_pied_de_page(elements, username)  # Passer canvas ici
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\views_print.py", line 81, in generer_pdf_avec_pied_de_page
+    raise TypeError("L'objet p doit être un objet de type canvas.")
+TypeError: L'objet p doit être un objet de type canvas.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py", line 78, in generate_conge_pdf
+    doc.build(elements, onFirstPage=onPage, onLaterPages=onPage)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 1322, in build
+    BaseDocTemplate.build(self,flowables, canvasmaker=canvasmaker)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 1080, in build
+    self.clean_hanging()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 592, in clean_hanging
+    self.handle_flowable(self._hanging)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 926, in handle_flowable
+    f.apply(self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 172, in apply
+    annotateException("\nhandle_%s args=%s"%(action,ascii(args)))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 1176, in annotateException
+    rl_reraise(t,t(sep.join((_ for _ in (msg,str(v),postMsg) if _))),b)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 138, in rl_reraise
+    raise v.with_traceback(b)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 165, in apply
+    getattr(doc,arn)(*args)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 1298, in handle_pageBegin
+    self._handle_pageBegin()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\platypus\doctemplate.py", line 621, in handle_pageBegin
+    self.pageTemplate.onPage(self.canv,self)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py", line 30, in onPage
+    generer_pdf_avec_pied_de_page(elements, username)  # Passer canvas ici
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\views_print.py", line 81, in generer_pdf_avec_pied_de_page
+    raise TypeError("L'objet p doit être un objet de type canvas.")
+TypeError: 
+handle_pageBegin args=() L'objet p doit être un objet de type canvas.
+2025-05-13 10:24:41,051 - ERROR - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 500 147749
+2025-05-13 10:25:07,621 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 10:25:09,540 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 10:25:11,146 - INFO - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 200 2635
+2025-05-13 10:27:56,417 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\views_print.py changed, reloading.
+2025-05-13 10:27:59,906 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 10:28:07,729 - INFO - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 200 2635
+2025-05-13 10:31:05,544 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 10:31:07,712 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 10:31:10,680 - INFO - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 200 2635
+2025-05-13 10:33:07,661 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 10:33:09,413 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 10:34:14,983 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 10:34:18,759 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 10:34:41,326 - ERROR - log - Internal Server Error: /conge/conge/4/pdf/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 523, in open_for_read
+    return open_for_read_by_name(name,mode)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 463, in open_for_read_by_name
+    return open(name,mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'chemin_vers_ton_dossier\\45906d1a-f183-41db-bfad-d4e6c14242fb.png'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 530, in open_for_read
+    return BytesIO((datareader if name[:5].lower()=='data:' else rlUrlRead)(name))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 476, in rlUrlRead
+    return urlopen(name).read()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 501, in open
+    req = Request(fullurl, data)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 320, in __init__
+    self.full_url = url
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 346, in full_url
+    self._parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 375, in _parse
+    raise ValueError("unknown url type: %r" % self.full_url)
+ValueError: unknown url type: 'chemin_vers_ton_dossier\\45906d1a-f183-41db-bfad-d4e6c14242fb.png'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 643, in __init__
+    fp = open_for_read(fileName,'b')
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 534, in open_for_read
+    return open_for_read(name,mode)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 532, in open_for_read
+    raise IOError('Cannot open resource "%s"' % name)
+OSError: Cannot open resource "chemin_vers_ton_dossier\45906d1a-f183-41db-bfad-d4e6c14242fb.png"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\views_print.py", line 28, in generer_entete_pdf
+    logo = ImageReader(logo_path)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 655, in __init__
+    annotateException('\nfileName=%r identity=%s'%(fileName,self.identity()))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 1176, in annotateException
+    rl_reraise(t,t(sep.join((_ for _ in (msg,str(v),postMsg) if _))),b)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 138, in rl_reraise
+    raise v.with_traceback(b)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 643, in __init__
+    fp = open_for_read(fileName,'b')
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 534, in open_for_read
+    return open_for_read(name,mode)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 532, in open_for_read
+    raise IOError('Cannot open resource "%s"' % name)
+OSError: 
+fileName='chemin_vers_ton_dossier\\45906d1a-f183-41db-bfad-d4e6c14242fb.png' identity=[ImageReader@0x174b6f8c580 filename='chemin_vers_ton_dossier\\45906d1a-f183-41db-bfad-d4e6c14242fb.png'] Cannot open resource "chemin_vers_ton_dossier\45906d1a-f183-41db-bfad-d4e6c14242fb.png"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py", line 29, in generate_conge_pdf
+    generer_entete_pdf( doc)  # Passe l'objet canvas
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\views_print.py", line 34, in generer_entete_pdf
+    p.setFont("Times-Roman", 10)
+AttributeError: 'SimpleDocTemplate' object has no attribute 'setFont'
+2025-05-13 10:34:41,335 - ERROR - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 500 158432
+2025-05-13 10:34:47,589 - ERROR - log - Internal Server Error: /conge/conge/4/pdf/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 523, in open_for_read
+    return open_for_read_by_name(name,mode)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 463, in open_for_read_by_name
+    return open(name,mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'chemin_vers_ton_dossier\\45906d1a-f183-41db-bfad-d4e6c14242fb.png'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 530, in open_for_read
+    return BytesIO((datareader if name[:5].lower()=='data:' else rlUrlRead)(name))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 476, in rlUrlRead
+    return urlopen(name).read()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 501, in open
+    req = Request(fullurl, data)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 320, in __init__
+    self.full_url = url
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 346, in full_url
+    self._parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 375, in _parse
+    raise ValueError("unknown url type: %r" % self.full_url)
+ValueError: unknown url type: 'chemin_vers_ton_dossier\\45906d1a-f183-41db-bfad-d4e6c14242fb.png'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 643, in __init__
+    fp = open_for_read(fileName,'b')
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 532, in open_for_read
+    raise IOError('Cannot open resource "%s"' % name)
+OSError: Cannot open resource "chemin_vers_ton_dossier\45906d1a-f183-41db-bfad-d4e6c14242fb.png"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\views_print.py", line 28, in generer_entete_pdf
+    logo = ImageReader(logo_path)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 655, in __init__
+    annotateException('\nfileName=%r identity=%s'%(fileName,self.identity()))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 1176, in annotateException
+    rl_reraise(t,t(sep.join((_ for _ in (msg,str(v),postMsg) if _))),b)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 138, in rl_reraise
+    raise v.with_traceback(b)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 643, in __init__
+    fp = open_for_read(fileName,'b')
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 532, in open_for_read
+    raise IOError('Cannot open resource "%s"' % name)
+OSError: 
+fileName='chemin_vers_ton_dossier\\45906d1a-f183-41db-bfad-d4e6c14242fb.png' identity=[ImageReader@0x174b71ca370 filename='chemin_vers_ton_dossier\\45906d1a-f183-41db-bfad-d4e6c14242fb.png'] Cannot open resource "chemin_vers_ton_dossier\45906d1a-f183-41db-bfad-d4e6c14242fb.png"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py", line 29, in generate_conge_pdf
+    generer_entete_pdf( doc)  # Passe l'objet canvas
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\views_print.py", line 34, in generer_entete_pdf
+    p.setFont("Times-Roman", 10)
+AttributeError: 'SimpleDocTemplate' object has no attribute 'setFont'
+2025-05-13 10:34:47,600 - ERROR - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 500 148426
+2025-05-13 10:35:40,701 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 10:35:43,491 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 10:35:45,794 - INFO - basehttp - "GET /conge/conge/4/pdf/ HTTP/1.1" 200 0
+2025-05-13 10:47:51,033 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 10:47:53,807 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 10:48:00,007 - INFO - basehttp - "GET /conge/4/supprimer/ HTTP/1.1" 302 0
+2025-05-13 10:48:00,150 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 11701
+2025-05-13 10:48:00,236 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 10:48:04,195 - INFO - basehttp - "GET /conge/conge/8/pdf/ HTTP/1.1" 200 0
+2025-05-13 10:51:23,179 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 10:51:26,104 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 10:51:27,462 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 11701
+2025-05-13 10:51:37,482 - ERROR - log - Internal Server Error: /conge/conge/8/pdf/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 523, in open_for_read
+    return open_for_read_by_name(name,mode)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 463, in open_for_read_by_name
+    return open(name,mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'chemin_vers_ton_dossier\\45906d1a-f183-41db-bfad-d4e6c14242fb.png'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 530, in open_for_read
+    return BytesIO((datareader if name[:5].lower()=='data:' else rlUrlRead)(name))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 476, in rlUrlRead
+    return urlopen(name).read()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 501, in open
+    req = Request(fullurl, data)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 320, in __init__
+    self.full_url = url
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 346, in full_url
+    self._parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 375, in _parse
+    raise ValueError("unknown url type: %r" % self.full_url)
+ValueError: unknown url type: 'chemin_vers_ton_dossier\\45906d1a-f183-41db-bfad-d4e6c14242fb.png'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 643, in __init__
+    fp = open_for_read(fileName,'b')
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 534, in open_for_read
+    return open_for_read(name,mode)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 532, in open_for_read
+    raise IOError('Cannot open resource "%s"' % name)
+OSError: Cannot open resource "chemin_vers_ton_dossier\45906d1a-f183-41db-bfad-d4e6c14242fb.png"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\views_print.py", line 28, in generer_entete_pdf
+    logo = ImageReader(logo_path)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 655, in __init__
+    annotateException('\nfileName=%r identity=%s'%(fileName,self.identity()))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 1176, in annotateException
+    rl_reraise(t,t(sep.join((_ for _ in (msg,str(v),postMsg) if _))),b)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 138, in rl_reraise
+    raise v.with_traceback(b)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 643, in __init__
+    fp = open_for_read(fileName,'b')
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 534, in open_for_read
+    return open_for_read(name,mode)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\utils.py", line 532, in open_for_read
+    raise IOError('Cannot open resource "%s"' % name)
+OSError: 
+fileName='chemin_vers_ton_dossier\\45906d1a-f183-41db-bfad-d4e6c14242fb.png' identity=[ImageReader@0x22b42b68b80 filename='chemin_vers_ton_dossier\\45906d1a-f183-41db-bfad-d4e6c14242fb.png'] Cannot open resource "chemin_vers_ton_dossier\45906d1a-f183-41db-bfad-d4e6c14242fb.png"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py", line 28, in generate_conge_pdf
+    generer_entete_pdf(doc)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\views_print.py", line 34, in generer_entete_pdf
+    p.setFont("Times-Roman", 10)
+AttributeError: 'SimpleDocTemplate' object has no attribute 'setFont'
+2025-05-13 10:51:37,491 - ERROR - basehttp - "GET /conge/conge/8/pdf/ HTTP/1.1" 500 158509
+2025-05-13 10:51:53,333 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 10:51:55,575 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 10:52:04,257 - INFO - basehttp - "GET /conge/conge/8/pdf/ HTTP/1.1" 200 0
+2025-05-13 10:56:59,684 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 10:57:02,444 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 10:57:04,516 - INFO - basehttp - "GET /conge/conge/8/pdf/ HTTP/1.1" 200 0
+2025-05-13 11:08:33,521 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 11:08:35,798 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 11:08:38,892 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 11701
+2025-05-13 11:08:38,977 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 11:08:40,490 - INFO - basehttp - "GET /conge/conge/8/pdf/ HTTP/1.1" 200 2632
+2025-05-13 11:09:32,885 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 11:09:35,334 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 11:09:37,565 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 11701
+2025-05-13 11:09:39,277 - INFO - basehttp - "GET /conge/conge/8/pdf/ HTTP/1.1" 200 2631
+2025-05-13 11:09:53,069 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 11:09:55,660 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 11:09:57,533 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 11701
+2025-05-13 11:09:59,602 - INFO - basehttp - "GET /conge/conge/8/pdf/ HTTP/1.1" 200 2629
+2025-05-13 11:10:27,809 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 11:10:30,602 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 11:10:32,462 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 11701
+2025-05-13 11:10:33,622 - INFO - basehttp - "GET /conge/conge/8/pdf/ HTTP/1.1" 200 2629
+2025-05-13 11:11:01,103 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 11:11:03,931 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 11:11:05,222 - INFO - basehttp - "GET /conge/conge/8/pdf/ HTTP/1.1" 200 2631
+2025-05-13 11:24:31,372 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 11:24:33,750 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 11:24:36,874 - INFO - basehttp - "GET /conge/conge/8/pdf/ HTTP/1.1" 200 2632
+2025-05-13 11:25:16,972 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 11:25:19,633 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 11:25:27,345 - INFO - basehttp - "GET /conge/conge/8/pdf/ HTTP/1.1" 200 2632
+2025-05-13 11:26:17,938 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 11:26:20,417 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 11:26:22,556 - INFO - basehttp - "GET /conge/conge/8/pdf/ HTTP/1.1" 200 2617
+2025-05-13 11:26:48,937 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 11:26:51,059 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 11:26:53,460 - INFO - basehttp - "GET /conge/conge/8/pdf/ HTTP/1.1" 200 2617
+2025-05-13 11:33:59,277 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 11:34:01,960 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 11:34:07,437 - INFO - basehttp - "GET /conge/conge/8/pdf/ HTTP/1.1" 200 2626
+2025-05-13 11:34:51,055 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 11:34:55,456 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 11:37:35,187 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 11:37:37,317 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 11:37:41,370 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 11701
+2025-05-13 11:37:41,440 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 11:37:43,848 - INFO - basehttp - "GET /conge/conge/8/pdf/ HTTP/1.1" 200 2617
+2025-05-13 11:37:56,189 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 11:37:58,331 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 11:38:04,176 - INFO - basehttp - "GET /conge/conge/8/pdf/ HTTP/1.1" 200 2617
+2025-05-13 11:38:54,064 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 11:38:56,295 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 11:39:04,993 - INFO - basehttp - "GET /conge/conge/8/pdf/ HTTP/1.1" 200 2617
+2025-05-13 11:39:21,361 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 11:39:24,035 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 11:39:37,801 - INFO - basehttp - "GET /conge/conge/8/pdf/ HTTP/1.1" 200 2614
+2025-05-13 11:39:56,308 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 11:39:59,008 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 11:40:03,450 - INFO - basehttp - "GET /conge/conge/8/pdf/ HTTP/1.1" 200 2617
+2025-05-13 11:41:05,885 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 11:41:08,009 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 11:41:11,391 - INFO - basehttp - "GET /conge/conge/8/pdf/ HTTP/1.1" 200 2618
+2025-05-13 11:44:37,494 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 11:44:39,519 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 11:44:43,232 - INFO - basehttp - "GET /conge/conge/8/pdf/ HTTP/1.1" 200 2629
+2025-05-13 11:46:20,380 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\views_print.py changed, reloading.
+2025-05-13 11:46:22,582 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 11:46:24,526 - INFO - basehttp - "GET /conge/conge/8/pdf/ HTTP/1.1" 200 2633
+2025-05-13 11:46:50,630 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\views_print.py changed, reloading.
+2025-05-13 11:46:53,131 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 11:46:57,495 - INFO - basehttp - "GET /conge/conge/8/pdf/ HTTP/1.1" 200 2629
+2025-05-13 11:47:11,619 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Gestion_Personnel_2\views_print.py changed, reloading.
+2025-05-13 11:47:14,178 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 11:47:17,935 - INFO - basehttp - "GET /conge/conge/8/pdf/ HTTP/1.1" 200 2628
+2025-05-13 12:11:45,568 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 12:11:50,221 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 12:12:27,230 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\urls.py changed, reloading.
+2025-05-13 12:12:30,989 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 12:13:01,838 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\urls.py changed, reloading.
+2025-05-13 12:13:04,257 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 12:15:04,036 - ERROR - log - Internal Server Error: /conge/
+2025-05-13 12:15:04,037 - ERROR - basehttp - "GET /conge/ HTTP/1.1" 500 175
+2025-05-13 12:15:38,722 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 11871
+2025-05-13 12:15:38,788 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 12:15:43,590 - INFO - basehttp - "GET /conge/conges/pdf/ HTTP/1.1" 200 2628
+2025-05-13 12:24:51,981 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 12:24:55,033 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 12:25:10,636 - INFO - basehttp - "GET /conge/conges/pdf/ HTTP/1.1" 200 2628
+2025-05-13 12:28:05,814 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 11599
+2025-05-13 12:28:14,406 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-13 12:28:14,408 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 5301
+2025-05-13 12:28:14,779 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 302 0
+2025-05-13 12:28:14,856 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 13201
+2025-05-13 12:28:29,734 - INFO - basehttp - "GET /conge/10/modifier/ HTTP/1.1" 200 12954
+2025-05-13 12:28:40,784 - INFO - basehttp - "POST /conge/10/modifier/ HTTP/1.1" 302 0
+2025-05-13 12:28:40,835 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 13201
+2025-05-13 12:28:43,220 - INFO - basehttp - "GET /conge/11/modifier/ HTTP/1.1" 200 12954
+2025-05-13 12:28:47,076 - INFO - basehttp - "POST /conge/11/modifier/ HTTP/1.1" 302 0
+2025-05-13 12:28:47,129 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 13201
+2025-05-13 12:46:36,480 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-13 12:46:40,105 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 12:46:43,005 - INFO - basehttp - "GET /conge/10/modifier/ HTTP/1.1" 200 12954
+2025-05-13 12:46:43,096 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 12:46:45,767 - INFO - basehttp - "POST /conge/10/modifier/ HTTP/1.1" 302 0
+2025-05-13 12:46:45,835 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 13201
+2025-05-13 12:46:47,319 - ERROR - log - Internal Server Error: /conge/ajouter/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views.py", line 33, in ajouter_conge
+    form = CLCongeForm()
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py", line 45, in __init__
+    if 'typeconge' in self.fields and self.instance.typeconge:
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\fields\related_descriptors.py", line 246, in __get__
+    raise self.RelatedObjectDoesNotExist(
+Conge.models.CLConge.typeconge.RelatedObjectDoesNotExist: CLConge has no typeconge.
+2025-05-13 12:46:47,324 - ERROR - basehttp - "GET /conge/ajouter/ HTTP/1.1" 500 74913
+2025-05-13 12:47:03,971 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-13 12:47:06,045 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 12:47:15,312 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 11599
+2025-05-13 12:47:23,487 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-13 12:47:23,489 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 5301
+2025-05-13 12:47:23,911 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 302 0
+2025-05-13 12:47:24,013 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 14531
+2025-05-13 12:47:31,750 - INFO - basehttp - "GET /conge/8/modifier/ HTTP/1.1" 200 12974
+2025-05-13 12:47:35,474 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 14531
+2025-05-13 12:47:37,542 - INFO - basehttp - "GET /conge/10/modifier/ HTTP/1.1" 200 12954
+2025-05-13 12:47:41,327 - INFO - basehttp - "POST /conge/10/modifier/ HTTP/1.1" 302 0
+2025-05-13 12:47:41,408 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 14495
+2025-05-13 12:48:23,715 - INFO - basehttp - "GET /conge/10/modifier/ HTTP/1.1" 200 12964
+2025-05-13 12:48:26,844 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 14495
+2025-05-13 13:00:31,983 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-13 13:00:35,047 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 13:00:37,980 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 11599
+2025-05-13 13:00:42,146 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-13 13:00:42,148 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 5301
+2025-05-13 13:00:42,582 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 302 0
+2025-05-13 13:00:42,671 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 15825
+2025-05-13 13:09:12,127 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-13 13:09:14,671 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 13:26:28,034 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-13 13:26:30,340 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 13:28:49,901 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-13 13:28:54,357 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 13:29:01,118 - INFO - basehttp - "GET /conge/13/supprimer/ HTTP/1.1" 302 0
+2025-05-13 13:29:01,265 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 14495
+2025-05-13 13:29:01,331 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 13:29:03,749 - INFO - basehttp - "GET /conge/11/supprimer/ HTTP/1.1" 302 0
+2025-05-13 13:29:03,832 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 13165
+2025-05-13 13:29:07,331 - INFO - basehttp - "GET /conge/12/supprimer/ HTTP/1.1" 302 0
+2025-05-13 13:29:07,383 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 11835
+2025-05-13 13:29:10,610 - INFO - basehttp - "GET /conge/10/supprimer/ HTTP/1.1" 302 0
+2025-05-13 13:29:10,660 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 10548
+2025-05-13 13:29:11,646 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 11599
+2025-05-13 13:29:15,803 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-13 13:29:15,806 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 5301
+2025-05-13 13:29:17,174 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 302 0
+2025-05-13 13:29:17,223 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 11871
+2025-05-13 13:29:27,168 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 11599
+2025-05-13 13:29:31,474 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-13 13:29:31,476 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 5301
+2025-05-13 13:29:31,994 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 302 0
+2025-05-13 13:29:32,044 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 13201
+2025-05-13 13:29:35,546 - INFO - basehttp - "GET /conge/14/modifier/ HTTP/1.1" 200 12954
+2025-05-13 13:49:44,917 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\forms.py changed, reloading.
+2025-05-13 13:49:48,609 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 13:49:50,104 - INFO - basehttp - "GET /conge/14/modifier/ HTTP/1.1" 200 12954
+2025-05-13 13:49:52,314 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 13201
+2025-05-13 13:49:54,080 - INFO - basehttp - "GET /conge/ajouter/ HTTP/1.1" 200 11599
+2025-05-13 13:49:59,119 - WARNING - log - Not Found: /api/typeconge/1/
+2025-05-13 13:49:59,120 - WARNING - basehttp - "GET /api/typeconge/1/ HTTP/1.1" 404 5301
+2025-05-13 13:49:59,459 - INFO - basehttp - "POST /conge/ajouter/ HTTP/1.1" 302 0
+2025-05-13 13:49:59,519 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 14551
+2025-05-13 13:50:15,049 - INFO - basehttp - "GET /conge/16/modifier/ HTTP/1.1" 200 12974
+2025-05-13 13:50:18,834 - INFO - basehttp - "POST /conge/16/modifier/ HTTP/1.1" 302 0
+2025-05-13 13:50:18,890 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 14515
+2025-05-13 13:50:25,445 - INFO - basehttp - "GET /conge/14/modifier/ HTTP/1.1" 200 12954
+2025-05-13 13:50:27,735 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 14515
+2025-05-13 13:50:31,378 - INFO - basehttp - "GET /conge/14/supprimer/ HTTP/1.1" 302 0
+2025-05-13 13:50:31,439 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 13192
+2025-05-13 13:50:34,546 - INFO - basehttp - "GET /conge/15/supprimer/ HTTP/1.1" 302 0
+2025-05-13 13:50:34,598 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 11862
+2025-05-13 13:50:38,419 - INFO - basehttp - "GET /conge/8/modifier/ HTTP/1.1" 200 12974
+2025-05-13 13:50:40,214 - INFO - basehttp - "POST /conge/8/modifier/ HTTP/1.1" 200 12955
+2025-05-13 13:50:44,050 - INFO - basehttp - "POST /conge/8/modifier/ HTTP/1.1" 302 0
+2025-05-13 13:50:44,101 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 11862
+2025-05-13 13:50:49,724 - INFO - basehttp - "GET /conge/8/modifier/ HTTP/1.1" 200 12974
+2025-05-13 13:51:03,499 - INFO - basehttp - "POST /conge/8/modifier/ HTTP/1.1" 302 0
+2025-05-13 13:51:03,552 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 11826
+2025-05-13 14:00:21,206 - INFO - basehttp - "GET /conge/conges/pdf/ HTTP/1.1" 200 4040
+2025-05-13 14:01:26,727 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 14:01:29,411 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 14:06:44,381 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 14:06:46,946 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 14:06:48,237 - INFO - basehttp - "GET /conge/conges/pdf/ HTTP/1.1" 200 2697
+2025-05-13 14:07:44,430 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 14:07:46,559 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 14:11:15,600 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 14:11:18,299 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 14:11:51,435 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 14:11:55,820 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 14:12:22,791 - INFO - basehttp - "GET / HTTP/1.1" 302 0
+2025-05-13 14:12:22,936 - INFO - basehttp - "GET /login/ HTTP/1.1" 200 9735
+2025-05-13 14:12:23,005 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 14:12:23,950 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-13 14:12:32,957 - INFO - basehttp - "POST /login/ HTTP/1.1" 302 0
+2025-05-13 14:12:33,047 - INFO - basehttp - "GET /home HTTP/1.1" 200 19290
+2025-05-13 14:12:33,180 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-13 14:12:40,769 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 11826
+2025-05-13 14:12:43,820 - INFO - basehttp - "GET /conge/conges/pdf/ HTTP/1.1" 200 2696
+2025-05-13 14:27:10,904 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 14:27:13,818 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 14:27:18,772 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 11826
+2025-05-13 14:27:20,418 - INFO - basehttp - "GET /conge/conges/pdf/ HTTP/1.1" 200 2696
+2025-05-13 14:28:06,635 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 14:28:08,789 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 14:28:17,104 - INFO - basehttp - "GET /conge/conges/pdf/ HTTP/1.1" 200 2696
+2025-05-13 14:28:39,944 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 14:28:41,793 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 14:28:46,919 - INFO - basehttp - "GET /conge/conges/pdf/ HTTP/1.1" 200 2697
+2025-05-13 14:29:40,015 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 14:29:42,919 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 15:00:51,496 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 15:00:54,244 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 15:01:00,211 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 15:01:04,460 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 15:01:05,746 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 11826
+2025-05-13 15:01:05,827 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 15:01:07,544 - INFO - basehttp - "GET /conge/conges/pdf/ HTTP/1.1" 200 2694
+2025-05-13 15:19:03,138 - INFO - basehttp - "GET /conge/conge/8/pdf/ HTTP/1.1" 200 2627
+2025-05-13 15:23:07,096 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 15:23:10,148 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 15:23:11,688 - INFO - basehttp - "GET /conge/conges/pdf/ HTTP/1.1" 200 2897
+2025-05-13 15:23:11,732 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 52277)
+2025-05-13 15:25:06,611 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 15:25:09,318 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 15:25:12,021 - INFO - basehttp - "GET /conge/conges/pdf/ HTTP/1.1" 200 2896
+2025-05-13 15:42:05,009 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Affectation\urls.py changed, reloading.
+2025-05-13 15:42:08,206 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 16:01:26,316 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Affectation\views_print.py changed, reloading.
+2025-05-13 16:01:28,777 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 16:15:44,229 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 16:15:47,097 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 16:19:47,377 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 16:19:50,770 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 16:20:22,882 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\urls.py changed, reloading.
+2025-05-13 16:20:25,264 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 16:21:20,051 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\urls.py changed, reloading.
+2025-05-13 16:21:22,787 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 16:23:27,132 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Conge\views_print.py changed, reloading.
+2025-05-13 16:23:29,023 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 16:23:45,145 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Affectation\views_print.py changed, reloading.
+2025-05-13 16:23:47,382 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 16:31:34,217 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Affectation\urls.py changed, reloading.
+2025-05-13 16:31:36,319 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 16:39:06,949 - INFO - basehttp - "GET /conge/ HTTP/1.1" 200 11826
+2025-05-13 16:39:20,943 - INFO - basehttp - "GET /affectation/ HTTP/1.1" 200 11836
+2025-05-13 16:39:21,021 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 16:39:25,555 - INFO - basehttp - "GET /affectation/pdf/affectation/1/ HTTP/1.1" 200 2711
+2025-05-13 16:42:13,027 - INFO - basehttp - "GET /affectation/ HTTP/1.1" 200 12027
+2025-05-13 16:42:15,204 - INFO - basehttp - "GET /affectation/pdf/affectations_annee/ HTTP/1.1" 200 3037
+2025-05-13 16:43:14,010 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Affectation\views_print.py changed, reloading.
+2025-05-13 16:43:16,470 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 16:43:56,978 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Employe\models.py changed, reloading.
+2025-05-13 16:44:00,147 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 16:44:38,354 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Affectation\views_print.py changed, reloading.
+2025-05-13 16:44:41,115 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 16:44:43,208 - INFO - basehttp - "GET /affectation/ HTTP/1.1" 200 12027
+2025-05-13 16:44:45,171 - INFO - basehttp - "GET /affectation/pdf/affectations_annee/ HTTP/1.1" 200 3038
+2025-05-13 16:44:57,060 - INFO - basehttp - "GET /affectation/pdf/affectation/1/ HTTP/1.1" 200 2701
+2025-05-13 16:45:19,201 - INFO - basehttp - "GET /affectation/1/modifier/ HTTP/1.1" 200 12063
+2025-05-13 16:45:31,972 - INFO - basehttp - "GET /affectation/ HTTP/1.1" 200 12027
+2025-05-13 16:45:37,210 - INFO - basehttp - "GET /affectation/2/modifier/ HTTP/1.1" 200 12080
+2025-05-13 16:45:54,116 - INFO - basehttp - "POST /affectation/2/modifier/ HTTP/1.1" 302 0
+2025-05-13 16:45:54,157 - INFO - basehttp - "GET /affectation/ HTTP/1.1" 200 12027
+2025-05-13 17:00:46,212 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\mutation\urls.py changed, reloading.
+2025-05-13 17:00:48,762 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 17:01:08,222 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\mutation\urls.py changed, reloading.
+2025-05-13 17:01:10,705 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 17:01:17,828 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\mutation\urls.py changed, reloading.
+2025-05-13 17:01:19,951 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 17:20:14,636 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 11225
+2025-05-13 17:22:25,493 - ERROR - log - Internal Server Error: /OrganizationalUnit/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'mutation'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\OrganizationalUnit\views.py", line 16, in liste_OrganizationalUnit
+    return render(request, 'OrganizationalUnit/liste_unites.html', {
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 541, in render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'mutation' is not a registered namespace
+2025-05-13 17:22:25,506 - ERROR - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 500 169457
+2025-05-13 17:22:56,246 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 11286
+2025-05-13 17:23:02,576 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 11286
+2025-05-13 17:23:03,452 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 11286
+2025-05-13 17:23:07,344 - ERROR - log - Internal Server Error: /Mutation/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\mutation\views.py", line 16, in lister_mutations
+    return render(request, 'Mutation/lister_mutations.html', {    'username': username, 'mutations': mutations})
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'generate_mutations_pdf' not found. 'generate_mutations_pdf' is not a valid view function or pattern name.
+2025-05-13 17:23:07,350 - ERROR - basehttp - "GET /Mutation/ HTTP/1.1" 500 166800
+2025-05-13 17:24:31,941 - ERROR - log - Internal Server Error: /Mutation/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\mutation\views.py", line 16, in lister_mutations
+    return render(request, 'Mutation/lister_mutations.html', {    'username': username, 'mutations': mutations})
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'generate_mutation_pdf' not found. 'generate_mutation_pdf' is not a valid view function or pattern name.
+2025-05-13 17:24:31,949 - ERROR - basehttp - "GET /Mutation/ HTTP/1.1" 500 179547
+2025-05-13 17:24:37,023 - ERROR - log - Internal Server Error: /Mutation/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\mutation\views.py", line 16, in lister_mutations
+    return render(request, 'Mutation/lister_mutations.html', {    'username': username, 'mutations': mutations})
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'generate_mutation_pdf' not found. 'generate_mutation_pdf' is not a valid view function or pattern name.
+2025-05-13 17:24:37,029 - ERROR - basehttp - "GET /Mutation/ HTTP/1.1" 500 179547
+2025-05-13 17:25:41,144 - INFO - basehttp - "GET /Mutation/ HTTP/1.1" 200 10830
+2025-05-13 17:25:41,218 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 17:25:46,617 - INFO - basehttp - "GET /Mutation/mutations/pdf/annssee/ HTTP/1.1" 200 2898
+2025-05-13 17:26:10,819 - INFO - basehttp - "GET /Mutation/mutation/pdf/1/ HTTP/1.1" 200 2674
+2025-05-13 17:26:55,371 - INFO - basehttp - "GET /complet/ HTTP/1.1" 200 2276
+2025-05-13 17:28:23,174 - INFO - basehttp - "GET /Mutation/1/detail/ HTTP/1.1" 200 9656
+2025-05-13 17:28:25,696 - INFO - basehttp - "GET /Mutation/ HTTP/1.1" 200 10830
+2025-05-13 17:28:28,646 - INFO - basehttp - "GET /Mutation/mutations/pdf/annssee/ HTTP/1.1" 200 2898
+2025-05-13 20:10:06,616 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 21:13:10,495 - INFO - basehttp - "GET /Mutation/ HTTP/1.1" 200 10830
+2025-05-13 21:13:13,890 - INFO - basehttp - "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 78743
+2025-05-13 21:13:13,922 - INFO - basehttp - "GET /media/logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-13 21:13:13,926 - INFO - basehttp - "GET /static/js/scripti.js HTTP/1.1" 200 2496
+2025-05-13 21:13:13,929 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3609
+2025-05-13 21:13:13,951 - INFO - basehttp - "GET /static/css/bootstrap.min.css HTTP/1.1" 200 155845
+2025-05-13 21:13:15,452 - INFO - basehttp - "GET /static/image/boat-5889919_1280.png HTTP/1.1" 200 143567
+2025-05-13 21:13:16,141 - WARNING - log - Not Found: /favicon.ico
+2025-05-13 21:13:16,143 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 5286
+2025-05-13 21:17:58,354 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\EmployeMission\urls.py changed, reloading.
+2025-05-13 21:18:00,935 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 21:21:02,033 - INFO - basehttp - "GET /employe_mission/ HTTP/1.1" 200 11579
+2025-05-13 21:21:06,936 - ERROR - log - Internal Server Error: /employe_mission/pdf/employe-mission/1/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: generate_employe_mission_pdf() got an unexpected keyword argument 'mission_id'
+2025-05-13 21:21:06,939 - ERROR - basehttp - "GET /employe_mission/pdf/employe-mission/1/ HTTP/1.1" 500 62294
+2025-05-13 21:24:14,653 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\EmployeMission\views_print.py changed, reloading.
+2025-05-13 21:24:16,953 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 21:24:58,926 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\EmployeMission\views_print.py changed, reloading.
+2025-05-13 21:25:01,029 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 21:26:14,450 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\EmployeMission\views_print.py changed, reloading.
+2025-05-13 21:26:16,498 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 21:26:26,158 - INFO - basehttp - "GET /employe_mission/pdf/employe-mission/1/ HTTP/1.1" 200 2627
+2025-05-13 21:27:25,715 - INFO - basehttp - "GET /employe_mission/pdf/employe-missions/annee/ HTTP/1.1" 200 2819
+2025-05-13 21:31:08,566 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\EmployeMission\views_print.py changed, reloading.
+2025-05-13 21:31:11,179 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 21:31:18,752 - ERROR - log - Internal Server Error: /employe_mission/pdf/employe-mission/1/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: generate_employe_mission_pdf() got an unexpected keyword argument 'mission_id'
+2025-05-13 21:31:18,755 - ERROR - basehttp - "GET /employe_mission/pdf/employe-mission/1/ HTTP/1.1" 500 62294
+2025-05-13 21:34:22,465 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\EmployeMission\views_print.py changed, reloading.
+2025-05-13 21:34:24,889 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 21:34:33,429 - INFO - basehttp - "GET /employe_mission/pdf/employe-mission/1/ HTTP/1.1" 200 2664
+2025-05-13 21:35:51,902 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\EmployeMission\views_print.py changed, reloading.
+2025-05-13 21:35:54,446 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 21:36:06,137 - INFO - basehttp - "GET /employe_mission/pdf/employe-mission/1/ HTTP/1.1" 200 2664
+2025-05-13 21:37:20,033 - INFO - basehttp - "GET /employe_mission/pdf/employe-missions/annee/ HTTP/1.1" 200 2819
+2025-05-13 21:44:07,807 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\mission\urls.py changed, reloading.
+2025-05-13 21:44:09,537 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 21:49:00,390 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\mission\urls.py changed, reloading.
+2025-05-13 21:49:02,197 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 21:52:21,196 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\mission\urls.py changed, reloading.
+2025-05-13 21:52:23,611 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 21:57:28,320 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 11462
+2025-05-13 21:57:33,866 - INFO - basehttp - "GET /mission/pdf/employe-mission/1/ HTTP/1.1" 200 2779
+2025-05-13 21:59:59,281 - ERROR - log - Internal Server Error: /mission/
+2025-05-13 21:59:59,283 - ERROR - basehttp - "GET /mission/ HTTP/1.1" 500 162
+2025-05-13 22:02:50,413 - INFO - basehttp - "GET /mission/ HTTP/1.1" 200 11629
+2025-05-13 22:04:07,971 - INFO - basehttp - "GET /mission/pdf/employes-missions/ HTTP/1.1" 200 2903
+2025-05-13 22:04:54,847 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\mission\views_print.py changed, reloading.
+2025-05-13 22:04:57,182 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 22:05:03,309 - INFO - basehttp - "GET /mission/pdf/employes-missions/ HTTP/1.1" 200 2904
+2025-05-13 22:05:15,482 - INFO - basehttp - "GET /mission/pdf/employe-mission/1/ HTTP/1.1" 200 2779
+2025-05-13 22:05:36,268 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\mission\views_print.py changed, reloading.
+2025-05-13 22:05:40,084 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 22:09:12,204 - INFO - basehttp - "GET /mission/pdf/employe-mission/1/ HTTP/1.1" 200 2779
+2025-05-13 22:39:33,756 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Employe\urls.py changed, reloading.
+2025-05-13 22:39:36,775 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 22:42:05,920 - ERROR - log - Internal Server Error: /Employee/Employee
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Employe\views.py", line 22, in liste_employes
+    return render(request, 'Employee/liste_employes.html', {
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'employes_pdf' not found. 'employes_pdf' is not a valid view function or pattern name.
+2025-05-13 22:42:05,932 - ERROR - basehttp - "GET /Employee/Employee HTTP/1.1" 500 164675
+2025-05-13 22:45:20,587 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Employe\urls.py changed, reloading.
+2025-05-13 22:45:22,365 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 22:55:59,668 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 23:12:32,856 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Employe\views_print.py changed, reloading.
+2025-05-13 23:12:36,416 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 23:13:17,802 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Employe\views_print.py changed, reloading.
+2025-05-13 23:13:20,783 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 23:13:32,928 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 11324
+2025-05-13 23:13:33,017 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 304 0
+2025-05-13 23:13:42,447 - INFO - basehttp - "GET /Employee/employe/pdf/2/ HTTP/1.1" 200 2987
+2025-05-13 23:14:01,601 - INFO - basehttp - "GET /Employee/employes/pdf/ HTTP/1.1" 200 2874
+2025-05-13 23:14:58,886 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Employe\views_print.py changed, reloading.
+2025-05-13 23:15:01,414 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 23:15:10,845 - INFO - basehttp - "GET /Employee/employe/pdf/2/ HTTP/1.1" 200 2987
+2025-05-13 23:15:52,774 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Employe\views_print.py changed, reloading.
+2025-05-13 23:15:56,646 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 23:15:59,384 - INFO - basehttp - "GET /Employee/employe/pdf/2/ HTTP/1.1" 200 2988
+2025-05-13 23:16:17,246 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Employe\views_print.py changed, reloading.
+2025-05-13 23:16:20,312 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 23:16:23,544 - INFO - basehttp - "GET /Employee/employe/pdf/2/ HTTP/1.1" 200 2987
+2025-05-13 23:16:44,741 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Employe\views_print.py changed, reloading.
+2025-05-13 23:16:47,787 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 23:16:52,588 - INFO - basehttp - "GET /Employee/employe/pdf/2/ HTTP/1.1" 200 2987
+2025-05-13 23:17:14,023 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Employe\views_print.py changed, reloading.
+2025-05-13 23:17:16,940 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 23:17:21,339 - INFO - basehttp - "GET /Employee/employe/pdf/2/ HTTP/1.1" 200 2987
+2025-05-13 23:17:49,968 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Employe\views_print.py changed, reloading.
+2025-05-13 23:17:53,287 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 23:17:56,366 - INFO - basehttp - "GET /Employee/employe/pdf/2/ HTTP/1.1" 200 2983
+2025-05-13 23:18:09,935 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Employe\views_print.py changed, reloading.
+2025-05-13 23:18:12,840 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 23:18:18,509 - INFO - basehttp - "GET /Employee/employe/pdf/2/ HTTP/1.1" 200 2986
+2025-05-13 23:18:36,951 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Employe\views_print.py changed, reloading.
+2025-05-13 23:18:39,607 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 23:18:46,608 - INFO - basehttp - "GET /Employee/employe/pdf/2/ HTTP/1.1" 200 2986
+2025-05-13 23:19:17,069 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Employe\views_print.py changed, reloading.
+2025-05-13 23:19:20,396 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 23:19:23,291 - INFO - basehttp - "GET /Employee/employe/pdf/2/ HTTP/1.1" 200 2984
+2025-05-13 23:19:37,226 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Employe\views_print.py changed, reloading.
+2025-05-13 23:19:40,390 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 23:19:42,999 - INFO - basehttp - "GET /Employee/employe/pdf/2/ HTTP/1.1" 200 2986
+2025-05-13 23:20:07,033 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Employe\views_print.py changed, reloading.
+2025-05-13 23:20:10,420 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 23:20:13,095 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 11324
+2025-05-13 23:20:16,166 - INFO - basehttp - "GET /Employee/employe/pdf/2/ HTTP/1.1" 200 2988
+2025-05-13 23:20:34,493 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Employe\views_print.py changed, reloading.
+2025-05-13 23:20:37,226 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 23:20:44,077 - INFO - basehttp - "GET /Employee/employe/pdf/2/ HTTP/1.1" 200 2987
+2025-05-13 23:21:59,362 - INFO - basehttp - "GET /Employee/employes/pdf/ HTTP/1.1" 200 2874
+2025-05-13 23:22:32,235 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Employe\views_print.py changed, reloading.
+2025-05-13 23:22:35,276 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 23:22:41,365 - INFO - basehttp - "GET /Employee/employes/pdf/ HTTP/1.1" 200 2873
+2025-05-13 23:22:58,839 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Employe\views_print.py changed, reloading.
+2025-05-13 23:23:01,865 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 23:23:06,375 - INFO - basehttp - "GET /Employee/employes/pdf/ HTTP/1.1" 200 2873
+2025-05-13 23:23:25,641 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\Employe\views_print.py changed, reloading.
+2025-05-13 23:23:28,754 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-13 23:23:31,142 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 11324
+2025-05-13 23:23:33,761 - INFO - basehttp - "GET /Employee/employes/pdf/ HTTP/1.1" 200 2874

@@ -1,5 +1,5 @@
 from django.urls import path
-from . import views
+from . import views, views_print
 
 app_name = "affectation"
 
@@ -21,4 +21,7 @@ urlpatterns = [
 
     # Recherche des affectations
     path('recherche/', views.rechercher_affectations, name='search'),
+
+    path('pdf/affectation/<int:affectation_id>/', views_print.generate_affectation_pdf, name='pdf_affectation'),
+    path('pdf/affectations_annee/', views_print.generate_affectations_annee_pdf, name='pdf_affectations_annee'),
 ]

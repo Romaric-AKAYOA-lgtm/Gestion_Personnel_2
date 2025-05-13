@@ -7,4 +7,4 @@ class CLEmploye(ClUser):
         super().save(*args, **kwargs)
 
     def __str__(self):
-        return f"{self.tnm} {self.tpm} - Employé (e)"
+        return f"{self.tnm} {self.tpm} "

@@ -1,5 +1,5 @@
 from django.urls import path
-from . import views
+from . import views, views_print
 
 app_name = "Employee"
 
@@ -18,4 +18,7 @@ urlpatterns = [
     path('<int:id>/delete/', views.supprimer_employe, name='delete'),
      path('employee/pdf/', views.generate_employee_pdf, name='generate_employee_pdf'),
      path('recherche/', views.employee_search, name='recherche'),  # Ajout de la route de recherche
+     path('employe/pdf/<int:employe_id>/', views_print.generate_employe_pdf, name='employe_pdf'),
+    path('employes/pdf/', views_print.generate_employes_pdf, name='employes_pdf'),
+
 ]

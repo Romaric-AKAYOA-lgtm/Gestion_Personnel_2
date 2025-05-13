@@ -8,6 +8,9 @@
         <a href="{% url 'affectation:create' %}" class="btn btn-primary">
             <i class="bi bi-person-plus"></i> Ajouter une affectation
         </a>
+        <a href="{% url 'affectation:pdf_affectations_annee' %}" class="btn btn-primary">
+                    <i class="bi bi-calendar-plus"></i> Imprimer liste d'affectatios de l'énnée
+        </a>
 
         <!-- Formulaire de recherche -->
         <form method="GET" action="{% url 'affectation:search' %}" class="d-flex">
@@ -61,6 +64,10 @@
                         </a>
                         <a href="{% url 'affectation:delete' affectation.id %}" class="btn btn-danger btn-sm mb-1" onclick="return confirm('Êtes-vous sûr ?')">
                             <i class="bi bi-trash"></i> Supprimer
+                        </a>
+                       <!-- Bouton Imprimer PDF -->
+                        <a href="{% url 'affectation:pdf_affectation' affectation_id=affectation.id %}" class="btn btn-danger btn-sm mb-1" target="_blank">
+                            <i class="bi bi-file-earmark-pdf"></i> PDF
                         </a>
                     </td>
                 </tr>

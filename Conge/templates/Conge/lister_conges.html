@@ -8,6 +8,9 @@
         <a href="{% url 'conge:create' %}" class="btn btn-primary">
             <i class="bi bi-calendar-plus"></i> Ajouter un congé
         </a>
+        <a href="{% url 'conge:generate_conges_annee_pdf' %}" class="btn btn-primary">
+                    <i class="bi bi-calendar-plus"></i> Imprimer liste de congés de l'énnée
+        </a>
 
         <!-- Formulaire de recherche -->
         <form method="GET" action="{% url 'conge:search' %}" class="d-flex">
@@ -59,6 +62,10 @@
                         </a>
                         <a href="{% url 'conge:delete' conge.id %}" class="btn btn-danger btn-sm mb-1" onclick="return confirm('Êtes-vous sûr ?')">
                             <i class="bi bi-trash"></i> Supprimer
+                        </a>
+                        <!-- Bouton Imprimer PDF -->
+                        <a href="{% url 'conge:generate_conge_pdf' conge_id=conge.id %}" class="btn btn-danger btn-sm mb-1" target="_blank">
+                            <i class="bi bi-file-earmark-pdf"></i> PDF
                         </a>
                     </td>
                 </tr>

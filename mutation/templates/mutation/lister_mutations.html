@@ -1,7 +1,6 @@
 {% extends 'template_base.html' %}
 
 {% block contenue %}
-
 <div class="container-fkud mt-4">
     <h1 class="text-center mb-4 text-white">Liste des Mutations</h1>
 
@@ -9,16 +8,19 @@
         <a href="{% url 'Mutation:create' %}" class="btn btn-primary">
             <i class="bi bi-plus-circle"></i> Créer une mutation
         </a>
+        <a href="{% url 'Mutation:mutations_annee_pdf' %}" class="btn btn-primary">
+            <i class="bi bi-file-earmark-pdf"></i> Imprimer liste des mutations
+        </a>
 
-        <!-- Formulaire de recherche pour une mutation -->
+        <!-- Formulaire de recherche -->
         <form method="GET" action="{% url 'Mutation:search' %}" class="d-flex">
-            <select name="criteres" class="form-select me-2" aria-label="Critère de recherche">
-                <option value="employe">Employé</option>
-                <option value="organizational_unit">Unité Organisationnelle</option>
-                <option value="function">Fonction</option>
-                <option value="responsable">Responsable</option>
+            <select name="criteres" class="form-select me-2">
+                <option value="employe" {% if criteres == "employe" %}selected{% endif %}>Employé</option>
+                <option value="organizational_unit" {% if criteres == "organizational_unit" %}selected{% endif %}>Unité Organisationnelle</option>
+                <option value="function" {% if criteres == "function" %}selected{% endif %}>Fonction</option>
+                <option value="responsable" {% if criteres == "responsable" %}selected{% endif %}>Responsable</option>
             </select>
-            <input type="text" name="query" class="form-control me-2" placeholder="Rechercher une mutation" aria-label="Recherche">
+            <input type="text" name="query" class="form-control me-2" placeholder="Rechercher une mutation" value="{{ query }}">
             <button type="submit" class="btn btn-secondary">
                 <i class="bi bi-search"></i> Rechercher
             </button>
@@ -29,6 +31,7 @@
         <table class="table table-striped table-hover text-center">
             <thead class="table-dark">
                 <tr>
+                    <th>#</th>
                     <th>Employé</th>
                     <th>Unité Organisationnelle</th>
                     <th>Fonction</th>
@@ -41,6 +44,7 @@
             <tbody class="bg-white">
                 {% for mutation in mutations %}
                 <tr>
+                    <td>{{ forloop.counter }}</td>
                     <td>{{ mutation.employe }}</td>
                     <td>{{ mutation.organizational_unit }}</td>
                     <td>{{ mutation.function }}</td>
@@ -51,8 +55,8 @@
                             <span class="text-muted">Aucun</span>
                         {% endif %}
                     </td>
-                    <td>{{ mutation.date_debut }}</td>
-                    <td>{{ mutation.date_fin }}</td>
+                    <td>{{ mutation.date_debut|date:"d/m/Y" }}</td>
+                    <td>{{ mutation.date_fin|date:"d/m/Y" }}</td>
                     <td>
                         <a href="{% url 'Mutation:detail' mutation.id %}" class="btn btn-info btn-sm mb-1">
                             <i class="bi bi-eye"></i> Détail
@@ -60,21 +64,22 @@
                         <a href="{% url 'Mutation:update' mutation.id %}" class="btn btn-warning btn-sm mb-1">
                             <i class="bi bi-pencil"></i> Modifier
                         </a>
-                        <a href="{% url 'Mutation:delete' mutation.id %}" class="btn btn-danger btn-sm mb-1">
+                        <a href="{% url 'Mutation:delete' mutation.id %}" class="btn btn-danger btn-sm mb-1" onclick="return confirm('Êtes-vous sûr ?')">
                             <i class="bi bi-trash"></i> Supprimer
+                        </a>
+                        <!-- Bouton Imprimer PDF -->
+                        <a href="{% url 'Mutation:mutation_pdf' mutation.id %}" class="btn btn-danger btn-sm mb-1" target="_blank">
+                            <i class="bi bi-file-earmark-pdf"></i> PDF
                         </a>
                     </td>
                 </tr>
                 {% empty %}
                 <tr>
-                    <td colspan="7" class="text-center text-muted">Aucune mutation trouvée.</td>
+                    <td colspan="8" class="text-center text-muted">Aucune mutation trouvée.</td>
                 </tr>
                 {% endfor %}
             </tbody>
         </table>
     </div>
 </div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
 {% endblock %}

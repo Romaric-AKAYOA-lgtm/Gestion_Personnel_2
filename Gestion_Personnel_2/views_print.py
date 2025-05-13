@@ -72,9 +72,13 @@ def generer_pdf_avec_pied_de_page(p, user):
     tnm = getattr(user, 'tnm', 'Nom inconnu').upper()
     tpm = getattr(user, 'tpm', 'Prénom inconnu')
 
-    p.setFont("Times-Roman", 10)
-    p.drawString(x_offset_right, y_infos, f"Fait à Brazzaville, le {date_du_jour}")
-    p.drawString(x_offset_right, y_infos - 70, f"{tnm} {tpm}")
+    # Assurez-vous que p est un objet canvas
+    if isinstance(p, canvas.Canvas):
+        p.setFont("Times-Roman", 10)
+        p.drawString(x_offset_right, y_infos, f"Fait à Brazzaville, le {date_du_jour}")
+        p.drawString(x_offset_right, y_infos - 100, f"{tnm} {tpm}")
+    else:
+        raise TypeError("L'objet p doit être un objet de type canvas.")
 
     return True
 

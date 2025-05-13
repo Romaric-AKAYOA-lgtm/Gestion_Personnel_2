@@ -1,5 +1,5 @@
 from django.urls import path
-from . import views
+from . import views, views_print
 
 app_name = "employe_mission"
 
@@ -21,4 +21,7 @@ urlpatterns = [
 
     # 🔹 Rechercher des liaisons employé-mission
     path('recherche/', views.rechercher_employe_missions, name='search'),
+    
+    path('pdf/employe-mission/<int:mission_id>/', views_print.generate_employe_mission_pdf, name='employe_mission_pdf'),
+    path('pdf/employe-missions/annee/', views_print.generate_employes_missions_pdf, name='employe_missions_annee_pdf'),
 ]

@@ -8,6 +8,9 @@
         <a href="{% url 'mission:create' %}" class="btn btn-primary">
             <i class="bi bi-plus-circle"></i> Ajouter une mission
         </a>
+        <a href="{% url 'mission:pdf_employes_missions' %}" class="btn btn-primary">
+            <i class="bi bi-file-earmark-pdf"></i> Imprimer liste les missions
+        </a>
 
         <form method="GET" action="{% url 'mission:search' %}" class="d-flex">
             <input type="text" name="query" class="form-control me-2" placeholder="Rechercher une mission" value="{{ query }}">
@@ -51,6 +54,10 @@
                         </a>
                         <a href="{% url 'mission:delete' mission.id %}" class="btn btn-danger btn-sm mb-1" onclick="return confirm('Êtes-vous sûr ?')">
                             <i class="bi bi-trash"></i> Supprimer
+                        </a>
+                        <!-- Bouton Imprimer PDF -->
+                        <a href="{% url 'mission:pdf_employe_mission' mission.id %}" class="btn btn-danger btn-sm mb-1" target="_blank">
+                            <i class="bi bi-file-earmark-pdf"></i> PDF
                         </a>
                     </td>
                 </tr>

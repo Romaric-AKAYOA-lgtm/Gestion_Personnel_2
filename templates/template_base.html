@@ -16,7 +16,6 @@
           background-size: cover;
           background-repeat: no-repeat;
           background-attachment: fixed;
-          font-size: 2.20rem;  /* Correction ici avec un ":" */
         }
   </style>
 </head>
@@ -63,6 +62,7 @@
       <div id="collapseEmploye" class="accordion-collapse collapse {% if url_name in 'Employee:list fonction:fonction OrganizationalUnit:list unite:unite' %}show{% endif %}" data-bs-parent="#menuAccordion">
         <div class="accordion-body p-2">
           <a href="{% url 'Employee:list' %}" class="nav-link">Employé</a>
+          <a href="{% url 'Mutation:list' %}" class="nav-link">Mutation</a>
           <a href="{% url 'fonction:fonction' %}" class="nav-link">Fonction</a>
           <a href="{% url 'OrganizationalUnit:list' %}" class="nav-link">Service</a>
           <a href="{% url 'unite:unite' %}" class="nav-link">Unité</a>
