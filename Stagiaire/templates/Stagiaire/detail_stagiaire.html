@@ -76,6 +76,9 @@
 
                 <div class="modal-footer">
                     <a href="{% url 'stagiaire:update' stagiaire.id %}" class="btn btn-warning">Modifier</a>
+                        <a href="{% url 'stagiaire:fiche_pdf' stagiaire.id %}" class="btn btn-danger ">
+                            <i class="bi bi-file-earmark-pdf"></i> PDF
+                        </a>
                     <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#supprimerModal" data-bs-dismiss="modal">Supprimer</button>
                     <a href="{% url 'stagiaire:list' %}" class="btn btn-secondary">Retour à la liste</a>
                 </div>

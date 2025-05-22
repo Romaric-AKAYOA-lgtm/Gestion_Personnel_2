@@ -50,6 +50,9 @@
 
                 <div class="modal-footer">
                     <a href="{% url 'mission:update' mission.id %}" class="btn btn-warning">Modifier</a>
+                         <a href="{% url 'mission:pdf_employe_mission' mission.id %}" class="btn btn-danger " target="_blank">
+                            <i class="bi bi-file-earmark-pdf"></i> PDF
+                        </a>
                     <a href="{% url 'mission:list' %}" class="btn btn-secondary">Retour à la liste</a>
                 </div>
 

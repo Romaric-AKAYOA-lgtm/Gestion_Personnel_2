@@ -8,18 +8,18 @@ from reportlab.pdfgen import canvas
 
 from connection.views import get_connected_user
 from Gestion_Personnel_2.views_print import generer_entete_pdf, generer_pdf_avec_pied_de_page
-from .models import CLEmploye
+from .models import CLStagiaire
 
 
-def generate_employe_pdf(request, employe_id):
+def generate_stagiaire_pdf(request, stagiaire_id):
     username = get_connected_user(request)
     if not username:
         return redirect('connection:login')
 
-    employe = get_object_or_404(CLEmploye, id=employe_id)
+    stagiaire = get_object_or_404(CLStagiaire, id=stagiaire_id)
 
     response = HttpResponse(content_type='application/pdf')
-    response['Content-Disposition'] = f'attachment; filename="employe_{employe.id}.pdf"'
+    response['Content-Disposition'] = f'attachment; filename="stagiaire_{stagiaire.id}.pdf"'
 
     doc = canvas.Canvas(response, pagesize=A4)
     width, height = A4
@@ -28,9 +28,7 @@ def generate_employe_pdf(request, employe_id):
     generer_entete_pdf(doc)
     y -= 190
 
-    # Titre du document
-    data_title = [["Fiche Employé(e)"]]
-    title_table = Table(data_title, colWidths=[300])
+    title_table = Table([["Fiche Stagiaire"]], colWidths=[300])
     title_table.setStyle(TableStyle([
         ('TEXTCOLOR', (0, 0), (-1, 0), colors.black),
         ('ALIGN', (0, 0), (-1, 0), 'CENTER'),
@@ -38,31 +36,24 @@ def generate_employe_pdf(request, employe_id):
         ('FONTSIZE', (0, 0), (-1, 0), 20),
         ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
     ]))
-    x_title = (width - 300) / 2
     title_table.wrapOn(doc, width, height)
-    title_table.drawOn(doc, x_title, y)
-    y -= 300
+    title_table.drawOn(doc, (width - 300) / 2, y)
+    y -= 200
 
     styles = getSampleStyleSheet()
     normal_style = styles['Normal']
 
     data = [
-        ["Nom", employe.tnm],
-        ["Prénom", employe.tpm or "N/A"],
-        ["Matricule", employe.matricule or "N/A"],
-        ["Sexe", employe.tsx],
-        ["Date de naissance", str(employe.dns)],
-        ["Adresse", employe.tads or "N/A"],
-        ["Téléphone", employe.tphne or "N/A"],
-        ["Email", employe.teml or "N/A"],
-        ["Grade", employe.grade or "N/A"],
-        ["Échelon", str(employe.echelon) if employe.echelon else "N/A"],
-        ["Spécialité", str(employe.specialite) if employe.specialite else "N/A"],
-        ["Observation", Paragraph((employe.observation or "Aucune").replace('\n', '<br/>'), normal_style)],
-        ["Date début service", str(employe.dsb) if employe.dsb else "N/A"],
-        ["Date fin service", str(employe.ddf) if employe.ddf else "N/A"],
-        ["Date retraite", str(employe.date_retraite) if employe.date_retraite else "N/A"],
-        ["Statut", employe.tstt_user or "N/A"],
+        ["Nom", stagiaire.tnm or "N/A"],
+        ["Prénom", stagiaire.tpm or "N/A"],
+        ["Sexe", stagiaire.tsx or "N/A"],
+        ["Date de naissance", str(stagiaire.dns) if stagiaire.dns else "N/A"],
+        ["Téléphone", stagiaire.tphne or "N/A"],
+        ["Email", stagiaire.teml or "N/A"],
+        ["Etablissement", stagiaire.etablissement or "N/A"],
+        ["Filière", stagiaire.filiere or "N/A"],
+        ["Thème de stage", Paragraph((stagiaire.theme or "N/A").replace('\n', '<br/>'), normal_style)],
+        ["Statut", stagiaire.tstt_user or "N/A"],
     ]
 
     col_widths = [200, 250]
@@ -76,9 +67,8 @@ def generate_employe_pdf(request, employe_id):
         ('BACKGROUND', (0, 0), (-1, 0), colors.lightgrey),
     ]))
 
-    x_table = (width - sum(col_widths)) / 2
     table.wrapOn(doc, width, height)
-    table.drawOn(doc, x_table, y)
+    table.drawOn(doc, (width - sum(col_widths)) / 2, y)
 
     generer_pdf_avec_pied_de_page(doc, username)
     doc.showPage()
@@ -86,23 +76,29 @@ def generate_employe_pdf(request, employe_id):
 
     return response
 
+
+from django.http import HttpResponse
+from django.shortcuts import redirect
 from reportlab.lib.pagesizes import A4
 from reportlab.lib import colors
 from reportlab.platypus import Table, TableStyle, Paragraph
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.pdfgen import canvas
-from django.http import HttpResponse
-from django.shortcuts import redirect
 
-def generate_employes_pdf(request):
+from connection.views import get_connected_user
+from Gestion_Personnel_2.views_print import generer_entete_pdf, generer_pdf_avec_pied_de_page
+from .models import CLStagiaire
+
+
+def generate_stagiaires_pdf(request):
     username = get_connected_user(request)
     if not username:
         return redirect('connection:login')
 
-    employes = CLEmploye.objects.all().order_by('tnm')
+    stagiaires = CLStagiaire.objects.all().order_by('tnm')
 
     response = HttpResponse(content_type='application/pdf')
-    response['Content-Disposition'] = 'attachment; filename="liste_employes.pdf"'
+    response['Content-Disposition'] = 'attachment; filename="liste_stagiaires.pdf"'
 
     doc = canvas.Canvas(response, pagesize=A4)
     page_width, page_height = A4
@@ -112,16 +108,15 @@ def generate_employes_pdf(request):
     styleN.fontName = 'Times-Roman'
     styleN.fontSize = 10
 
-    headers = ["Nom", "Prénom", "Matricule", "Sexe", "Spécialité", "Grade", "Échelon", "Statut"]
-    col_widths = [70, 70, 70, 50, 95, 70, 50, 60]  # élargissement léger
+    headers = ["Nom", "Prénom", "Sexe", "Téléphone", "Email", "Etablissement", "Filière", "Statut"]
+    col_widths = [65, 65, 40, 70, 80, 90, 80, 60]
     table_width = sum(col_widths)
     row_height = 20
-
 
     def draw_header_and_title():
         y = generer_entete_pdf(doc)
         y -= 5
-        title_table = Table([["Liste des Employé(e)s"]], colWidths=[page_width - 100])
+        title_table = Table([["Liste des Stagiaires"]], colWidths=[page_width - 100])
         title_table.setStyle(TableStyle([
             ('TEXTCOLOR', (0, 0), (-1, 0), colors.black),
             ('ALIGN', (0, 0), (-1, 0), 'CENTER'),
@@ -130,28 +125,26 @@ def generate_employes_pdf(request):
             ('BOTTOMPADDING', (0, 0), (-1, 0), 8),
         ]))
         title_table.wrapOn(doc, page_width, page_height)
-        title_x = (page_width - (page_width - 100)) / 2
-        title_table.drawOn(doc, title_x, y)
+        title_table.drawOn(doc, 50, y)
         return y - 50
 
     y = draw_header_and_title()
     current_y = y
     table_data = [[Paragraph(h, styleN) for h in headers]]
 
-    for emp in employes:
+    for stagiaire in stagiaires:
         row = [
-            Paragraph(emp.tnm or "N/A", styleN),
-            Paragraph(emp.tpm or "N/A", styleN),
-            Paragraph(emp.matricule or "N/A", styleN),
-            Paragraph(emp.tsx or "N/A", styleN),
-            Paragraph(str(emp.specialite) if emp.specialite else "N/A", styleN),
-            Paragraph(emp.grade or "N/A", styleN),
-            Paragraph(str(emp.echelon) if emp.echelon else "N/A", styleN),
-            Paragraph(emp.tstt_user or "N/A", styleN),
+            Paragraph(stagiaire.tnm or "N/A", styleN),
+            Paragraph(stagiaire.tpm or "N/A", styleN),
+            Paragraph(stagiaire.tsx or "N/A", styleN),
+            Paragraph(stagiaire.tphne or "N/A", styleN),
+            Paragraph(stagiaire.teml or "N/A", styleN),
+            Paragraph(stagiaire.etablissement or "N/A", styleN),
+            Paragraph(stagiaire.filiere or "N/A", styleN),
+            Paragraph(stagiaire.tstt_user or "N/A", styleN),
         ]
         table_data.append(row)
 
-        # Pagination quand page presque pleine
         if current_y - row_height * len(table_data) < 100:
             table = Table(table_data, colWidths=col_widths, repeatRows=1)
             table.setStyle(TableStyle([
@@ -170,7 +163,6 @@ def generate_employes_pdf(request):
             current_y = draw_header_and_title()
             table_data = [[Paragraph(h, styleN) for h in headers]]
 
-    # Dernière page
     if len(table_data) > 1:
         table = Table(table_data, colWidths=col_widths, repeatRows=1)
         table.setStyle(TableStyle([
@@ -185,13 +177,12 @@ def generate_employes_pdf(request):
         y_table = current_y - row_height * len(table_data)
         table.drawOn(doc, x, y_table)
 
-        # Ajout du texte avec le nombre total d'employés
-        nb_employes = len(employes)
         doc.setFont("Times-Roman", 12)
-        doc.drawString(50, y_table - 25, f"Nombre d'enregistrements : {nb_employes}")
+        doc.drawString(50, y_table - 25, f"Nombre d'enregistrements : {len(stagiaires)}")
 
     generer_pdf_avec_pied_de_page(doc, username)
     doc.showPage()
     doc.save()
 
     return response
+

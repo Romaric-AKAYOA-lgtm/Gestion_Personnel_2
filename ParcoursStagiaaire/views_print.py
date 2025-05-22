@@ -2,35 +2,35 @@ from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, redirect
 from reportlab.lib.pagesizes import A4
 from reportlab.lib import colors
-from reportlab.platypus import Table, TableStyle, Paragraph
-from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.platypus import Table, TableStyle
 from reportlab.pdfgen import canvas
-from datetime import datetime
-
-from .models import CLMutation
+from .models import CLParcoursStagiaire
 from Gestion_Personnel_2.views_print import generer_entete_pdf, generer_pdf_avec_pied_de_page
 from connection.views import get_connected_user
 
-# ✅ PDF détaillé pour une mutation
-def generate_mutation_pdf(request, mutation_id):
+
+def generate_parcours_pdf(request, parcours_id):
+    # Vérifier utilisateur connecté
     username = get_connected_user(request)
     if not username:
         return redirect('connection:login')
-
-    mutation = get_object_or_404(CLMutation, id=mutation_id)
-
+    
+    parcours = get_object_or_404(CLParcoursStagiaire, id=parcours_id)
+    
     response = HttpResponse(content_type='application/pdf')
-    response['Content-Disposition'] = f'attachment; filename="mutation_{mutation.id}.pdf"'
+    response['Content-Disposition'] = f'attachment; filename="parcours_{parcours.id}.pdf"'
 
     doc = canvas.Canvas(response, pagesize=A4)
     width, height = A4
     y = height - 40
 
+    # Entête PDF
     generer_entete_pdf(doc)
-    y -= 280
+    y -= 250
 
     # Titre
-    data_title = [["Fiche de Mutation"]]
+    from reportlab.platypus import Table
+    data_title = [["Fiche Parcours Stagiaire"]]
     title_table = Table(data_title, colWidths=[300])
     title_table.setStyle(TableStyle([
         ('TEXTCOLOR', (0, 0), (-1, 0), colors.black),
@@ -42,19 +42,21 @@ def generate_mutation_pdf(request, mutation_id):
     x_title = (width - 300) / 2
     title_table.wrapOn(doc, width, height)
     title_table.drawOn(doc, x_title, y)
-    y -= 140
+    y -= 160
 
-    # Données
+    # Données du parcours
     data = [
-        ["Employé", str(mutation.employe)],
-        ["Unité organisationnelle", str(mutation.organizational_unit)],
-        ["Fonction", str(mutation.function)],
-        ["Responsable", str(mutation.responsable) if mutation.responsable else "Non défini"],
-        ["Date de début", mutation.date_debut.strftime('%d/%m/%Y') if mutation.date_debut else "Non définie"],
-        ["Date de fin", mutation.date_fin.strftime('%d/%m/%Y') if mutation.date_fin else "Non définie"],
+        ["Stagiaire", str(parcours.stagiaire)],
+        ["Unité organisationnelle", str(parcours.organizational_unit)],
+        ["Responsable", str(parcours.responsable) if parcours.responsable else "Non défini"],
+        ["Date début", parcours.date_debut.strftime('%d/%m/%Y') if parcours.date_debut else "Non défini"],
+        ["Date fin", parcours.date_fin.strftime('%d/%m/%Y') if parcours.date_fin else "Non défini"],
+        ["Évaluation", parcours.evaluation or "Aucune"],
+        ["Commentaire", parcours.commentaire or "Aucun"],
+        ["Compétences", parcours.competences or "Aucune"],
     ]
 
-    col_widths = [200, 250]
+    col_widths = [200, 300]
     table_width = sum(col_widths)
     x_table = (width - table_width) / 2
 
@@ -67,60 +69,78 @@ def generate_mutation_pdf(request, mutation_id):
         ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),
         ('BACKGROUND', (0, 0), (-1, 0), colors.lightgrey),
     ]))
-
     table.wrapOn(doc, width, height)
     table.drawOn(doc, x_table, y)
+    y -= len(data) * 20 + 20
 
+    # Pied de page
     generer_pdf_avec_pied_de_page(doc, username)
 
     doc.showPage()
     doc.save()
+
     return response
 
-# ✅ PDF des mutations de l'année
-from datetime import datetime
 from django.http import HttpResponse
 from django.shortcuts import redirect
 from reportlab.lib.pagesizes import A4
-from reportlab.pdfgen import canvas
-from reportlab.platypus import Table, TableStyle, Paragraph
 from reportlab.lib import colors
+from reportlab.platypus import Table, TableStyle, Paragraph
 from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.pdfgen import canvas
+from .models import CLParcoursStagiaire
+from Gestion_Personnel_2.views_print import generer_entete_pdf, generer_pdf_avec_pied_de_page
+from connection.views import get_connected_user
+from datetime import datetime
+from urllib.parse import quote
 
-def generate_mutations_annee_pdf(request):
+
+def generate_parcours_annee_pdf(request):
     username = get_connected_user(request)
     if not username:
         return redirect('connection:login')
 
     annee = datetime.now().year
-    mutations = CLMutation.objects.filter(
+    parcours_list = CLParcoursStagiaire.objects.filter(
         date_debut__year=annee
-    ).order_by('employe__tnm', 'employe__tpm')
+    ).order_by('stagiaire__tnm', 'stagiaire__tpm')
 
+    filename = f"parcours_stagiaires_{annee}.pdf"
     response = HttpResponse(content_type='application/pdf')
-    response['Content-Disposition'] = f'attachment; filename="mutations_{annee}.pdf"'
+    response['Content-Disposition'] = f'attachment; filename="{quote(filename)}"; filename*=UTF-8\'\'{quote(filename)}'
 
     doc = canvas.Canvas(response, pagesize=A4)
     width, height = A4
+    row_height = 25
+# Ligne à modifier
+    col_widths = [120, 120, 100, 80, 80, 100]  # Largeur réduite des colonnes
+    max_width = width - 60
+    total_relative = 120 + 120 + 100 + 80 + 80 + 100
+    col_widths = [max_width * w / total_relative for w in [120, 120, 100, 80, 80, 100]]
+
+
+    # Puis dans la création des tableaux, la variable col_widths est utilisée comme avant
+
 
     styles = getSampleStyleSheet()
-    styleN = styles["Normal"]
-    styleN.fontName = 'Times-Roman'
-    styleN.fontSize = 10
-    styleN.alignment = 0  # Alignement à gauche
+    style_center = styles["Normal"].clone('style_center')
+    style_center.fontName = 'Times-Roman'
+    style_center.fontSize = 10
+    style_center.alignment = 1  # center
 
-    headers = [
-        "Employé", "Unité\nOrganisationnelle", "Fonction",
-        "Responsable", "Date\ndébut", "Date\nfin"
-    ]
-    header_row = [Paragraph(h.replace('\n', '<br/>'), styleN) for h in headers]
-    col_widths = [90, 100, 80, 90, 60, 60]
-    row_height = 25
+    style_left = styles["Normal"].clone('style_left')
+    style_left.fontName = 'Times-Roman'
+    style_left.fontSize = 10
+    style_left.alignment = 0  # left
+
+    headers = ["Stagiaire", "Unité org.", "Responsable", "Date début", "Date fin", "Évaluation"]
+    header_row = [Paragraph(h, style_center) for h in headers]
 
     def draw_header_and_title():
         y = generer_entete_pdf(doc)
         y -= 5
-        title_table = Table([["Liste des Mutations de l'Année"]], colWidths=[width - 100])
+        title = f"Liste des Parcours Stagiaires de l'année {annee}"
+        title_table = Table([[title]], colWidths=[width - 100])
         title_table.setStyle(TableStyle([
             ('TEXTCOLOR', (0, 0), (-1, 0), colors.black),
             ('ALIGN', (0, 0), (-1, 0), 'CENTER'),
@@ -130,27 +150,28 @@ def generate_mutations_annee_pdf(request):
         ]))
         title_table.wrapOn(doc, width, height)
         title_table.drawOn(doc, 50, y)
-        y -= 60
-        return y
+        return y - 50
 
-    y = draw_header_and_title()
-    current_y = y
+    y_start = draw_header_and_title()
+    current_y = y_start
     table_data = [header_row]
-    last_table_y = 0  # Pour savoir où est le dernier tableau
 
-    for mutation in mutations:
+    for parcours in parcours_list:
         row = [
-            Paragraph(str(mutation.employe), styleN),
-            Paragraph(str(mutation.organizational_unit), styleN),
-            Paragraph(str(mutation.function), styleN),
-            Paragraph(str(mutation.responsable) if mutation.responsable else "Non défini", styleN),
-            Paragraph(mutation.date_debut.strftime('%d/%m/%Y') if mutation.date_debut else "Non définie", styleN),
-            Paragraph(mutation.date_fin.strftime('%d/%m/%Y') if mutation.date_fin else "Non définie", styleN),
+            Paragraph(str(parcours.stagiaire), style_center),
+            Paragraph(str(parcours.organizational_unit), style_center),
+            Paragraph(str(parcours.responsable) if parcours.responsable else "Non défini", style_center),
+            Paragraph(parcours.date_debut.strftime('%d/%m/%Y') if parcours.date_debut else "N/D", style_center),
+            Paragraph(parcours.date_fin.strftime('%d/%m/%Y') if parcours.date_fin else "N/D", style_center),
+            Paragraph(parcours.evaluation or "N/A", style_center),
         ]
         table_data.append(row)
 
         needed_height = row_height * len(table_data)
+
+        # Si on dépasse la zone d'impression verticale
         if needed_height > current_y - 60:
+            # Dessiner la table sans la dernière ligne (qui dépasse)
             table = Table(table_data[:-1], colWidths=col_widths)
             table.setStyle(TableStyle([
                 ('GRID', (0, 0), (-1, -1), 1, colors.black),
@@ -165,8 +186,10 @@ def generate_mutations_annee_pdf(request):
 
             doc.showPage()
             current_y = draw_header_and_title()
+            # Commencer nouvelle table avec header + dernière ligne
             table_data = [header_row, row]
 
+    # Dessiner le reste des données si il en reste
     if len(table_data) > 1:
         table = Table(table_data, colWidths=col_widths)
         table.setStyle(TableStyle([
@@ -180,16 +203,15 @@ def generate_mutations_annee_pdf(request):
         table_height = row_height * len(table_data)
         table.wrapOn(doc, width, height)
         table_y = current_y - table_height
-        last_table_y = table_y
         table.drawOn(doc, (width - sum(col_widths)) / 2, table_y)
 
-        # ✅ Afficher le total d'enregistrements en bas à gauche
-        total_paragraph = Paragraph(
-            f"<b>Nombre total de mutations : {len(mutations)}</b>",
-            styleN
-        )
+        # Afficher nombre total en bas à gauche
+        total_paragraph = Paragraph(f"<b>Nombre total d'enregistrements : {len(parcours_list)}</b>", style_left)
         total_paragraph.wrapOn(doc, width, height)
-        total_paragraph.drawOn(doc, 60, last_table_y - 25)
+        total_paragraph.drawOn(doc, 60, table_y - 30)
+
+    elif len(parcours_list) == 0:
+        doc.drawString(60, current_y - 20, "Aucun parcours stagiaire enregistré pour l'année en cours.")
 
     generer_pdf_avec_pied_de_page(doc, username)
     doc.save()

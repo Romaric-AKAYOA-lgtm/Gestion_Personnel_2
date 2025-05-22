@@ -38,9 +38,10 @@
                     </table>
                 </div>
                 <div class="modal-footer">
-                    <a href="{% url 'Employee:update' employe.id %}" class="btn btn-warning btn-sm">Modifier</a>
-                    <a href="{% url 'Employee:list' %}" class="btn btn-secondary">Fermer</a>
-                </div>
+                <a href="{% url 'Employee:update' employe.id %}" class="btn btn-warning p-3" style="font-size: 1.1rem;">Modifier</a>
+                <a href="{% url 'Employee:employe_pdf' employe.id %}" class="btn btn-danger p-3" style="font-size: 1.1rem;">PDF</a>   
+                <a href="{% url 'Employee:list' %}" class="btn btn-secondary p-3" style="font-size: 1.1rem;">Fermer</a>
+            </div>
             </div>
         </div>
     </div>

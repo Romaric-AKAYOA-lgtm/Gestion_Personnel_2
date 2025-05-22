@@ -1,4 +1,6 @@
 from django import forms
+
+from Affectation.models import CLAffectation
 from .models import CLMutation
 
 
@@ -50,5 +52,23 @@ class CLMutationForm(forms.ModelForm):
                 raise forms.ValidationError(
                     f"La date de début doit être postérieure à la dernière date de fin ({last_mutation.date_fin}) de mutation pour cette unité organisationnelle."
                 )
+
+        return cleaned_data
+
+    def clean(self):
+        cleaned_data = super().clean()
+        employe = self.instance
+
+        # Si c'est une modification (instance pk existe) ou création
+        # on vérifie si l'employé a une affectation définitive
+
+        # Récupérer les affectations définitives liées à cet employé
+        has_definitive = CLAffectation.objects.filter(
+            employe=employe,
+            statut='Définitif'
+        ).exists()
+
+        if has_definitive:
+            raise forms.ValidationError("Cet employé a déjà une affectation définitive et ne peut pas être modifié/créé.")
 
         return cleaned_data

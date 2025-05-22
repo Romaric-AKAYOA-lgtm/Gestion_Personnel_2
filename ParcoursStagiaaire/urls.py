@@ -1,5 +1,5 @@
 from django.urls import path
-from . import views
+from . import views, views_print
 
 app_name = "parcours_stagiaire"
 
@@ -21,4 +21,10 @@ urlpatterns = [
 
     # Recherche de parcours
     path('recherche/', views.rechercher_parcours, name='search'),
+
+    # PDF d’un stagiaire spécifique
+    path('<int:parcours_id>/pdf/', views_print.generate_parcours_pdf, name='pdf_parcours'),
+
+    # PDF de la liste des stagiaires (groupés par le plus récent)
+    path('pdf/liste/', views_print.generate_parcours_annee_pdf , name='pdf_liste_stagiaires'),
 ]

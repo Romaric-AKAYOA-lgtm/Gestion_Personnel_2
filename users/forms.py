@@ -8,8 +8,9 @@ class ClUserForm(forms.ModelForm):
     class Meta:
         model = ClUser
         fields = [
-            'tnm', 'tpm', 'tsx', 'dns', 'tlns', 'tads', 'teml', 'tphne', 'dsb', 'ddf',
-            'tstt', 'ttvst', 'img', 'matricule', 'grade', 'echelon', 'specialite', 'tstt_user'  # 🆕 Ajouté ici
+            'tnm', 'tpm', 'tsx', 'dns', 'tlns', 'tads', 'teml', 'tphne',
+            'dsb', 'ddf', 'observation', 'tstt', 'ttvst', 'img',
+            'matricule', 'grade', 'echelon', 'specialite', 'tstt_user'
         ]
         widgets = {
             'dns': forms.DateInput(attrs={'type': 'date'}),
@@ -28,7 +29,7 @@ class ClUserForm(forms.ModelForm):
             MaxValueValidator(50),
         ])
 
-        self.fields['specialite'].required = False  # Si tu veux rendre le champ non obligatoire
+        self.fields['specialite'].required = False  # Champ non obligatoire
 
     def clean_tnm(self):
         tnm = self.cleaned_data.get('tnm')
@@ -50,7 +51,6 @@ class ClUserForm(forms.ModelForm):
             raise forms.ValidationError("Le matricule doit contenir au moins 5 caractères.")
         return matricule
 
-
     def clean_echelon(self):
         echelon = self.cleaned_data.get('echelon')
         if echelon is not None and not (1 <= echelon <= 50):
@@ -66,3 +66,20 @@ class ClUserForm(forms.ModelForm):
             delta = dsb - dns
             if delta < timedelta(days=18 * 365):
                 self.add_error('dsb', "L'utilisateur doit avoir au moins 18 ans à la date de début.")
+
+    def save(self, commit=True):
+        user = super().save(commit=False)
+
+        # ➤ Vérification automatique : si date_retraite atteinte ou dépassée
+        date_retraite = getattr(user, 'date_retraite', None)
+        today = now().date()
+
+        if date_retraite and date_retraite <= today:
+            user.ddf = today             # Mettre à jour la date de départ
+            user.tstt_user = False       # Mettre à inactif
+
+        if commit:
+            user.save()
+            self.save_m2m()
+
+        return user

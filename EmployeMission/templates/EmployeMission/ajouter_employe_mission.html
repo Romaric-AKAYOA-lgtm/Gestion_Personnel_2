@@ -2,7 +2,7 @@
 
 {% block contenue %}
 <div class="modal fade show" id="employeMissionModal" tabindex="-1" aria-labelledby="employeMissionModalLabel" aria-modal="true" role="dialog" style="display: block;">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">  {# modal-lg pour largeur plus grande #}
         <div class="modal-content">
             <div class="modal-header bg-primary">
                 <h5 class="modal-title text-white" id="employeMissionModalLabel">
@@ -69,33 +69,18 @@
         }).show();
     });
 </script>
-
 {% endblock %}
 
 {% block styles %}
 <style>
-    .modal-body form {
-        max-width: 100%;
-        overflow-wrap: break-word;
-    }
 
-    .form-label {
-        font-size: 14px; /* Taille de police uniforme */
-    }
 
-    .form-control, .input-container select, .input-container textarea {
-        width: 100%;  /* Garantir que le champ ne déborde pas */
-        max-width: 100%; /* Assure que le champ ne dépasse pas son conteneur */
-        overflow: hidden; /* Cacher le texte qui déborde */
-        text-overflow: ellipsis; /* Ajoute '...' si le texte est trop long */
-    }
-
-    .modal-dialog {
-        max-width: 800px; /* Contrôle la taille du modal */
-    }
-
-    .input-container select {
-        width: 100%; /* Ajout spécifique pour le champ select */
+    /* Amélioration responsive */
+    @media (max-width: 976px) {
+        .modal-dialog {
+            max-width: 100%;
+            margin: 0 10px;
+        }
     }
 </style>
 {% endblock %}

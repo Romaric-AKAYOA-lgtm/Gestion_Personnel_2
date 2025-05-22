@@ -46,6 +46,9 @@
 
                 <div class="modal-footer">
                     <a href="{% url 'employe_mission:update' affectation.id %}" class="btn btn-warning">Modifier</a>
+                             <a href="{% url 'employe_mission:employe_mission_pdf' affectation.mission.id %}" class="btn btn-danger " target="_blank">
+                            <i class="bi bi-file-earmark-pdf"></i> PDF
+                        </a>
                     <a href="{% url 'employe_mission:list' %}" class="btn btn-secondary">Retour à la liste</a>
                 </div>
 

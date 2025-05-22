@@ -1,4 +1,6 @@
 from django import forms
+
+from Affectation.models import CLAffectation
 from .models import CLConge
 from django.core.exceptions import ValidationError
 from datetime import datetime, timedelta
@@ -110,5 +112,23 @@ class CLCongeForm(forms.ModelForm):
                 raise ValidationError(
                     f"L'employé ne peut pas avoir plus de trois congés en cours. (Actuels: {nb_conges})"
                 )
+
+        return cleaned_data
+
+    def clean(self):
+        cleaned_data = super().clean()
+        employe = self.instance
+
+        # Si c'est une modification (instance pk existe) ou création
+        # on vérifie si l'employé a une affectation définitive
+
+        # Récupérer les affectations définitives liées à cet employé
+        has_definitive = CLAffectation.objects.filter(
+            employe=employe,
+            statut='Définitif'
+        ).exists()
+
+        if has_definitive:
+            raise ValidationError("Cet employé a déjà une affectation définitive et ne peut pas être modifié/créé.")
 
         return cleaned_data

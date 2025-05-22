@@ -99,7 +99,7 @@ def supprimer_parcours(request, id):
         return HttpResponseServerError(f"Erreur serveur lors de la suppression : {e}")
 
 
-# 6. Rechercher des parcours
+# 6. Rechercher des parcoursfrom django.db.models import Q
 def rechercher_parcours(request):
     username = get_connected_user(request)
     if not username:
@@ -111,9 +111,8 @@ def rechercher_parcours(request):
             parcours = CLParcoursStagiaire.objects.filter(
                 Q(evaluation__icontains=query) |
                 Q(commentaire__icontains=query) |
-                Q(competence__icontains=query) |
-                Q(stagiaire__nom__icontains=query) |
-                Q(responsable__nom__icontains=query)
+                Q(stagiaire__tnm__icontains=query) |        # ici tnm et non nom
+                Q(responsable__tnm__icontains=query)       # idem ici
             )
         else:
             parcours = CLParcoursStagiaire.objects.all()

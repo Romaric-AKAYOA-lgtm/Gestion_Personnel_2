@@ -1,5 +1,6 @@
 from django.urls import path
 from . import views
+from .views_print import generate_stagiaire_pdf, generate_stagiaires_pdf
 
 app_name = "stagiaire"
 
@@ -21,4 +22,10 @@ urlpatterns = [
 
     # Recherche des stagiaires
     path('recherche/', views.rechercher_stagiaires, name='search'),
+
+    # PDF individuel d'un stagiaire
+    path('<int:stagiaire_id>/fiche_pdf/', generate_stagiaire_pdf, name='fiche_pdf'),
+
+    # PDF liste de tous les stagiaires
+    path('liste/pdf/', generate_stagiaires_pdf, name='liste_pdf'),
 ]

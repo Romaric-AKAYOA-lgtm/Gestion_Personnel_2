@@ -11,6 +11,53 @@
   <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 
   <style>
+            body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        /* Bouton remonter en haut */
+        #topBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: orange;
+            color: white;
+            cursor: pointer;
+            padding: 12px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+            transition: 0.3s ease;
+        }
+
+        #topBtn:hover {
+            background-color: darkorange;
+        }
+
+        /* Exemple de contenu long pour tester le bouton */
+        .content-block {
+            height: 600px;
+            margin-bottom: 30px;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
         body {
           background-image: url("{% static 'image/boat-5889919_1280.png' %}");
           background-size: cover;
@@ -173,10 +220,17 @@
         </div>
       </div>
     </header>
+      <!-- Bouton "Revenir en haut" -->
+      <button onclick="scrollToTop()" id="topBtn" title="Revenir en haut">↑ Haut</button>
 
     <div class="main-content">
       {% block contenue %}{% endblock %}
     </div>
+
+      <!-- Scroll to Top Button -->
+      <button onclick="scrollToTop()" id="scrollToTopBtn" class="btn btn-secondary btn-lg rounded-circle p-3 mb-3" style="position: fixed; bottom: 90px; right: 20px; display: none;">
+        <img class="bi bi-arrow-up-circle display-5" src="/static/icons/telecharger-big-arrow.png" alt="Retour en haut" width="40" height="40">
+      </button>
 
     <footer class="text-center">
       <div class="container-fluid">
@@ -189,9 +243,59 @@
       </div>
     </footer>
   </div>
+<!-- Bouton Remonter en Haut -->
+
+
+<!-- Script JavaScript pour le bouton -->
+<script>
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+  window.onscroll = function () {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      scrollToTopBtn.style.display = 'block';
+    } else {
+      scrollToTopBtn.style.display = 'none';
+    }
+  };
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  // Afficher le bouton après avoir défilé de 20px vers le bas
+  window.onscroll = function() {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    const topBtn = document.getElementById("topBtn");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      topBtn.style.display = "block";
+    } else {
+      topBtn.style.display = "none";
+    }
+  }
+
+  // Remonter en haut de la page
+  function topFunction() {
+    document.body.scrollTop = 0; // Pour Safari
+    document.documentElement.scrollTop = 0; // Pour Chrome, Firefox, IE et Opera
+  }
+</script>
 
   <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
   <script src="{% static 'js/scripti.js' %}"></script>
 
+<script>
+    // Afficher le bouton quand on descend de 100px
+    window.onscroll = function () {
+        const btn = document.getElementById("topBtn");
+        btn.style.display = (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)
+            ? "block" : "none";
+    };
+
+    // Fonction de remontée
+    function scrollToTop() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+</script>
 </body>
 </html>

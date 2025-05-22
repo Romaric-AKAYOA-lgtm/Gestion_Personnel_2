@@ -21,12 +21,18 @@
             </div>
             <div class="modal-footer">
                 <!-- Bouton pour modifier -->
-                <a href="{% url 'Mutation:update' mutation.id %}" class="btn btn-warning btn-sm mb-1">
+                <a href="{% url 'Mutation:update' mutation.id %}" class="btn btn-warning mb-1 p-3" style="font-size: 1.1rem;">
                     <i class="bi bi-pencil"></i> Modifier
                 </a>
+                <a href="{% url 'Mutation:mutation_pdf' mutation.id %}" class="btn btn-danger mb-1 p-3" target="_blank" style="font-size: 1.1rem;">
+                    <i class="bi bi-file-earmark-pdf"></i> PDF
+                </a>
                 <!-- Bouton pour annuler -->
-                <a href="{% url 'Mutation:list' %}" class="btn btn-secondary px-4 py-2 btn-sm">Annuler</a>
+                <a href="{% url 'Mutation:list' %}" class="btn btn-secondary p-3" style="font-size: 1.1rem;">
+                    Annuler
+                </a>
             </div>
+
         </div>
     </div>
 </div>

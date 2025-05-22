@@ -50,6 +50,9 @@
 
                 <div class="modal-footer">
                     <a href="{% url 'affectation:update' affectation.id %}" class="btn btn-warning">Modifier</a>
+                         <a href="{% url 'affectation:pdf_affectation' affectation_id=affectation.id %}" class="btn btn-danger " target="_blank">
+                            <i class="bi bi-file-earmark-pdf"></i> PDF
+                        </a>
                     <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#supprimerModal" data-bs-dismiss="modal">Supprimer</button>
                     <a href="{% url 'affectation:list' %}" class="btn btn-secondary">Retour à la liste</a>
                 </div>

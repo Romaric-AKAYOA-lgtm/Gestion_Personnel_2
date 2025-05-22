@@ -47,6 +47,9 @@
 
                 <div class="modal-footer">
                     <a href="{% url 'conge:update' conge.id %}" class="btn btn-warning">Modifier</a>
+                        <a href="{% url 'conge:generate_conge_pdf' conge_id=conge.id %}" class="btn btn-danger" target="_blank">
+                            <i class="bi bi-file-earmark-pdf"></i> PDF
+                        </a>
                     <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#supprimerModal" data-bs-dismiss="modal">Supprimer</button>
                     <a href="{% url 'conge:list' %}" class="btn btn-secondary">Retour à la liste</a>
                 </div>

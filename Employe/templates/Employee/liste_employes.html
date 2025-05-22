@@ -8,7 +8,9 @@
     <div class="d-flex justify-content-between align-items-center mb-3">
         <div>
             <a href="{% url 'Employee:create' %}" class="btn btn-primary me-2">Ajouter un Employé</a>
-            <a href="{% url 'Employee:employes_pdf' %}" class="btn btn-success">Télécharger la liste PDF</a>
+        </div>
+           <div>
+                 <a href="{% url 'Employee:employes_pdf' %}" class="btn btn-primary">Télécharger la liste PDF</a>
         </div>
         <form action="{% url 'Employee:recherche' %}" method="get" class="d-flex">
             <select name="criteres" class="form-select me-2">
@@ -46,7 +48,7 @@
                             <a href="{% url 'Employee:detail' employe.id %}" class="btn btn-info mb-1">Voir les détails</a>
                             <a href="{% url 'Employee:update' employe.id %}" class="btn btn-warning btn-sm mb-1">Modifier</a>
                             <a href="{% url 'Employee:delete' employe.id %}" class="btn btn-danger btn-sm mb-1">Supprimer</a>
-                            <a href="{% url 'Employee:employe_pdf' employe.id %}" class="btn btn-outline-danger btn-sm mb-1">PDF</a>
+                            <a href="{% url 'Employee:employe_pdf' employe.id %}" class="btn btn-danger btn-sm mb-1">PDF</a>
                         </td>
                     </tr>
                 {% empty %}

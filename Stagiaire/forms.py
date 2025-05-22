@@ -1,5 +1,6 @@
 from django import forms
 from django.core.exceptions import ValidationError
+from Affectation.models import CLAffectation
 from users.forms import ClUserForm
 from Stagiaire.models import CLStagiaire
 from datetime import date
@@ -57,3 +58,19 @@ class ClStagiaireForm(ClUserForm):
                 raise ValidationError("Ce responsable n'est pas encore disponible (date de fin non atteinte).")
 
         return responsable
+    
+    def clean(self):
+        cleaned_data = super().clean()
+        responsable = cleaned_data.get('responsable')
+
+        if responsable:
+            # Vérifier si le responsable a une affectation définitive
+            has_definitive = CLAffectation.objects.filter(
+                employe=responsable,
+                statut='Définitif'
+            ).exists()
+
+            if has_definitive:
+                raise ValidationError("Le responsable sélectionné a déjà une affectation définitive.")
+
+        return cleaned_data

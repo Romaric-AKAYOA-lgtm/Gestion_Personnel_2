@@ -16,12 +16,12 @@ from connection.views import get_connected_user
 def generer_entete_pdf(p):
     """
     Ajoute l'entête du document PDF avec un logo centré et des lignes de texte officielles.
+    Retourne la position y restante pour le contenu à venir.
     """
     width, height = A4
     y = height - 50  # Position initiale en haut de la page
     line_height = 15
 
-    # 📌 Chemin du logo à adapter selon l'arborescence de ton projet
     logo_path = os.path.join("chemin_vers_ton_dossier", "45906d1a-f183-41db-bfad-d4e6c14242fb.png")
 
     try:
@@ -35,7 +35,6 @@ def generer_entete_pdf(p):
         p.drawCentredString(width / 2, y, "Logo non disponible")
         y -= 20
 
-    # Texte institutionnel
     lignes_entete = [
         "REPUBLIQUE DU CONGO",
         "Unité * Travail * Progrès",
@@ -57,6 +56,10 @@ def generer_entete_pdf(p):
         p.drawCentredString(width / 2, y, ligne)
         y -= line_height
 
+    # Ajout d'une marge avant le contenu
+    y -= 30
+
+    return y
 
 def generer_pdf_avec_pied_de_page(p, user):
     """

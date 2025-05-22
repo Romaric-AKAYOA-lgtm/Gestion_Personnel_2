@@ -42,6 +42,9 @@
 
                 <div class="modal-footer">
                     <a href="{% url 'parcours_stagiaire:update' parcours.id %}" class="btn btn-warning">Modifier</a>
+                      <a href="{% url 'parcours_stagiaire:pdf_parcours' parcours.id %}" class="btn btn-danger   " target="_blank">
+                        <i class="bi bi-file-earmark-pdf"></i> PDF
+                    </a>
                     <a href="{% url 'parcours_stagiaire:list' %}" class="btn btn-secondary">Retour à la liste</a>
                 </div>
 
