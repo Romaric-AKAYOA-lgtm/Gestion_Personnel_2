@@ -17444,3 +17444,49 @@ django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '
 2025-05-26 21:51:33,320 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_2\OrganizationalUnit\view_print.py changed, reloading.
 2025-05-26 21:51:35,599 - INFO - autoreload - Watching for file changes with StatReloader
 2025-05-26 21:51:38,514 - INFO - basehttp - "GET /OrganizationalUnit/organigramme/ HTTP/1.1" 200 3226
+2025-05-26 21:52:23,641 - INFO - basehttp - "GET /home HTTP/1.1" 200 26525
+2025-05-26 21:52:26,267 - INFO - basehttp - "GET /static/image/istockphoto-2162033406-1024x1024.jpg HTTP/1.1" 200 62104
+2025-05-26 21:52:26,283 - INFO - basehttp - "GET /static/image/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-26 21:52:26,286 - INFO - basehttp - "GET /static/image/city-7352352_1280.jpg HTTP/1.1" 200 445704
+2025-05-26 21:52:26,296 - INFO - basehttp - "GET /static/image/city-182223_1280.jpg HTTP/1.1" 200 376515
+2025-05-26 21:59:27,494 - INFO - autoreload - Watching for file changes with StatReloader
+2025-05-26 21:59:36,113 - INFO - basehttp - "GET / HTTP/1.1" 302 0
+2025-05-26 21:59:36,205 - INFO - basehttp - "GET /login/ HTTP/1.1" 200 11695
+2025-05-26 21:59:36,380 - WARNING - log - Not Found: /media/logos/242_04_031_2893_20231106_204940.jpg
+2025-05-26 21:59:36,385 - WARNING - basehttp - "GET /media/logos/242_04_031_2893_20231106_204940.jpg HTTP/1.1" 404 5649
+2025-05-26 21:59:38,944 - INFO - basehttp - "GET /static/css/styles.css HTTP/1.1" 200 3692
+2025-05-26 21:59:38,947 - INFO - basehttp - "GET /static/icons/telecharger-big-arrow.png HTTP/1.1" 200 4896
+2025-05-26 21:59:38,948 - INFO - basehttp - "GET /static/js/scripti.js HTTP/1.1" 200 2496
+2025-05-26 21:59:38,953 - INFO - basehttp - "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 78743
+2025-05-26 21:59:38,958 - INFO - basehttp - "GET /static/css/bootstrap.min.css HTTP/1.1" 200 155845
+2025-05-26 21:59:39,018 - INFO - basehttp - "GET /static/image/boat-5889919_1280.png HTTP/1.1" 200 143567
+2025-05-26 21:59:39,826 - WARNING - log - Not Found: /favicon.ico
+2025-05-26 21:59:39,828 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 5286
+2025-05-26 22:00:08,578 - INFO - basehttp - "POST /login/ HTTP/1.1" 302 0
+2025-05-26 22:00:08,742 - INFO - basehttp - "GET /home HTTP/1.1" 200 26525
+2025-05-26 22:00:08,799 - INFO - basehttp - "GET /static/image/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-05-26 22:00:08,850 - INFO - basehttp - "GET /static/image/city-182223_1280.jpg HTTP/1.1" 200 376515
+2025-05-26 22:00:08,864 - INFO - basehttp - "GET /static/image/city-7352352_1280.jpg HTTP/1.1" 200 445704
+2025-05-26 22:00:08,864 - INFO - basehttp - "GET /static/image/istockphoto-2162033406-1024x1024.jpg HTTP/1.1" 200 62104
+2025-05-26 22:00:08,898 - WARNING - log - Not Found: /media/logos/242_04_031_2893_20231106_204940.jpg
+2025-05-26 22:00:08,900 - WARNING - basehttp - "GET /media/logos/242_04_031_2893_20231106_204940.jpg HTTP/1.1" 404 5649
+2025-05-26 22:00:15,839 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 58478
+2025-05-26 22:00:15,942 - WARNING - log - Not Found: /media/logos/242_04_031_2893_20231106_204940.jpg
+2025-05-26 22:00:15,945 - WARNING - basehttp - "GET /media/logos/242_04_031_2893_20231106_204940.jpg HTTP/1.1" 404 5649
+2025-05-26 22:00:17,627 - INFO - basehttp - "GET /Mutation/ HTTP/1.1" 200 84185
+2025-05-26 22:00:17,695 - WARNING - log - Not Found: /media/logos/242_04_031_2893_20231106_204940.jpg
+2025-05-26 22:00:17,697 - WARNING - basehttp - "GET /media/logos/242_04_031_2893_20231106_204940.jpg HTTP/1.1" 404 5649
+2025-05-26 22:00:19,883 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 37649
+2025-05-26 22:00:20,032 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 60079)
+2025-05-26 22:00:20,040 - WARNING - log - Not Found: /media/logos/242_04_031_2893_20231106_204940.jpg
+2025-05-26 22:00:20,043 - WARNING - basehttp - "GET /media/logos/242_04_031_2893_20231106_204940.jpg HTTP/1.1" 404 5649
+2025-05-26 22:00:28,375 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 49960
+2025-05-26 22:00:28,442 - WARNING - log - Not Found: /media/logos/242_04_031_2893_20231106_204940.jpg
+2025-05-26 22:00:28,443 - WARNING - basehttp - "GET /media/logos/242_04_031_2893_20231106_204940.jpg HTTP/1.1" 404 5649
+2025-05-26 22:00:31,058 - INFO - basehttp - "GET /parcours_stagiaire/ HTTP/1.1" 200 14887
+2025-05-26 22:00:31,138 - WARNING - log - Not Found: /media/logos/242_04_031_2893_20231106_204940.jpg
+2025-05-26 22:00:31,140 - WARNING - basehttp - "GET /media/logos/242_04_031_2893_20231106_204940.jpg HTTP/1.1" 404 5649
+2025-05-26 22:00:38,288 - INFO - basehttp - "GET /affectation/ HTTP/1.1" 200 217839
+2025-05-26 22:00:38,353 - WARNING - log - Not Found: /media/logos/242_04_031_2893_20231106_204940.jpg
+2025-05-26 22:00:38,355 - WARNING - basehttp - "GET /media/logos/242_04_031_2893_20231106_204940.jpg HTTP/1.1" 404 5649
+2025-05-26 22:00:45,967 - INFO - basehttp - "GET /affectation/pdf/affectations_annee/ HTTP/1.1" 200 11733
