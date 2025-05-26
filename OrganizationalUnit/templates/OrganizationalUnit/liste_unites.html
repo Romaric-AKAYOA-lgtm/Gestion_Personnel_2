@@ -8,6 +8,9 @@
         <a href="{% url 'OrganizationalUnit:create' %}" class="btn btn-primary mb-2 mb-md-0">
             <i class="bi bi-plus-circle"></i> Ajouter une unité
         </a>  
+            <a href="{% url 'OrganizationalUnit:organigramme_pdf' %}" class="btn btn-primary mb-2 mb-md-0">
+            <i class="bi bi-plus-circle"></i> Imprimer PDF
+        </a>  
     
         <!-- Formulaire de recherche -->
         <form method="GET" action="{% url 'OrganizationalUnit:search_organizational_units' %}" class="row g-2 align-items-center" id="searchForm">
