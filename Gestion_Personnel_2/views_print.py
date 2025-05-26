@@ -1,6 +1,7 @@
 # utils_pdf.py
 
 import os
+from pydoc import doc
 from django.shortcuts import redirect
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
@@ -11,29 +12,61 @@ from django.http import HttpResponse
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
 
+from Gestion_Personnel_2 import settings
+from administration.models import Administration
 from connection.views import get_connected_user
+from reportlab.lib.pagesizes import A4
+from reportlab.lib.utils import ImageReader
+import os
+from django.conf import settings
 
 def generer_entete_pdf(p):
     """
-    Ajoute l'entête du document PDF avec un logo centré et des lignes de texte officielles.
+    Ajoute l'entête du document PDF avec un logo centré (dimensions auto, ratio préservé)
+    et des lignes de texte officielles.
     Retourne la position y restante pour le contenu à venir.
     """
     width, height = A4
-    y = height - 50  # Position initiale en haut de la page
+    y = height - 60  # Position initiale en haut de la page
     line_height = 15
 
-    logo_path = os.path.join("chemin_vers_ton_dossier", "45906d1a-f183-41db-bfad-d4e6c14242fb.png")
-
-    try:
-        logo = ImageReader(logo_path)
-        logo_width, logo_height = 120, 50
-        p.drawImage(logo, (width - logo_width) / 2, y, width=logo_width, height=logo_height, mask='auto')
-        y -= (logo_height + 10)
-    except Exception as e:
-        print(f"Erreur lors de l'affichage du logo : {e}")
+    administration = Administration.objects.first()
+    if administration and administration.logo:
+        logo_path = os.path.join(settings.MEDIA_ROOT, administration.logo.name)
+        try:
+            logo = ImageReader(logo_path)
+            # Dimensions max souhaitées pour le logo
+            max_logo_width = 120
+            max_logo_height = 80
+            
+            # Récupérer taille réelle image
+            img_width, img_height = logo.getSize()
+            
+            # Calcul du facteur d'échelle pour garder le ratio et ne pas dépasser max dimensions
+            scale = min(max_logo_width / img_width, max_logo_height / img_height, 1)
+            
+            logo_width = img_width * scale
+            logo_height = img_height * scale
+            
+            # Position horizontale centrée
+            x = (width - logo_width) / 2
+            # Position verticale : un peu en dessous du bord haut (y point de base en bas de l'image)
+            y_logo = height - logo_height - 20
+            
+            p.drawImage(logo, x, y_logo, width=logo_width, height=logo_height, mask='auto')
+            
+            # Mise à jour de y sous l'image
+            y = y_logo - 30
+            
+        except Exception as e:
+            print(f"Erreur lors de l'affichage du logo : {e}")
+            p.setFont("Times-Roman", 10)
+            p.drawCentredString(width / 2, y, "Logo non disponible")
+            y -= 40
+    else:
         p.setFont("Times-Roman", 10)
         p.drawCentredString(width / 2, y, "Logo non disponible")
-        y -= 20
+        y -= 40
 
     lignes_entete = [
         "REPUBLIQUE DU CONGO",

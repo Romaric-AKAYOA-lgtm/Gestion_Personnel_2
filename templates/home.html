@@ -64,6 +64,7 @@
             <div class="card-body overflow-auto">
                 <table class="table table-bordered table-striped">
                     <thead class="table-primary">
+                        <p><strong>Nombre des employés actifs:</strong> {{nombre_employes_actif }}</p>
                         <tr><th>Nom</th><th>Prénom</th></tr>
                     </thead>
                     <tbody>
@@ -87,6 +88,8 @@
             <div class="card-body overflow-auto">
                 <table class="table table-bordered table-striped">
                     <thead class="table-warning">
+                           <p><strong>Nombre Employés en Retraite Cette Année:</strong> {{nombre_employes_retraite_cette_annee}}</p>
+                     
                         <tr><th>Nom</th><th>Prénom</th><th>Date de Retraite</th></tr>
                     </thead>
                     <tbody>
@@ -221,13 +224,15 @@
         <div class="card-body overflow-auto">
             <table class="table table-bordered table-striped">
                 <thead class="table-warning">
+                               <p><strong>Moins Mutations de l'Année en Courss:</strong> {{ nombre_mutations_hierarchiques}} </p>
+          
                     <tr>
                         <th>Employé</th>
                         <th>Fonction</th>
                         <th>Niveau</th>
                         <th>Unité Organisationnelle</th>
                         <th>Date Début</th>
-                    </tr>
+                    </tr>  
                 </thead>
                 <tbody>
                     {% for mutation in mutations_hierarchiques %}
@@ -257,6 +262,7 @@
         <div class="card-body overflow-auto">
             <table class="table table-bordered table-striped">
                 <thead class="table-success">
+                   <p><strong>Nombre Employés Actuellement en Congé:</strong> {{nombre_en_conge}}</p>
                     <tr>
                         <th>Employé</th>
                         <th>Type de Congé</th>
@@ -292,6 +298,7 @@
         <div class="card-body overflow-auto">
             <table class="table table-bordered table-striped">
                 <thead class="table-warning">
+                           <p><strong>Nombre  Employés Partant Aujourd'hui en Congé:</strong> {{nombre_partent_aujourdhui}}</p>
                     <tr>
                         <th>Employé</th>
                         <th>Type de Congé</th>
@@ -325,6 +332,7 @@
         <div class="card-body overflow-auto">
             <table class="table table-bordered table-striped">
                 <thead class="table-info">
+                                 <p><strong>Nombre   Employés Revenant Aujourd'hui de Congé:</strong> {{nombre_reviennent_aujourdhui}}</p>
                     <tr>
                         <th>Employé</th>
                         <th>Type de Congé</th>

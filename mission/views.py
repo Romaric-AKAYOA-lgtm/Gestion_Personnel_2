@@ -17,7 +17,7 @@ def lister_missions(request):
         return redirect('connection:login')
 
     try:
-        missions = CLMission.objects.all()
+        missions = CLMission.objects.all().order_by('-date_debut')
         return render(request, 'mission/lister_missions.html', {'missions': missions, "username": username})
     except Exception as e:
         return HttpResponseServerError(f"Erreur serveur lors de l'affichage des missions : {e}")
@@ -107,9 +107,9 @@ def rechercher_missions(request):
                 Q(description__icontains=query) |
                 Q(lieu_mission__icontains=query) |
                 Q(organisme__icontains=query)
-            )
+            ).order_by('-date_debut')
         else:
-            missions = CLMission.objects.all()
+            missions = CLMission.objects.all().order_by('-date_debut')
 
         return render(request, 'mission/lister_missions.html', {
             "username": username,

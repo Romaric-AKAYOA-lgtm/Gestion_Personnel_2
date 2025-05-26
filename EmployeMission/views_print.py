@@ -80,7 +80,7 @@ def generate_employe_mission_pdf(request, mission_id):
     return response
 
 
-# ✅ PDF des affectations de mission
+
 from datetime import datetime
 from django.http import HttpResponse
 from django.shortcuts import redirect
@@ -112,9 +112,8 @@ def generate_employes_missions_pdf(request):
     headers = ["Employé", "Mission", "Statut"]
     header_row = [Paragraph(h, styleN) for h in headers]
     col_widths = [130, 250, 90]
-    row_height = 20
 
-    def draw_header_and_title():
+    def draw_title_page():
         y = generer_entete_pdf(doc)
         y -= 20
         title_table = Table([["Liste des Affectations Employé - Mission"]], colWidths=[width - 100])
@@ -127,15 +126,13 @@ def generate_employes_missions_pdf(request):
         ]))
         title_table.wrapOn(doc, width, height)
         title_table.drawOn(doc, 50, y)
-        y -=60
+        y -= 30
         return y
 
-    y = draw_header_and_title()
-    current_y = y
+    current_y = draw_title_page()
     table_data = [header_row]
-    last_table_y = 0
 
-    for affectation in affectations:
+    for idx, affectation in enumerate(affectations):
         row = [
             Paragraph(str(affectation.employe), styleN),
             Paragraph(str(affectation.mission), styleN),
@@ -143,8 +140,16 @@ def generate_employes_missions_pdf(request):
         ]
         table_data.append(row)
 
-        needed_height = row_height * len(table_data)
+        # Crée un tableau temporaire pour vérifier la hauteur
+        tmp_table = Table(table_data, colWidths=col_widths)
+        tmp_table.setStyle(TableStyle([
+            ('FONTNAME', (0, 0), (-1, -1), 'Times-Roman'),
+            ('FONTSIZE', (0, 0), (-1, -1), 10),
+        ]))
+        _, needed_height = tmp_table.wrap(width, height)
+
         if needed_height > current_y - 60:
+            # Affiche le tableau sans la dernière ligne
             table = Table(table_data[:-1], colWidths=col_widths)
             table.setStyle(TableStyle([
                 ('GRID', (0, 0), (-1, -1), 1, colors.black),
@@ -155,12 +160,14 @@ def generate_employes_missions_pdf(request):
                 ('BACKGROUND', (0, 0), (-1, 0), colors.lightgrey),
             ]))
             table.wrapOn(doc, width, height)
-            table.drawOn(doc, (width - sum(col_widths)) / 2, current_y - row_height * (len(table_data) - 1))
+            table.drawOn(doc, (width - sum(col_widths)) / 2, current_y - table._height)
 
             doc.showPage()
-            current_y = draw_header_and_title()
-            table_data = [header_row, row]
+            generer_pdf_avec_pied_de_page(doc, username)
+            current_y = height - 60  # en-tête ignoré sur les pages suivantes
+            table_data = [header_row, row]  # recommence avec l'en-tête
 
+    # Affiche les dernières lignes restantes
     if len(table_data) > 1:
         table = Table(table_data, colWidths=col_widths)
         table.setStyle(TableStyle([
@@ -171,19 +178,17 @@ def generate_employes_missions_pdf(request):
             ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),
             ('BACKGROUND', (0, 0), (-1, 0), colors.lightgrey),
         ]))
-        table_height = row_height * len(table_data)
         table.wrapOn(doc, width, height)
-        table_y = current_y - table_height
-        last_table_y = table_y
+        table_y = current_y - table._height
         table.drawOn(doc, (width - sum(col_widths)) / 2, table_y)
 
-        # ✅ Afficher le total d'affectations
+        # Total des affectations
         total_paragraph = Paragraph(
             f"<b>Nombre total d'affectations : {len(affectations)}</b>",
             styleN
         )
         total_paragraph.wrapOn(doc, width, height)
-        total_paragraph.drawOn(doc, 60, last_table_y - 30)
+        total_paragraph.drawOn(doc, 60, table_y - 30)
 
     generer_pdf_avec_pied_de_page(doc, username)
     doc.save()

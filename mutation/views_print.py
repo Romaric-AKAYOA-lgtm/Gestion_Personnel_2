@@ -77,7 +77,6 @@ def generate_mutation_pdf(request, mutation_id):
     doc.save()
     return response
 
-# ✅ PDF des mutations de l'année
 from datetime import datetime
 from django.http import HttpResponse
 from django.shortcuts import redirect
@@ -86,6 +85,7 @@ from reportlab.pdfgen import canvas
 from reportlab.platypus import Table, TableStyle, Paragraph
 from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet
+from .models import CLMutation
 
 def generate_mutations_annee_pdf(request):
     username = get_connected_user(request)
@@ -95,32 +95,30 @@ def generate_mutations_annee_pdf(request):
     annee = datetime.now().year
     mutations = CLMutation.objects.filter(
         date_debut__year=annee
-    ).order_by('employe__tnm', 'employe__tpm')
+    ).order_by( '-date_debut', 'employe__tnm', 'employe__tpm')
 
     response = HttpResponse(content_type='application/pdf')
     response['Content-Disposition'] = f'attachment; filename="mutations_{annee}.pdf"'
 
     doc = canvas.Canvas(response, pagesize=A4)
-    width, height = A4
-
+    page_width, page_height = A4
     styles = getSampleStyleSheet()
     styleN = styles["Normal"]
     styleN.fontName = 'Times-Roman'
     styleN.fontSize = 10
-    styleN.alignment = 0  # Alignement à gauche
 
     headers = [
-        "Employé", "Unité\nOrganisationnelle", "Fonction",
-        "Responsable", "Date\ndébut", "Date\nfin"
+        "Employé", "Unité Organisationnelle", "Fonction",
+        "Responsable", "Date début", "Date fin"
     ]
-    header_row = [Paragraph(h.replace('\n', '<br/>'), styleN) for h in headers]
     col_widths = [90, 100, 80, 90, 60, 60]
-    row_height = 25
+    table_width = sum(col_widths)
+    row_height = 57
 
     def draw_header_and_title():
         y = generer_entete_pdf(doc)
-        y -= 5
-        title_table = Table([["Liste des Mutations de l'Année"]], colWidths=[width - 100])
+        y -= 10
+        title_table = Table([[f"Liste des Mutations de l'Année {annee}"]], colWidths=[page_width - 100])
         title_table.setStyle(TableStyle([
             ('TEXTCOLOR', (0, 0), (-1, 0), colors.black),
             ('ALIGN', (0, 0), (-1, 0), 'CENTER'),
@@ -128,47 +126,13 @@ def generate_mutations_annee_pdf(request):
             ('FONTSIZE', (0, 0), (-1, 0), 20),
             ('BOTTOMPADDING', (0, 0), (-1, 0), 8),
         ]))
-        title_table.wrapOn(doc, width, height)
-        title_table.drawOn(doc, 50, y)
-        y -= 60
-        return y
+        title_table.wrapOn(doc, page_width, page_height)
+        title_x = (page_width - (page_width - 100)) / 2
+        title_table.drawOn(doc, title_x, y)
+        return y - 10   # espace sous le titre pour commencer le tableau
 
-    y = draw_header_and_title()
-    current_y = y
-    table_data = [header_row]
-    last_table_y = 0  # Pour savoir où est le dernier tableau
-
-    for mutation in mutations:
-        row = [
-            Paragraph(str(mutation.employe), styleN),
-            Paragraph(str(mutation.organizational_unit), styleN),
-            Paragraph(str(mutation.function), styleN),
-            Paragraph(str(mutation.responsable) if mutation.responsable else "Non défini", styleN),
-            Paragraph(mutation.date_debut.strftime('%d/%m/%Y') if mutation.date_debut else "Non définie", styleN),
-            Paragraph(mutation.date_fin.strftime('%d/%m/%Y') if mutation.date_fin else "Non définie", styleN),
-        ]
-        table_data.append(row)
-
-        needed_height = row_height * len(table_data)
-        if needed_height > current_y - 60:
-            table = Table(table_data[:-1], colWidths=col_widths)
-            table.setStyle(TableStyle([
-                ('GRID', (0, 0), (-1, -1), 1, colors.black),
-                ('FONTNAME', (0, 0), (-1, -1), 'Times-Roman'),
-                ('FONTSIZE', (0, 0), (-1, -1), 10),
-                ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
-                ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),
-                ('BACKGROUND', (0, 0), (-1, 0), colors.lightgrey),
-            ]))
-            table.wrapOn(doc, width, height)
-            table.drawOn(doc, (width - sum(col_widths)) / 2, current_y - row_height * (len(table_data) - 1))
-
-            doc.showPage()
-            current_y = draw_header_and_title()
-            table_data = [header_row, row]
-
-    if len(table_data) > 1:
-        table = Table(table_data, colWidths=col_widths)
+    def render_table(doc, data, y_pos):
+        table = Table(data, colWidths=col_widths, repeatRows=1)
         table.setStyle(TableStyle([
             ('GRID', (0, 0), (-1, -1), 1, colors.black),
             ('FONTNAME', (0, 0), (-1, -1), 'Times-Roman'),
@@ -177,20 +141,47 @@ def generate_mutations_annee_pdf(request):
             ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),
             ('BACKGROUND', (0, 0), (-1, 0), colors.lightgrey),
         ]))
-        table_height = row_height * len(table_data)
-        table.wrapOn(doc, width, height)
-        table_y = current_y - table_height
-        last_table_y = table_y
-        table.drawOn(doc, (width - sum(col_widths)) / 2, table_y)
+        table.wrapOn(doc, page_width, page_height)
+        x = (page_width - table_width) / 2
+        table.drawOn(doc, x, y_pos - row_height * len(data))
 
-        # ✅ Afficher le total d'enregistrements en bas à gauche
-        total_paragraph = Paragraph(
-            f"<b>Nombre total de mutations : {len(mutations)}</b>",
-            styleN
-        )
-        total_paragraph.wrapOn(doc, width, height)
-        total_paragraph.drawOn(doc, 60, last_table_y - 25)
+    y = draw_header_and_title()
+    current_y = y
+    available_height = current_y - 100  # marge basse
+    rows_per_page = int(available_height / row_height)
+    total_rows = len(mutations)
+    min_rows_last_page = 5
 
-    generer_pdf_avec_pied_de_page(doc, username)
+    rows_buffered = []
+
+    for i, m in enumerate(mutations):
+        row = [
+            Paragraph(str(m.employe), styleN),
+            Paragraph(str(m.organizational_unit), styleN),
+            Paragraph(str(m.function), styleN),
+            Paragraph(str(m.responsable) if m.responsable else "Non défini", styleN),
+            Paragraph(m.date_debut.strftime('%d/%m/%Y') if m.date_debut else "Non définie", styleN),
+            Paragraph(m.date_fin.strftime('%d/%m/%Y') if m.date_fin else "Non définie", styleN),
+        ]
+        rows_buffered.append(row)
+        remaining = total_rows - (i + 1)
+
+        if len(rows_buffered) == rows_per_page:
+            # Si on a encore beaucoup de lignes restantes (pour ne pas couper trop court la dernière page)
+            if remaining > min_rows_last_page:
+                render_table(doc, [[Paragraph(h, styleN) for h in headers]] + rows_buffered, current_y)
+                doc.showPage()
+                current_y = page_height - 50
+                rows_buffered = []
+
+    if rows_buffered:
+        table_data = [[Paragraph(h, styleN) for h in headers]] + rows_buffered
+        render_table(doc, table_data, current_y)
+        y_table = current_y - row_height * len(table_data)
+        doc.setFont("Times-Roman", 12)
+        doc.drawString(50, y_table - 25, f"Nombre d'enregistrements : {total_rows}")
+        generer_pdf_avec_pied_de_page(doc, username)
+
+    doc.showPage()
     doc.save()
     return response

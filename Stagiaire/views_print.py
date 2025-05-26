@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, redirect
+from pandas import read_table
 from reportlab.lib.pagesizes import A4
 from reportlab.lib import colors
 from reportlab.platypus import Table, TableStyle, Paragraph
@@ -76,7 +77,6 @@ def generate_stagiaire_pdf(request, stagiaire_id):
 
     return response
 
-
 from django.http import HttpResponse
 from django.shortcuts import redirect
 from reportlab.lib.pagesizes import A4
@@ -89,33 +89,29 @@ from connection.views import get_connected_user
 from Gestion_Personnel_2.views_print import generer_entete_pdf, generer_pdf_avec_pied_de_page
 from .models import CLStagiaire
 
-
 def generate_stagiaires_pdf(request):
     username = get_connected_user(request)
     if not username:
         return redirect('connection:login')
 
-    stagiaires = CLStagiaire.objects.all().order_by('tnm')
+    stagiaires = CLStagiaire.objects.all().order_by('-dsb')
 
     response = HttpResponse(content_type='application/pdf')
     response['Content-Disposition'] = 'attachment; filename="liste_stagiaires.pdf"'
 
     doc = canvas.Canvas(response, pagesize=A4)
     page_width, page_height = A4
-
     styles = getSampleStyleSheet()
     styleN = styles["Normal"]
     styleN.fontName = 'Times-Roman'
     styleN.fontSize = 10
 
-    headers = ["Nom", "Prénom", "Sexe", "Téléphone", "Email", "Etablissement", "Filière", "Statut"]
+    headers = ["Nom", "Prénom", "Sexe", "Téléphone", "Email", "Établissement", "Filière", "Statut"]
     col_widths = [65, 65, 40, 70, 80, 90, 80, 60]
     table_width = sum(col_widths)
     row_height = 20
 
-    def draw_header_and_title():
-        y = generer_entete_pdf(doc)
-        y -= 5
+    def render_title(doc, y):
         title_table = Table([["Liste des Stagiaires"]], colWidths=[page_width - 100])
         title_table.setStyle(TableStyle([
             ('TEXTCOLOR', (0, 0), (-1, 0), colors.black),
@@ -125,46 +121,12 @@ def generate_stagiaires_pdf(request):
             ('BOTTOMPADDING', (0, 0), (-1, 0), 8),
         ]))
         title_table.wrapOn(doc, page_width, page_height)
-        title_table.drawOn(doc, 50, y)
-        return y - 50
+        title_x = (page_width - (page_width - 100)) / 2
+        title_table.drawOn(doc, title_x, y)
+        return y - 30
 
-    y = draw_header_and_title()
-    current_y = y
-    table_data = [[Paragraph(h, styleN) for h in headers]]
-
-    for stagiaire in stagiaires:
-        row = [
-            Paragraph(stagiaire.tnm or "N/A", styleN),
-            Paragraph(stagiaire.tpm or "N/A", styleN),
-            Paragraph(stagiaire.tsx or "N/A", styleN),
-            Paragraph(stagiaire.tphne or "N/A", styleN),
-            Paragraph(stagiaire.teml or "N/A", styleN),
-            Paragraph(stagiaire.etablissement or "N/A", styleN),
-            Paragraph(stagiaire.filiere or "N/A", styleN),
-            Paragraph(stagiaire.tstt_user or "N/A", styleN),
-        ]
-        table_data.append(row)
-
-        if current_y - row_height * len(table_data) < 100:
-            table = Table(table_data, colWidths=col_widths, repeatRows=1)
-            table.setStyle(TableStyle([
-                ('GRID', (0, 0), (-1, -1), 1, colors.black),
-                ('FONTNAME', (0, 0), (-1, -1), 'Times-Roman'),
-                ('FONTSIZE', (0, 0), (-1, -1), 10),
-                ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
-                ('BACKGROUND', (0, 0), (-1, 0), colors.lightgrey),
-            ]))
-            table.wrapOn(doc, page_width, page_height)
-            x = (page_width - table_width) / 2
-            table.drawOn(doc, x, current_y - row_height * len(table_data))
-
-            generer_pdf_avec_pied_de_page(doc, username)
-            doc.showPage()
-            current_y = draw_header_and_title()
-            table_data = [[Paragraph(h, styleN) for h in headers]]
-
-    if len(table_data) > 1:
-        table = Table(table_data, colWidths=col_widths, repeatRows=1)
+    def render_table(doc, data, y_pos):
+        table = Table(data, colWidths=col_widths, repeatRows=1)
         table.setStyle(TableStyle([
             ('GRID', (0, 0), (-1, -1), 1, colors.black),
             ('FONTNAME', (0, 0), (-1, -1), 'Times-Roman'),
@@ -174,15 +136,50 @@ def generate_stagiaires_pdf(request):
         ]))
         table.wrapOn(doc, page_width, page_height)
         x = (page_width - table_width) / 2
+        table.drawOn(doc, x, y_pos - row_height * len(data))
+
+    # Première page : entête et titre
+    y = generer_entete_pdf(doc)
+    y = render_title(doc, y)
+    current_y = y
+    available_height = current_y - 100  # Marge inférieure
+    rows_per_page = int(available_height / row_height)
+    total_rows = len(stagiaires)
+    min_rows_last_page = 5  # Minimum pour la dernière page
+
+    table_data = [[Paragraph(h, styleN) for h in headers]]
+    rows_buffered = []
+
+    for i, st in enumerate(stagiaires):
+        row = [
+            Paragraph(st.tnm or "N/A", styleN),
+            Paragraph(st.tpm or "N/A", styleN),
+            Paragraph(st.tsx or "N/A", styleN),
+            Paragraph(st.tphne or "N/A", styleN),
+            Paragraph(st.teml or "N/A", styleN),
+            Paragraph(st.etablissement or "N/A", styleN),
+            Paragraph(st.filiere or "N/A", styleN),
+            Paragraph(st.tstt_user or "N/A", styleN),
+        ]
+        rows_buffered.append(row)
+
+        remaining = total_rows - (i + 1)
+        if len(rows_buffered) == rows_per_page:
+            if remaining > min_rows_last_page:
+                render_table(doc, [[Paragraph(h, styleN) for h in headers]] + rows_buffered, current_y)
+                doc.showPage()
+                current_y = page_height - 50  # En-tête ignorée sur les pages suivantes
+                rows_buffered = []
+
+    if rows_buffered:
+        y=10
+        table_data = [[Paragraph(h, styleN) for h in headers]] + rows_buffered
+        render_table(doc, table_data, current_y)
         y_table = current_y - row_height * len(table_data)
-        table.drawOn(doc, x, y_table)
-
         doc.setFont("Times-Roman", 12)
-        doc.drawString(50, y_table - 25, f"Nombre d'enregistrements : {len(stagiaires)}")
+        doc.drawString(50, y_table - 30, f"Nombre d'enregistrements : {total_rows}")
+        generer_pdf_avec_pied_de_page(doc, username)
 
-    generer_pdf_avec_pied_de_page(doc, username)
     doc.showPage()
     doc.save()
-
     return response
-

@@ -14,17 +14,18 @@
 
         <!-- Formulaire de recherche -->
         <form method="GET" action="{% url 'Mutation:search' %}" class="d-flex">
-            <select name="criteres" class="form-select me-2">
+            <select name="criteres" class="form-select me-2" aria-label="Critères de recherche">
                 <option value="employe" {% if criteres == "employe" %}selected{% endif %}>Employé</option>
                 <option value="organizational_unit" {% if criteres == "organizational_unit" %}selected{% endif %}>Unité Organisationnelle</option>
                 <option value="function" {% if criteres == "function" %}selected{% endif %}>Fonction</option>
                 <option value="responsable" {% if criteres == "responsable" %}selected{% endif %}>Responsable</option>
             </select>
-            <input type="text" name="query" class="form-control me-2" placeholder="Rechercher une mutation" value="{{ query }}">
+            <input type="text" name="query" class="form-control me-2" placeholder="Rechercher une mutation" value="{{ query|default_if_none:'' }}">
             <button type="submit" class="btn btn-secondary">
                 <i class="bi bi-search"></i> Rechercher
             </button>
         </form>
+
     </div>
 
     <div class="table-responsive">

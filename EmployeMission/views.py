@@ -75,23 +75,23 @@ def modifier_employe_mission(request, id):
     username = get_connected_user(request)
     if not username:
         return redirect('connection:login')
-    
+
     try:
         affectation = get_object_or_404(CLEmployeMission, id=id)
         if request.method == 'POST':
             form = CLEmployeMissionForm(request.POST, instance=affectation)
             if form.is_valid():
                 form.save()
-                return redirect('employe_mission:list')
+                return redirect('employe_mission:list')  # À adapter selon ton URL
         else:
             form = CLEmployeMissionForm(instance=affectation)
-        
+
         return render(request, 'EmployeMission/modifier_employe_mission.html', {
             'form': form,
             'affectation': affectation,
             'username': username
         })
-    
+
     except IntegrityError:
         return render(request, 'EmployeMission/modifier_employe_mission.html', {
             'form': form,

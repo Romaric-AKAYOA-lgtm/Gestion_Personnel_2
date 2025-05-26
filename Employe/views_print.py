@@ -86,6 +86,7 @@ def generate_employe_pdf(request, employe_id):
 
     return response
 
+
 from reportlab.lib.pagesizes import A4
 from reportlab.lib import colors
 from reportlab.platypus import Table, TableStyle, Paragraph
@@ -100,23 +101,20 @@ def generate_employes_pdf(request):
         return redirect('connection:login')
 
     employes = CLEmploye.objects.all().order_by('tnm')
-
     response = HttpResponse(content_type='application/pdf')
     response['Content-Disposition'] = 'attachment; filename="liste_employes.pdf"'
 
     doc = canvas.Canvas(response, pagesize=A4)
     page_width, page_height = A4
-
     styles = getSampleStyleSheet()
     styleN = styles["Normal"]
     styleN.fontName = 'Times-Roman'
     styleN.fontSize = 10
 
     headers = ["Nom", "Prénom", "Matricule", "Sexe", "Spécialité", "Grade", "Échelon", "Statut"]
-    col_widths = [70, 70, 70, 50, 95, 70, 50, 60]  # élargissement léger
+    col_widths = [70, 70, 70, 50, 95, 70, 50, 60]
     table_width = sum(col_widths)
     row_height = 20
-
 
     def draw_header_and_title():
         y = generer_entete_pdf(doc)
@@ -132,13 +130,32 @@ def generate_employes_pdf(request):
         title_table.wrapOn(doc, page_width, page_height)
         title_x = (page_width - (page_width - 100)) / 2
         title_table.drawOn(doc, title_x, y)
-        return y - 50
+        return y - 10
+
+    def render_table(doc, data, y_pos):
+        table = Table(data, colWidths=col_widths, repeatRows=1)
+        table.setStyle(TableStyle([
+            ('GRID', (0, 0), (-1, -1), 1, colors.black),
+            ('FONTNAME', (0, 0), (-1, -1), 'Times-Roman'),
+            ('FONTSIZE', (0, 0), (-1, -1), 10),
+            ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
+            ('BACKGROUND', (0, 0), (-1, 0), colors.lightgrey),
+        ]))
+        table.wrapOn(doc, page_width, page_height)
+        x = (page_width - table_width) / 2
+        table.drawOn(doc, x, y_pos - row_height * len(data))
 
     y = draw_header_and_title()
     current_y = y
-    table_data = [[Paragraph(h, styleN) for h in headers]]
+    available_height = current_y - 100  # Marge inférieure
+    rows_per_page = int(available_height / row_height)
+    total_rows = len(employes)
+    min_rows_last_page = 5  # Minimum à garder avec pied de page
 
-    for emp in employes:
+    table_data = [[Paragraph(h, styleN) for h in headers]]
+    rows_buffered = []
+
+    for i, emp in enumerate(employes):
         row = [
             Paragraph(emp.tnm or "N/A", styleN),
             Paragraph(emp.tpm or "N/A", styleN),
@@ -149,49 +166,26 @@ def generate_employes_pdf(request):
             Paragraph(str(emp.echelon) if emp.echelon else "N/A", styleN),
             Paragraph(emp.tstt_user or "N/A", styleN),
         ]
-        table_data.append(row)
+        rows_buffered.append(row)
 
-        # Pagination quand page presque pleine
-        if current_y - row_height * len(table_data) < 100:
-            table = Table(table_data, colWidths=col_widths, repeatRows=1)
-            table.setStyle(TableStyle([
-                ('GRID', (0, 0), (-1, -1), 1, colors.black),
-                ('FONTNAME', (0, 0), (-1, -1), 'Times-Roman'),
-                ('FONTSIZE', (0, 0), (-1, -1), 10),
-                ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
-                ('BACKGROUND', (0, 0), (-1, 0), colors.lightgrey),
-            ]))
-            table.wrapOn(doc, page_width, page_height)
-            x = (page_width - table_width) / 2
-            table.drawOn(doc, x, current_y - row_height * len(table_data))
+        remaining = total_rows - (i + 1)
+        if len(rows_buffered) == rows_per_page:
+            # Si on peut garder suffisamment pour la dernière page
+            if remaining > min_rows_last_page:
+                render_table(doc, [[Paragraph(h, styleN) for h in headers]] + rows_buffered, current_y)
+                doc.showPage()
+                current_y = page_height - 50
+                rows_buffered = []
 
-            generer_pdf_avec_pied_de_page(doc, username)
-            doc.showPage()
-            current_y = draw_header_and_title()
-            table_data = [[Paragraph(h, styleN) for h in headers]]
-
-    # Dernière page
-    if len(table_data) > 1:
-        table = Table(table_data, colWidths=col_widths, repeatRows=1)
-        table.setStyle(TableStyle([
-            ('GRID', (0, 0), (-1, -1), 1, colors.black),
-            ('FONTNAME', (0, 0), (-1, -1), 'Times-Roman'),
-            ('FONTSIZE', (0, 0), (-1, -1), 10),
-            ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
-            ('BACKGROUND', (0, 0), (-1, 0), colors.lightgrey),
-        ]))
-        table.wrapOn(doc, page_width, page_height)
-        x = (page_width - table_width) / 2
+    # Dernière page : affiche les lignes restantes et pied de page
+    if rows_buffered:
+        table_data = [[Paragraph(h, styleN) for h in headers]] + rows_buffered
+        render_table(doc, table_data, current_y)
         y_table = current_y - row_height * len(table_data)
-        table.drawOn(doc, x, y_table)
-
-        # Ajout du texte avec le nombre total d'employés
-        nb_employes = len(employes)
         doc.setFont("Times-Roman", 12)
-        doc.drawString(50, y_table - 25, f"Nombre d'enregistrements : {nb_employes}")
+        doc.drawString(50, y_table - 25, f"Nombre d'enregistrements : {total_rows}")
+        generer_pdf_avec_pied_de_page(doc, username)
 
-    generer_pdf_avec_pied_de_page(doc, username)
     doc.showPage()
     doc.save()
-
     return response

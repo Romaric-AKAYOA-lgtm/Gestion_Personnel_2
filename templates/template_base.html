@@ -11,53 +11,7 @@
   <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 
   <style>
-            body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
 
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        /* Bouton remonter en haut */
-        #topBtn {
-            display: none;
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 99;
-            font-size: 18px;
-            border: none;
-            outline: none;
-            background-color: orange;
-            color: white;
-            cursor: pointer;
-            padding: 12px;
-            border-radius: 8px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-            transition: 0.3s ease;
-        }
-
-        #topBtn:hover {
-            background-color: darkorange;
-        }
-
-        /* Exemple de contenu long pour tester le bouton */
-        .content-block {
-            height: 600px;
-            margin-bottom: 30px;
-            background-color: #f0f0f0;
-            padding: 20px;
-        }
         body {
           background-image: url("{% static 'image/boat-5889919_1280.png' %}");
           background-size: cover;
@@ -75,13 +29,15 @@
 
   <div class="sidebar" id="sidebar">
     <div class="d-flex flex-column align-items-center mb-1 mt-2">
-      <img src="{{ administration.logo.url }}" alt="Logo" class="rounded-circle mb-2">
+            <img src="{{ administration.logo.url }}" alt="Logo" class="rounded-circle mb-2" >
       <span class="h5 text-light text-center">{{ administration.nom }}</span>
     </div>
 
-    <h6 class="mb-3 text-center text-dark">Menu</h6>
+  
+    
 
   <div class="accordion" id="menuAccordion">
+        <p class="h5 text-light text-center mb-7" >    Menu </p>
     {% with url_name=request.resolver_match.url_name %}
 
     <!-- Accueil -->
@@ -94,7 +50,6 @@
       <div id="collapseHome" class="accordion-collapse collapse {% if url_name == 'home' %}show{% endif %}" data-bs-parent="#menuAccordion">
         <div class="accordion-body p-2">
           <a href="{% url 'home' %}" class="nav-link">Accueil</a>
-            <a href="{% url 'complet_pdf' %}" class="nav-link">Imprimer</a>
         </div>
       </div>
     </div>
@@ -173,10 +128,10 @@
       <div id="collapseParam" class="accordion-collapse collapse {% if url_name == 'administration:list' %}show{% endif %}" data-bs-parent="#menuAccordion">
         <div class="accordion-body p-2">
           <a href="{% url 'administration:list' %}" class="nav-link">Paramètres</a>
+              <a href="{% url 'complet_pdf' %}" class="nav-link">Imprimer</a>
         </div>
       </div>
     </div>
-
     <!-- Déconnexion -->
     <div class="accordion">
       <h2 class="accordion-header" id="headingLogout">
@@ -220,8 +175,7 @@
         </div>
       </div>
     </header>
-      <!-- Bouton "Revenir en haut" -->
-      <button onclick="scrollToTop()" id="topBtn" title="Revenir en haut">↑ Haut</button>
+
 
     <div class="main-content">
       {% block contenue %}{% endblock %}
@@ -237,9 +191,8 @@
         <div class="row">
           <div class="col-md-2 text-start"></div>
           <div class="col-md-10 d-flex align-items-center justify-content-center">
-            <small class="text-muted">&copy; 2025 Gestion Visites - Tous droits réservés.</small>
+                <small class="text-muted">&copy; 2025 Gestion du Personnel - Tous droits réservés.</small>   </div>
           </div>
-        </div>
       </div>
     </footer>
   </div>

@@ -1,6 +1,9 @@
 from django import forms
-from .models import CLParcoursStagiaire
+from django.db.models import Q
 from datetime import date
+
+from mutation.models import CLMutation
+from .models import CLParcoursStagiaire
 
 class CLParcoursStagiaireForm(forms.ModelForm):
     class Meta:
@@ -20,24 +23,35 @@ class CLParcoursStagiaireForm(forms.ModelForm):
         }
 
     def clean_responsable(self):
-        """Empêche de sélectionner un responsable déjà retraité (dont la date de retraite est dans le passé),
-        vérifie si l'utilisateur est actif et que la date de fin (ddf) n'est pas encore atteinte."""
-        
         responsable = self.cleaned_data.get('responsable')
 
-        if responsable:
-            # Vérification de la date de retraite
-            date_retraite = getattr(responsable, 'date_retraite', None)
-            if date_retraite and date_retraite <= date.today():
-                raise forms.ValidationError("Le responsable ne peut pas être un retraité.")
+        if not responsable:
+            raise forms.ValidationError("Veuillez sélectionner un responsable.")
 
-            # Vérification que l'utilisateur est actif (tstt_user actif)
-            if not responsable.tstt_user.is_active:
-                raise forms.ValidationError("Le responsable doit être un utilisateur actif.")
+        # 1. Vérification de la date de retraite
+        date_retraite = getattr(responsable, 'date_retraite', None)
+        if date_retraite and date_retraite <= date.today():
+            raise forms.ValidationError("Le responsable sélectionné est déjà à la retraite.")
 
-            # Vérification que la date de fin (ddf) n'est pas encore atteinte
-            ddf = getattr(responsable, 'ddf', None)
-            if ddf and ddf <= date.today():
-                raise forms.ValidationError("La date de fin du responsable est déjà atteinte.")
-        
+        # 2. Vérification que le responsable est lié à un utilisateur système
+        if not getattr(responsable, 'tstt_user', None):
+            raise forms.ValidationError("Le responsable sélectionné n’est associé à aucun utilisateur du système.")
+
+
         return responsable
+
+    def clean(self):
+        cleaned_data = super().clean()
+        stagiaire = cleaned_data.get('stagiaire')
+        date_fin = cleaned_data.get('date_fin')
+
+        # Vérification que la date de fin du parcours ne dépasse pas la fin du stage du stagiaire
+        if stagiaire and date_fin:
+            date_fin_stage = getattr(stagiaire, 'ddf', None)
+            if date_fin_stage and date_fin > date_fin_stage:
+                self.add_error(
+                    'date_fin',
+                    f"La date de fin du parcours ne peut pas dépasser la date de fin de stage du stagiaire ({date_fin_stage.strftime('%Y-%m-%d')})."
+                )
+
+        return cleaned_data

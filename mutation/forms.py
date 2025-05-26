@@ -1,8 +1,6 @@
 from django import forms
-
 from Affectation.models import CLAffectation
 from .models import CLMutation
-
 
 class CLMutationForm(forms.ModelForm):
     class Meta:
@@ -19,56 +17,51 @@ class CLMutationForm(forms.ModelForm):
             'date_debut': forms.DateInput(attrs={'type': 'date'}),
             'date_fin': forms.DateInput(attrs={'type': 'date'}),
         }
+def clean(self):
+    cleaned_data = super().clean()
+    employe = cleaned_data.get("employe")
+    responsable = cleaned_data.get("responsable")
+    organizational_unit = cleaned_data.get("organizational_unit")
+    date_debut = cleaned_data.get("date_debut")
 
-    def clean(self):
-        cleaned_data = super().clean()
-        employe = cleaned_data.get("employe")
-        responsable = cleaned_data.get("responsable")
-        organizational_unit = cleaned_data.get("organizational_unit")
-        date_debut = cleaned_data.get("date_debut")
+    # Vérifier que l'employé n'est pas son propre responsable
+    if employe and responsable and employe == responsable:
+        raise forms.ValidationError("Un employé ne peut pas être son propre responsable.")
 
-        # Vérifier que l'employé n'est pas son propre responsable
-        if employe and responsable and employe == responsable:
-            raise forms.ValidationError("Un employé ne peut pas être son propre responsable.")
-
-        # Vérifier la validité de la date_debut
-        if employe and date_debut:
-            # Vérifie que la date de début est postérieure à la date de début de service
-            if employe.dsb and date_debut <= employe.dsb:
-                raise forms.ValidationError(
-                    f"La date de début doit être postérieure à la date de début de service ({employe.dsb}) de l'employé."
-                )
-
-            # Vérifie qu'il n'y a pas de chevauchement avec la dernière mutation
-            last_mutation = (
-                CLMutation.objects
-                .filter(employe=employe, organizational_unit=organizational_unit)
-                .exclude(date_fin__isnull=True)
-                .order_by('-date_fin')
-                .first()
+    # Vérifier la validité de la date_debut
+    if employe and date_debut:
+        # Vérifie que la date de début est postérieure à la date de début de service
+        if employe.dsb and date_debut <= employe.dsb:
+            raise forms.ValidationError(
+                f"La date de début doit être postérieure à la date de début de service ({employe.dsb}) de l'employé."
             )
 
-            if last_mutation and date_debut <= last_mutation.date_fin:
-                raise forms.ValidationError(
-                    f"La date de début doit être postérieure à la dernière date de fin ({last_mutation.date_fin}) de mutation pour cette unité organisationnelle."
-                )
+        # Vérifie qu'il n'y a pas de chevauchement avec la dernière mutation
+        last_mutation = (
+            CLMutation.objects
+            .filter(employe=employe, organizational_unit=organizational_unit)
+            .exclude(date_fin__isnull=True)
+            .order_by('-date_fin')
+            .first()
+        )
 
-        return cleaned_data
+        if last_mutation and date_debut <= last_mutation.date_fin:
+            function_label = last_mutation.function if last_mutation.function else "Fonction inconnue"
+            raise forms.ValidationError(
+                f"La date de début doit être postérieure à la dernière date de fin ({last_mutation.date_fin}) "
+                f"de mutation pour cette unité organisationnelle (fonction : {function_label})."
+            )
 
-    def clean(self):
-        cleaned_data = super().clean()
-        employe = self.instance
-
-        # Si c'est une modification (instance pk existe) ou création
-        # on vérifie si l'employé a une affectation définitive
-
-        # Récupérer les affectations définitives liées à cet employé
+    # Vérifier si l'employé a déjà une affectation définitive
+    if employe:
         has_definitive = CLAffectation.objects.filter(
             employe=employe,
             statut='Définitif'
         ).exists()
 
         if has_definitive:
-            raise forms.ValidationError("Cet employé a déjà une affectation définitive et ne peut pas être modifié/créé.")
+            raise forms.ValidationError(
+                "Cet employé a déjà une affectation définitive et ne peut pas être modifié/créé."
+            )
 
-        return cleaned_data
+    return cleaned_data

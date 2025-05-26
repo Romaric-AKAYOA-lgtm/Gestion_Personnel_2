@@ -14,7 +14,7 @@ def lister_affectations(request):
         return redirect('connection:login')
     
     try:
-        affectations = CLAffectation.objects.all()
+        affectations = CLAffectation.objects.all().order_by('-date_debut')
         return render(request, 'Affectation/lister_affectations.html', {
             'affectations': affectations,
             'username': username
@@ -124,9 +124,9 @@ def rechercher_affectations(request):
                 Q(organisme_affecte__icontains=query) |
                 Q(lieu_affectation__icontains=query) |
                 Q(statut__icontains=query)
-            )
+            ).order_by('-date_debut')
         else:
-            affectations = CLAffectation.objects.all()
+            affectations = CLAffectation.objects.all().order_by('-date_debut')
 
         return render(request, 'Affectation/lister_affectations.html', {
             'affectations': affectations,

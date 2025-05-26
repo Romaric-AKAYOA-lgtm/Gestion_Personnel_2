@@ -15,8 +15,7 @@ urlpatterns = [
     path('ajouter/', views.ajouter_stagiaire, name='create'),
 
     # Formulaire de modification d'un stagiaire
-    path('<int:id>/modifier/', views.modifier_stagiaire, name='update'),
-
+   path('<int:id>/modifier/', views.modifier_stagiaire, name='update'),
     # Suppression d'un stagiaire
     path('<int:id>/supprimer/', views.supprimer_stagiaire, name='delete'),
 

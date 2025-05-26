@@ -47,7 +47,7 @@ def generate_parcours_pdf(request, parcours_id):
     # Données du parcours
     data = [
         ["Stagiaire", str(parcours.stagiaire)],
-        ["Unité organisationnelle", str(parcours.organizational_unit)],
+        ["Service", str(parcours.organizational_unit)],
         ["Responsable", str(parcours.responsable) if parcours.responsable else "Non défini"],
         ["Date début", parcours.date_debut.strftime('%d/%m/%Y') if parcours.date_debut else "Non défini"],
         ["Date fin", parcours.date_fin.strftime('%d/%m/%Y') if parcours.date_fin else "Non défini"],
@@ -94,7 +94,6 @@ from connection.views import get_connected_user
 from datetime import datetime
 from urllib.parse import quote
 
-
 def generate_parcours_annee_pdf(request):
     username = get_connected_user(request)
     if not username:
@@ -103,7 +102,7 @@ def generate_parcours_annee_pdf(request):
     annee = datetime.now().year
     parcours_list = CLParcoursStagiaire.objects.filter(
         date_debut__year=annee
-    ).order_by('stagiaire__tnm', 'stagiaire__tpm')
+    ).order_by('-date_debut', 'stagiaire__tnm', 'stagiaire__tpm')
 
     filename = f"parcours_stagiaires_{annee}.pdf"
     response = HttpResponse(content_type='application/pdf')
@@ -111,16 +110,12 @@ def generate_parcours_annee_pdf(request):
 
     doc = canvas.Canvas(response, pagesize=A4)
     width, height = A4
+
     row_height = 25
-# Ligne à modifier
-    col_widths = [120, 120, 100, 80, 80, 100]  # Largeur réduite des colonnes
-    max_width = width - 60
+    # Colonnes avec largeur relative
     total_relative = 120 + 120 + 100 + 80 + 80 + 100
+    max_width = width - 60  # marges gauche/droite
     col_widths = [max_width * w / total_relative for w in [120, 120, 100, 80, 80, 100]]
-
-
-    # Puis dans la création des tableaux, la variable col_widths est utilisée comme avant
-
 
     styles = getSampleStyleSheet()
     style_center = styles["Normal"].clone('style_center')
@@ -150,13 +145,21 @@ def generate_parcours_annee_pdf(request):
         ]))
         title_table.wrapOn(doc, width, height)
         title_table.drawOn(doc, 50, y)
-        return y - 50
+        return y - 50  # espace sous le titre
 
     y_start = draw_header_and_title()
     current_y = y_start
-    table_data = [header_row]
 
-    for parcours in parcours_list:
+    # Calcul du nombre de lignes par page
+    margin_bottom = 60
+    available_height = current_y - margin_bottom
+    rows_per_page = int(available_height / row_height)
+    min_rows_last_page = 5
+
+    rows_buffered = []
+    total_rows = len(parcours_list)
+
+    for i, parcours in enumerate(parcours_list):
         row = [
             Paragraph(str(parcours.stagiaire), style_center),
             Paragraph(str(parcours.organizational_unit), style_center),
@@ -165,33 +168,35 @@ def generate_parcours_annee_pdf(request):
             Paragraph(parcours.date_fin.strftime('%d/%m/%Y') if parcours.date_fin else "N/D", style_center),
             Paragraph(parcours.evaluation or "N/A", style_center),
         ]
-        table_data.append(row)
+        rows_buffered.append(row)
+        remaining = total_rows - (i + 1)
 
-        needed_height = row_height * len(table_data)
+        # Dès que le buffer atteint la limite de lignes par page,
+        # et qu'on a assez de lignes restantes pour ne pas couper trop court la dernière page,
+        # on imprime la page et on recommence
+        if len(rows_buffered) == rows_per_page:
+            if remaining > min_rows_last_page:
+                table_data = [header_row] + rows_buffered
+                table = Table(table_data, colWidths=col_widths, repeatRows=1)
+                table.setStyle(TableStyle([
+                    ('GRID', (0, 0), (-1, -1), 1, colors.black),
+                    ('FONTNAME', (0, 0), (-1, -1), 'Times-Roman'),
+                    ('FONTSIZE', (0, 0), (-1, -1), 10),
+                    ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
+                    ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),
+                    ('BACKGROUND', (0, 0), (-1, 0), colors.lightgrey),
+                ]))
+                table.wrapOn(doc, width, height)
+                x_start = (width - sum(col_widths)) / 2
+                table.drawOn(doc, x_start, current_y - row_height * len(table_data))
+                doc.showPage()
+                current_y = draw_header_and_title()
+                rows_buffered = []
 
-        # Si on dépasse la zone d'impression verticale
-        if needed_height > current_y - 60:
-            # Dessiner la table sans la dernière ligne (qui dépasse)
-            table = Table(table_data[:-1], colWidths=col_widths)
-            table.setStyle(TableStyle([
-                ('GRID', (0, 0), (-1, -1), 1, colors.black),
-                ('FONTNAME', (0, 0), (-1, -1), 'Times-Roman'),
-                ('FONTSIZE', (0, 0), (-1, -1), 10),
-                ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
-                ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),
-                ('BACKGROUND', (0, 0), (-1, 0), colors.lightgrey),
-            ]))
-            table.wrapOn(doc, width, height)
-            table.drawOn(doc, (width - sum(col_widths)) / 2, current_y - row_height * (len(table_data) - 1))
-
-            doc.showPage()
-            current_y = draw_header_and_title()
-            # Commencer nouvelle table avec header + dernière ligne
-            table_data = [header_row, row]
-
-    # Dessiner le reste des données si il en reste
-    if len(table_data) > 1:
-        table = Table(table_data, colWidths=col_widths)
+    # Dernière page, dessiner les lignes restantes
+    if rows_buffered:
+        table_data = [header_row] + rows_buffered
+        table = Table(table_data, colWidths=col_widths, repeatRows=1)
         table.setStyle(TableStyle([
             ('GRID', (0, 0), (-1, -1), 1, colors.black),
             ('FONTNAME', (0, 0), (-1, -1), 'Times-Roman'),
@@ -202,15 +207,14 @@ def generate_parcours_annee_pdf(request):
         ]))
         table_height = row_height * len(table_data)
         table.wrapOn(doc, width, height)
-        table_y = current_y - table_height
-        table.drawOn(doc, (width - sum(col_widths)) / 2, table_y)
+        x_start = (width - sum(col_widths)) / 2
+        table.drawOn(doc, x_start, current_y - table_height)
 
         # Afficher nombre total en bas à gauche
-        total_paragraph = Paragraph(f"<b>Nombre total d'enregistrements : {len(parcours_list)}</b>", style_left)
+        total_paragraph = Paragraph(f"<b>Nombre total d'enregistrements : {total_rows}</b>", style_left)
         total_paragraph.wrapOn(doc, width, height)
-        total_paragraph.drawOn(doc, 60, table_y - 30)
-
-    elif len(parcours_list) == 0:
+        total_paragraph.drawOn(doc, 60, current_y - table_height - 30)
+    elif total_rows == 0:
         doc.drawString(60, current_y - 20, "Aucun parcours stagiaire enregistré pour l'année en cours.")
 
     generer_pdf_avec_pied_de_page(doc, username)

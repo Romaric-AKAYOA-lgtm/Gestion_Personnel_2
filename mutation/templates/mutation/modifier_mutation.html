@@ -14,12 +14,11 @@
             </div>
 
             <div class="modal-body">
-                {% if form.errors %}
+                <!-- Erreurs globales -->
+                {% if form.non_field_errors %}
                 <div class="alert alert-danger">
-                    {% for field in form %}
-                        {% if field.errors %}
-                            <strong>{{ field.label }}</strong> : {{ field.errors|striptags }}
-                        {% endif %}
+                    {% for error in form.non_field_errors %}
+                        <p class="mb-0">{{ error }}</p>
                     {% endfor %}
                 </div>
                 {% endif %}
@@ -39,20 +38,34 @@
                                 </option>
                             {% endfor %}
                         </select>
+                        {% if form.organizational_unit.errors %}
+                            <div class="text-danger small mt-1">
+                                {% for error in form.organizational_unit.errors %}
+                                    {{ error }}
+                                {% endfor %}
+                            </div>
+                        {% endif %}
                     </div>
 
                     <!-- Employé -->
                     <div class="mb-3">
                         <label for="employe" class="form-label">Employé</label>
                         <select name="employe" id="employe" class="form-select" required>
-                            <option value="" selected>---------</option>
+                            <option value="">---------</option>
                             {% for emp in form.fields.employe.queryset %}
                                 <option value="{{ emp.pk }}"
-                                    {% if form.initial.employe == emp.pk %}selected{% endif %}>
-                                    {{ emp.tnm }}    {{ emp.tpm }}
+                                    {% if form.instance.employe and form.instance.employe.pk == emp.pk %}selected{% endif %}>
+                                    {{ emp.tnm }} {{ emp.tpm }}
                                 </option>
                             {% endfor %}
                         </select>
+                        {% if form.employe.errors %}
+                            <div class="text-danger small mt-1">
+                                {% for error in form.employe.errors %}
+                                    {{ error }}
+                                {% endfor %}
+                            </div>
+                        {% endif %}
                     </div>
 
                     <!-- Responsable -->
@@ -67,6 +80,13 @@
                                 </option>
                             {% endfor %}
                         </select>
+                        {% if form.responsable.errors %}
+                            <div class="text-danger small mt-1">
+                                {% for error in form.responsable.errors %}
+                                    {{ error }}
+                                {% endfor %}
+                            </div>
+                        {% endif %}
                     </div>
 
                     <!-- Fonction -->
@@ -81,6 +101,13 @@
                                 </option>
                             {% endfor %}
                         </select>
+                        {% if form.function.errors %}
+                            <div class="text-danger small mt-1">
+                                {% for error in form.function.errors %}
+                                    {{ error }}
+                                {% endfor %}
+                            </div>
+                        {% endif %}
                     </div>
 
                     <!-- Date début -->
@@ -88,6 +115,13 @@
                         <label for="date_debut" class="form-label">Date début</label>
                         <input type="date" class="form-control" id="date_debut" name="date_debut" 
                                value="{{ form.initial.date_debut|date:'Y-m-d' }}" required>
+                        {% if form.date_debut.errors %}
+                            <div class="text-danger small mt-1">
+                                {% for error in form.date_debut.errors %}
+                                    {{ error }}
+                                {% endfor %}
+                            </div>
+                        {% endif %}
                     </div>
 
                     <!-- Date fin -->
@@ -95,6 +129,13 @@
                         <label for="date_fin" class="form-label">Date fin</label>
                         <input type="date" class="form-control" id="date_fin" name="date_fin" 
                                value="{{ form.initial.date_fin|date:'Y-m-d' }}">
+                        {% if form.date_fin.errors %}
+                            <div class="text-danger small mt-1">
+                                {% for error in form.date_fin.errors %}
+                                    {{ error }}
+                                {% endfor %}
+                            </div>
+                        {% endif %}
                     </div>
 
                     <!-- Buttons -->

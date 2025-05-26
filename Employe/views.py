@@ -18,7 +18,7 @@ def liste_employes(request):
     username = get_connected_user(request)
     if not username:
         return redirect('connection:login')
-    employes = CLEmploye.objects.all().order_by('id')
+    employes = CLEmploye.objects.all().order_by('-dsb')
     return render(request, 'Employee/liste_employes.html', {
         'username': username, 'employes': employes
     })
@@ -150,7 +150,7 @@ def employee_search(request):
     critere = request.GET.get('criteres', '')
 
     # Récupère tous les employés par défaut
-    employes = CLEmploye.objects.all()
+    employes = CLEmploye.objects.all().order_by('-dsb')
 
     # Filtres par critères spécifiques
     if critere and query:
@@ -174,7 +174,7 @@ def employee_search(request):
             Q(tnm__icontains=query) |
             Q(tpm__icontains=query) |
             Q(email__icontains=query)
-        )
+        ).order_by('-dsb')
 
     # Filtres par date
     date_debut = request.GET.get('date_debut', '')
@@ -188,7 +188,7 @@ def employee_search(request):
     # Si aucune recherche n’est soumise, on retourne tous les employés
     is_filtering = query or date_debut or date_fin
     if not is_filtering:
-        employes = CLEmploye.objects.all()
+        employes = CLEmploye.objects.all().order_by('-dsb')
     elif not employes.exists():
         employes = None
 

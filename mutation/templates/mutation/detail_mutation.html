@@ -15,8 +15,8 @@
                     <li class="list-group-item"><strong>Unité Organisationnelle :</strong> {{ mutation.organizational_unit }}</li>
                     <li class="list-group-item"><strong>Fonction :</strong> {{ mutation.function }}</li>
                     <li class="list-group-item"><strong>Responsable :</strong> {{ mutation.responsable }}</li>
-                    <li class="list-group-item"><strong>Date de Début :</strong> {{ mutation.date_debut }}</li>
-                    <li class="list-group-item"><strong>Date de Fin :</strong> {{ mutation.date_fin }}</li>
+                    <li class="list-group-item"><strong>Date de Début :</strong> {{ mutation.date_debut|date:"Y-m-d" }}</li>
+                    <li class="list-group-item"><strong>Date de Fin :</strong> {{ mutation.date_fin|date:"Y-m-d" }}</li>
                 </ul>
             </div>
             <div class="modal-footer">

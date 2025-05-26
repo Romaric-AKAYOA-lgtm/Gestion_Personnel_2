@@ -15,7 +15,7 @@ def lister_parcours(request):
         return redirect('connection:login')
 
     try:
-        parcours = CLParcoursStagiaire.objects.all()
+        parcours = CLParcoursStagiaire.objects.all().order_by('-date_debut')
         return render(request, 'ParcoursStagiaaire/lister_parcours.html', {
             'parcours': parcours,
             'username': username
@@ -24,25 +24,24 @@ def lister_parcours(request):
         return HttpResponseServerError(f"Erreur serveur lors de l'affichage des parcours : {e}")
 
 
-# 2. Ajouter un parcours stagiaire
 def ajouter_parcours(request):
     username = get_connected_user(request)
     if not username:
         return redirect('connection:login')
 
-    form = CLParcoursStagiaireForm(request.POST or None)
-
-    if request.method == 'POST' and form.is_valid():
-        try:
+    if request.method == "POST":
+        form = CLParcoursStagiaireForm(request.POST)
+        if form.is_valid():
             form.save()
             return redirect('parcours_stagiaire:list')
-        except IntegrityError:
-            form.add_error(None, "Erreur d'intégrité lors de l'ajout.")
+    else:
+        form = CLParcoursStagiaireForm()
 
     return render(request, 'ParcoursStagiaaire/ajouter_parcours.html', {
         'form': form,
         'username': username
     })
+
 
 
 # 3. Détail d’un parcours
@@ -113,9 +112,9 @@ def rechercher_parcours(request):
                 Q(commentaire__icontains=query) |
                 Q(stagiaire__tnm__icontains=query) |        # ici tnm et non nom
                 Q(responsable__tnm__icontains=query)       # idem ici
-            )
+            ).order_by('-date_debut')
         else:
-            parcours = CLParcoursStagiaire.objects.all()
+            parcours = CLParcoursStagiaire.objects.all().order_by('-date_debut')
 
         return render(request, 'ParcoursStagiaaire/lister_parcours.html', {
             'parcours': parcours,

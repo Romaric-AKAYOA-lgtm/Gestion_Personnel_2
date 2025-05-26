@@ -101,7 +101,9 @@ def home_view(request):
     context = {
         'username': username,
         'employes_actifs': employes_actifs,
+        'nombre_employes_actif':employes_actifs.count(),
         'employes_retraite_cette_annee': employes_retraite_cette_annee,
+        'nombre_employes_retraite_cette_annee':employes_retraite_cette_annee.count(),
         'employes_moins_6_mois': employes_moins_6_mois,
         'nombre_moins_20': employes_moins_20.count(),
         'nombre_entre_30_50': employes_entre_30_50.count(),
@@ -111,9 +113,13 @@ def home_view(request):
         'stagiaires_de_cette_annee': stagiaires_de_cette_annee,
         'missions_employes_statut': missions_employes_statut,
         'mutations_hierarchiques': mutations_hierarchiques,
+        'nombre_mutations_hierarchiques':mutations_hierarchiques.count(),
         'en_conge': en_conge,
+        'nombre_en_conge':en_conge.count(),
         'partent_aujourdhui': partent_aujourdhui,
+        'nombre_partent_aujourdhui':partent_aujourdhui.count(),
         'reviennent_aujourdhui': reviennent_aujourdhui,
+        'nombre_reviennent_aujourdhui':reviennent_aujourdhui.count()
     }
 
     return render(request, "home.html", context)

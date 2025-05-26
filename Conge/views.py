@@ -13,7 +13,7 @@ def lister_conges(request):
         return redirect('connection:login')
 
     try:
-        conges = CLConge.objects.all()
+        conges = CLConge.objects.all().order_by('-date_debut_previsionnel')
         return render(request, 'conge/lister_conges.html', {'conges': conges,    "username": username, })
     except Exception as e:
         # Capturer toute exception et renvoyer une page d'erreur générale
@@ -105,9 +105,9 @@ def rechercher_conges(request):
                 Q(employe__tnm__icontains=query) |
                 Q(employe__tpm__icontains=query) |
                 Q(typeconge__designation__icontains=query)
-            )
+            ).order_by('-date_debut_previsionnel')
         else:
-            conges = CLConge.objects.all()
+            conges = CLConge.objects.all().order_by('-date_debut_previsionnel')
 
         return render(request, 'conge/lister_conges.html', {
             "username": username, 

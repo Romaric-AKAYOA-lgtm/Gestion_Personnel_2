@@ -24,6 +24,18 @@
                                 <th>Responsable</th>
                                 <td>{{ parcours.responsable }}</td>
                             </tr>
+                                <tr>
+                                <th>Service</th>
+                                <td>{{ parcours.organizational_unit}}</td>
+                            </tr>
+                            <tr>
+                                <th>Date de début</th>
+                                <td>{{ parcours.date_debut|date:"Y-m-d" }}</td>
+                            </tr>
+                            <tr>
+                                <th>Date de fin</th>
+                                <td>{{ parcours.date_fin|date:"Y-m-d" }}</td>
+                            </tr>
                             <tr>
                                 <th>Évaluation</th>
                                 <td>{{ parcours.evaluation }}</td>
@@ -37,6 +49,8 @@
                                 <td>{{ parcours.commentaire }}</td>
                             </tr>
                         </tbody>
+
+        
                     </table>
                 </div>
 
@@ -45,6 +59,9 @@
                       <a href="{% url 'parcours_stagiaire:pdf_parcours' parcours.id %}" class="btn btn-danger   " target="_blank">
                         <i class="bi bi-file-earmark-pdf"></i> PDF
                     </a>
+                           <a href="{% url 'parcours_stagiaire:delete' parcours.id %}" class="btn btn-danger btn-sm mb-1" onclick="return confirm('Êtes-vous sûr ?')">
+                            <i class="bi bi-trash"></i> Supprimer
+                        </a>
                     <a href="{% url 'parcours_stagiaire:list' %}" class="btn btn-secondary">Retour à la liste</a>
                 </div>
 

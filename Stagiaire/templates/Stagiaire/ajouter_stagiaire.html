@@ -127,13 +127,20 @@
                   {% endfor %}
                 </select>
               </div>
+            <!-- Statut -->
+            <div class="col-md-6">
+              <label for="tstt_user" class="form-label">Statut</label>
+              <select class="form-select" id="tstt_user" name="tstt_user">
+                <option value="actif" {% if form.tstt_user.value == 'actif' %}selected{% endif %}>Actif</option>
+                <option value="inactif" {% if form.tstt_user.value == 'inactif' %}selected{% endif %}>Non Actif</option>
+              </select>
+            </div>
 
-            <!-- Image -->
-            <div class="col-12">
+            <!-- Photo -->
+             <div class="col-md-6">
               <label for="id_img" class="form-label">Photo</label>
               <input type="file" name="img" id="id_img" class="form-control">
             </div>
-
             <!-- Observation -->
             <div class="col-12">
               <label for="id_observation" class="form-label">Observation</label>

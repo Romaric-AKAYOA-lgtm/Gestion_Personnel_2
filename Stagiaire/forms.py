@@ -27,18 +27,19 @@ class ClStagiaireForm(ClUserForm):
             }),
         })
 
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        # Initialiser 'tstt' à 'Stagiaire' si c’est une création
-        if not self.instance.pk:
-            self.fields['tstt'].initial = 'Stagiaire'
-            self.fields['tstt'].widget.attrs['readonly'] = True
+def __init__(self, *args, **kwargs):
+    super().__init__(*args, **kwargs)
 
-        # Filtrer les responsables : date de retraite dépassée + user actif + ddf atteinte
-        self.fields['responsable'].queryset = self.fields['responsable'].queryset.filter(
-            tstt_user__is_active=True,
-            ddf__lte=date.today()
-        ).exclude(date_retraite__lte=date.today())
+    if not self.instance.pk:
+        self.fields['tstt'].initial = 'Stagiaire'
+        self.fields['tstt'].widget.attrs['readonly'] = True
+
+    # CORRECTION ici
+    self.fields['responsable'].queryset = self.fields['responsable'].queryset.filter(
+        tstt_user__is_active=True,
+        ddf__lte=date.today()
+    ).exclude(date_retraite__lte=date.today())
+
 
     def clean_responsable(self):
         responsable = self.cleaned_data.get('responsable')
@@ -46,19 +47,19 @@ class ClStagiaireForm(ClUserForm):
         if responsable:
             date_retraite = getattr(responsable, 'date_retraite', None)
             ddf = getattr(responsable, 'ddf', None)
-            tstt_user = getattr(responsable, 'tstt_user', None)
+            is_active = getattr(responsable, 'is_active', True)
 
             if date_retraite and date_retraite <= date.today():
                 raise ValidationError("Le responsable est déjà à la retraite.")
 
-            if tstt_user and not tstt_user.is_active:
+            if not is_active:
                 raise ValidationError("Le responsable sélectionné n'est pas actif.")
 
             if ddf and ddf > date.today():
                 raise ValidationError("Ce responsable n'est pas encore disponible (date de fin non atteinte).")
 
         return responsable
-    
+
     def clean(self):
         cleaned_data = super().clean()
         responsable = cleaned_data.get('responsable')

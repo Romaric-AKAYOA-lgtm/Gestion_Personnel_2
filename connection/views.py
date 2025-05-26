@@ -1,7 +1,7 @@
 # utils.py (si vous souhaitez centraliser la logique)
 from connection.models import ClConnection
 from datetime import date
-
+from django.views.decorators.csrf import csrf_protect
 # views.py
 from django.shortcuts import render, get_object_or_404
 # views.py
@@ -79,6 +79,8 @@ def logout_view(request):
     messages.info(request, "Vous avez été déconnecté avec succès.")
     return redirect("connection:login")  # Rediriger vers la page de connexion
 
+
+@csrf_protect
 # Vue de connexion (Login)
 def login_view(request):
     """Affiche la page de connexion et gère l'authentification des utilisateurs."""

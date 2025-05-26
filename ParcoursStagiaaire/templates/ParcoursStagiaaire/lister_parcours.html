@@ -28,7 +28,8 @@
                 <tr>
                     <th>#</th>
                     <th>Stagiaire</th>
-                    <th>Responsable</th>
+                    <th>Responsable</th>           
+                     <th>Service</th>
                     <th>Évaluation</th>
                     <th>Compétence</th>
                     <th>Actions</th>
@@ -38,8 +39,9 @@
                 {% for p in parcours %}
                 <tr>
                     <td>{{ forloop.counter }}</td>
-                    <td>{{ p.stagiaire }}</td>
+                    <td>{{ p.stagiaire }}</td>  
                     <td>{{ p.responsable }}</td>
+                    <td>{{ p.organizational_unit }}</td>
                     <td>{{ p.evaluation }}</td>
                     <td>{{ p.competences }}</td>
                     <td>
@@ -61,7 +63,7 @@
                 </tr>
                 {% empty %}
                 <tr>
-                    <td colspan="6" class="text-center text-muted">Aucun parcours trouvé.</td>
+                    <td colspan="7" class="text-center text-muted">Aucun parcours trouvé.</td>
                 </tr>
                 {% endfor %}
             </tbody>
