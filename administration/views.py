@@ -13,11 +13,8 @@ from django.shortcuts import render, get_object_or_404, redirect
 def administration_list(request):
     """Affiche la page d'accueil avec la gestion du personnel et la vérification d'activation."""
     username = get_connected_user(request)
-
-    # Assurez-vous que le nom d'utilisateur est disponible dans la session
     if not username:
-        return redirect('login')  # Redirige vers la page de connexion si pas de nom d'utilisateur dans la session
-
+        return redirect('connection:login')
     # 🔹 Vérifier l'activation
     activation = Activation.objects.first()
     if not activation or not activation.is_valid():
@@ -32,11 +29,8 @@ def administration_list(request):
 
 def administration_detail(request, id):  # Accepte l'ID comme paramètre
     username = get_connected_user(request)
-
-    # Assurez-vous que le nom d'utilisateur est disponible dans la session
     if not username:
-        return redirect('login')  # Redirige vers la page de connexion si pas de nom d'utilisateur dans la session
-
+        return redirect('connection:login')
     # Récupérer l'administration par son ID
     administration = get_object_or_404(Administration, id=id)
 
@@ -44,11 +38,8 @@ def administration_detail(request, id):  # Accepte l'ID comme paramètre
 
 def administration_create(request):
     username = get_connected_user(request)
-
-    # Assurez-vous que le nom d'utilisateur est disponible dans la session
     if not username:
-        return redirect('login')  # Redirige vers la page de connexion si pas de nom d'utilisateur dans la session
-
+        return redirect('connection:login')
     if request.method == 'POST':
         form = AdministrationForm(request.POST, request.FILES)
         if form.is_valid():
@@ -60,11 +51,8 @@ def administration_create(request):
 
 def administration_modify(request, id):
     username = get_connected_user(request)
-
-    # Assurez-vous que le nom d'utilisateur est disponible dans la session
     if not username:
-        return redirect('login')  # Redirige vers la page de connexion si pas de nom d'utilisateur dans la session
-
+        return redirect('connection:login')
     # Récupérer l'administration existante
     administration = get_object_or_404(Administration, id=id)
 
