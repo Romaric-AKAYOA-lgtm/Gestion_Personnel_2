@@ -26,7 +26,7 @@ def generate_conge_pdf(request, conge_id):
     # Créer le document PDF
     doc = canvas.Canvas(response, pagesize=A4)
     width, height = A4
-    y = height - 40
+    y = height - 80
 
     # Entête
     generer_entete_pdf(doc)

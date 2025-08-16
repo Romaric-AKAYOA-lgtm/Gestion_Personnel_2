@@ -24,7 +24,7 @@ def generate_mutation_pdf(request, mutation_id):
 
     doc = canvas.Canvas(response, pagesize=A4)
     width, height = A4
-    y = height - 40
+    y = height - 80
 
     generer_entete_pdf(doc)
     y -= 280
